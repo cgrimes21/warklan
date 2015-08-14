@@ -1,0 +1,19 @@
+mob/proc
+	BlackSmith()
+	//	var/obj/NPCs/Items/Staff/G=new/obj/NPCs/Items/Staff
+		var/obj/NPCs/Items/redoakstaff/S=new/obj/NPCs/Items/redoakstaff
+		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
+		src.contents+=G
+		src.contents+=S
+		return
+	Doctor()
+		var/obj/NPCs/Items/Potion/G=new/obj/NPCs/Items/Potion
+		src.contents+=G
+		return
+	Witch_Doctor()
+		var/obj/NPCs/Items/Buff/G=new/obj/NPCs/Items/Buff
+		src.contents+=G
+		return
+	Tailor()
+		var/obj/NPCs/Items/Sack/G=new/obj/NPCs/Items/Sack
+		src.contents+=G
