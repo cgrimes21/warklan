@@ -5,3 +5,6 @@
  • Add dragging effect while you’re placing a skill in hotspot (S to bring up skills, I to bring up inventory)
 
 i don’t mean sword skill literally, but like, in the attacking and shooting bow verbs, pretty much check to see if they have the weapon on, and then give some exp points
+
+
+TODO @
