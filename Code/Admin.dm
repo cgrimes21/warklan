@@ -27,6 +27,7 @@
 							)
 
 
+//BOOM
 
 //	Define the CSS style for the browser, if you wish to make it more fancy.
 var/_CSS = {"
