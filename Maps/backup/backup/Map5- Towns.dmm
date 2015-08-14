@@ -1,0 +1,205 @@
+"aa" = (/turf/Mountains/w6,/area)
+"ab" = (/turf/Mountains/w6,/turf/Mountains/pl11,/area)
+"ac" = (/turf/Mountains/mg12,/turf/EnemyStop{D = 1},/turf/Mountains/pl11,/area)
+"ad" = (/turf/Mountains/mg12,/turf/EnemyStop,/turf/Mountains/pl11,/area)
+"ae" = (/turf/Mountains/mg8,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
+"af" = (/turf/Mountains/mg7,/turf/Mountains/pl9,/area)
+"ag" = (/turf/Mountains/mg8,/turf/EnemyStop{D = 1},/area)
+"ah" = (/turf/Mountains/mg7,/turf/Mountains/pl11,/area)
+"ai" = (/turf/Mountains/jap31,/area)
+"aj" = (/turf/Mountains/mg7,/area)
+"ak" = (/turf/Mountains/jap32,/area)
+"al" = (/turf/Mountains/s9,/area)
+"am" = (/turf/Mountains/jap37,/area)
+"an" = (/turf/Mountains/jap34,/area)
+"ao" = (/turf/Mountains/Black,/area)
+"ap" = (/turf/Mountains/mg7,/turf/Mountains/pl9,/turf/Mountains/pl11,/area)
+"aq" = (/turf/Mountains/mg2,/turf/Mountains/pl9,/area)
+"ar" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1},/area)
+"as" = (/turf/Mountains/m7,/turf/EnemyStop{D = 1},/area)
+"at" = (/turf/Mountains/m8,/turf/EnemyStop{D = 1},/area)
+"au" = (/turf/Mountains/m9,/turf/EnemyStop{D = 1},/area)
+"av" = (/turf/Mountains/m2,/turf/EnemyStop{D = 1},/area)
+"aw" = (/turf/Mountains/mg7,/turf/Mountains/pl5,/area)
+"ax" = (/turf/Mountains/mg7,/turf/Mountains/pl2,/area)
+"ay" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToVillageEntrance,/area)
+"az" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/ToVillageCenterFromVillageEntrance,/area)
+"aA" = (/turf/Mountains/p3,/area)
+"aB" = (/turf/Mountains/p4,/turf/Mountains/pl5,/area)
+"aC" = (/turf/Mountains/p1,/area)
+"aD" = (/turf/Mountains/p2,/area)
+"aE" = (/turf/Mountains/mg2,/area)
+"aF" = (/turf/Mountains/s9,/turf/Markers/VillageOne/FromVillageOutskirtsToVillageCenter,/area)
+"aG" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/ToVillageOutskirtsFromVillageCenter,/area)
+"aH" = (/turf/Mountains/tg15,/area)
+"aI" = (/turf/Mountains/tg14,/area)
+"aJ" = (/turf/Mountains/tg9,/area)
+"aK" = (/turf/Mountains/tg7,/area)
+"aL" = (/turf/Mountains/tg7,/turf/Mountains/pl1,/area)
+"aM" = (/turf/Mountains/tg7,/turf/Mountains/pl4,/area)
+"aN" = (/mob/NPCS/QUEST,/turf/Mountains/mg7,/area)
+"aO" = (/turf/Mountains/tg7,/turf/Mountains/pl2,/area)
+"aP" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/ToVillageEntrance,/area)
+"aQ" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToVillageCenterFromVillageEntrance,/area)
+"aR" = (/turf/Mountains/tg7,/turf/Mountains/pl3,/area)
+"aS" = (/turf/Mountains/tg3,/area)
+"aT" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/FromVillageOutskirtsToVillageCenter,/area)
+"aU" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToVillageOutskirtsFromVillageCenter,/area)
+"aV" = (/turf/Mountains/mg8,/area)
+"aW" = (/turf/Mountains/Black,/turf/Locations/MercenaryQuests/ToMercenaryQuest1,/area)
+"aX" = (/turf/Mountains/s9,/turf/Markers/MercenaryQuest/MercQuest1_Outside,/area)
+"aY" = (/turf/Mountains/mg8,/turf/Mountains/pl11,/area)
+"aZ" = (/turf/Mountains/mg8,/turf/Mountains/pl9,/area)
+"ba" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToVillageOutskirtsFromArea2,/area)
+"bb" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/ToArea2FromVillageOutskirts,/area)
+"bc" = (/turf/Mountains/jap34,/turf/Mountains/pl11,/area)
+"bd" = (/turf/Mountains/mg12,/turf/Mountains/pl9,/area)
+"be" = (/turf/Mountains/mg8,/turf/EnemyStop{D = 1},/turf/Mountains/pl11,/area)
+"bf" = (/turf/Mountains/mg8,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
+"bg" = (/turf/Mountains/s9,/turf/Mountains/pl9,/area)
+"bh" = (/turf/Mountains/mg7,/turf/Mountains/pl11,/turf/Mountains/pl9,/turf/Mountains/pl11,/area)
+"bi" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
+"bj" = (/turf/Mountains/s9,/turf/Markers/VillageTwo/ToVillage2FromVillage2Outskirts,/area)
+"bk" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageTwo/ToVillage2OutskirtsFromVillage2,/area)
+"bl" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageTwo/ToArea2FromVillage2,/area)
+"bm" = (/turf/Mountains/s9,/turf/Markers/VillageTwo/ToVillage2FromArea2,/area)
+"bn" = (/turf,/area)
+"bo" = (/turf/Mountains/Black,/turf/Locations/MercenaryQuests/ToMercenaryQuest2,/area)
+"bp" = (/turf/Mountains/s9,/turf/Markers/MercenaryQuest/MercQuest2_Outside,/area)
+"bq" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageTwo/ToVillage2FromVillage2Outskirts,/area)
+"br" = (/turf/Mountains/s9,/turf/Markers/VillageTwo/ToVillage2OutskirtsFromVillage2,/area)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+acacadacacacacacacacacacacacacacacacacacacacacacacacacacae
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafag
+ahahahahahahahahahahahahahahahahahahahahahahahahahahahahag
+afafafafafafafafafafafafafafafafafafaiaiaiaiaiaiaiaiaiafag
+ahahajajajajajajajajajajajajajajajajaiaiaiaiaiaiaiaiaiajag
+afafajajajajajajajajajajajajajajajajakakakakakakakakakajag
+alalalalalalalalalalalalalalajajajajamamamamamamamamamajag
+ahahajajajajajajajajajajalalajajajajananananaoananananajag
+apapahahahahahahahahahahalalahahahahahahahahahahahahahahag
+aqaqaqaqaqaqaqaqaqaqaqaqalalaqaqaqaqaqaqaqaqaqaqaqaqaqaqar
+asatatatatatatatatatatatalalatatatatatatatatatatatatatatau
+asavavavavavavavavavavavalalavavavavavavavavavavavavavavau
+ajajajajajajajajajajajajajalajajajajajajajajajajajajahahah
+ajaiaiaiaiaiaiaiaiaiajajajalajawajajajajajajajaxajajafafaf
+ajaiaiaiaiaiaiaiaiaiajajajalajajajajajajawajalalalalayalaz
+alaiaiaiaiaiaiaiaiaialalalalalalalalalalalalalajajajahahah
+ajakakakakakakakakakajajajalajajajajajajajajajajajajafafaf
+ajamamamamamamamamamajajajalajaAaBajajajajajajajajajajajaj
+ajananananaoananananajajajalajaCaDajajajajajajajajajajajaj
+alalalalalalalalalalalalalalajajajajajajajajajajajajajajaj
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+asatatatatatatatatatatatasatatatatasatatatatatatatatatatat
+asavavavavavavavavavavavasavavavavasavavavavavavavavavavav
+"}
+
+(1,1,2) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+acacadacacacacacacacacacacacacacacacacacacacacacacacacacae
+afaiaiaiaiaiaiafafafaiaiaiaiaiaiafafajaiaiaiaiaiaiajajafag
+ahaiaiaiaiaiaiahahahaiaiaiaiaiaiahahajaiaiaiaiaiaiajajahag
+afakakakakakakafafafakakakakakakafafajakakakakakakajajafag
+ajamamamamamamajajajamamamamamamajajajamamamamamamajajajag
+ajananananananajajajananananananajajajananananananajajajag
+alalalalalalalalalalalalalalalalalalalalalalalalalalalaFaG
+ajajajajajajajajajajajajalalajajajajajajajajajajajajajajag
+ajajajajajajajajajajajajalalajajajajajajajajajajajajajajag
+ajajaiaiaiaiaiaiajajajajalalajajajajaiaiaiaiaiaiajajajajag
+ajajaiaiaiaiaiaiajajajajalalajajajajakakakakakakajajajajag
+ahahamamamamamamahahahahalalahahahahamamamamamamahahahahag
+afafananananananafafafafalalafafafafananananananafafafafar
+asatatatatatatatatatatatalalatatatatatatatatatatatatatatau
+asavavavavavavavavavavavalalavavavavavavavavavavavavavavau
+ajajajajajajajajajajajajalalajajajajajajawaHaIaIaIaIaIaIaI
+ahahahahajajajajajajajajalalajajajajajajaJaKaLaKaKaMaKaKaM
+afafafafajajajajajajajajalalajajajajaNajaJaKaOaKaKaOaKaKaO
+aPalaQalalalalalalalalalalalajajajajajajaJaKaRaKaKaRaKaKaR
+ahahahahajajajajajajajajajajajajajajajajaJaKaKaKaKaKaKaKaK
+afafafafajajajajajajajajajajajajajajajajajaSaSaSaSaSaSaSaS
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+asatatatatatatatatatatatatatatatatasatatatatatatatatatatat
+"}
+
+(1,1,3) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+acacadacacacacacacacacacacacacacacacacacacacacacacacacacae
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafag
+ahahahahahahahahahahahahahahahahahahahahahahahahahahahahag
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafag
+ahahahahajajajajajajajajajajajajajajajajajajajajajajajajag
+afafafafajajajajajajajajajajajajajajajajajajajajajajajajag
+aTalaUalalalalalalalalalalalajajajajajajajajajajajajajajag
+ahahahahajajajajajajajajalalajaiaiaiaiaiaiaiaiaiaiaiaiaiag
+apapapapahahahahahahahahalalajaiaiaiaiaiaiaiaiaiaiaiaiaiag
+afafafafafafafafafafafafalalajaiaiaiaiaiaiaiaiaiaiaiaiaiaV
+asatatatatatatatatatatatalalajaiaiaiaiaiaiaiaiaiaiaiaiaiaV
+asaiaiaiaiaiaiavavavavavalalajaiaiaiaiaiaiaiaiaiaiaiaiaiaV
+ajaiaiaiaiaiaiajajajajajalalajaiaiaiaiaiaiaiaiaiaiaiaiaiaV
+ajamamamamamamajajajajajalalajamamamamamamamamamamamamamaV
+ajananananananajajajajajalalajananananananaWananananananaV
+ajajajalalajajajajajajajalalajajajajalalalaXalalalajajajaV
+ajajajalalalalalalalalalalalajajajajajajajalajajajajajajaV
+ajajajajajajajajajajajajalalalalalalalalalalajajajajajajaV
+ajajajajajaiaiaiaiaiaiajalalahahahahahahahahahahahahahahaY
+ajajajajajaiaiaiaiaiaiajalalafafafafafafafafafafafafafafaZ
+ajajajajajamamamamamamajalalalalalalalalalalalalalalalbabb
+ahahahahahbcbcbcbcbcbcahahahahahahahahahahahahahahahahahaY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafaZ
+"}
+
+(1,1,4) = {"
+ababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaababababab
+bdbdbdbdbdbdbdbdbdbdbdbdacacacacacacacacacacacacbdbdbdbdae
+ahahahahahahahahahahahahafafafafafafafafafafafafahahahahbe
+afafafafafafafafafafafafahahahaiaiaiaiaiaiaiaiaiafafafafbf
+ahahahahahahahahahahahahbgbgbhaiaiaiaiaiaiaiaiaiahahahahbe
+aqaqaqaqaqaqaqaqaqaqaqaqalalaqaiaiaiaiaiaiaiaiaiaqaqaqaqbi
+asatatatatatatatatatatatalalatakakakakakakakakakatatatatau
+asavavaiaiaiaiaiaiaiaiaiajalavakakakakakakakakakavavavavau
+ajajajaiaiaiaiaiaiaiaiaiajalajakakakakakakakakakajajajajaj
+ajajajaiaiaiaiaiaiaiaiaiajalajamamamamamamamamamajajajajaj
+ajajajakakakakakakakakakajalajananananaoananananajajajajaj
+ajajajamamamamamamamamamajalajajajajajajajajajajajajajajaj
+ajajajananananaoananananajalajajajajajajajajajajajajajajaj
+ajajajajajajajalajajajajajalajajajajajajajajajajajajajajaj
+ajajajajajajajalajajajajajalalalalalalalalalalalalalalbjbk
+ajajajajajajajalajajajajajalajaiaiaiaiaiaiaiaiaiajajajajaj
+blbmalalalalalalalalalalalalajaiaiaiaiaiaiaiaiaiajajahahah
+ajajajajajajajajajajajajajalajaiaiaiaiaiaiaiaiaiajajafafaf
+ajajajajajajajajajajajajajalajakakakakakakakakakajajajajaj
+ajajajajajajajajajajajajajalajamamamamamamamamamajajajajaj
+alalalalalalalalalalalalalalajananananaoananananajajajajaj
+aEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaE
+asatatatatatatatatatatatasatatatatasatatatatatatatatatatat
+asavavavavavavavavavavavasavavavavasavavavavavavavavavavav
+"}
+
+(1,1,5) = {"
+bnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+acacadacacacacacacacacacacacacacacacacacacacacacacacacacae
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafag
+ahahahahahahahahahahahahahahahahahahahahahahahahahahahahag
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafag
+ahahahaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiag
+apapapaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiag
+afafafaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiag
+asatataiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiag
+asatataiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiag
+ajajajaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaV
+ajajajamamamamamamamamamamamamamamamamamamamamamamamamamaV
+ajajajananananananananananananboananananananananananananaV
+ajajajajajajajajajajajajajajajbpajajajajajajajajajajajajaV
+ajajajajajajajajajajajajajajajalajajajajajajajajajajajajaV
+ajajajajajajajajajajajajajajajalajajajajajajajajajajajajaV
+ajajajajajajajajajajajajajajajalajajajajajajajajajajajajaV
+bqbralalalalalalalalalalalalalalajajajajajajajajajajajajaV
+ajajajajajajajajajajajajalajajajajajajajajajajajajajajajaV
+ajajajajajaiaiaiaiaiaiajalajahahahahahahahahahahahahahahaY
+ajajajajajaiaiaiaiaiaiajalajafafafafafafafafafafafafafafaZ
+ajajajajajamamamamamamajalalalalalalalalalalalalalalalalal
+ahahahahahbcbcbcbcbcbcahahahahahahahahahahahahahahahahahaY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafaZ
+"}
