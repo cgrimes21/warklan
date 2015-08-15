@@ -6,5 +6,13 @@
 
 i don’t mean sword skill literally, but like, in the attacking and shooting bow verbs, pretty much check to see if they have the weapon on, and then give some exp points
 
+NEW ADDONS
+
+Fix Monster Attacking System
+- Boundary boxes are out of whack
+- Monsters should start attacking players a reasonable distance upon seeing me
+- Monsters should start being aggro depending on the level of player (so if monster is way above player level, the   aggro factor is low, if they’re around player level and way below player level the aggro factor is high)
+
+When you’re accepting a quest, it shows black boxes above the dialogue which shows all the rewards, i cant figure out how to put rewards in those boxes
 
 TODO @
