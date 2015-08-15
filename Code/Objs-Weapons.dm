@@ -37,11 +37,12 @@ mob/verb
 			if(!O.CanPickUp)
 				return
 			if(usr.AvailableItems>=usr.MaxItems)
-				_message(usr,"You're Holding To Many Items","Yellow")
+				_message(usr,"You're holding too many items","Yellow")
 				return
 			else
 				usr.AvailableItems+=1
 				usr.contents+=O
+				QuestItemCheck()
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
@@ -50,10 +51,25 @@ obj/Items/ItemDrops
 	Fox_Fur
 		icon='ItemDrops.dmi'
 		icon_state="foxfur"
+		name="Fox Fur"
 		Click()
 			if(src in oview(1))
 				if(usr.AvailableItems>=usr.MaxItems)
-					_message(usr,"You're Holding To Many Items","Yellow")
+					_message(usr,"You're holding too many Items","Yellow")
+					return
+				else
+					usr.AvailableItems+=1
+					usr.contents+=src
+					if(usr.BagOpen==1)
+						usr.AddItems()
+	Small_Stick
+		icon='ItemDrops.dmi'
+		icon_state="smallstick"
+		name="Small Stick"
+		Click()
+			if(src in oview(1))
+				if(usr.AvailableItems>=usr.MaxItems)
+					_message(usr,"You're holding too many Items","Yellow")
 					return
 				else
 					usr.AvailableItems+=1
@@ -290,7 +306,7 @@ obj/Items
 		Level=1
 		layer=17
 		Weight=25
-		Staff
+		Wooden_Sword
 			icon='JpShopItems.dmi'
 			icon_state="trainingstaff"
 			Click()

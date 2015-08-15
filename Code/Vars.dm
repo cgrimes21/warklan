@@ -154,3 +154,4 @@ obj
 		Weight=0
 		Cost=0
 		CanPickUp=1
+		MaterialsRequired=""

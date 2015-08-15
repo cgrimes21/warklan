@@ -22,6 +22,8 @@ mob/var
 	tmp/QuestMenuUp=0
 	QuestLevel=1
 	DoingQuest=0
+	FoxFurCollected=0
+	SmallSticksCollected=0
 	WolfKilled=0
 	FoxKilled=0
 	BanditsKilled=0
@@ -47,7 +49,7 @@ mob/proc
 			sleep(world.tick_lag)
 		if(T=="FurQuest")
 			src<< output(null,"QuestMenu.Info")
-			if(src.FoxKilled>=3)
+			if(src.FoxFurCollected>=3)
 				src<< output("<center>Great work! Here's a fox fur tunic. </center>","QuestMenu.Info")
 				src.DoingQuest=1
 				var/icon/my_icon = icon('Coin.dmi')
@@ -63,7 +65,7 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 		if(T=="WoodenSwordQuest")
 			src<< output(null,"QuestMenu.Info")
-			if(src.FoxKilled>=3)
+			if(src.SmallSticksCollected>=3)
 				src<< output("<center>Great work! Here's a wooden sword. </center>","QuestMenu.Info")
 				src.DoingQuest=1
 				var/icon/my_icon = icon('Coin.dmi')
@@ -78,7 +80,51 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
+	QuestItemCheck()
+		if(src.DoingQuest&&src.QuestLevel==1)
+			for(var/obj/O in src.contents)
+				if(O.name=="Fox Fur")
+					src.FoxFurCollected+=1
+					_message(src, "<font color=green>Furs Collected: [src.FoxFurCollected]/3</font>","white")
+					if(src.FoxFurCollected>=3)
+						src.ElderNPC=1
+					return
+		if(src.DoingQuest&&src.QuestLevel==2)
+			for(var/obj/O in src.contents)
+				if(O.name=="Small Stick")
+					src.SmallSticksCollected+=1
+					_message(src, "<font color=green>Small Sticks Collected: [src.SmallSticksCollected]/3</font>","white")
+					if(src.SmallSticksCollected>=3)
+						src.ElderNPC=1
+					return
 
+	QuestItemDelete()
+		if(src.DoingQuest&&src.QuestLevel==1)
+			for(var/obj/O in src.contents)
+				if(O.name=="Fox Fur")
+					if(usr.BagOpen==1)
+						usr.AddItems()
+					del O
+					del O
+					del O
+					usr.AvailableItems-=1
+					usr.CreateInventory()
+				else
+					return
+
+
+		if(src.DoingQuest&&src.QuestLevel==2)
+			for(var/obj/O in src.contents)
+				if(O.name=="Small Stick")
+					if(usr.BagOpen==1)
+						usr.AddItems()
+					del O
+					del O
+					del O
+					usr.AvailableItems-=1
+					usr.CreateInventory()
+				else
+					return
 mob
 	verb
 		ExitQuest()
@@ -90,9 +136,10 @@ mob
 
 
 			// Beginning Quests//
-			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxKilled>=3)
+			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxFurCollected>=3)
+				src.QuestItemDelete()
 				src.DoingQuest=0
-				src.FoxKilled=0
+				src.FoxFurCollected=0
 				src.QuestLevel+=1
 				src.Gold+=15
 				src.EXP+=45
@@ -101,7 +148,7 @@ mob
 				var/obj/Items/Clothing/Fox_Fur_Tunic/A = new/obj/Items/Clothing/Fox_Fur_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
-				_message(src, "<b><font color=yellow>Gold Received: 15, EXP Received: 55, Fox Fur Tunic Received!</font></b>","white")
+				_message(src, "<b><font color=yellow>Gold Received: 15, EXP Received: 45, Fox Fur Tunic Received!</font></b>","white")
 
 				if(usr.BagOpen==1)
 					usr.AddItems()
@@ -109,18 +156,20 @@ mob
 					src.LevelUP()
 				return
 
-			if(src.DoingQuest&&src.QuestLevel==2&&src.FoxKilled>=3)
+			if(src.DoingQuest&&src.QuestLevel==2&&src.SmallSticksCollected>=3)
+				src.QuestItemDelete()
 				src.DoingQuest=0
-				src.FoxKilled=0
+				src.FoxFurCollected=0
 				src.QuestLevel+=1
-				src.Gold+=30
-				src.EXP+=65
+				src.Gold+=20
+				src.EXP+=50
 				src.ElderNPC=0
-				_message(src, "<b><font color=yellow>Gold Received: 30, EXP Received: 65, Wooden Sword Received!</font></b>","white")
 
-				var/obj/Items/Weapons/Staff/A = new/obj/Items/Weapons/Staff
+				var/obj/Items/Clothing/Fox_Fur_Tunic/A = new/obj/Items/Weapons/Wooden_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
+				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
+
 				if(usr.BagOpen==1)
 					usr.AddItems()
 				if(src.EXP>=src.MaxEXP)
@@ -131,21 +180,14 @@ mob
 		QUESTCHECK(var/N as text)
 			//Shaolin Temple NPCs
 
-			if(N=="Fox")
-				if(src.DoingQuest==1&&src.QuestLevel==1)
-					src.FoxKilled+=1
-					_message(src, "<font color=green>Furs Collected: [src.FoxKilled]/3</font>","white")
-					if(src.FoxKilled>=3)
-						src.ElderNPC=1
-				return
 
-			if(N=="Wolf")
+			/*if(N=="Wolf")
 				if(src.DoingQuest==1&&src.QuestLevel==2)
 					src.FoxKilled+=1
 					_message(src, "<font color=green>Small Sticks Collected: [src.FoxKilled]/3</font>","white")
 					if(src.FoxKilled>=3)
 						src.ElderNPC=1
-				return
+				return*/
 
 
 			if(N=="Mountain Bandit")

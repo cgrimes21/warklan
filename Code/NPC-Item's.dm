@@ -27,17 +27,19 @@ obj/NPCs/Items
 		usr.ShowingInfo=1
 		winset(usr,"Item","is-visible=true")
 		usr.ItemInfoAligen()
-		winset(usr,"Item.Gold","text = 'Gold :   [src.Cost] Yen'")
+		winset(usr,"Item.Materials","text = 'Materials Required: :   [src.MaterialsRequired]'")
+		winset(usr,"Item.Gold","text = 'Gold Required:   [src.Cost] Gold'")
 		winset(usr,"Item.Weight","text ='Level Req :    [src.Req]'")
 		usr<<output(null,"Item.ItemInfo")
 		usr<<output("[src.Des]     <font size=+1><font color=yellow>Click To Purchase!</font></font>","Item.ItemInfo")
 	MouseExited()
 		usr.ShowingInfo=0
 		winset(usr,"Item","is-visible=false")
-	Staff
+	Wooden_Sword
 		Cost=15
 		Weight=25
-		Des="Normal Staff"
+		MaterialsRequired="3 Small Sticks"
+		Des="Wooden Sword"
 		icon='JpShopItems.dmi'
 		icon_state="trainingstaff"
 		Click()
@@ -46,15 +48,18 @@ obj/NPCs/Items
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.Gold>=src.Cost)
-				var/obj/Items/Weapons/Staff/A=new/obj/Items/Weapons/Staff
-				usr.AvailableItems+=1
-				usr.contents+=A
-				usr.Gold-=src.Cost
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				return
+				if(usr.SmallSticksCollected>=3)
+					var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
+					usr.AvailableItems+=1
+					usr.contents+=A
+					usr.Gold-=src.Cost
+					if(usr.BagOpen==1)
+						usr.AddItems()
+					return
+				else
+					_message(usr,"You still need [src.MaterialsRequired]!","Yellow")
 			else
-				_message(usr,"You Don't Have The Right Amount Of Gold","Yellow")
+				_message(usr,"Come back when you have enough gold!","Yellow")
 	redoakstaff
 		Cost=20
 		Weight=25
