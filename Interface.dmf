@@ -68,6 +68,10 @@ macro "macro"
 		command = "Boot"
 		is-disabled = false
 	elem 
+		name = "C+UP"
+		command = "toggle-debug-window"
+		is-disabled = false
+	elem 
 		name = "D"
 		command = "Block"
 		is-disabled = false
