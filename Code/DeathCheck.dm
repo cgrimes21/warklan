@@ -39,6 +39,9 @@ mob/proc
 					G.loc=M.loc
 				if(M.Name=="Wolf"&&M.Enemy==1)
 					G.Amount=5
+					var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stick
+					F.loc=M.loc
+					G.loc=M.loc
 				if(M.Name=="Bear"&&M.Enemy==1)
 					G.Amount=44
 				if(M.Name=="Thief"&&M.Enemy==1)

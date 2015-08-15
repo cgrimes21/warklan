@@ -37,7 +37,7 @@
 #include "Code\NPC-Shop.dm"
 #include "Code\NPCItemAdd.dm"
 #include "Code\Objs-Weapons.dm"
-#include "Code\QuestNPC's.dm"
+#include "Code\Quests.dm"
 #include "Code\Saveing&Loading.dm"
 #include "Code\Server.dm"
 #include "Code\ShadowSystem.dm"

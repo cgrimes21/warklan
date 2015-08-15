@@ -37,7 +37,7 @@ mob/proc
 			src.align()
 			if(src.StaffOn)
 				for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-					var/obj/Items/Weapons/Staff/O = new/obj/Items/Weapons/Staff
+					var/obj/Items/Weapons/Wooden_Sword/O = new/obj/Items/Weapons/Wooden_Sword
 					O.pixel_y+=5
 					O.pixel_x+=3
 					S.overlays+=O

@@ -71,14 +71,15 @@ mob
 		Help()
 			set hidden=0
 			Help_Player()
+			QuestItemDelete()
 
 	proc
 		Help_Player()
-			if(src.Admin)
-				winshow(usr,"tabber",1)
-				winshow(usr,"tabber.tab1",1)
+			//if(src.Admin)
+				//winshow(usr,"tabber",1)
+				//winshow(usr,"tabber.tab1",1)
 				//winset(usr,"tabber","is-visible=true")
-
+			usr.QuestItemDelete()
 			winset(usr,"Help","is-visible=true")
 			_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
 			return
