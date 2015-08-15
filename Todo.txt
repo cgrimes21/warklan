@@ -6,9 +6,21 @@ X • Place health bars overtop of character heads (use charge meter.dmi for hud
 X • Skills dont save on hotslot after you log out
 X • Add dragging effect while you’re placing a skill in hotspot (S to bring up skills, I to bring up inventory)
 
+NEW ADDONS
 
+<<<<<<< HEAD
 Notes: (bugs)
 
 Walk across tents
 walk in black part of map
 ENTER calls for map transition (should be entered)
+=======
+Fix Monster Attacking System
+- Boundary boxes are out of whack
+- Monsters should start attacking players a reasonable distance upon seeing me
+- Monsters should start being aggro depending on the level of player (so if monster is way above player level, the   aggro factor is low, if they’re around player level and way below player level the aggro factor is high)
+
+When you’re accepting a quest, it shows black boxes above the dialogue which shows all the rewards, i cant figure out how to put rewards in those boxes
+
+TODO @
+>>>>>>> origin/master
