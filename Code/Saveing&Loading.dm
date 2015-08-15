@@ -3,10 +3,16 @@ mob/proc
 		if(fexists("Saves/[src].sav"))
 			fdel("Saves/[src].sav")
 		var/savefile/F = new("Saves/[src].sav")
+
+		var/list/tempo = src.overlays
+		src.overlays = list()	//start fresh always, otherwise overlays saves into your icon
+
 		Write(F)
 		F["X"]<<src.x
 		F["Y"]<<src.y
 		F["Z"]<<src.z
+
+		src.overlays = tempo
 
 
 

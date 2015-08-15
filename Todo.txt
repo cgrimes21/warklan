@@ -1,10 +1,14 @@
-﻿ • Create a sword skill that is trained by attacking physically while using a sword
- • Create a bow skill that is trained by shooting a bow (create bow item and once its equipped, use A to shoot a bow)
- • Place health bars overtop of character heads (use charge meter.dmi for huds)
- • Skills dont save on hotslot after you log out
- • Add dragging effect while you’re placing a skill in hotspot (S to bring up skills, I to bring up inventory)
+﻿X • Create a sword skill that is trained by attacking physically while using a sword
+X • Create a bow skill that is trained by shooting a bow (create bow item and once its equipped, use A to shoot a bow)
 
-i don’t mean sword skill literally, but like, in the attacking and shooting bow verbs, pretty much check to see if they have the weapon on, and then give some exp points
+X • Place health bars overtop of character heads (use charge meter.dmi for huds)
+ 
+X • Skills dont save on hotslot after you log out
+X • Add dragging effect while you’re placing a skill in hotspot (S to bring up skills, I to bring up inventory)
 
 
-TODO @
+Notes: (bugs)
+
+Walk across tents
+walk in black part of map
+ENTER calls for map transition (should be entered)

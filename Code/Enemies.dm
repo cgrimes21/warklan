@@ -28,6 +28,7 @@ mob/proc
 				damage=rand(1,50)
 			new/effect/damage(M.loc,"<font color=red><b>[round(damage)]</b></font>")
 			M.Health-=damage
+			M.update_health_bar()
 		if(M.Health<=0)
 			M.Health=0
 			M.DeathCheck(src,M)

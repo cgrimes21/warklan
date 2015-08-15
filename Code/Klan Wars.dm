@@ -23,6 +23,17 @@ world
 				return
 		sleep(30)
 		..()
+mob/proc
+	update_health_bar()
+		if(!src.healthbar)
+			src.healthbar = new()
+
+		src.overlays -= src.healthbar
+		src.healthbar.icon_state = "[round((src.Health * 100) / src.MaxHealth, 5)]"
+		src.overlays += src.healthbar
+		spawn(50)
+			src.overlays -= src.healthbar
+
 proc
 	LoadClans()
 		if(fexists("Saves/World/Clans.sav"))
@@ -49,16 +60,21 @@ mob
 		..()
 		src<< sound('Sounds/Intro.ogg',1)
 		src.density=1
-		if(fexists("Saves/[src].sav"))
-			src.Load()
-			return
-		else
+		if(!fexists("Saves/[src].sav"))
+
 			src.loc=locate(30,20,2)
 			new/obj/back(src.client)
 			new/obj/OOC(src.client)
 			winset(src,"Main","focus=true")
 			src.align()
 			winset(src,"Main","focus=true")
+		else
+			src.Load()
+
+		//init hotbar
+		for(var/obj/Skills/S in usr.Skills)
+			src.client.screen += S
+
 	Logout()
 		..()
 		if(src.Player==1)

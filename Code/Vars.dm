@@ -43,6 +43,9 @@ mob
 		challenging = "" //name of challenger for pvp
 		clan/clan
 		Attacker=""
+		obj/Effects/health_bar/healthbar
+		sword_skill = 0
+		bow_skill = 0
 
 		Mute=0
 		Admin=0

@@ -25,6 +25,7 @@ mob/proc
 	DeathCheck(mob/T,mob/M)
 		if(M.Dead)
 			return
+		M.update_health_bar()
 		if(M.Health<=0)
 			M.Dying=1
 			if(M.Enemy)

@@ -1,4 +1,5 @@
 obj/Skills
+	mouse_drag_pointer = 1
 	proc
 		CD()
 			spawn while(CoolDown>=0)

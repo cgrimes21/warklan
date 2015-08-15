@@ -1,4 +1,12 @@
 obj/Effects
+
+	health_bar
+		icon = 'Charge Meter.dmi'
+		layer = 99
+
+		pixel_y = 32
+
+
 	Wind
 		New()
 		New()
@@ -6,3 +14,4 @@ obj/Effects
 				del(src)
 			..()
 		icon='Wind.dmi'
+

@@ -328,43 +328,16 @@ obj/Items
 						_message(usr,"You're Already Wearing A Weapon","Yellow")
 						return
 					src.Wearing=1
-					usr.StaffOn=1
+					usr.SwordOn = 1
 					usr.WearingWeapon=1
 					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 						src.pixel_y+=5
 						src.pixel_x+=3
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
-					if(Level==1)
-						usr.StaffBoost=10
-						usr.Strength+=10
-					if(Level==2)
-						usr.StaffBoost=15
-						usr.Strength+=15
-					if(Level==3)
-						usr.StaffBoost=20
-						usr.Strength+=20
-					if(Level==4)
-						usr.StaffBoost=25
-						usr.Strength+=25
-					if(Level==5)
-						usr.StaffBoost=30
-						usr.Strength+=30
-					if(Level==6)
-						usr.StaffBoost=35
-						usr.Strength+=35
-					if(Level==7)
-						usr.StaffBoost=40
-						usr.Strength+=40
-					if(Level==8)
-						usr.StaffBoost=45
-						usr.Strength+=45
-					if(Level==9)
-						usr.StaffBoost=50
-						usr.Strength+=50
-					if(Level==10)
-						usr.StaffBoost=55
-						usr.Strength+=55
+					usr.StaffBoost = 5 + Level * 5
+					usr.Strength += usr.StaffBoost
+
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
@@ -406,36 +379,9 @@ obj/Items
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
 					usr.BowOn=1
-					if(Level==1)
-						usr.BowBoost=5
-						usr.Strength+=5
-					if(Level==2)
-						usr.BowBoost=10
-						usr.Strength+=10
-					if(Level==3)
-						usr.BowBoost=15
-						usr.Strength+=15
-					if(Level==4)
-						usr.BowBoost=20
-						usr.Strength+=20
-					if(Level==5)
-						usr.BowBoost=25
-						usr.Strength+=25
-					if(Level==6)
-						usr.BowBoost=30
-						usr.Strength+=30
-					if(Level==7)
-						usr.BowBoost=35
-						usr.Strength+=35
-					if(Level==8)
-						usr.BowBoost=40
-						usr.Strength+=40
-					if(Level==9)
-						usr.BowBoost=45
-						usr.Strength+=45
-					if(Level==10)
-						usr.BowBoost=50
-						usr.Strength+=50
+					usr.BowBoost = Level * 5
+					usr.Strength += usr.BowBoost
+
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)

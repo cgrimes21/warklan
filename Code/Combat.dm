@@ -76,6 +76,11 @@ mob/verb
 			return
 		if(Slashing)
 			return
+		if(usr.SwordOn)
+			if(prob(1))
+				src.sword_skill += rand(0.5,1)
+				src<<"sword skill improved"
+
 		if(usr.BowOn)
 			if(usr.Dead==1)
 				return
@@ -86,6 +91,10 @@ mob/verb
 			if(usr.Punching)
 				return
 			else
+				if(prob(1))
+					src.bow_skill += rand(0.5,1)
+					src<<"bow skill improved"
+
 				Punching=1;spawn(6)Punching=0
 				flick("Quincy Bow Shooting",usr)
 				var/obj/Projectiles/Arrow/A=new/obj/Projectiles/Arrow()
