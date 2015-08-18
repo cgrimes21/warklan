@@ -46,6 +46,8 @@ mob
 		obj/Effects/health_bar/healthbar
 		sword_skill = 0
 		bow_skill = 0
+		music_on = 0
+		sound_on = 0
 
 		Mute=0
 		Admin=0

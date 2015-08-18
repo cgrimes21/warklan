@@ -58,7 +58,8 @@ mob
 
 		src.Quests()
 		..()
-		src<< sound('Sounds/Intro.ogg',1)
+		if(src.music_on)
+			src<< sound('Sounds/Intro.ogg',1)
 		src.density=1
 		if(!fexists("Saves/[src].sav"))
 

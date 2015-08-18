@@ -38,8 +38,46 @@ mob/Enemies
 	layer=6
 	Level=1
 
+	proc
+		NPCAttackPlayer(mob/who)
+			debuggers<<"[src.name] attacking [who.name]"
+
+		tickle()
+
+			src.Attacked -= 0
+
+			if(src.Attacked <= 0)
+				src.Attacked = 0
+				src.Attacker = ""
+				src.speed = 0.5
+
+
+			if(src.Health > src.MaxHealth)
+				src.Health = src.MaxHealth
+
+			if((src.Attacked <=0) && src.Health<src.MaxHealth)
+				src.Health += 10
+
+			if(src && !src.Dead && !src.Dying)
+				if(src.Attacked)	//follow their attacker
+					var/found = 0
+					for(var/mob/M in oview(8))
+						if(M.Player && !M.Dead && !M.Dying && src.Attacker == M.Name)
+							found = 1
+							//if they are right next to the player facing them, attack them
+							if(get_dist(src,M)<=1 && src.dir == get_dir(src,M))
+								src.NPCAttackPlayer(M)
+							else
+								//take a step towards them
+								step_to(src,M,0,1)
+								//walk(src,get_dir(src,M),0,3)
+					if(!found)
+						src.Attacked = 0
+				if(src.Attacked<=0)
+					step(src, pick(NORTH, EAST, SOUTH, WEST),1)
+
 	Fox
-		icon='Fox.dmi'
+		icon='fox3.dmi'
 		Name="Fox"
 		speed=2
 		Level=1
@@ -48,7 +86,12 @@ mob/Enemies
 		Health=40
 		MaxHealth=40
 		New()
-			GenerateShadow(src, SOUTH,-50)
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			/*
+			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
 			spawn while(src)
 				if(Attacked==0&&Health<MaxHealth)
@@ -86,6 +129,7 @@ mob/Enemies
 						src.speed=4
 						walk(src,get_dir(src,M),1,3)
 				sleep(world.tick_lag)
+				*/
 			..()
 
 	Wolf
