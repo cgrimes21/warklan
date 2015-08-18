@@ -151,13 +151,14 @@ mob/verb
 					flick("Upper Cut",usr)
 				else
 					flick("Jab",usr)
-				usr<<sound(G)
+				if(usr.sound_on)
+					usr<<sound(G)
 				oview(10,usr)<<sound(G)
 				usr.speed=2;spawn(5)usr.speed=4
 				Punching=1;spawn(8)Punching=0
 				M.Attacker=usr.Name
 				if(M.Enemy)
-					M.Attacked=1
+					M.Attacked+=10
 				if(usr.UpperCut)
 					if(M.Blocking)
 						if(usr.dir==EAST)

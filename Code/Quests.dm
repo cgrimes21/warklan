@@ -104,14 +104,11 @@ mob/proc
 				if(O.name=="Fox Fur")
 					if(usr.BagOpen==1)
 						usr.AddItems()
-					del O
-					del O
-					del O
+
 					usr.AvailableItems-=1
 					usr.CreateInventory()
-				else
-					return
 
+					del O
 
 		if(src.DoingQuest&&src.QuestLevel==2)
 			for(var/obj/O in src.contents)

@@ -21774,3 +21774,6391 @@ runtime error: Cannot read null.name
 proc name: Stat (/mob/Stat)
   source file: Admin.dm,476
 Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+Suicide Shifter (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+
+Webclient users can visit this address to play:
+http://www.byond.com/play/73.182.223.228:50572
+
+Mon Aug 17 17:05:36 2015
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+  usr: Suicide Shifter (/mob)
+  src: Suicide Shifter (/mob)
+  call stack:
+Suicide Shifter (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,476
+Warning: further proc crash messages are being suppressed to prevent overload...
