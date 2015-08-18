@@ -1,81 +1,107 @@
 "a" = (/turf,/area)
-"b" = (/turf/Mountains/s11,/turf/Darkness/Cave_Dark,/area)
-"c" = (/turf/Mountains/s12,/turf/Darkness/Cave_Dark,/area)
-"d" = (/turf/Mountains/s13,/turf/Darkness/Cave_Dark,/area)
-"e" = (/turf/Mountains/s8,/turf/Darkness/Cave_Dark,/area)
-"f" = (/turf/Mountains/s9,/turf/Darkness/Cave_Dark,/area)
-"g" = (/turf/Mountains/s10,/turf/Darkness/Cave_Dark,/area)
-"h" = (/turf/Mountains/s5,/turf/Darkness/Cave_Dark,/area)
-"i" = (/turf/Mountains/s7,/turf/Darkness/Cave_Dark,/area)
-"j" = (/turf/Mountains/s6,/turf/Darkness/Cave_Dark,/area)
-"k" = (/turf/Mountains/m7,/turf/Darkness/Cave_Dark,/area)
-"l" = (/turf/Mountains/m8,/turf/Darkness/Cave_Dark,/area)
-"m" = (/turf/Mountains/m9,/turf/Darkness/Cave_Dark,/area)
-"n" = (/turf/Mountains/m4,/turf/Darkness/Cave_Dark,/area)
-"o" = (/turf/Mountains/m6,/turf/Darkness/Cave_Dark,/area)
-"p" = (/turf/Mountains/s9,/turf/Darkness/Cave_Dark,/turf/Markers/Mountains/Dungeon1_Inside,/area)
-"q" = (/turf/Mountains/s9,/turf/Darkness/Cave_Dark,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
+"b" = (/turf/EnemyStop,/area)
+"c" = (/turf/Mountains/s11,/area)
+"d" = (/turf/Mountains/s12,/area)
+"e" = (/turf/Mountains/s12,/turf/Cave/rock2,/area)
+"f" = (/turf/Mountains/s12,/turf/Cave/bones2,/area)
+"g" = (/turf/Mountains/s13,/area)
+"h" = (/turf/Mountains/s12,/turf/Cave/rock4,/area)
+"i" = (/turf/Mountains/s8,/area)
+"j" = (/turf/Mountains/s9,/area)
+"k" = (/turf/Mountains/s9,/turf/Cave/rock1,/area)
+"l" = (/turf/Mountains/s9,/turf/Cave/shovel,/area)
+"m" = (/turf/Mountains/s10,/area)
+"n" = (/turf/Mountains/s9,/turf/Cave/rock7,/area)
+"o" = (/turf/Mountains/s5,/area)
+"p" = (/turf/Mountains/s7,/area)
+"q" = (/turf/Mountains/s9,/turf/Cave/rock3,/area)
+"r" = (/turf/Mountains/s9,/turf/Cave/flower1,/area)
+"s" = (/turf/Mountains/s9,/turf/Cave/rock6,/area)
+"t" = (/turf/Mountains/s6,/area)
+"u" = (/turf/Mountains/s6,/turf/Cave/rock5,/area)
+"v" = (/turf/Mountains/s6,/turf/Cave/rock4,/area)
+"w" = (/turf/Mountains/s6,/turf/Cave/rock3,/area)
+"x" = (/turf/Mountains/s12,/turf/Cave/rock6,/area)
+"y" = (/turf/Mountains/s9,/turf/Cave/rock5,/area)
+"z" = (/turf/Mountains/s9,/turf/Cave/rock4,/area)
+"A" = (/turf/Mountains/s9,/turf/Cave/rock2,/area)
+"B" = (/turf/Mountains/s6,/turf/Cave/flower1,/area)
+"C" = (/turf/Mountains/s6,/turf/Cave/rock1,/area)
+"D" = (/turf/Mountains/s6,/turf/Cave/rock7,/area)
+"E" = (/turf/Mountains/s12,/turf/Cave/rock7,/area)
+"F" = (/turf/Mountains/s12,/turf/Cave/rock3,/area)
+"G" = (/turf/Mountains/s6,/turf/Cave/bones2,/area)
+"H" = (/turf/Mountains/m7,/area)
+"I" = (/turf/Mountains/m8,/area)
+"J" = (/turf/Mountains/m9,/area)
+"K" = (/turf/Mountains/m4,/area)
+"L" = (/turf/Mountains/m8,/turf/Cave/rock6,/area)
+"M" = (/turf/Mountains/m6,/area)
+"N" = (/turf/Mountains/s9,/turf/Cave/bones2,/area)
+"O" = (/turf/Mountains/s9,/turf/Cave/bones1,/area)
+"P" = (/turf/Mountains/s9,/turf/Markers/Mountains/Dungeon1_Inside,/area)
+"Q" = (/turf/Mountains/s9,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaabccccccccccccccdaaaaaaaaaaaaabccccccccccccccdaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaabffffffffffffffffdaaaaaaaaaaabffffffffffffffffdaaaaaaaaaaaaaaa
-aaaaaaaahffffffffffffffffiaaaaaaaaaaahffffffffffffffffiaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaabccccccccccccccdaaaaaaaaaaaaabccccccccccccccdaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaabffffffffffffffffdaaaaaaaaaaabffffffffffffffffdaaaaaaaaaaaaaaa
-aaaaaaaahffffffffffffffffiaaaaaaaaaaahffffffffffffffffiaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbbbbbbbbbaaaaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
+aaaaaaaabcdddeddfdddedddgbbaaaaaaaaaabcdddeddddhdddddgbaaaaaaaaaaaaaaa
+aaaaaaaabijjjkjjjljjkjjjmbbaaaaaaaaaabijjjkjjjjjjjnjjmbbaaaaaaaaaaaaaa
+aaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaaaaaaa
+aaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaaaaaaa
+aaaaaaabbijjjjjjjjjqjjjjmbbaaaaaaaaabbijjrjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaaabijsjqjjsjjjjsjqmbbaaaaaaaaaabijjjjjjjjjrjjjjmbaaaaaaaaaaaaaaa
+aaaaaaaabotuttttuttttuttpbbaaaaaaaaaabotvtttwttttttwtpbaaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaabccccccccccccccdaaaaaaaaaaaaabccccccccccccccdaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaabffffffffffffffffdaaaaaaaaaaabffffffffffffffffdaaaaaaaaaaaaaaa
-aaaaaaaahffffffffffffffffiaaaaaaaaaaahffffffffffffffffiaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaaaa
-aaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaahjjjjjjjjjjjjjjiaaaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
+aaaaaaaabcdxdddxddddddddgbaaaaaaaaaaabcdhdddhddddhddhgbaaaaaaaaaaaaaaa
+aaaaaaaabijyjzjyjjjjqjqjmbaaaaaaaaaaabijjjqjjjjqjjjqjmbbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjjjjjjjjjjmbbaaaaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaaaaaaa
+aaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjjjjjjjjjjmbbaaaaaaaaaaaijjjjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaaabijjjjAjjjAjjjjjmbaaaaaaaaaaaaijjjnjjjjjjjjnjmbaaaaaaaaaaaaaaa
+aaaaaaaabotBttCtDtCtttBtpbaaaaaaaaaaaaovttttBttDtttttpbaaaaaaaaaaaaaaa
+aaaaaaaaabbbbbbbbbbbbbbbbbaaaaaaaaaaaabbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabccdbccdbccdbcccdaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeffghjjieffgefffgaaaaaaaaaaaaaaa
-aaaaaaaaabccccccccccccccdaaaaaaaaaaaaahjjikllmhjjihjjjiaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaakllmnllokllmklllmaaaaaaaaaaaaaaa
-aaaaaaaaaefffffffffffffffdaaaaaaaaaaaanlloffffnllonllloaaaaaaaaaaaaaaa
-aaaaaaaaaefffffffffffffffiaaaaaaaaaaaaefffffffffffffffgaaaaaaaaaaaaaaa
-aaaaaaaaaeffffffffffffffgaaaaaaaaaaaaaefffffffffffffffgaaaaaaaaaaaaaaa
-aaaaaaaaaeffffjjjjjjjjjjiaaaaaaaaaaaabfffffffffffffffffdaaaaaaaaaaaaaa
-aaaaaaaaaefffgaaaaaaaaaaaaaaaaaaaaaaahfffffffffffffffffiaaaaaaaaaaaaaa
-aaaaaaaaaefffgaaaaaaaaaaaaaaaaaaaaaaaaefffffffffffffffgaaaaaaaaaaaaaaa
-aaaaaaaaaefffgaaaaaaaaaaaaaaaaaaaaaaaaefffffffffffffffgaaaaaaaaaaaaaaa
-aaaaaaaaaefpfgaaaaaaaaaaaaaaaaaaaaaaaahjjjjjjjjjjjjjjjiaaaaaaaaaaaaaaa
-aaaaaaaaahjqjiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaabbbbbbbbbbbbbbbbbaaaaaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
+aaaaaaaabcdddEFdxdddEFddgbaaaaaaaaaaabcdeeddeeddeedddgbaaaaaaaaaaaaaaa
+aaaaaaabbijqjjjjyqjjjjjjmbaaaaaaaaaaabijkkjjkkjjkkjjjmbaaaaaaaaaaaaaaa
+aaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaabcjjjjjjjjjjjjjjjjgbaaaaaaaaaaaaaa
+aaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaabojjjjjjjjjjjjjjjjpbaaaaaaaaaaaaaa
+aaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaabbijjjjjjjjjjjjjjmbbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjAjjjjjjjjmbaaaaaaaaaaabijjjljjjjjjqjjjmbaaaaaaaaaaaaaaa
+aaaaaaaabotttGtCtBttBtttpbaaaaaaaaaaabotBwGtttttwwwBtpbaaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcdegcdegcddgcdddgbaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbbbbbbbbaaaaaaaaaaabijkmotCpijAmijjAmbaaaaaaaaaaaaaa
+aaaaaaaabcdxxxdddddddEddgbaaaaaaaaaaabottpHIIJotCpottCpbaaaaaaaaaaaaaa
+aaaaaaaabijyyyjjjqjjjjjjmbbaaaaaaaaaabHIIJKILMHIIJHIIIJbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjjjjjjjjjjjgbaaaaaaaaaabKIIMjsyjKIIMKIIIMbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjjjjjjjjjjjpbaaaaaaaaabbijjrjyjljjjjjjrjmbaaaaaaaaaaaaaa
+aaaaaaaabijjjjjjjjjjjjjjmbaaaaaaaaaabbijjjjjjjNjjjjjjjmbbaaaaaaaaaaaaa
+aaaaaaaabijjOjtttttvttttpbaaaaaaaaaabcjjjjjjjjjjjjjjjjjgbaaaaaaaaaaaaa
+aaaaaaaabijjjmbbbbbbbbbbbbaaaaaaaaaabojjjjjjjjjjjjjjjjjpbaaaaaaaaaaaaa
+aaaaaaaabijjjmbaaaaaaaaaaaaaaaaaaaaaabijjjjjjjjjjjjjjjmbbaaaaaaaaaaaaa
+aaaaaaaabijjjmbaaaaaaaaaaaaaaaaaaaaaabijAjjjjjjjjjjjqjmbaaaaaaaaaaaaaa
+aaaaaaaabijPjmbaaaaaaaaaaaaaaaaaaaaaabotCtttttDtttttttpbaaaaaaaaaaaaaa
+aaaaaaaabotQtpbaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

@@ -5,10 +5,55 @@ turf
 			icon_state="cavefloor"
 		CaveWall
 			icon_state="cavewall"
-	Darkness
-		Cave_Dark
-			icon='Icons/Darkness.dmi'
-			icon_state="cave_dark"
+		rock1
+			icon_state="rock1"
+			density=1
+
+		rock2
+			icon_state="rock2"
+			density=1
+
+		rock3
+			icon_state="rock3"
+			density=1
+
+		rock4
+			icon_state="rock4"
+			density=1
+
+		rock5
+			icon_state="rock5"
+			density=1
+
+		rock6
+			icon_state="rock6"
+			density=1
+
+		rock7
+			icon_state="rock7"
+			density=1
+
+		flower1
+			icon_state="flower1"
+
+		bones1
+			icon_state="bones1"
+			density=1
+
+		bones2
+			icon_state="bones2"
+			density=1
+
+		gold
+			icon_state="gold"
+
+		shovel
+			icon_state="shovel"
+
+		entrance
+			icon_state="entrance"
+			density=1
+
 	Mountains
 		icon='JpTurfsNew.dmi'
 		icon_state=""
@@ -308,7 +353,11 @@ turf
 			icon_state = "jap54"
 		Black
 			icon_state = "black"
-
+area
+	Darkness
+		Cave_Dark
+			icon='Icons/Darkness.dmi'
+			icon_state="cave_dark"
 
 turf/Markers
 	Mountains
