@@ -18,7 +18,9 @@ mob
 			var/MAX_Name = src.Name
 			src.Max_Name = list()
 			var/list/Max_Letters = list()
-			var/Max_Balance =- (lentext(MAX_Name)*2)
+			var/Max_Balance =0// (lentext(MAX_Name))
+
+
 			for(var/M = 1, M < lentext(MAX_Name) + 1, M++)
 				Max_Letters += copytext(MAX_Name, M, M+1)
 			for(var/Max_X in Max_Letters)

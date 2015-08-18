@@ -58,6 +58,7 @@ mob/Enemies
 			if((src.Attacked <=0) && src.Health<src.MaxHealth)
 				src.Health += 10
 
+		//	walk(src,0)
 			if(src && !src.Dead && !src.Dying)
 				if(src.Attacked)	//follow their attacker
 					var/found = 0
@@ -69,12 +70,17 @@ mob/Enemies
 								src.NPCAttackPlayer(M)
 							else
 								//take a step towards them
-								step_to(src,M,0,1)
-								//walk(src,get_dir(src,M),0,3)
+								//step_to(src,M,0)
+								//step_to(src,M,0)
+								//walk(src,get_dir(src,M),1,3)
+								walk_to(src,M,0,1,3)
+
 					if(!found)
 						src.Attacked = 0
 				if(src.Attacked<=0)
 					step(src, pick(NORTH, EAST, SOUTH, WEST),1)
+					//walk(src, pick(NORTH, EAST, SOUTH, WEST),0,3)
+
 
 	Fox
 		icon='fox3.dmi'

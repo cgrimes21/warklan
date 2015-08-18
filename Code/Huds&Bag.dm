@@ -431,10 +431,10 @@ mob
 					O.layer = MOB_LAYER+20
 					src.client.screen += O
 					O.screen_loc = "[ox],[oy]"
-					oy--
-					if(oy<1)
-						oy=5
-						ox++
+					ox++
+					if(ox>28)
+						ox=24
+						oy--
 		MenuBack()
 			var/obj/H = new/obj/Bag/Bag(src.client)
 			H.screen_loc = "24,1 to 28,5"

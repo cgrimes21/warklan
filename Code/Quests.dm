@@ -48,16 +48,20 @@ mob/proc
 			winset(src,"QuestMenu","pos=[chatx+180],[chaty+237]")
 			sleep(world.tick_lag)
 		if(T=="FurQuest")
+			var/icon/my_icon = icon('Coin.dmi')
+			var/file_reference = fcopy_rsc(my_icon)
+			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+
 			src<< output(null,"QuestMenu.Info")
 			if(src.FoxFurCollected>=3)
 				src<< output("<center>Great work! Here's a fox fur tunic. </center>","QuestMenu.Info")
 				src.DoingQuest=1
-				var/icon/my_icon = icon('Coin.dmi')
-				var/file_reference = fcopy_rsc(my_icon)
+
 				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
+
 			else
 				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need stronger clothing, and a weapon. Why don't you go and get 3 fox skins for me. You can get them from the foxes to your right.</center>","QuestMenu.Info")
 				src.DoingQuest=1
@@ -65,12 +69,14 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 		if(T=="WoodenSwordQuest")
 			src<< output(null,"QuestMenu.Info")
+			var/icon/my_icon = icon('Coin.dmi')
+			var/file_reference = fcopy_rsc(my_icon)
+			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+
 			if(src.SmallSticksCollected>=3)
 				src<< output("<center>Great work! Here's a wooden sword. </center>","QuestMenu.Info")
 				src.DoingQuest=1
-				var/icon/my_icon = icon('Coin.dmi')
-				var/file_reference = fcopy_rsc(my_icon)
-				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
