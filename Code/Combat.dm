@@ -79,7 +79,8 @@ mob/verb
 		if(usr.SwordOn)
 			if(prob(1))
 				src.sword_skill += rand(0.5,1)
-				src<<"sword skill improved"
+				src<<"sword skill improved (Sword Skill Exp: [src.sword_skill])"
+
 
 		if(usr.BowOn)
 			if(usr.Dead==1)

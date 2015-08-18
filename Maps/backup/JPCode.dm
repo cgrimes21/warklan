@@ -5,6 +5,10 @@ turf
 			icon_state="cavefloor"
 		CaveWall
 			icon_state="cavewall"
+	Darkness
+		Cave_Dark
+			icon='Icons/Darkness.dmi'
+			icon_state="cave_dark"
 	Mountains
 		icon='JpTurfsNew.dmi'
 		icon_state=""
