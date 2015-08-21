@@ -304,6 +304,9 @@ obj
 			icon='Tree.dmi'
 			icon_state="2"
 obj
+	invis_density
+		density = 1
+
 	Smalltree
 		icon='Small Tree.dmi'
 		density=1
@@ -311,6 +314,8 @@ obj
 		shadow=1
 	Tent
 		icon='Tent.dmi'
+		layer = 55
+		density = 1
 
 turf
 	var/m

@@ -24,3 +24,13 @@ When you’re accepting a quest, it shows black boxes above the dialogue which s
 
 TODO @
 >>>>>>> origin/master
+
+x 1. Center user name above his head
+[8/17/2015 11:34:24 PM] JP:  x 2. Change inventory adding system
+[8/17/2015 11:34:40 PM] JP: like for some reason distant made it so items went into your inventory from top to bottom
+[8/17/2015 11:34:43 PM] JP: instead of left to right
+[8/17/2015 11:34:46 PM] JP: like a normal game
+[8/17/2015 11:35:08 PM] JP: 3. Help me figure out how to put rewards in the boxes when you accept quests
+[8/17/2015 11:35:10 PM] JP: and that's it
+
+starting programming at 2:26 am
