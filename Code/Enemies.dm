@@ -70,10 +70,10 @@ mob/Enemies
 								src.NPCAttackPlayer(M)
 							else
 								//take a step towards them
-								//step_to(src,M,0)
+								step_to(src,M,0)
 								//step_to(src,M,0)
 								//walk(src,get_dir(src,M),1,3)
-								walk_to(src,M,0,1,3)
+							//	walk_to(src,M,0,1,3)
 
 					if(!found)
 						src.Attacked = 0
