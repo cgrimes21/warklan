@@ -46,7 +46,9 @@ mob
 		clan/clan
 		Attacker=""
 		obj/Effects/health_bar/healthbar
-		sword_skill = 0
+		sword_skill_exp = 0
+		sword_skill_maxexp = 10
+		sword_skill_level = 0
 		bow_skill = 0
 		music_on = 0
 		sound_on = 0
@@ -85,7 +87,6 @@ mob
 		StaffBoost=0
 		SwordBoost=0
 		BowBoost=0
-		StaffOn=0
 		BowOn=0
 		SwordOn=0
 		InClan=0
@@ -124,6 +125,7 @@ mob
 		SlashDmg=0
 		Buffed=0
 		ShowingSkills=0
+		ShowingSkillLevels=0
 		Jab=0
 		oldlayer=0
 		UpperCut=0

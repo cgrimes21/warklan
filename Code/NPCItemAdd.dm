@@ -1,9 +1,6 @@
 mob/proc
 	BlackSmith()
-	//	var/obj/NPCs/Items/Staff/G=new/obj/NPCs/Items/Staff
 		var/obj/NPCs/Items/Wooden_Sword/S=new/obj/NPCs/Items/Wooden_Sword
-		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
-		src.contents+=G
 		src.contents+=S
 		return
 	Doctor()
@@ -15,5 +12,5 @@ mob/proc
 		src.contents+=G
 		return
 	Tailor()
-		var/obj/NPCs/Items/Sack/G=new/obj/NPCs/Items/Sack
+		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
 		src.contents+=G

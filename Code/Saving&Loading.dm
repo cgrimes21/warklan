@@ -41,12 +41,6 @@ mob/proc
 			src.StaminaREGEN()
 			GenerateShadow(src, SOUTH,-32)
 			src.align()
-			if(src.StaffOn)
-				for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-					var/obj/Items/Weapons/Wooden_Sword/O = new/obj/Items/Weapons/Wooden_Sword
-					O.pixel_y+=5
-					O.pixel_x+=3
-					S.overlays+=O
 			if(src.SwordOn)
 				for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 					var/obj/Items/Weapons/RStaff/O = new/obj/Items/Weapons/RStaff

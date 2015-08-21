@@ -35,13 +35,15 @@ mob/proc
 				T.QUESTCHECK(M.Name)
 				if(M.Name=="Fox"&&M.Enemy==1)
 					G.Amount=3
-					var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
-					F.loc=M.loc
+					if(prob(50))
+						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
+						F.loc=M.loc
 					G.loc=M.loc
 				if(M.Name=="Wolf"&&M.Enemy==1)
 					G.Amount=5
-					var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stick
-					F.loc=M.loc
+					if(prob(50))
+						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stick
+						F.loc=M.loc
 					G.loc=M.loc
 				if(M.Name=="Bear"&&M.Enemy==1)
 					G.Amount=44
@@ -160,33 +162,30 @@ mob/proc
 				return
 			animate(src,transform=matrix(),alpha=alpha+6,time=0)
 			sleep(world.tick_lag)
+
+	LevelGain_MaxExpGain()
+		src.Level+=1
+		src.EXP=0
+		src.MaxEXP *= 1.5
+		if(src.Level==5)
+			_message(src,"You can now form a clan! Speak to the Clan Elder to get started!","Aqua")
+
+	SwordSkill_LevelGain_MaxExpGain()
+		src.sword_skill_level+=1
+		src.sword_skill_exp=0
+		src.sword_skill_maxexp *= 1.5
+
+
+	SkillLevelUP()
+		if(src.sword_skill_exp>=sword_skill_maxexp)
+			SwordSkill_LevelGain_MaxExpGain()
+			_message(src,"Your sword skill has leveled up!","Aqua")
+			src<<sound('levelup.wav')
+
 	LevelUP()
-		if(src.EXP>MaxEXP)
-			flick("Flash Step",src)
-			src.Level+=1
-			src.EXP=0
-			if(src.Level==2)
-				src.MaxEXP=150
-			if(src.Level==3)
-				src.MaxEXP=225
-			if(src.Level==4)
-				src.MaxEXP=505
-			if(src.Level==5)
-				src.MaxEXP=505
-				_message(src,"You can now form a clan! Speak to the Clan Elder to get started!","Aqua")
-			if(src.Level==6)
-				src.MaxEXP=758
-			if(src.Level==7)
-				src.MaxEXP=1137
-			if(src.Level==8)
-				src.MaxEXP=1706
-			if(src.Level==9)
-				src.MaxEXP=2559
-			if(src.Level==10)
-				src.MaxEXP=3838
-			if(src.Level>=11)
-				src.Level=11
-			_message(src,"You Leveled Up","Aqua")
+		if(src.EXP>=MaxEXP)
+			LevelGain_MaxExpGain()
+			_message(src,"You've gained a level!","Aqua")
 			src<<sound('levelup.wav')
 			src.MaxStrength+=3
 			src.MaxDefense+=3
@@ -204,11 +203,7 @@ mob/proc
 				src.Strength-=SwordBoost
 				src.Strength=src.MaxStrength
 				src.Strength+=SwordBoost
-			if(src.StaffOn)
-				src.Strength-=StaffBoost
-				src.Strength=src.MaxStrength
-				src.Strength+=StaffBoost
-			src.SkillGive()
+			//src.SkillGive()
 	SkillGive()
 		if(src.Class=="Monk")
 			if(src.Level==5)

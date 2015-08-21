@@ -6,7 +6,7 @@ mob
 		ShowingInfo=0
 mob
 	proc
-		ItemInfoAligen()
+		IteminfoAlign()
 			spawn while(src.ShowingInfo)
 				if(!src){return}
 				if(!client){return}
@@ -26,8 +26,8 @@ obj/NPCs/Items
 	MouseEntered()
 		usr.ShowingInfo=1
 		winset(usr,"Item","is-visible=true")
-		usr.ItemInfoAligen()
-		winset(usr,"Item.Materials","text = 'Materials Required: :   [src.MaterialsRequired]'")
+		usr.IteminfoAlign()
+		winset(usr,"Item.Materials","text = 'Materials Required:  [src.MaterialsRequired]'")
 		winset(usr,"Item.Gold","text = 'Gold Required:   [src.Cost] Gold'")
 		winset(usr,"Item.Weight","text ='Level Req :    [src.Req]'")
 		usr<<output(null,"Item.ItemInfo")
@@ -92,6 +92,7 @@ obj/NPCs/Items
 	Fox_Fur_Tunic
 		Cost=15
 		Weight=25
+		MaterialsRequired="3 Fox Furs"
 		Des="Fox Fur Tunic"
 		icon='JpShopItems.dmi'
 		icon_state="fftunic"

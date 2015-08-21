@@ -104,7 +104,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
-				alert("I heard there was some scary stuff in this cave...but at the end, there's apparently a gold mine of iron!")
+				alert("Apparently there's some scary stuff in this cave...but I heard there was a lot of bronze inside!")
 	Tailor
 		icon_state="Tailor"
 		Name="Tailor"

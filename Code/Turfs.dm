@@ -1,5 +1,6 @@
-turf/Screen2
-	icon='Screen2.jpg'
+turf/Screen1
+	icon='Screen1.jpg'
+
 turf/EnemyStop
 	var/D=0
 	Enter(atom/a)
@@ -215,6 +216,339 @@ turf/Locations
 				else
 					..()
 
+		//Inside the dungeon
+		Room1_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room1_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room1_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room1_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room2_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room2_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room2_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room2_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room3_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room3_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room3_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room3_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room4_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room4_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room4_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room4_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room5_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room5_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room5_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room5_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room6_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room6_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room6_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room6_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room7_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room7_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room7_Back
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room7_Back)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		Room8_Next
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/Mountains/Room8_Next)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+
+
 turf/Turfs
 	icon='Turfs.dmi'
 
@@ -314,7 +648,7 @@ obj
 		shadow=1
 	Tent
 		icon='Tent.dmi'
-		layer = 55
+		layer = 15
 		density = 1
 
 turf
@@ -432,3 +766,6 @@ obj
 	Density
 		layer=TURF_LAYER+20
 		density=1
+	Darkness
+		icon='Darkness.dmi'
+		icon_state="cave_dark"

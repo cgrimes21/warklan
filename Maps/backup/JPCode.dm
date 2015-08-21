@@ -1,6 +1,10 @@
 turf
 	Cave
 		icon='JpTurfsNew.dmi'
+		Black
+			icon_state="black"
+			density=1
+			opacity=1
 		CaveFloor
 			icon_state="cavefloor"
 		CaveWall
@@ -15,7 +19,6 @@ turf
 
 		rock3
 			icon_state="rock3"
-			density=1
 
 		rock4
 			icon_state="rock4"
@@ -38,7 +41,6 @@ turf
 
 		bones1
 			icon_state="bones1"
-			density=1
 
 		bones2
 			icon_state="bones2"
@@ -118,7 +120,6 @@ turf
 			density=1
 		s13
 			icon_state="s13"
-			density=1
 		mg1
 			icon_state="mg1"
 		mg2
@@ -363,6 +364,21 @@ turf/Markers
 	Mountains
 		Dungeon1_Inside
 		Dungeon1_Outside
+		Room1_Next
+		Room1_Back
+		Room2_Next
+		Room2_Back
+		Room3_Next
+		Room3_Back
+		Room4_Next
+		Room4_Back
+		Room5_Next
+		Room5_Back
+		Room6_Next
+		Room6_Back
+		Room7_Next
+		Room7_Back
+		Room8_Next
 	MercenaryQuest
 		MercQuest1_Inside
 		MercQuest1_Outside

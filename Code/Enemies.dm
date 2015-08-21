@@ -40,7 +40,7 @@ mob/Enemies
 
 	proc
 		NPCAttackPlayer(mob/who)
-			debuggers<<"[src.name] attacking [who.name]"
+			//debuggers<<"[src.name] attacking [who.name]"
 
 		tickle()
 

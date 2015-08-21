@@ -7,10 +7,10 @@ mob
 			new/obj/Huds/StatPanel/STRPanel2(src.client)
 			new/obj/Huds/StatPanel/EXPPanel(src.client)
 			new/obj/Huds/StatPanel/EXPPanel2(src.client)
-			new/obj/Huds/StatPanel/WeightPanel2(src.client)
+			//new/obj/Huds/StatPanel/WeightPanel(src.client)
+			//new/obj/Huds/StatPanel/WeightPanel2(src.client)
 			new/obj/Huds/StatPanel/DefensePanel2(src.client)
 			new/obj/Huds/StatPanel/DefensePanel(src.client)
-			new/obj/Huds/StatPanel/WeightPanel(src.client)
 			new/obj/Huds/StatPanel/NamePanel(src.client)
 			new/obj/Huds/StatPanel/HealthPanel2(src.client)
 			new/obj/Huds/StatPanel/HealthPanel(src.client)
@@ -44,10 +44,10 @@ mob
 				new/obj/Huds/StatPanel/STRPanel2(usr.client)
 				new/obj/Huds/StatPanel/EXPPanel(usr.client)
 				new/obj/Huds/StatPanel/EXPPanel2(usr.client)
+				new/obj/Huds/StatPanel/WeightPanel(usr.client)
 				new/obj/Huds/StatPanel/WeightPanel2(usr.client)
 				new/obj/Huds/StatPanel/DefensePanel2(usr.client)
 				new/obj/Huds/StatPanel/DefensePanel(usr.client)
-				new/obj/Huds/StatPanel/WeightPanel(usr.client)
 				new/obj/Huds/StatPanel/NamePanel(usr.client)
 				new/obj/Huds/StatPanel/HealthPanel2(usr.client)
 				new/obj/Huds/StatPanel/HealthPanel(usr.client)
@@ -327,23 +327,24 @@ obj/Huds
 						return
 					src.maptext="<font color=white>[usr.Defense]</font>"
 					sleep(5)
+
 		WeightPanel
 			layer=9999
 			maptext_width=900
 			New(client/c)
 				screen_loc="24:4,11:24"
 				c.screen+=src
-				src.maptext="<font color=white>Weight:</font>"
+				src.maptext="<font color=white>Sword Skill EXP:</font>"
 		WeightPanel2
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="25:24,11:24"
+				screen_loc="25:74,11:24"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>0%</font>"
+					src.maptext="<font color=white>[usr.sword_skill_exp] / [usr.sword_skill_maxexp]%</font>"
 					sleep(5)
 		EXPPanel
 			layer=9999

@@ -60,7 +60,7 @@ mob/proc
 
 		usr.QuestItemDelete()
 		winset(usr,"Help","is-visible=true")
-		_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
+		//_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
 
 
 client

@@ -3,6 +3,15 @@ mob/verb
 		var/Name=winget(usr,"Name.NameI","text")
 		if(Name==null||Name==""){return}
 		usr.Name=Name
+		usr.loc=locate(/turf/Markers/VillageOne/Spawn)
+		usr.icon ='White Base.dmi'
+		usr.HudCreate()
+		usr.Player=1
+		usr.Max_MouseName()
+		usr.HEALTHREGEN()
+		usr.StaminaREGEN()
+		GenerateShadow(usr, SOUTH,-32)
+		usr.Help_Player()
 		winset(usr,"NameChild","is-visible=false")
 		return
 turf/BG
@@ -14,10 +23,9 @@ obj/Class
 			var/obj/Class/Description/HanD/D=new/obj/Class/Description/HanD
 			D.loc=locate(21,24,2)
 			usr.Class="Han"
-	Monk
-		icon='Monk.png'
+	New
+		icon='Icons/Empty.dmi'
 		Click()
-			usr.Class="Monk"
 			usr.MaxStamina=100
 			usr.MaxHealth=200
 			usr.Health=200
@@ -50,7 +58,6 @@ obj/Class
 		icon='Finish.png'
 		Click()
 			if(usr.Class!=""&&usr.Name!="")
-				//usr.loc=locate(11,34,13)
 				usr.loc=locate(/turf/Markers/VillageOne/Spawn)
 				usr.icon ='White Base.dmi'
 				usr.HudCreate()
@@ -60,6 +67,3 @@ obj/Class
 				usr.StaminaREGEN()
 				GenerateShadow(usr, SOUTH,-32)
 				usr.Help_Player()
-
-		//		if(usr.Class=="Monk")
-		//			usr.contents+=new/obj/Items/Weapons/Staff

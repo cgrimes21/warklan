@@ -317,7 +317,7 @@ obj/Items
 						usr.Strength-=usr.StaffBoost
 						src.overlays-=src.overlays
 						usr.WearingWeapon=0
-						usr.StaffOn=0
+						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0

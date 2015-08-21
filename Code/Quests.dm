@@ -50,7 +50,10 @@ mob/proc
 		if(T=="FurQuest")
 			var/icon/my_icon = icon('Coin.dmi')
 			var/file_reference = fcopy_rsc(my_icon)
+			var/icon/my_icon2 = icon('Icons/Quest_Rewards/FoxFurTunic.dmi')
+			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 
 			src<< output(null,"QuestMenu.Info")
 			if(src.FoxFurCollected>=3)
@@ -58,6 +61,7 @@ mob/proc
 				src.DoingQuest=1
 
 				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+				winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
@@ -67,21 +71,27 @@ mob/proc
 				src.DoingQuest=1
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
+
 		if(T=="WoodenSwordQuest")
-			src<< output(null,"QuestMenu.Info")
 			var/icon/my_icon = icon('Coin.dmi')
 			var/file_reference = fcopy_rsc(my_icon)
+			var/icon/my_icon2 = icon('Icons/Quest_Rewards/WoodenSword.dmi')
+			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 
+			src<< output(null,"QuestMenu.Info")
 			if(src.SmallSticksCollected>=3)
 				src<< output("<center>Great work! Here's a wooden sword. </center>","QuestMenu.Info")
 				src.DoingQuest=1
 
+				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+				winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small wooden sticks, they're usually dropped by Wolves. I'll carve them into a wooden sword for you.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. I'll carve them into a wooden sword for you.</center>","QuestMenu.Info")
 				src.DoingQuest=1
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
@@ -121,13 +131,11 @@ mob/proc
 				if(O.name=="Small Stick")
 					if(usr.BagOpen==1)
 						usr.AddItems()
-					del O
-					del O
-					del O
+
 					usr.AvailableItems-=1
 					usr.CreateInventory()
-				else
-					return
+
+					del O
 mob
 	verb
 		ExitQuest()
