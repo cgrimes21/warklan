@@ -15,15 +15,38 @@ world
 				GenerateShadow(A,SOUTH,-52)
 		LoadClans()
 		Repopper()
+		spawn(20)
+			main_loop()
 		..()
+
+
 	Reboot()
 		world<<"<b><font color=yellow><font size=+1>Rebooting!!!</font></b>"
-		for(var/mob/M in world)
-			if(!M)
-				return
-		sleep(30)
 		..()
+proc
+	main_loop()
+		while(world)
+			sleep(10)
+			ticker ++
+
+			for(var/mob/M in world)
+				if(istype(M,/mob))
+					M.process()
+	LoadClans()
+		if(fexists("Saves/World/Clans.sav"))
+			var/savefile/F = new("Saves/World/Clans.sav")
+			F["Clan"] >> Clans
+	Repopper()
+		sleep(90)
+#warn never use world.repop. Design alternative
+		world.Repop()
+		Repopper()
+var
+	ticker = 0
+
 mob/proc
+	process()
+
 	update_health_bar()
 		if(!src.healthbar)
 			src.healthbar = new()
@@ -33,16 +56,12 @@ mob/proc
 		src.overlays += src.healthbar
 		spawn(50)
 			src.overlays -= src.healthbar
+	Help_Player()
 
-proc
-	LoadClans()
-		if(fexists("Saves/World/Clans.sav"))
-			var/savefile/F = new("Saves/World/Clans.sav")
-			F["Clan"] >> Clans
-	Repopper()
-		sleep(90)
-		world.Repop()
-		Repopper()
+		usr.QuestItemDelete()
+		winset(usr,"Help","is-visible=true")
+		_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
+
 
 client
 	perspective=EDGE_PERSPECTIVE
@@ -58,7 +77,8 @@ mob
 
 		src.Quests()
 		..()
-		src<< sound('Sounds/Intro.ogg',1)
+		if(src.music_on)
+			src<< sound('Sounds/Intro.ogg',1)
 		src.density=1
 		if(!fexists("Saves/[src].sav"))
 
@@ -95,11 +115,3 @@ mob
 				winshow(usr,"tabber",1)
 				winshow(usr,"tabber.tab1",1)
 				winset(usr,"tabber","is-visible=true")
-
-	proc
-		Help_Player()
-
-			usr.QuestItemDelete()
-			winset(usr,"Help","is-visible=true")
-			_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
-			return
