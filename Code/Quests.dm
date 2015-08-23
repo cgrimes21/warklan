@@ -36,6 +36,9 @@ mob/var
 	HealingNPC=0
 	WeaponNPC=0
 	EnemiesKilled=0
+	BoughtWoodenSword=0
+	BoughtFoxFurTunic=0
+	SecondQuestOver=0
 
 
 mob/proc
@@ -54,21 +57,21 @@ mob/proc
 			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
 			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
-
 			src<< output(null,"QuestMenu.Info")
+
 			if(src.FoxFurCollected>=3)
-				src<< output("<center>Great work! Here's a fox fur tunic. </center>","QuestMenu.Info")
-				src.DoingQuest=1
+				if(!usr.BoughtFoxFurTunic)
+					src<< output("<center>You've retrieved the furs! Take them to the tailor and trade them for a tunic.</center>","QuestMenu.Info")
+				else
+					src<< output("<center>Great work! You've gotten the tunic, now let's get you a weapon. </center>","QuestMenu.Info")
 
-				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-				winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
-				winset(src,"QuestMenu.Accept","is-visible=true")
-				winset(src,"QuestMenu.Accept","text=Complete")
-				winset(usr,"QuestMenu.Deny","is-visible=false")
-
+					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+					winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+					winset(src,"QuestMenu.Accept","is-visible=true")
+					winset(src,"QuestMenu.Accept","text=Complete")
+					winset(usr,"QuestMenu.Deny","is-visible=false")
 			else
 				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need stronger clothing, and a weapon. Why don't you go and get 3 fox skins for me. You can get them from the foxes to your right.</center>","QuestMenu.Info")
-				src.DoingQuest=1
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -79,22 +82,39 @@ mob/proc
 			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
 			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
-
 			src<< output(null,"QuestMenu.Info")
-			if(src.SmallSticksCollected>=3)
-				src<< output("<center>Great work! Here's a wooden sword. </center>","QuestMenu.Info")
-				src.DoingQuest=1
 
-				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-				winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
-				winset(src,"QuestMenu.Accept","is-visible=true")
-				winset(src,"QuestMenu.Accept","text=Complete")
-				winset(usr,"QuestMenu.Deny","is-visible=false")
+			if(src.SmallSticksCollected>=3)
+				if(!usr.BoughtWoodenSword)
+					src<< output("<center>You've retrieved the sticks! Take them to the blacksmith and trade them for a sword.</center>","QuestMenu.Info")
+					usr.SecondQuestOver=1
+				else
+					src<< output("<center>Good job! That weapon should do you well. If you need to purchase anything else you can always speak with the craftsman. Using that weapon will level up your sword skill and make it stronger, allowing you to wield better weapons. Press the S button to view your skill levels.</center>","QuestMenu.Info")
+					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
+					winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+					winset(src,"QuestMenu.Accept","is-visible=true")
+					winset(src,"QuestMenu.Accept","text=Complete")
+					winset(usr,"QuestMenu.Deny","is-visible=false")
+
 			else
 				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. I'll carve them into a wooden sword for you.</center>","QuestMenu.Info")
-				src.DoingQuest=1
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
+
+	QuestItemDrop()
+		if(src.DoingQuest&&src.QuestLevel==1)
+			for(var/obj/O in src.contents)
+				if(O.name=="Fox Fur")
+					src.FoxFurCollected-=1
+
+
+		if(src.DoingQuest&&src.QuestLevel==2)
+			for(var/obj/O in src.contents)
+				if(O.name=="Small Stick")
+					src.SmallSticksCollected-=1
+					_message(src, "<font color=green>NEW STICKS: [src.SmallSticksCollected]/3</font>","white")
+
+
 
 	QuestItemCheck()
 		if(src.DoingQuest&&src.QuestLevel==1)
@@ -105,10 +125,11 @@ mob/proc
 					if(src.FoxFurCollected>=3)
 						src.ElderNPC=1
 					return
+
 		if(src.DoingQuest&&src.QuestLevel==2)
 			for(var/obj/O in src.contents)
 				if(O.name=="Small Stick")
-					src.SmallSticksCollected+=1
+					src.SmallSticksCollected+=9
 					_message(src, "<font color=green>Small Sticks Collected: [src.SmallSticksCollected]/3</font>","white")
 					if(src.SmallSticksCollected>=3)
 						src.ElderNPC=1
@@ -147,7 +168,7 @@ mob
 
 
 			// Beginning Quests//
-			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxFurCollected>=3)
+			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxFurCollected>=3&&BoughtFoxFurTunic)
 				src.QuestItemDelete()
 				src.DoingQuest=0
 				src.FoxFurCollected=0
@@ -167,7 +188,7 @@ mob
 					src.LevelUP()
 				return
 
-			if(src.DoingQuest&&src.QuestLevel==2&&src.SmallSticksCollected>=3)
+			if(src.DoingQuest&&src.QuestLevel==2&&src.SmallSticksCollected>=3&&usr.BoughtWoodenSword)
 				src.QuestItemDelete()
 				src.DoingQuest=0
 				src.FoxFurCollected=0
@@ -175,8 +196,9 @@ mob
 				src.Gold+=20
 				src.EXP+=50
 				src.ElderNPC=0
+				BoughtWoodenSword=0
 
-				var/obj/Items/Clothing/Fox_Fur_Tunic/A = new/obj/Items/Weapons/Wooden_Sword
+				var/obj/Items/Weapons/Wooden_Sword/A = new/obj/Items/Weapons/Wooden_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
 				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
@@ -265,11 +287,17 @@ mob/verb
 
 		//Monk Temple Quests//
 		if(QuestLevel==1)
-			_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
-			usr.ElderNPC=0
+			if(!usr.DoingQuest)
+				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
+				usr.ElderNPC=0
+				usr.DoingQuest=1
 		if(QuestLevel==2)
-			_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Sticks!</font></b>","white")
-			usr.ElderNPC=0
+			if(!usr.DoingQuest)
+				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Sticks!</font></b>","white")
+				usr.ElderNPC=0
+				usr.DoingQuest=1
+			if(SecondQuestOver)
+				usr.ShowSkillLevel()
 		usr.CheckQuest()
 		return
 
@@ -278,6 +306,7 @@ mob/verb
 	QDeny()
 		set hidden=1
 		winset(usr,"QuestMenu","is-visible=false")
+		_message(usr, "<b><font color=red>Quest:<font color=white> - Quest Cancelled!</font></b>","white")
 		usr.DoingQuest=0
 		usr.QuestMenuUp=0
 		return

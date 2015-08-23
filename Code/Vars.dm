@@ -155,7 +155,7 @@ mob
 
 obj
 	var
-		Level=0
+		WeaponLevel=0
 		Wearing=0
 		Owner=""
 		Style=""
