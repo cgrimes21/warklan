@@ -42,7 +42,7 @@ mob/verb
 			else
 				usr.AvailableItems+=1
 				usr.contents+=O
-				QuestItemCheck()
+				QuestItemPickup()
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
@@ -128,8 +128,8 @@ obj/Items
 		Drop()
 			if(src in usr.contents)
 				usr.AvailableItems-=1
-				src.loc = usr.loc
 				usr.QuestItemDrop()
+				src.loc = usr.loc
 				usr.AddItems()
 				usr.CreateInventory()
 				usr.CreateInventory()
@@ -251,9 +251,9 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.StaffBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
+						usr.Defense-=10
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0

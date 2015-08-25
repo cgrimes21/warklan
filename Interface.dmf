@@ -338,7 +338,7 @@ window "Help"
 	elem "Help"
 		type = MAIN
 		pos = 281,0
-		size = 531x423
+		size = 475x394
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -377,7 +377,7 @@ window "Help"
 	elem "Helping"
 		type = LABEL
 		pos = 0,0
-		size = 531x423
+		size = 475x394
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = "Times New Roman"

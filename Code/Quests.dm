@@ -87,7 +87,6 @@ mob/proc
 			if(src.SmallSticksCollected>=3)
 				if(!usr.BoughtWoodenSword)
 					src<< output("<center>You've retrieved the sticks! Take them to the blacksmith and trade them for a sword.</center>","QuestMenu.Info")
-					usr.SecondQuestOver=1
 				else
 					src<< output("<center>Good job! That weapon should do you well. If you need to purchase anything else you can always speak with the craftsman. Using that weapon will level up your sword skill and make it stronger, allowing you to wield better weapons. Press the S button to view your skill levels.</center>","QuestMenu.Info")
 					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
@@ -95,7 +94,7 @@ mob/proc
 					winset(src,"QuestMenu.Accept","is-visible=true")
 					winset(src,"QuestMenu.Accept","text=Complete")
 					winset(usr,"QuestMenu.Deny","is-visible=false")
-
+					usr.SecondQuestOver=1
 			else
 				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. I'll carve them into a wooden sword for you.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
@@ -103,60 +102,59 @@ mob/proc
 
 	QuestItemDrop()
 		if(src.DoingQuest&&src.QuestLevel==1)
-			for(var/obj/O in src.contents)
-				if(O.name=="Fox Fur")
-					src.FoxFurCollected-=1
-
+			var/FoxFurCollected=0
+			for(var/obj/Items/ItemDrops/Fox_Fur/A in src.contents)
+				FoxFurCollected++
+				usr<<"[FoxFurCollected]/3"
 
 		if(src.DoingQuest&&src.QuestLevel==2)
-			for(var/obj/O in src.contents)
-				if(O.name=="Small Stick")
-					src.SmallSticksCollected-=1
-					_message(src, "<font color=green>NEW STICKS: [src.SmallSticksCollected]/3</font>","white")
+			for(var/obj/Items/ItemDrops/Small_Stick/B in src.contents)
+				src.SmallSticksCollected-=1
 
 
 
-	QuestItemCheck()
+	QuestItemPickup()
 		if(src.DoingQuest&&src.QuestLevel==1)
-			for(var/obj/O in src.contents)
-				if(O.name=="Fox Fur")
-					src.FoxFurCollected+=1
-					_message(src, "<font color=green>Furs Collected: [src.FoxFurCollected]/3</font>","white")
-					if(src.FoxFurCollected>=3)
-						src.ElderNPC=1
-					return
+			var/FoxFurCollected=0
+			for(var/obj/Items/ItemDrops/Fox_Fur in src.contents)
+				FoxFurCollected+=1
+				_message(src, "<font color=green>Fox Furs Collected: [FoxFurCollected]/3</font>","white")
+				if(FoxFurCollected>=3)
+					src.ElderNPC=1
+				return
 
 		if(src.DoingQuest&&src.QuestLevel==2)
-			for(var/obj/O in src.contents)
-				if(O.name=="Small Stick")
-					src.SmallSticksCollected+=9
-					_message(src, "<font color=green>Small Sticks Collected: [src.SmallSticksCollected]/3</font>","white")
-					if(src.SmallSticksCollected>=3)
-						src.ElderNPC=1
-					return
+			for(var/obj/Items/ItemDrops/Small_Stick in src.contents)
+				src.SmallSticksCollected++
+				_message(src, "<font color=green>Small Sticks Collected: [src.SmallSticksCollected]/3</font>","white")
+				if(src.SmallSticksCollected>=3)
+					src.ElderNPC=1
+				return
 
 	QuestItemDelete()
 		if(src.DoingQuest&&src.QuestLevel==1)
-			for(var/obj/O in src.contents)
-				if(O.name=="Fox Fur")
-					if(usr.BagOpen==1)
+			var/counter = 0
+			for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+				counter++
+				if(counter <= 3)
+					del B
+					if(src.BagOpen==1)
 						usr.AddItems()
+					src.AvailableItems-=1
+					src.CreateInventory()
 
-					usr.AvailableItems-=1
-					usr.CreateInventory()
-
-					del O
 
 		if(src.DoingQuest&&src.QuestLevel==2)
-			for(var/obj/O in src.contents)
-				if(O.name=="Small Stick")
+			var/counter = 0
+			for(var/obj/Items/ItemDrops/Small_Stick/C in src.contents)
+				counter++
+				if(counter <= 3)
+					del C
 					if(usr.BagOpen==1)
 						usr.AddItems()
+					src.AvailableItems-=1
+					src.CreateInventory()
 
-					usr.AvailableItems-=1
-					usr.CreateInventory()
-
-					del O
 mob
 	verb
 		ExitQuest()
@@ -169,7 +167,6 @@ mob
 
 			// Beginning Quests//
 			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxFurCollected>=3&&BoughtFoxFurTunic)
-				src.QuestItemDelete()
 				src.DoingQuest=0
 				src.FoxFurCollected=0
 				src.QuestLevel+=1
@@ -177,9 +174,6 @@ mob
 				src.EXP+=45
 				src.ElderNPC=1
 
-				var/obj/Items/Clothing/Fox_Fur_Tunic/A = new/obj/Items/Clothing/Fox_Fur_Tunic
-				usr.AvailableItems+=1
-				usr.contents+=A
 				_message(src, "<b><font color=yellow>Gold Received: 15, EXP Received: 45, Fox Fur Tunic Received!</font></b>","white")
 
 				if(usr.BagOpen==1)
@@ -189,18 +183,14 @@ mob
 				return
 
 			if(src.DoingQuest&&src.QuestLevel==2&&src.SmallSticksCollected>=3&&usr.BoughtWoodenSword)
-				src.QuestItemDelete()
 				src.DoingQuest=0
-				src.FoxFurCollected=0
+				src.SmallSticksCollected=0
 				src.QuestLevel+=1
 				src.Gold+=20
 				src.EXP+=50
 				src.ElderNPC=0
 				BoughtWoodenSword=0
 
-				var/obj/Items/Weapons/Wooden_Sword/A = new/obj/Items/Weapons/Wooden_Sword
-				usr.AvailableItems+=1
-				usr.contents+=A
 				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
 
 				if(usr.BagOpen==1)

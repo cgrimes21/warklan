@@ -76,13 +76,8 @@ mob/verb
 			return
 		if(Slashing)
 			return
-		if(usr.SwordOn)
-			if(prob(20))
-				src.sword_skill_exp += rand(0.5,1)
-				src.SkillLevelUP()
 
-
-		if(usr.BowOn)
+		/*if(usr.BowOn)
 			if(usr.Dead==1)
 				return
 			if(usr.Dying==1)
@@ -107,7 +102,7 @@ mob/verb
 				A.step_x = nx
 				A.step_y = ny
 			/////////////////////
-				walk(A,usr.dir)
+				walk(A,usr.dir)*/
 		for(var/mob/M in oview(1))
 			if(usr.dir!=get_dir(usr,M))	//your not one step away facing them,
 				continue
@@ -143,7 +138,10 @@ mob/verb
 				fight_on = 1
 
 			if(fight_on)
-
+				if(usr.SwordOn)
+					if(prob(20))
+						usr.sword_skill_exp += rand(0.5,1)
+						usr.SkillLevelUP()
 				Jab+=1
 				var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')
 				if(Jab>=3)

@@ -28,13 +28,14 @@ obj/NPCs/Items
 		winset(usr,"Item","is-visible=true")
 		usr.IteminfoAlign()
 		winset(usr,"Item.Name","text = ' [src.name]'")
-		winset(usr,"Item.Level","text = ' Weapon Level: [WeaponLevel]'")
+		winset(usr,"Item.Level","text = ' Level: [WeaponLevel]'")
 		winset(usr,"Item.Materials","text = ' [src.MaterialsRequired] Needed'")
 		usr<<output(null,"Item.ItemInfo")
 		usr<<output("[src.Des]     <font size=+1><font color=yellow>Click To Purchase!</font></font>","Item.ItemInfo")
 	MouseExited()
 		usr.ShowingInfo=0
 		winset(usr,"Item","is-visible=false")
+
 	Wooden_Sword
 		name="Wooden Sword"
 		Cost=15
@@ -49,6 +50,7 @@ obj/NPCs/Items
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.SmallSticksCollected>=3)
+				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -57,6 +59,7 @@ obj/NPCs/Items
 					usr.AddItems()
 				if(usr.DoingQuest==1&&usr.QuestLevel==2&&usr.BoughtWoodenSword==0)
 					usr.BoughtWoodenSword=1
+				_message(usr,"You've received a wooden sword.","Yellow")
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
@@ -76,6 +79,7 @@ obj/NPCs/Items
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.FoxFurCollected>=3)
+				usr.QuestItemDelete()
 				var/obj/Items/Clothing/Fox_Fur_Tunic/A=new/obj/Items/Clothing/Fox_Fur_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -84,6 +88,7 @@ obj/NPCs/Items
 					usr.AddItems()
 				if(usr.DoingQuest==1&&usr.QuestLevel==1&&usr.BoughtFoxFurTunic==0)
 					usr.BoughtFoxFurTunic=1
+				_message(usr,"You've received a fox fur tunic.","Yellow")
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")

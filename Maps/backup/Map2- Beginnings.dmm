@@ -96,19 +96,19 @@
 "bR" = (/turf/Mountains/tg3,/area)
 "bS" = (/turf/Mountains/tg4,/area)
 "bT" = (/turf/Mountains/mg6,/turf/EnemyStop,/area)
-"bU" = (/mob/Enemies/Wolf,/turf/Mountains/s9,/area)
-"bV" = (/mob/Enemies/Wolf,/turf/Mountains/mg7,/area)
-"bW" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Back,/area)
-"bX" = (/turf/Mountains/mg2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bY" = (/turf/Mountains/mg3,/area)
-"bZ" = (/turf/Mountains/mg6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"ca" = (/turf/Mountains/mg1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"cb" = (/turf/Mountains/mg2,/turf/Mountains/pl2,/area)
-"cc" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"cd" = (/turf/Mountains/mg13,/turf/EnemyStop,/area)
-"ce" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Enter,/area)
-"cf" = (/mob/Enemies/Bandit_Enemies/Bandit,/turf/Mountains/s9,/area)
-"cg" = (/turf/Mountains/mg8,/turf/EnemyStop,/area)
+"bU" = (/turf/Mountains/mg8,/turf/EnemyStop,/area)
+"bV" = (/mob/Enemies/Wolf,/turf/Mountains/s9,/area)
+"bW" = (/mob/Enemies/Wolf,/turf/Mountains/mg7,/area)
+"bX" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Back,/area)
+"bY" = (/turf/Mountains/mg2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bZ" = (/turf/Mountains/mg3,/area)
+"ca" = (/turf/Mountains/mg6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"cb" = (/turf/Mountains/mg1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"cc" = (/turf/Mountains/mg2,/turf/Mountains/pl2,/area)
+"cd" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"ce" = (/turf/Mountains/mg13,/turf/EnemyStop,/area)
+"cf" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Enter,/area)
+"cg" = (/mob/Enemies/Bandit_Enemies/Bandit,/turf/Mountains/s9,/area)
 "ch" = (/turf/Mountains/mg11,/area)
 "ci" = (/turf/Mountains/mg7,/turf/Mountains/pl11,/area)
 "cj" = (/turf/Mountains/mg12,/area)
@@ -195,18 +195,18 @@ aiaWbvaBagbCbDauauauauauauauauauauauauauauauaubEaBagaBbybobo
 aobkbvaBagbCblbHbIbIbHbIbIbHbIbIbHbIbIbHbIbIbHbnaBagaBbybobo
 axbEbvaBagbCbJbKaBaBbKaBbLbMbNbNbMbNbNbOaBbPbKaBaBagaBbybobo
 axbEbvbQagbCbJaBaBbwaBaBaBbRbRbRbRbRbRbSaBaBaBaBaBagaBbybobo
-blbnbTbFbGbybJaBagagagagagbUagagagagagbUagagagagagagaBbybobo
-bJaBaBaBagbCbJaBagaBaBaBaBaBaBaBaBaBagaBaBaBbVaBaBaBaBbybobo
-bWagagagagbCbJbQagaBbVaBaBaBaBaBbVaBagaBaBaBaBaBaBaBaBbybobo
-bXbzbzbzbzbYbpbqbqbqbqbqbqbqbqbqbqbqbGbqbqbqbqbqbqbqbqbtbobo
-bDbmbmbmbmbEbZagagagagagagagagagagagagagagagagagagaBaBbybobo
-bDauauauauavcabzbzbzbzbzbzbzbzbzbzbzbzbzcbbzbzbzagbzbzccbobo
+blbnbTbFbGbUbJaBagagagagagbVagagagagagbVagagagagagagaBbybobo
+bJaBaBaBagbCbJaBagaBaBaBaBaBaBaBaBaBagaBaBaBbWaBaBaBaBbybobo
+bXagagagagbCbJbQagaBbWaBaBaBaBaBbWaBagaBaBaBaBaBaBaBaBbybobo
+bYbzbzbzbzbZbpbqbqbqbqbqbqbqbqbqbqbqbGbqbqbqbqbqbqbqbqbtbobo
+bDbmbmbmbmbEcaagagagagagagagagagagagagagagagagagagaBaBbybobo
+bDauauauauavcbbzbzbzbzbzbzbzbzbzbzbzbzbzccbzbzbzagbzbzcdbobo
 bmauauauauavbDbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmagbmbmbEbobo
 blbIbIbIbIbnbDbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbGbIbIbEbobo
-bJaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBagaBaBcdbobo
-ceagagagagagagagagagagagagagcfagagagagagagagagagagaBaBcgbobo
-ceagagagagagagagagagcfagagagagagagagcfagagagagagagaBaBcgbobo
-bXbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzccbobo
+bJaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBagaBaBcebobo
+cfagagagagagagagagagagagagagcgagagagagagagagagagagaBaBbUbobo
+cfagagagagagagagagagcgagagagagagagagcgagagagagagagaBaBbUbobo
+bYbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzcdbobo
 bmbmbmbmbmbmbmbmbmbmbDbmbmbmbmbmbmbmbmbmbmbmbDbmbmbmbmbEbobo
 ayauaAayazazazazazazaxazazazazazazazazazazazazazazazazaAbobo
 bobobobobobobobobobobobobobobobobobobobobobobobobobobobobobo
@@ -217,8 +217,8 @@ chcicjcjckckcjckckcjckckcjckckcjckckcjcjcjcjclcmcmcmcmcmcmcm
 bvcnaBaBbKbKaBbKbKaBbKbKaBbKbKaBbKbKaBaBciaBbCcmcmcmcmcmcmcm
 bvaBaBaBaBaBaBaBaBciaBaBaBaBaBaBaBaBaBaBcnaBbCcmcmcmcmcmcmcm
 bvaBciaBaBciaBaBaBcnaBaBaBciaBaBaBciaBaBaBaBbCcmcmcmcmcmcmcm
-bvaBbKcobzcnbzbzbzbAbzbzbzcncbbzcpcnaBbPciaBbCcmcmcmcmcmcmcm
-cqcrbAbYaxawavaxauauawavaxauauavcqbzcbbzcnbzbYcmcmcmcmcmcmcm
+bvaBbKcobzcnbzbzbzbAbzbzbzcnccbzcpcnaBbPciaBbCcmcmcmcmcmcmcm
+cqcrbAbZaxawavaxauauawavaxauauavcqbzccbzcnbzbZcmcmcmcmcmcmcm
 axauauavaxawavaxauauawavaxauauavaxawawavaxauavcmcmcmcmcmcmcm
 axauauavaxawavayazcsaCctaycscsaAaxawawavaxauavcmcmcmcmcmcmcm
 cucscsctaycvaAbNcwbKcibKaBbKbKaBaycxcxctayazaAcmcmcmcmcmcmcm
