@@ -24,6 +24,7 @@
 #include "Interface.dmf"
 #include "Code\Admin.dm"
 #include "Code\AI.dm"
+#include "Code\Building.dm"
 #include "Code\Chat.dm"
 #include "Code\Clan.dm"
 #include "Code\Class-Select.dm"

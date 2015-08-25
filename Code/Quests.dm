@@ -20,20 +20,14 @@ mob
 
 mob/var
 	tmp/QuestMenuUp=0
+	//Tutorial
 	QuestLevel=1
 	DoingQuest=0
 	FoxFurCollected=0
 	SmallSticksCollected=0
 	WolfKilled=0
 	FoxKilled=0
-	BanditsKilled=0
-	BanditLeaderKilled=0
-	BearHead=0
-	HerbsReady=0
-	Herbs=0
-	ClothingNPC=0
 	ElderNPC=1
-	HealingNPC=0
 	WeaponNPC=0
 	EnemiesKilled=0
 	BoughtWoodenSword=0
@@ -64,12 +58,12 @@ mob/proc
 					src<< output("<center>You've retrieved the furs! Take them to the tailor and trade them for a tunic.</center>","QuestMenu.Info")
 				else
 					src<< output("<center>Great work! You've gotten the tunic, now let's get you a weapon. </center>","QuestMenu.Info")
-
 					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
 					winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 					winset(src,"QuestMenu.Accept","is-visible=true")
 					winset(src,"QuestMenu.Accept","text=Complete")
 					winset(usr,"QuestMenu.Deny","is-visible=false")
+
 			else
 				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need stronger clothing, and a weapon. Why don't you go and get 3 fox skins for me. You can get them from the foxes to your right.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
@@ -96,35 +90,48 @@ mob/proc
 					winset(usr,"QuestMenu.Deny","is-visible=false")
 					usr.SecondQuestOver=1
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. I'll carve them into a wooden sword for you.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. The craftsman will carve them into a wooden sword for you.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
+		if(T=="CreateClanQuest")
+			src<< output(null,"QuestMenu.Info")
+
+			if(src.InClan)
+				src<< output("<center>Ah great, you've finally created a clan of your own. Clans can build fortifications and objects, but they may require resources such as wood, iron, gold, etc, or clan points gained from killing rival clan members. Press B to activate the 'Clan Builder' Menu</center>","QuestMenu.Info")
+				winset(src,"QuestMenu.Accept","is-visible=true")
+				winset(src,"QuestMenu.Accept","text=Complete")
+				winset(usr,"QuestMenu.Deny","is-visible=false")
+			else
+				src<< output("<center>I've seen your progress! You've grown very quickly. I think you're ready to form your own clan. Clans are the driving force in this world. You can create a clan of warriors that beat other clans into submission, a clan of conquerers that takes over the world, the possibilities are endless. Speak to the Clan Elder, and he'll start the process.</center>","QuestMenu.Info")
+				winset(src,"QuestMenu.Accept","is-visible=true")
+				winset(usr,"QuestMenu.Deny","is-visible=true")
+
+
 	QuestItemDrop()
 		if(src.DoingQuest&&src.QuestLevel==1)
-			var/FoxFurCollected=0
 			for(var/obj/Items/ItemDrops/Fox_Fur/A in src.contents)
-				FoxFurCollected++
-				usr<<"[FoxFurCollected]/3"
+				//src.FoxFurCollected-=1
+				usr<<"[usr.FoxFurCollected]/3"
 
 		if(src.DoingQuest&&src.QuestLevel==2)
 			for(var/obj/Items/ItemDrops/Small_Stick/B in src.contents)
-				src.SmallSticksCollected-=1
+				//src.SmallSticksCollected-=1
+				usr<<"[usr.SmallSticksCollected]/3"
 
 
 
 	QuestItemPickup()
 		if(src.DoingQuest&&src.QuestLevel==1)
-			var/FoxFurCollected=0
-			for(var/obj/Items/ItemDrops/Fox_Fur in src.contents)
-				FoxFurCollected+=1
+			for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+				src.FoxFurCollected+=1
 				_message(src, "<font color=green>Fox Furs Collected: [FoxFurCollected]/3</font>","white")
 				if(FoxFurCollected>=3)
 					src.ElderNPC=1
 				return
 
 		if(src.DoingQuest&&src.QuestLevel==2)
-			for(var/obj/Items/ItemDrops/Small_Stick in src.contents)
+			for(var/obj/Items/ItemDrops/Small_Stick/B in src.contents)
 				src.SmallSticksCollected++
 				_message(src, "<font color=green>Small Sticks Collected: [src.SmallSticksCollected]/3</font>","white")
 				if(src.SmallSticksCollected>=3)
@@ -173,13 +180,8 @@ mob
 				src.Gold+=15
 				src.EXP+=45
 				src.ElderNPC=1
-
 				_message(src, "<b><font color=yellow>Gold Received: 15, EXP Received: 45, Fox Fur Tunic Received!</font></b>","white")
-
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				if(src.EXP>=src.MaxEXP)
-					src.LevelUP()
+				_message(src, "<font color=green>New Task Unlocked: Make A Weapon!</font>","white")
 				return
 
 			if(src.DoingQuest&&src.QuestLevel==2&&src.SmallSticksCollected>=3&&usr.BoughtWoodenSword)
@@ -190,14 +192,20 @@ mob
 				src.EXP+=50
 				src.ElderNPC=0
 				BoughtWoodenSword=0
-
 				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
 
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				if(src.EXP>=src.MaxEXP)
-					src.LevelUP()
 				return
+
+			if(src.DoingQuest&&src.QuestLevel==3&&src.InClan==1)
+				src.DoingQuest=0
+				src.QuestLevel+=1
+				src.Gold+=20
+				src.EXP+=50
+				src.ElderNPC=0
+				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
+
+				return
+
 
 
 		QUESTCHECK(var/N as text)
@@ -212,30 +220,14 @@ mob
 						src.ElderNPC=1
 				return*/
 
-
-			if(N=="Mountain Bandit")
-				if(src.DoingQuest==1&&QuestLevel==4)
-					src.BanditsKilled+=1
-					_message(src, "<font color=green>Mountain Bandits Defeated: [src.BanditsKilled]/5</font>","white")
-					if(src.BanditsKilled>=5)
-						src.WeaponNPC=1
-				return
-			if(N=="Bear")
-				if(src.DoingQuest==1&&QuestLevel==9)
-					src.BearHead+=1
-					_message(src, "<font color=green>Bear Head: [src.BearHead]/1</font>","white")
-					if(src.BearHead>=1)
-						src.ElderNPC=1
-				return
-
-			if(N=="Cave Bandit Leader (Boss)")
+			/*if(N=="Cave Bandit Leader (Boss)")
 				if(src.DoingQuest==1)
 					_message(src, "<font color=green>The bandit drops a treasure chest! </font>","white")
 					var/obj/Items/Quest/Treasure_Chest/O = new/obj/Items/Quest/Treasure_Chest
 					O.y=src.y
 					O.x=src.x
 					O.z=src.z
-				return
+				return*/
 
 
 mob/NPCS/QUEST
@@ -263,6 +255,11 @@ mob/NPCS/QUEST
 						usr.QuestMenuUp=1
 						usr.BeginningQuests("WoodenSwordQuest")
 						return
+					if(usr.QuestLevel==3&&usr.Level==5)
+						usr.QuestMenuUp=1
+						usr.BeginningQuests("CreateClanQuest")
+						return
+
 
 
 
@@ -288,6 +285,11 @@ mob/verb
 				usr.DoingQuest=1
 			if(SecondQuestOver)
 				usr.ShowSkillLevel()
+		if(QuestLevel==3)
+			if(!usr.DoingQuest)
+				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")
+				usr.ElderNPC=0
+				usr.DoingQuest=1
 		usr.CheckQuest()
 		return
 

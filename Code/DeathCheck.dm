@@ -168,7 +168,8 @@ mob/proc
 		src.EXP=0
 		src.MaxEXP *= 1.5
 		if(src.Level==5)
-			_message(src,"You can now form a clan! Speak to the Clan Elder to get started!","Aqua")
+			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
+			src.ElderNPC=1
 
 	SwordSkill_LevelGain_MaxExpGain()
 		src.sword_skill_level+=1

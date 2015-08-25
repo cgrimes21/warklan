@@ -1398,7 +1398,7 @@ window "SkillLevels"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "Skill Mastery"
+		text = "Skill Mastery (S)"
 		image = ""
 		image-mode = center
 		keep-aspect = false
