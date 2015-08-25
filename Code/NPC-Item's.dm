@@ -6,7 +6,7 @@ mob
 		ShowingInfo=0
 mob
 	proc
-		ItemInfoAligen()
+		IteminfoAlign()
 			spawn while(src.ShowingInfo)
 				if(!src){return}
 				if(!client){return}
@@ -21,21 +21,23 @@ mob
 				sleep(world.tick_lag)
 obj/NPCs/Items
 	icon='Items.dmi'
-	Level=1
+	WeaponLevel=1
 	layer=16
 	MouseEntered()
 		usr.ShowingInfo=1
 		winset(usr,"Item","is-visible=true")
-		usr.ItemInfoAligen()
-		winset(usr,"Item.Materials","text = 'Materials Required: :   [src.MaterialsRequired]'")
-		winset(usr,"Item.Gold","text = 'Gold Required:   [src.Cost] Gold'")
-		winset(usr,"Item.Weight","text ='Level Req :    [src.Req]'")
+		usr.IteminfoAlign()
+		winset(usr,"Item.Name","text = ' [src.name]'")
+		winset(usr,"Item.Level","text = ' Level: [WeaponLevel]'")
+		winset(usr,"Item.Materials","text = ' [src.MaterialsRequired] Needed'")
 		usr<<output(null,"Item.ItemInfo")
 		usr<<output("[src.Des]     <font size=+1><font color=yellow>Click To Purchase!</font></font>","Item.ItemInfo")
 	MouseExited()
 		usr.ShowingInfo=0
 		winset(usr,"Item","is-visible=false")
+
 	Wooden_Sword
+		name="Wooden Sword"
 		Cost=15
 		Weight=25
 		MaterialsRequired="3 Small Sticks"
@@ -47,51 +49,27 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(usr.Gold>=src.Cost)
-				if(usr.SmallSticksCollected>=3)
-					var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
-					usr.AvailableItems+=1
-					usr.contents+=A
-					usr.Gold-=src.Cost
-					if(usr.BagOpen==1)
-						usr.AddItems()
-					return
-				else
-					_message(usr,"You still need [src.MaterialsRequired]!","Yellow")
+			if(usr.SmallSticksCollected>=3)
+				usr.QuestItemDelete()
+				var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
+				usr.AvailableItems+=1
+				usr.contents+=A
+				usr.Gold-=src.Cost
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				if(usr.DoingQuest==1&&usr.QuestLevel==2&&usr.BoughtWoodenSword==0)
+					usr.BoughtWoodenSword=1
+				_message(usr,"You've received a wooden sword.","Yellow")
+				return
 			else
-				_message(usr,"Come back when you have enough gold!","Yellow")
-	redoakstaff
-		Cost=20
-		Weight=25
-		Des="Red Oak Staff, 2x Stronger Then The Normal Training Staff"
-		Req=8
-		icon='JPShopItems.dmi'
-		icon_state="redoakstaff"
-		Click()
-			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
-				_message(usr,"You're holding too many items!","Yellow")
-				return
-			if(usr.Level<src.Req)
-				_message(usr,"Your level is too low to purchase this!","Yellow")
-				return
-			if(usr.Gold>=src.Cost)
-				switch(alert("Are You Sure You Would Like To Buy This Item",,"Yes","No"))
-					if("No")
-						return
-					if("Yes")
-						var/obj/Items/Weapons/RStaff/A=new/obj/Items/Weapons/RStaff
-						usr.AvailableItems+=1
-						usr.contents+=A
-						usr.Gold-=src.Cost
-						if(usr.BagOpen==1)
-							usr.AddItems()
-						return
-					else
-						_message(usr,"You Don't Have The Right Amount Of Gold","Yellow")
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+
 	Fox_Fur_Tunic
+		name="Fox Fur Tunic"
 		Cost=15
 		Weight=25
+		MaterialsRequired="3 Fox Furs"
 		Des="Fox Fur Tunic"
 		icon='JpShopItems.dmi'
 		icon_state="fftunic"
@@ -100,16 +78,20 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(usr.Gold>=src.Cost)
+			if(usr.FoxFurCollected>=3)
+				usr.QuestItemDelete()
 				var/obj/Items/Clothing/Fox_Fur_Tunic/A=new/obj/Items/Clothing/Fox_Fur_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
 				usr.Gold-=src.Cost
 				if(usr.BagOpen==1)
 					usr.AddItems()
+				if(usr.DoingQuest==1&&usr.QuestLevel==1&&usr.BoughtFoxFurTunic==0)
+					usr.BoughtFoxFurTunic=1
+				_message(usr,"You've received a fox fur tunic.","Yellow")
 				return
 			else
-				_message(usr,"You Don't Have The Right Amount Of Gold","Yellow")
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
 
 	Bow

@@ -104,7 +104,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
-				alert("I heard there was some scary stuff in this cave...but at the end, there's apparently a gold mine of iron!")
+				alert("Apparently there's some scary stuff in this cave...but I heard there was a lot of bronze inside!")
 	Tailor
 		icon_state="Tailor"
 		Name="Tailor"
@@ -189,7 +189,7 @@ mob/NPCS
 					_message(usr,"You are in a Clan!","yellow")
 					return
 
-				if(alert("Are you sure you wish to create a Clan?","Clan Creation","Yes","No")=="No")
+				if(alert("Ah, have you come to create a Clan?","Clan Creation","Yes","No")=="No")
 					return
 
 				var/satisfactory = 0
@@ -221,6 +221,9 @@ mob/NPCS
 				var/clan/c = new()
 				c.Create_Clan(ClanName, usr.name)
 				usr.clan = c
+				usr.InClan=1
+				if(usr.QuestLevel==3&&usr.Level==5)
+					usr.ElderNPC=1
 				clans.Add(c)
 				F["Clan"] << clans
 				_message(usr,"Your clan, [ClanName] has been formed!","yellow")

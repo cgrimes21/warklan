@@ -40,7 +40,7 @@ mob/Enemies
 
 	proc
 		NPCAttackPlayer(mob/who)
-			debuggers<<"[src.name] attacking [who.name]"
+			//debuggers<<"[src.name] attacking [who.name]"
 
 		tickle()
 
@@ -96,47 +96,9 @@ mob/Enemies
 				while(src)
 					sleep(10)
 					src.tickle()
-			/*
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
-			spawn while(src)
-				if(Attacked==0&&Health<MaxHealth)
-					Health+=10
-					if(Health>=MaxHealth)
-						Health=MaxHealth
-				sleep(100)
-			spawn while(src)
-				if(Attacked)
-					Attacked=0
-					Attacker=""
-					src.speed=0.5
-				sleep(120)
-			spawn while(src&&Dead==0&&Dying==0)
-				src.speed=2
-				walk(src, pick(NORTH, EAST, SOUTH, WEST),1,3)
-				sleep(15)
-			spawn while(src&&Dead==0&&Dying==0)
-				for(var/mob/M in oview(4))
-					if(M.Player==1&&M.Dead==0&&M.Dying==0&&src.Attacked&&src.Attacker==M.Name&&M.Level>50)
-						NPCAttack(src,M)
-					else
-						if(M.Player==1&&M.Dead==0&&M.Dying==0&&M.Level<=5)
-							if(src.dir==get_dir(src,M))
-								src.Attacker=M.Name
-								src.Attacked=1
-								NPCAttack(src,M)
-				sleep(10)
-			spawn while(src&&Dead==0&&Dying==0)
-				for(var/mob/M in oview(5))
-			//		if(M.Player==1&&M.Level>=5)
-			//			src.speed=4
-			//			walk(src,get_dir(src,M),1,3)
-					if(M.Player==1&&src.Attacked&&src.Attacker==M.Name)
-						src.speed=4
-						walk(src,get_dir(src,M),1,3)
-				sleep(world.tick_lag)
-				*/
-			..()
+
 
 	Wolf
 		icon='Wolf.dmi'

@@ -76,13 +76,8 @@ mob/verb
 			return
 		if(Slashing)
 			return
-		if(usr.SwordOn)
-			if(prob(1))
-				src.sword_skill += rand(0.5,1)
-				src<<"sword skill improved (Sword Skill Exp: [src.sword_skill])"
 
-
-		if(usr.BowOn)
+		/*if(usr.BowOn)
 			if(usr.Dead==1)
 				return
 			if(usr.Dying==1)
@@ -107,21 +102,21 @@ mob/verb
 				A.step_x = nx
 				A.step_y = ny
 			/////////////////////
-				walk(A,usr.dir)
+				walk(A,usr.dir)*/
 		for(var/mob/M in oview(1))
 			if(usr.dir!=get_dir(usr,M))	//your not one step away facing them,
 				continue
 			if(M.NPC == 1)
 				return
 			if(M.Dead==1)
-				debuggers<<"dead = 1 return"
+				//debuggers<<"dead = 1 return"
 				return
 			if(M.Dying==1)
-				debuggers<<"dying = 1 return"
+				//debuggers<<"dying = 1 return"
 				return
 
 			if(usr.Stamina<=5)
-				debuggers<<"stamina = [usr.Stamina] return"
+				//debuggers<<"stamina = [usr.Stamina] return"
 				return
 			if(usr.Punching)
 				return
@@ -137,13 +132,16 @@ mob/verb
 						//debuggers<<"[usr.clan.name] is at war with [M.clan.name]"
 
 				if(usr.challenging ==ckey(M.name))
-					debuggers<<"[usr.challenging] is challenging [M.name]"
+					//debuggers<<"[usr.challenging] is challenging [M.name]"
 					fight_on = 1
 			else//enemy npc
 				fight_on = 1
 
 			if(fight_on)
-
+				if(usr.SwordOn)
+					if(prob(20))
+						usr.sword_skill_exp += rand(0.5,1)
+						usr.SkillLevelUP()
 				Jab+=1
 				var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')
 				if(Jab>=3)

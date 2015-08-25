@@ -1,20 +1,36 @@
+
 mob
 	verb
 		ShowSkills()
-			set hidden =1
+			set hidden = 1
 			if(!usr.ShowingSkills)
 				usr.ShowingSkills=1
 				winset(usr,"Skills","is-visible=true")
 				usr.SkillShow()
-				usr.SkillAligen()
+				usr.SkillAlign()
 				return
 			else
 				usr.ShowingSkills=0
 				winset(usr,"Skills","is-visible=false")
 				return
-
+		ShowSkillLevel()
+			set hidden = 1
+			if(!usr.ShowingSkillLevels)
+				usr.ShowingSkillLevels=1
+				winset(usr,"SkillLevels","is-visible=true")
+				usr.SkillLevelShow()
+				return
+			else
+				usr.ShowingSkillLevels=0
+				winset(usr,"SkillLevels","is-visible=false")
+				return
 	proc
-		SkillAligen()
+		SkillLevelShow()
+			winset(usr,"SkillLevels","is-visible=true")
+			winset(usr,"SkillLevels.Level","text = 'Level: [src.sword_skill_level]'")
+			winset(usr,"SkillLevels.EXP","text = 'EXP: [src.sword_skill_exp]/[src.sword_skill_maxexp]'")
+
+		SkillAlign()
 			spawn while(src.ShowingSkills)
 				if(!src){return}
 				if(!client){return}

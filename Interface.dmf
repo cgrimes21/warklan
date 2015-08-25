@@ -109,7 +109,7 @@ macro "macro"
 		is-disabled = false
 	elem 
 		name = "S"
-		command = "ShowSkills"
+		command = "ShowSkillLevel"
 		is-disabled = false
 	elem 
 		name = "T"
@@ -126,6 +126,15 @@ macro "macro"
 
 
 menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		category = ""
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
 	elem 
 		name = "&Quit"
 		command = ".quit"
@@ -329,7 +338,7 @@ window "Help"
 	elem "Help"
 		type = MAIN
 		pos = 281,0
-		size = 519x372
+		size = 475x394
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -368,7 +377,7 @@ window "Help"
 	elem "Helping"
 		type = LABEL
 		pos = 0,0
-		size = 519x372
+		size = 475x394
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = "Times New Roman"
@@ -390,129 +399,6 @@ window "Help"
 		image-mode = center
 		keep-aspect = false
 		align = center
-		text-wrap = false
-		allow-html = false
-		letterbox = true
-
-window "Item"
-	elem "Item"
-		type = MAIN
-		pos = 281,0
-		size = 344x194
-		anchor1 = none
-		anchor2 = none
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #000000
-		background-color = #000000
-		is-visible = false
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = none
-		drop-zone = false
-		right-click = false
-		saved-params = "pos;size;is-minimized;is-maximized"
-		on-size = ""
-		title = ""
-		titlebar = false
-		statusbar = false
-		can-close = false
-		can-minimize = false
-		can-resize = false
-		is-pane = false
-		is-minimized = false
-		is-maximized = false
-		can-scroll = none
-		icon = ""
-		image = ""
-		image-mode = stretch
-		keep-aspect = false
-		transparent-color = none
-		alpha = 150
-		macro = "macro"
-		menu = ""
-		on-close = ""
-	elem "ItemInfo"
-		type = OUTPUT
-		pos = 0,44
-		size = 344x149
-		anchor1 = 0,22
-		anchor2 = 100,100
-		font-family = ""
-		font-size = 14
-		font-style = ""
-		text-color = #80ff00
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = line
-		drop-zone = false
-		right-click = false
-		saved-params = "max-lines"
-		on-size = ""
-		link-color = #0000ff
-		visited-color = #ff00ff
-		style = ""
-		enable-http-images = false
-		max-lines = 1000
-		image = ""
-	elem "Materials"
-		type = LABEL
-		pos = 0,22
-		size = 344x22
-		anchor1 = 0,11
-		anchor2 = 100,22
-		font-family = ""
-		font-size = 12
-		font-style = "bold"
-		text-color = #ff0000
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = line
-		drop-zone = false
-		right-click = false
-		saved-params = ""
-		on-size = ""
-		text = "Materials Required"
-		image = ""
-		image-mode = center
-		keep-aspect = false
-		align = left
-		text-wrap = false
-		allow-html = false
-		letterbox = true
-	elem "Gold"
-		type = LABEL
-		pos = 0,0
-		size = 344x22
-		anchor1 = 0,0
-		anchor2 = 100,11
-		font-family = ""
-		font-size = 12
-		font-style = "bold"
-		text-color = #ffff00
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = line
-		drop-zone = false
-		right-click = false
-		saved-params = ""
-		on-size = ""
-		text = "Gold"
-		image = ""
-		image-mode = center
-		keep-aspect = false
-		align = left
 		text-wrap = false
 		allow-html = false
 		letterbox = true
@@ -751,7 +637,7 @@ window "Name"
 		right-click = false
 		saved-params = "is-checked"
 		on-size = ""
-		text = "Ok"
+		text = "Get Started"
 		image = ""
 		command = "NameC"
 		is-flat = true
@@ -820,13 +706,13 @@ window "QuestMenu"
 		image-mode = stretch
 		keep-aspect = false
 		transparent-color = none
-		alpha = 180
+		alpha = 231
 		macro = ""
 		menu = ""
 		on-close = ""
 	elem "Deny"
 		type = BUTTON
-		pos = 390,264
+		pos = 390,263
 		size = 152x30
 		anchor1 = 72,90
 		anchor2 = 100,100
@@ -854,7 +740,7 @@ window "QuestMenu"
 		button-type = pushbutton
 	elem "Accept"
 		type = BUTTON
-		pos = 0,264
+		pos = 0,263
 		size = 152x30
 		anchor1 = 0,90
 		anchor2 = 28,100
@@ -880,9 +766,9 @@ window "QuestMenu"
 		is-checked = false
 		group = ""
 		button-type = pushbutton
-	elem "RewardTen"
+	elem "RewardNine"
 		type = LABEL
-		pos = 459,27
+		pos = 450,27
 		size = 49x48
 		anchor1 = 85,9
 		anchor2 = 94,26
@@ -908,9 +794,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardNine"
+	elem "RewardEight"
 		type = LABEL
-		pos = 408,27
+		pos = 399,27
 		size = 49x48
 		anchor1 = 75,9
 		anchor2 = 84,26
@@ -936,9 +822,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardEight"
+	elem "RewardSeven"
 		type = LABEL
-		pos = 357,27
+		pos = 348,27
 		size = 49x48
 		anchor1 = 66,9
 		anchor2 = 75,26
@@ -964,9 +850,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardSeven"
+	elem "RewardSix"
 		type = LABEL
-		pos = 306,27
+		pos = 297,27
 		size = 49x48
 		anchor1 = 56,9
 		anchor2 = 65,26
@@ -992,9 +878,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardSix"
+	elem "RewardFive"
 		type = LABEL
-		pos = 255,27
+		pos = 246,27
 		size = 49x48
 		anchor1 = 47,9
 		anchor2 = 56,26
@@ -1020,9 +906,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardFive"
+	elem "RewardFour"
 		type = LABEL
-		pos = 204,27
+		pos = 195,27
 		size = 49x48
 		anchor1 = 38,9
 		anchor2 = 47,26
@@ -1048,9 +934,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardFour"
+	elem "RewardThree"
 		type = LABEL
-		pos = 153,27
+		pos = 144,27
 		size = 49x48
 		anchor1 = 28,9
 		anchor2 = 37,26
@@ -1076,9 +962,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardThree"
+	elem "RewardTwo"
 		type = LABEL
-		pos = 102,27
+		pos = 93,27
 		size = 49x48
 		anchor1 = 19,9
 		anchor2 = 28,26
@@ -1104,9 +990,9 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardTwo"
+	elem "RewardOne"
 		type = LABEL
-		pos = 51,27
+		pos = 41,27
 		size = 49x48
 		anchor1 = 9,9
 		anchor2 = 18,26
@@ -1132,38 +1018,10 @@ window "QuestMenu"
 		text-wrap = false
 		allow-html = false
 		letterbox = true
-	elem "RewardOne"
-		type = LABEL
-		pos = 0,27
-		size = 49x48
-		anchor1 = 0,9
-		anchor2 = 9,26
-		font-family = ""
-		font-size = 0
-		font-style = ""
-		text-color = #ffffff
-		background-color = #000000
-		is-visible = true
-		is-disabled = false
-		is-transparent = false
-		is-default = false
-		border = line
-		drop-zone = false
-		right-click = false
-		saved-params = ""
-		on-size = ""
-		text = ""
-		image = ""
-		image-mode = center
-		keep-aspect = false
-		align = center
-		text-wrap = false
-		allow-html = false
-		letterbox = true
 	elem "ExitQuest"
 		type = BUTTON
-		pos = 514,0
-		size = 28x26
+		pos = 520,0
+		size = 22x16
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -1190,7 +1048,7 @@ window "QuestMenu"
 		button-type = pushbutton
 	elem "INFOL"
 		type = LABEL
-		pos = 0,76
+		pos = -11,79
 		size = 542x16
 		anchor1 = 0,26
 		anchor2 = 100,31
@@ -1246,8 +1104,8 @@ window "QuestMenu"
 		letterbox = true
 	elem "Info"
 		type = OUTPUT
-		pos = 0,112
-		size = 544x142
+		pos = 8,112
+		size = 525x142
 		anchor1 = 0,38
 		anchor2 = 100,86
 		font-family = ""
@@ -1259,7 +1117,7 @@ window "QuestMenu"
 		is-disabled = false
 		is-transparent = false
 		is-default = false
-		border = line
+		border = none
 		drop-zone = false
 		right-click = false
 		saved-params = "max-lines"
@@ -1367,6 +1225,271 @@ window "Server"
 		is-checked = false
 		group = ""
 		button-type = pushbutton
+
+window "SkillLevels"
+	elem "SkillLevels"
+		type = MAIN
+		pos = 281,0
+		size = 388x461
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #000000
+		is-visible = false
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		on-size = ""
+		title = ""
+		titlebar = true
+		statusbar = false
+		can-close = true
+		can-minimize = false
+		can-resize = false
+		is-pane = false
+		is-minimized = false
+		is-maximized = false
+		can-scroll = none
+		icon = ""
+		image = ""
+		image-mode = stretch
+		keep-aspect = false
+		transparent-color = none
+		alpha = 255
+		macro = ""
+		menu = ""
+		on-close = ""
+	elem "EXP"
+		type = LABEL
+		pos = 201,170
+		size = 91x24
+		anchor1 = none
+		anchor2 = none
+		font-family = "sans-serif"
+		font-size = 8
+		font-style = "bold"
+		text-color = #9a0c0c
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "EXP: "
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label7"
+		type = LABEL
+		pos = 207,268
+		size = 75x52
+		anchor1 = none
+		anchor2 = none
+		font-family = "sans-serif"
+		font-size = 8
+		font-style = "bold"
+		text-color = #9a0c0c
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Level 1\n\nEXP 0/50"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label6"
+		type = LABEL
+		pos = 122,233
+		size = 182x32
+		anchor1 = none
+		anchor2 = none
+		font-family = "sans-serif"
+		font-size = 15
+		font-style = ""
+		text-color = #ffffff
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Bow Mastery (N/A)"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label5"
+		type = LABEL
+		pos = 135,268
+		size = 60x52
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = ""
+		image = 'Icons\\Skills\\Bow.jpg'
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label4"
+		type = LABEL
+		pos = 51,39
+		size = 288x56
+		anchor1 = none
+		anchor2 = none
+		font-family = "@Malgun Gothic,sans-serif"
+		font-size = 20
+		font-style = ""
+		text-color = #ffffff
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Skill Mastery (S)"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "Level"
+		type = LABEL
+		pos = 207,152
+		size = 75x24
+		anchor1 = none
+		anchor2 = none
+		font-family = "sans-serif"
+		font-size = 8
+		font-style = "bold"
+		text-color = #9a0c0c
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Level 1"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label2"
+		type = LABEL
+		pos = 122,117
+		size = 152x32
+		anchor1 = none
+		anchor2 = none
+		font-family = "sans-serif"
+		font-size = 15
+		font-style = ""
+		text-color = #ffffff
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Sword Mastery"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "label1"
+		type = LABEL
+		pos = 135,152
+		size = 60x52
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = ""
+		image = 'Icons\\Skills\\Sword.jpg'
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
 
 window "Skills"
 	elem "Skills"
@@ -1542,4 +1665,157 @@ window "tabber"
 		on-tab = ""
 		prefix-color = none
 		suffix-color = none
+
+window "Item"
+	elem "Item"
+		type = MAIN
+		pos = 281,0
+		size = 200x194
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #000000
+		is-visible = false
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		on-size = ""
+		title = ""
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = false
+		is-minimized = false
+		is-maximized = false
+		can-scroll = none
+		icon = ""
+		image = ""
+		image-mode = stretch
+		keep-aspect = false
+		transparent-color = none
+		alpha = 219
+		macro = "macro"
+		menu = ""
+		on-close = ""
+	elem "label8"
+		type = LABEL
+		pos = 0,44
+		size = 200x22
+		anchor1 = 0,11
+		anchor2 = 100,22
+		font-family = ""
+		font-size = 12
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Weight"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = left
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "Materials"
+		type = LABEL
+		pos = 0,46
+		size = 200x22
+		anchor1 = 0,11
+		anchor2 = 100,22
+		font-family = ""
+		font-size = 12
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Materials"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = left
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "Level"
+		type = LABEL
+		pos = 0,22
+		size = 200x22
+		anchor1 = 0,11
+		anchor2 = 100,22
+		font-family = ""
+		font-size = 12
+		font-style = "bold"
+		text-color = #59b748
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Level"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = left
+		text-wrap = false
+		allow-html = false
+		letterbox = true
+	elem "Name"
+		type = LABEL
+		pos = 0,0
+		size = 200x22
+		anchor1 = 0,0
+		anchor2 = 100,11
+		font-family = ""
+		font-size = 12
+		font-style = "bold"
+		text-color = #439bbc
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Name"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = left
+		text-wrap = false
+		allow-html = false
+		letterbox = true
 

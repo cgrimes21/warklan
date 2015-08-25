@@ -42,7 +42,7 @@ mob/verb
 			else
 				usr.AvailableItems+=1
 				usr.contents+=O
-				QuestItemCheck()
+				QuestItemPickup()
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
@@ -128,6 +128,7 @@ obj/Items
 		Drop()
 			if(src in usr.contents)
 				usr.AvailableItems-=1
+				usr.QuestItemDrop()
 				src.loc = usr.loc
 				usr.AddItems()
 				usr.CreateInventory()
@@ -220,7 +221,6 @@ obj/Items
 								usr.AddItems()
 	Crafting
 		icon='Weapons.dmi'
-		Level=1
 		layer=17
 		Weight=25
 		Iron
@@ -240,7 +240,7 @@ obj/Items
 
 	Clothing
 		icon='Weapons.dmi'
-		Level=1
+		WeaponLevel=1
 		layer=17
 		Weight=25
 		Fox_Fur_Tunic
@@ -251,9 +251,9 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.StaffBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
+						usr.Defense-=10
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -270,26 +270,7 @@ obj/Items
 						src.pixel_x+=3
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
-					if(Level==1)
-						usr.Defense+=10
-					if(Level==2)
-						usr.Defense+=15
-					if(Level==3)
-						usr.Defense+=20
-					if(Level==4)
-						usr.Defense+=25
-					if(Level==5)
-						usr.Defense+=30
-					if(Level==6)
-						usr.Defense+=35
-					if(Level==7)
-						usr.Defense+=40
-					if(Level==8)
-						usr.Defense+=45
-					if(Level==9)
-						usr.Defense+=50
-					if(Level==10)
-						usr.Defense+=55
+					usr.Defense+=10
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
@@ -303,7 +284,7 @@ obj/Items
 
 	Weapons
 		icon='Weapons.dmi'
-		Level=1
+		WeaponLevel=1
 		layer=17
 		Weight=25
 		Wooden_Sword
@@ -317,7 +298,7 @@ obj/Items
 						usr.Strength-=usr.StaffBoost
 						src.overlays-=src.overlays
 						usr.WearingWeapon=0
-						usr.StaffOn=0
+						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -335,7 +316,7 @@ obj/Items
 						src.pixel_x+=3
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
-					usr.StaffBoost = 5 + Level * 5
+					usr.StaffBoost = 5 + WeaponLevel * 5
 					usr.Strength += usr.StaffBoost
 
 				else
@@ -379,7 +360,7 @@ obj/Items
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
 					usr.BowOn=1
-					usr.BowBoost = Level * 5
+					usr.BowBoost = WeaponLevel * 5
 					usr.Strength += usr.BowBoost
 
 				else
@@ -422,36 +403,9 @@ obj/Items
 						src.pixel_x+=3
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
-					if(Level==1)
+					if(WeaponLevel==1)
 						usr.SwordBoost=15
 						usr.Strength+=15
-					if(Level==2)
-						usr.SwordBoost=20
-						usr.Strength+=20
-					if(Level==3)
-						usr.SwordBoost=25
-						usr.Strength+=25
-					if(Level==4)
-						usr.SwordBoost=30
-						usr.Strength+=30
-					if(Level==5)
-						usr.SwordBoost=35
-						usr.Strength+=35
-					if(Level==6)
-						usr.SwordBoost=40
-						usr.Strength+=40
-					if(Level==7)
-						usr.SwordBoost=45
-						usr.Strength+=45
-					if(Level==8)
-						usr.SwordBoost=50
-						usr.Strength+=50
-					if(Level==9)
-						usr.SwordBoost=55
-						usr.Strength+=55
-					if(Level==10)
-						usr.SwordBoost=60
-						usr.Strength+=60
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
