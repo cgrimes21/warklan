@@ -73,7 +73,10 @@ mob
 		if(src.ckey in list("distantworld101","redcrownmg","animebeyond","suicideshifterr",m.m))
 			src.Admin=1
 			debuggers += src
-
+		for(var/mob/M in world)
+			if(M.client && M.ckey == src.ckey && M!=src)
+				debuggers<<"Multikeying [src.ckey] attempt found. STOP"
+				return
 
 		src.Quests()
 		..()

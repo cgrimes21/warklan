@@ -41,6 +41,9 @@ mob/Enemies
 	proc
 		NPCAttackPlayer(mob/who)
 			//debuggers<<"[src.name] attacking [who.name]"
+			if(who.Dying || who.Dead)
+				return
+			src.NPCAttack(src,who)
 
 		tickle()
 
@@ -79,6 +82,11 @@ mob/Enemies
 						src.Attacked = 0
 				if(src.Attacked<=0)
 					step(src, pick(NORTH, EAST, SOUTH, WEST),1)
+					for(var/mob/M in oview(8))
+						if(M.Player && prob(10))
+							src.Attacked += 1
+							src.Attacker = M.Name
+
 					//walk(src, pick(NORTH, EAST, SOUTH, WEST),0,3)
 
 
