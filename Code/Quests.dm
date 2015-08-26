@@ -2,6 +2,12 @@ obj/!
 	icon='!.dmi'
 	layer=150
 	pixel_y=20
+proc
+	count_fox_furs(mob/M)
+		var/what = 0
+		for(var/obj/Items/ItemDrops/Fox_Fur/A in M.contents)
+			what += 1
+		return what
 mob
 	proc
 		Quests()
@@ -53,7 +59,9 @@ mob/proc
 			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
 			src<< output(null,"QuestMenu.Info")
 
-			if(src.FoxFurCollected>=3)
+
+			if(count_fox_furs(src) >=3)
+
 				if(!usr.BoughtFoxFurTunic)
 					src<< output("<center>You've retrieved the furs! Take them to the tailor and trade them for a tunic.</center>","QuestMenu.Info")
 				else
@@ -173,7 +181,9 @@ mob
 
 
 			// Beginning Quests//
-			if(src.DoingQuest&&src.QuestLevel==1&&src.FoxFurCollected>=3&&BoughtFoxFurTunic)
+			var/ffcollected = count_fox_furs(src)
+
+			if(src.DoingQuest&&src.QuestLevel==1&&ffcollected>=3&&BoughtFoxFurTunic)
 				src.DoingQuest=0
 				src.FoxFurCollected=0
 				src.QuestLevel+=1
