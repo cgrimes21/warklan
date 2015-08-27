@@ -103,6 +103,9 @@ mob/verb
 				A.step_y = ny
 			/////////////////////
 				walk(A,usr.dir)*/
+		for(var/obj/Can_Build/O in oview(1))
+			O.Health-=10
+			O.Obj_DeathCheck()
 		for(var/mob/M in oview(1))
 			if(usr.dir!=get_dir(usr,M))	//your not one step away facing them,
 				continue

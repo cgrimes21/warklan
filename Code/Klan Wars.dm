@@ -62,6 +62,20 @@ mob/proc
 		winset(usr,"Help","is-visible=true")
 		//_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
 
+obj/Can_Build/proc
+	process()
+
+	update_health_bar()
+		if(!src.healthbar)
+			src.healthbar = new()
+
+		src.overlays -= src.healthbar
+		src.healthbar.icon_state = "[round((src.Health * 100) / src.MaxHealth, 5)]"
+		src.overlays += src.healthbar
+		spawn(50)
+			src.overlays -= src.healthbar
+
+
 
 client
 	perspective=EDGE_PERSPECTIVE

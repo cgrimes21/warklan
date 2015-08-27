@@ -164,3 +164,10 @@ obj
 		Cost=0
 		CanPickUp=1
 		MaterialsRequired=""
+
+obj/Can_Build
+	var
+		Health=50
+		MaxHealth=50
+		CanDestroy=1
+		obj/Effects/health_bar/healthbar

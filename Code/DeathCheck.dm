@@ -163,6 +163,7 @@ mob/proc
 			animate(src,transform=matrix(),alpha=alpha+6,time=0)
 			sleep(world.tick_lag)
 
+
 	LevelGain_MaxExpGain()
 		src.Level+=1
 		src.EXP=0
@@ -223,3 +224,9 @@ mob/proc
 				src.Skills+=new/obj/Skills/HTyphoon
 				_message(src,"You Have Learned Howling Typhoon, Press S to see all your skills.","green")
 				return
+
+obj/Can_Build/proc
+	Obj_DeathCheck()
+		src.update_health_bar()
+		if(src.Health<=0)
+			del src

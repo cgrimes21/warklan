@@ -1,5 +1,8 @@
 obj/Can_Build
 	Wood_Crafting_Table
+		density=1
+		Health=50
+		MaxHealth=50
 		icon='NPCs.dmi'
 		icon_state="Tailor"
 		name="Wood Crafting Table"
