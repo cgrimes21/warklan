@@ -14,3 +14,8 @@ mob/proc
 	Tailor()
 		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
 		src.contents+=G
+
+obj/proc
+	Wood_Crafting_Table()
+		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
+		src.contents+=G

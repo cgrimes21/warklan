@@ -100,7 +100,6 @@ mob/NPCS
 		New()
 			GenerateShadow(src, SOUTH,-60)
 			Max_MouseName()
-			Tailor()
 			..()
 		Click()
 			if(src in oview(1))

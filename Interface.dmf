@@ -64,6 +64,10 @@ macro "macro"
 		command = "Attack"
 		is-disabled = false
 	elem 
+		name = "B"
+		command = "BuildItems"
+		is-disabled = false
+	elem 
 		name = "SHIFT+B"
 		command = "Boot"
 		is-disabled = false
