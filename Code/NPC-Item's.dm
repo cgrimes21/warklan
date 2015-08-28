@@ -75,7 +75,7 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(usr.FoxFurCollected>=3)
+			if(count_fox_furs(usr)>=3)
 				usr.QuestItemDelete()
 				var/obj/Items/Clothing/Fox_Fur_Tunic/A=new/obj/Items/Clothing/Fox_Fur_Tunic
 				usr.AvailableItems+=1
