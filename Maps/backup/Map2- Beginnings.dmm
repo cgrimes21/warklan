@@ -28,21 +28,21 @@
 "aB" = (/turf/Mountains/mg7,/area)
 "aC" = (/turf/Mountains/m2,/turf/Mountains/pl10,/area)
 "aD" = (/obj/Density,/turf/Mountains/mg8,/area)
-"aE" = (/mob/NPCS/Tailor,/turf/Mountains/mg7,/area)
-"aF" = (/obj/Tent,/turf/Mountains/mg7,/area)
-"aG" = (/obj/Density,/turf/Mountains/mg7,/area)
-"aH" = (/turf/Mountains/s9,/turf/Markers/VillageOne/Spawn,/area)
-"aI" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Enter,/area)
-"aJ" = (/mob/NPCS/Clan_Creator,/turf/Mountains/mg7,/area)
-"aK" = (/obj/Tent,/turf/Mountains/s9,/area)
-"aL" = (/obj/Density,/turf/Mountains/s9,/area)
-"aM" = (/mob/NPCS/QUEST/Monk,/turf/Mountains/s9,/area)
-"aN" = (/turf/Mountains/s11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aO" = (/turf/Mountains/s12,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aP" = (/turf/Mountains/s12,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aQ" = (/turf/Mountains/s13,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aR" = (/turf/Mountains/s13,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aS" = (/mob/NPCS/BlackSmith,/turf/Mountains/mg7,/area)
+"aE" = (/obj/Tent,/turf/Mountains/mg7,/area)
+"aF" = (/obj/Density,/turf/Mountains/mg7,/area)
+"aG" = (/turf/Mountains/s9,/turf/Markers/VillageOne/Spawn,/area)
+"aH" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Enter,/area)
+"aI" = (/mob/NPCS/Clan_Creator,/turf/Mountains/mg7,/area)
+"aJ" = (/obj/Tent,/turf/Mountains/s9,/area)
+"aK" = (/obj/Density,/turf/Mountains/s9,/area)
+"aL" = (/mob/NPCS/QUEST/Monk,/turf/Mountains/s9,/area)
+"aM" = (/obj/Can_Build/Basic_Crafting_Table,/turf/Mountains/mg7,/area)
+"aN" = (/obj/Can_Build/Basic_Sewing_Table,/turf/Mountains/mg7,/area)
+"aO" = (/turf/Mountains/s11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aP" = (/turf/Mountains/s12,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aQ" = (/turf/Mountains/s12,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aR" = (/turf/Mountains/s13,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aS" = (/turf/Mountains/s13,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aT" = (/turf/Mountains/s8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aU" = (/turf/Mountains/s9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aV" = (/turf/Mountains/s9,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
@@ -168,16 +168,16 @@ aiagagagagahauauauavauawawavauauauavauauauavauawawavauauauav
 aoapapapapasauauauavaxawawavayazazaAayazazaAaxawawavaxauauav
 axauauauauavazazazaAayawawaAaBaBaBaBaBaBaBaBayaCaCaAayazauaA
 axauauauauavagaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagaBaBaBaBaBaBaBaBaEaBaFaGaGaBaBaBaBaBaBaBaBaBaD
+axauauauauavagaBaBaBaBaBaBaBaBaBaBaEaFaFaBaBaBaBaBaBaBaBaBaD
 axauauauauavagaBaBaBaBaBaBaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagagaBaBaBaBaBagagagaHagagagagagagagagagagagagaI
-axauauauauavaBagaBaJagaKaLaLaMaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagagagagagaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
+axauauauauavagagaBaBaBaBaBagagagaGagagagagagagagagagagagagaH
+axauauauauavaBagaBaIagaJaKaKaLaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
+axauauauauavagagagagagaMaBaNaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
 axauauauauavaBaBaBaBagaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavaBaBaBagagaBaBaBaBaBagagagagaBaBaBaBaBaNaOaPaPaQ
-aNaPaPaRauavaBaBaBagaBaBaBaBaBaBaBaBaSagaFaGaGaBaBaTaUaVaUaW
-aTaVaXaYaPaPaZaPaPaPaPaPbaaZaPaQaBaBaNaRagagaBaBaNaXaUbbaUaW
-aTbbaUbcaUaUbbaUaUaUaVaUaUbbaXaUaPbdbeaYaPaPaPaPbebfaXaUaUaW
+axauauauauavaBaBaBagagaBaBaBaBaBagagagagaBaBaBaBaBaOaPaQaQaR
+aOaQaQaSauavaBaBaBagaBaBaBaBaBaBaBaBaBagaEaFaFaBaBaTaUaVaUaW
+aTaVaXaYaQaQaZaQaQaQaQaQbaaZaQaRaBaBaOaSagagaBaBaOaXaUbbaUaW
+aTbbaUbcaUaUbbaUaUaUaVaUaUbbaXaUaQbdbeaYaQaQaQaQbebfaXaUaUaW
 aTaUaUaUaUaUaUaVaUaUbbaUaUaUaUaVaUaUaUaUaUaUbgaUaUbbaUaUaUaW
 aTaUaVaUaUaUaUbbaUaUaUaUaVaUaUbbaUaUaVaUaUaUbbaUaUaUaUaUaUaW
 bhbibbbibibibibibibibiaUbbbibibibibibbbjbibibibibibibibibibk
@@ -186,7 +186,7 @@ blbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbn
 
 (1,1,2) = {"
 bobobobobobobobobobobobobobobobobobobobobobobobobobobobobobo
-aaaQbpbqbqbqbqbqbrbqbqbqbqbqbqbqbqbqbqbqbqbqbsbqbqbqbqbtbubo
+aaaRbpbqbqbqbqbqbrbqbqbqbqbqbqbqbqbqbqbqbqbqbsbqbqbqbqbtbubo
 aiaWbvbwagagagagbxagagagagagagagagagagagagagagagagagaBbybobo
 aiaWbvaBagagagagagagagagagagagagagagagagagagagagagagaBbybobo
 aiaWbvaBagaBbzbzbzbzbzbAbzbzbBbzbzbzbzbzbzbzbzbzaBagbwbybobo

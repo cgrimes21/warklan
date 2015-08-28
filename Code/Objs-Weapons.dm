@@ -25,6 +25,18 @@ obj/Gold
 			usr<<sound('pickupcoin.wav')
 			usr.Gold+=src.Amount
 			del(src)
+
+obj/Iron
+	icon='JpShopItems.dmi'
+	icon_state="iron"
+	Click()
+		if(src in oview(1))
+			if(usr.Dying)
+				return
+			usr<<sound('pickupcoin.wav')
+			usr.Gold+=src.Amount
+			del(src)
+
 mob/verb
 	PickUp()
 		if(usr.Dying)
@@ -33,6 +45,10 @@ mob/verb
 			usr.Gold+=G.Amount
 			usr<<sound('pickupcoin.wav')
 			del(G)
+		for(var/obj/Iron/I in oview(1))
+			usr.Iron+=I.Amount
+			usr<<sound('pickupcoin.wav')
+			del(I)
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return
@@ -133,6 +149,36 @@ obj/Items
 				usr.AddItems()
 				usr.CreateInventory()
 				usr.CreateInventory()
+	//Buildable
+	Wood_Crafting_Table
+		icon='Items.dmi'
+		layer=16
+		Weight=1
+		Sack
+			icon_state="Sack"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					usr.AvailableItems-=1
+					usr.MaxWeight+=rand(0,2)
+					usr.MaxItems+=rand(1,4)
+					if(usr.MaxItems>=25)
+						usr.MaxItems=25
+					usr.contents-=src
+					usr.CreateInventory()
+					usr.CreateInventory()
+					return
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're holding too many items!","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+
 	Tailor
 		icon='Items.dmi'
 		layer=16

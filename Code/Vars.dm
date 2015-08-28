@@ -46,9 +46,12 @@ mob
 		clan/clan
 		Attacker=""
 		obj/Effects/health_bar/healthbar
-		sword_skill_exp = 0
-		sword_skill_maxexp = 10
-		sword_skill_level = 0
+		Sword_Skill_EXP = 0
+		Sword_Skill_MaxEXP = 10
+		Sword_Skill_Level = 1
+		HandToHand_Skill_EXP = 0
+		HandToHand_Skill_MaxEXP = 10
+		HandToHand_Skill_Level = 1
 		bow_skill = 0
 		music_on = 0
 		sound_on = 0
@@ -73,6 +76,7 @@ mob
 		Defense=10
 		MaxDefense=10
 		Gold=50
+		Iron=0
 		EXP=0
 		MaxEXP=100
 		Level=1
@@ -164,3 +168,11 @@ obj
 		Cost=0
 		CanPickUp=1
 		MaterialsRequired=""
+
+obj/Can_Build
+	var
+		Health=50
+		MaxHealth=50
+		Defense=50
+		CanDestroy=1
+		obj/Effects/health_bar/healthbar

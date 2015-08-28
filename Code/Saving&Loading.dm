@@ -29,7 +29,10 @@ mob/proc
 			src.density=1
 			src.Blocking=0
 			src.Dead=0
-
+			if(src.Frozen==1)
+				src.Frozen=0
+			if(src.Building==1)
+				src.Building=0
 			src.HudCreate()
 			src.Player=1
 			new/obj/back(src.client)

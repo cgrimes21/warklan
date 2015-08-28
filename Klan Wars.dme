@@ -9,6 +9,7 @@
 #define FILE_DIR .
 #define FILE_DIR "ClassTurfs"
 #define FILE_DIR "Icons"
+#define FILE_DIR "Icons/Buildable"
 #define FILE_DIR "Icons/Quest_Rewards"
 #define FILE_DIR "Icons/Skills"
 #define FILE_DIR "Maps"
@@ -40,6 +41,7 @@
 #include "Code\NPC-Item's.dm"
 #include "Code\NPC-Shop.dm"
 #include "Code\NPCItemAdd.dm"
+#include "Code\Obj-Buildable.dm"
 #include "Code\Objs-Weapons.dm"
 #include "Code\Quests.dm"
 #include "Code\Saving&Loading.dm"

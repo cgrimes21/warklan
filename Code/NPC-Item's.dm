@@ -38,7 +38,6 @@ obj/NPCs/Items
 
 	Wooden_Sword
 		name="Wooden Sword"
-		Cost=15
 		Weight=25
 		MaterialsRequired="3 Small Sticks"
 		Des="Wooden Sword"
@@ -54,7 +53,6 @@ obj/NPCs/Items
 				var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
-				usr.Gold-=src.Cost
 				if(usr.BagOpen==1)
 					usr.AddItems()
 				if(usr.DoingQuest==1&&usr.QuestLevel==2&&usr.BoughtWoodenSword==0)
@@ -67,7 +65,6 @@ obj/NPCs/Items
 
 	Fox_Fur_Tunic
 		name="Fox Fur Tunic"
-		Cost=15
 		Weight=25
 		MaterialsRequired="3 Fox Furs"
 		Des="Fox Fur Tunic"
@@ -83,7 +80,6 @@ obj/NPCs/Items
 				var/obj/Items/Clothing/Fox_Fur_Tunic/A=new/obj/Items/Clothing/Fox_Fur_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
-				usr.Gold-=src.Cost
 				if(usr.BagOpen==1)
 					usr.AddItems()
 				if(usr.DoingQuest==1&&usr.QuestLevel==1&&usr.BoughtFoxFurTunic==0)
@@ -95,7 +91,6 @@ obj/NPCs/Items
 
 
 	Bow
-		Cost=10
 		Weight=25
 		icon_state="Bow"
 		Click()
@@ -107,7 +102,6 @@ obj/NPCs/Items
 				var/obj/Items/Weapons/Bow/A=new/obj/Items/Weapons/Bow
 				usr.AvailableItems+=1
 				usr.contents+=A
-				usr.Gold-=src.Cost
 				if(usr.BagOpen==1)
 					usr.AddItems()
 				return
