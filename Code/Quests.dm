@@ -33,6 +33,7 @@ mob/var
 	BoughtWoodenSword=0
 	BoughtFoxFurTunic=0
 	SecondQuestOver=0
+	ThirdQuestOver=0
 
 
 mob/proc
@@ -45,21 +46,17 @@ mob/proc
 			winset(src,"QuestMenu","pos=[chatx+180],[chaty+237]")
 			sleep(world.tick_lag)
 		if(T=="FurQuest")
-			var/icon/my_icon = icon('Coin.dmi')
-			var/file_reference = fcopy_rsc(my_icon)
 			var/icon/my_icon2 = icon('Icons/Quest_Rewards/FoxFurTunic.dmi')
 			var/file_reference2 = fcopy_rsc(my_icon2)
-			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 			src<< output(null,"QuestMenu.Info")
 
 			if(src.FoxFurCollected>=3)
 				if(!usr.BoughtFoxFurTunic)
-					src<< output("<center>You've retrieved the furs! Take them to the tailor and trade them for a tunic.</center>","QuestMenu.Info")
+					src<< output("<center>You've retrieved the furs! Take them to the sewing table and create a tunic.</center>","QuestMenu.Info")
 				else
 					src<< output("<center>Great work! You've gotten the tunic, now let's get you a weapon. </center>","QuestMenu.Info")
-					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-					winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 					winset(src,"QuestMenu.Accept","is-visible=true")
 					winset(src,"QuestMenu.Accept","text=Complete")
 					winset(usr,"QuestMenu.Deny","is-visible=false")
@@ -70,27 +67,23 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
 		if(T=="WoodenSwordQuest")
-			var/icon/my_icon = icon('Coin.dmi')
-			var/file_reference = fcopy_rsc(my_icon)
-			var/icon/my_icon2 = icon('Icons/Quest_Rewards/WoodenSword.dmi')
+			var/icon/my_icon2 = icon('Icons/Quest_Rewards/FoxFurTunic.dmi')
 			var/file_reference2 = fcopy_rsc(my_icon2)
-			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-			winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 			src<< output(null,"QuestMenu.Info")
 
 			if(src.SmallSticksCollected>=3)
 				if(!usr.BoughtWoodenSword)
-					src<< output("<center>You've retrieved the sticks! Take them to the blacksmith and trade them for a sword.</center>","QuestMenu.Info")
+					src<< output("<center>You've retrieved the sticks! Take them to the crafting table and create a wooden sword.</center>","QuestMenu.Info")
 				else
 					src<< output("<center>Good job! That weapon should do you well. If you need to purchase anything else you can always speak with the craftsman. Using that weapon will level up your sword skill and make it stronger, allowing you to wield better weapons. Press the S button to view your skill levels.</center>","QuestMenu.Info")
-					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference]")
-					winset(src,"QuestMenu.RewardTwo","image=\ref[file_reference2]")
+					winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 					winset(src,"QuestMenu.Accept","is-visible=true")
 					winset(src,"QuestMenu.Accept","text=Complete")
 					winset(usr,"QuestMenu.Deny","is-visible=false")
 					usr.SecondQuestOver=1
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we start with a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves. The craftsman will carve them into a wooden sword for you.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -98,12 +91,13 @@ mob/proc
 			src<< output(null,"QuestMenu.Info")
 
 			if(src.InClan)
-				src<< output("<center>Ah great, you've finally created a clan of your own. Clans can build fortifications and objects, but they may require resources such as wood, iron, gold, etc, or clan points gained from killing rival clan members. Press B to activate the 'Clan Builder' Menu</center>","QuestMenu.Info")
+				src<< output("<center>Ah great, you've finally created a clan of your own. Clans can build fortifications and objects, but they may require resources such as wood, iron, gold, etc, or clan points gained from killing rival clan members. Press B to activate the 'Clan Building' Menu</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
+				usr.ThirdQuestOver=1
 			else
-				src<< output("<center>I've seen your progress! You've grown very quickly. I think you're ready to form your own clan. Clans are the driving force in this world. You can create a clan of warriors that beat other clans into submission, a clan of conquerers that takes over the world, the possibilities are endless. Speak to the Clan Elder, and he'll start the process.</center>","QuestMenu.Info")
+				src<< output("<center>I've seen your progress! You've grown very quickly. I think you're ready to form your own clan. Clans are the driving force in this world. You can create a clan of warriors that beat other clans into submission, a clan of conquerers that takes over the world, the possibilities are endless. Speak to the Clan Chief, and he'll start the process.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -190,9 +184,10 @@ mob
 				src.QuestLevel+=1
 				src.Gold+=20
 				src.EXP+=50
-				src.ElderNPC=0
+				src.ElderNPC=1
 				BoughtWoodenSword=0
 				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
+
 
 				return
 
@@ -290,6 +285,8 @@ mob/verb
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
+			if(ThirdQuestOver)
+				ShowSkillLevel()
 		usr.CheckQuest()
 		return
 

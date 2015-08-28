@@ -103,10 +103,11 @@ mob/verb
 				A.step_y = ny
 			/////////////////////
 				walk(A,usr.dir)*/
-		for(var/obj/Can_Build/O in oview(1))
-			O.Health-=10
+		for(var/obj/Can_Build/O in get_step(src,usr.dir))
+			var/tmp/damage=((usr.Strength+40)-O.Defense)/2
+			O.Health-=damage
 			O.Obj_DeathCheck()
-		for(var/mob/M in oview(1))
+		for(var/mob/M in get_step(src,usr.dir))
 			if(usr.dir!=get_dir(usr,M))	//your not one step away facing them,
 				continue
 			if(M.NPC == 1)
@@ -143,7 +144,11 @@ mob/verb
 			if(fight_on)
 				if(usr.SwordOn)
 					if(prob(20))
-						usr.sword_skill_exp += rand(0.5,1)
+						usr.Sword_Skill_EXP += rand(50,50)
+						usr.SkillLevelUP()
+				else
+					if(prob(20))
+						usr.HandToHand_Skill_EXP += rand(50,50)
 						usr.SkillLevelUP()
 				Jab+=1
 				var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')

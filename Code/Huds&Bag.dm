@@ -211,7 +211,8 @@ obj/Huds
 			C.screen += src
 			..()
 	Money4
-		icon='Coin.dmi'
+		icon='JpShopItems.dmi'
+		icon_state="iron"
 		layer=9999
 		New(client/C)
 			C.screen += src
@@ -226,7 +227,7 @@ obj/Huds
 			spawn while(src)
 				if(!usr)
 					return
-				src.maptext="<font color=white>[usr.Gold]</font>"
+				src.maptext="<font color=white>[usr.Iron]</font>"
 				sleep(5)
 			..()
 
@@ -344,7 +345,7 @@ obj/Huds
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[usr.sword_skill_exp] / [usr.sword_skill_maxexp]%</font>"
+					src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]%</font>"
 					sleep(5)
 		EXPPanel
 			layer=9999

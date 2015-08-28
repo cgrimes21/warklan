@@ -29,44 +29,22 @@ mob/proc
 		if(M.Health<=0)
 			M.Dying=1
 			if(M.Enemy)
-				var/obj/Gold/G=new/obj/Gold
-				var/Amount=rand(1,20)
-				G.Amount=Amount
+				//var/obj/Gold/G=new/obj/Gold
+				//var/Amount=rand(1,20)
+				//G.Amount=Amount
 				T.QUESTCHECK(M.Name)
 				if(M.Name=="Fox"&&M.Enemy==1)
-					G.Amount=3
+					//G.Amount=3
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
 						F.loc=M.loc
-					G.loc=M.loc
+					//G.loc=M.loc
 				if(M.Name=="Wolf"&&M.Enemy==1)
-					G.Amount=5
+					//G.Amount=5
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stick
 						F.loc=M.loc
-					G.loc=M.loc
-				if(M.Name=="Bear"&&M.Enemy==1)
-					G.Amount=44
-				if(M.Name=="Thief"&&M.Enemy==1)
-					G.Amount=42
-				if(M.Name=="Bandit"&&M.Enemy==1)
-					G.Amount=8
-				if(M.Name=="BanditLeader"&&M.Enemy==1)
-					G.Amount=33
-
-			if(T.Player==1)
-				if(M.Name=="Fox"&&M.Enemy==1)
-					T.EXP+=35
-				if(M.Name=="Bear"&&M.Enemy==1)
-					T.EXP+=397
-				if(M.Name=="Wolf"&&M.Enemy==1)
-					T.EXP+=52
-				if(M.Name=="Bandit"&&M.Enemy==1)
-					T.EXP+=78
-				if(M.Name=="Thief"&&M.Enemy==1)
-					T.EXP+=265
-				if(M.Name=="Bandit Leader"&&M.Enemy==1)
-					T.EXP+=177
+					//G.loc=M.loc
 				else
 					T.EXP+=rand(5,40)
 				T.LevelUP()
@@ -172,16 +150,25 @@ mob/proc
 			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
 			src.ElderNPC=1
 
-	SwordSkill_LevelGain_MaxExpGain()
-		src.sword_skill_level+=1
-		src.sword_skill_exp=0
-		src.sword_skill_maxexp *= 1.5
+	Skill_LevelGain_MaxExpGain()
+		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
+			src.Sword_Skill_Level+=1
+			src.Sword_Skill_EXP=0
+			src.Sword_Skill_MaxEXP *= 1.5
+		else if(src.HandToHand_Skill_EXP>=HandToHand_Skill_MaxEXP)
+			src.HandToHand_Skill_Level+=1
+			src.HandToHand_Skill_EXP=0
+			src.HandToHand_Skill_MaxEXP *= 1.5
 
 
 	SkillLevelUP()
-		if(src.sword_skill_exp>=sword_skill_maxexp)
-			SwordSkill_LevelGain_MaxExpGain()
+		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
+			Skill_LevelGain_MaxExpGain()
 			_message(src,"Your sword skill has leveled up!","Aqua")
+			src<<sound('levelup.wav')
+		if(src.HandToHand_Skill_EXP>=HandToHand_Skill_MaxEXP)
+			Skill_LevelGain_MaxExpGain()
+			_message(src,"Your hand to hand skill has leveled up!","Aqua")
 			src<<sound('levelup.wav')
 
 	LevelUP()

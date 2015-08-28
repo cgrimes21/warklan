@@ -17,7 +17,6 @@ mob
 			set hidden = 1
 			if(!usr.ShowingSkillLevels)
 				usr.ShowingSkillLevels=1
-				winset(usr,"SkillLevels","is-visible=true")
 				usr.SkillLevelShow()
 				return
 			else
@@ -27,8 +26,10 @@ mob
 	proc
 		SkillLevelShow()
 			winset(usr,"SkillLevels","is-visible=true")
-			winset(usr,"SkillLevels.Level","text = 'Level: [src.sword_skill_level]'")
-			winset(usr,"SkillLevels.EXP","text = 'EXP: [src.sword_skill_exp]/[src.sword_skill_maxexp]'")
+			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Sword_Skill_Level]'")
+			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Sword_Skill_EXP]/[src.Sword_Skill_MaxEXP]'")
+			winset(usr,"SkillLevels.HandToHandSkillLevel","text = 'Level: [src.HandToHand_Skill_Level]'")
+			winset(usr,"SkillLevels.HandToHandSkillEXP","text = 'EXP: [src.HandToHand_Skill_EXP]/[src.HandToHand_Skill_MaxEXP]'")
 
 		SkillAlign()
 			spawn while(src.ShowingSkills)

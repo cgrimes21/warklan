@@ -17,5 +17,11 @@ mob/proc
 
 obj/proc
 	Wood_Crafting_Table()
+		var/obj/NPCs/Items/Wooden_Sword/S=new/obj/NPCs/Items/Wooden_Sword
+		src.contents+=S
+		return
+
+	Sewing_Table()
 		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
 		src.contents+=G
+		return

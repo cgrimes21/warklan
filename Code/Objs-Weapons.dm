@@ -25,6 +25,18 @@ obj/Gold
 			usr<<sound('pickupcoin.wav')
 			usr.Gold+=src.Amount
 			del(src)
+
+obj/Iron
+	icon='JpShopItems.dmi'
+	icon_state="iron"
+	Click()
+		if(src in oview(1))
+			if(usr.Dying)
+				return
+			usr<<sound('pickupcoin.wav')
+			usr.Gold+=src.Amount
+			del(src)
+
 mob/verb
 	PickUp()
 		if(usr.Dying)
@@ -33,6 +45,10 @@ mob/verb
 			usr.Gold+=G.Amount
 			usr<<sound('pickupcoin.wav')
 			del(G)
+		for(var/obj/Iron/I in oview(1))
+			usr.Iron+=I.Amount
+			usr<<sound('pickupcoin.wav')
+			del(I)
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return

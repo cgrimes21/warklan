@@ -28,134 +28,133 @@
 "aB" = (/turf/Mountains/mg7,/area)
 "aC" = (/turf/Mountains/m2,/turf/Mountains/pl10,/area)
 "aD" = (/obj/Density,/turf/Mountains/mg8,/area)
-"aE" = (/mob/NPCS/Tailor,/turf/Mountains/mg7,/area)
-"aF" = (/obj/Tent,/turf/Mountains/mg7,/area)
-"aG" = (/obj/Density,/turf/Mountains/mg7,/area)
-"aH" = (/turf/Mountains/s9,/turf/Markers/VillageOne/Spawn,/area)
-"aI" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Enter,/area)
-"aJ" = (/mob/NPCS/Clan_Creator,/turf/Mountains/mg7,/area)
-"aK" = (/obj/Tent,/turf/Mountains/s9,/area)
-"aL" = (/obj/Density,/turf/Mountains/s9,/area)
-"aM" = (/mob/NPCS/QUEST/Monk,/turf/Mountains/s9,/area)
-"aN" = (/obj/Can_Build/Wood_Crafting_Table,/turf/Mountains/mg7,/area)
+"aE" = (/obj/Tent,/turf/Mountains/mg7,/area)
+"aF" = (/obj/Density,/turf/Mountains/mg7,/area)
+"aG" = (/turf/Mountains/s9,/turf/Markers/VillageOne/Spawn,/area)
+"aH" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Enter,/area)
+"aI" = (/mob/NPCS/Clan_Creator,/turf/Mountains/mg7,/area)
+"aJ" = (/obj/Tent,/turf/Mountains/s9,/area)
+"aK" = (/obj/Density,/turf/Mountains/s9,/area)
+"aL" = (/mob/NPCS/QUEST/Monk,/turf/Mountains/s9,/area)
+"aM" = (/obj/Can_Build/Basic_Crafting_Table,/turf/Mountains/mg7,/area)
+"aN" = (/obj/Can_Build/Basic_Sewing_Table,/turf/Mountains/mg7,/area)
 "aO" = (/turf/Mountains/s11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aP" = (/turf/Mountains/s12,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aQ" = (/turf/Mountains/s12,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aR" = (/turf/Mountains/s13,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
 "aS" = (/turf/Mountains/s13,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aT" = (/mob/NPCS/BlackSmith,/turf/Mountains/mg7,/area)
-"aU" = (/turf/Mountains/s8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aV" = (/turf/Mountains/s9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aW" = (/turf/Mountains/s9,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aX" = (/turf/Mountains/s10,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aY" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"aZ" = (/turf/Mountains/s4,/turf/Mountains/pl9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"ba" = (/turf/Mountains/s12,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bb" = (/turf/Mountains/s12,/turf/Mountains/pl2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bc" = (/turf/Mountains/s9,/turf/Mountains/pl9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bd" = (/turf/Mountains/s9,/turf/Mountains/pl2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"be" = (/turf/Mountains/s12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bf" = (/turf/Mountains/s3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bg" = (/turf/Mountains/s9,/turf/Mountains/pl11{layer = 20},/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bh" = (/turf/Mountains/s9,/turf/Mountains/pl11{layer = 10},/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bi" = (/turf/Mountains/s5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bj" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bk" = (/turf/Mountains/s6,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bl" = (/turf/Mountains/s7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bm" = (/turf/Mountains/m1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bn" = (/turf/Mountains/m8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bo" = (/turf/Mountains/m3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bp" = (/turf,/area)
-"bq" = (/turf/Mountains/mg11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"br" = (/turf/Mountains/mg12,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bs" = (/turf/Mountains/mg12,/turf/Mountains/pl3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bt" = (/turf/Mountains/mg12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bu" = (/turf/Mountains/mg13,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bv" = (/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bw" = (/turf/Mountains/mg6,/area)
-"bx" = (/turf/Mountains/mg7,/turf/Mountains/pl2,/area)
-"by" = (/mob/Enemies/Fox,/turf/Mountains/s9,/area)
-"bz" = (/turf/Mountains/mg8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bA" = (/turf/Mountains/mg2,/area)
-"bB" = (/turf/Mountains/mg2,/turf/Mountains/pl1,/area)
-"bC" = (/mob/Enemies/Fox,/turf/Mountains/mg2,/area)
-"bD" = (/turf/Mountains/mg8,/area)
-"bE" = (/turf/Mountains/m7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bF" = (/turf/Mountains/m9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bG" = (/turf/Mountains/mg7,/turf/EnemyStop,/area)
-"bH" = (/turf/Mountains/s9,/turf/EnemyStop,/area)
-"bI" = (/turf/Mountains/m2,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bJ" = (/turf/Mountains/m2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bK" = (/turf/Mountains/mg7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"bL" = (/turf/Mountains/mg7,/turf/Mountains/pl9,/area)
-"bM" = (/turf/Mountains/tg5,/area)
-"bN" = (/turf/Mountains/tg11,/turf/Mountains/pl9,/area)
-"bO" = (/turf/Mountains/tg11,/area)
-"bP" = (/turf/Mountains/tg8,/turf/Mountains/pl9,/area)
-"bQ" = (/turf/Mountains/mg7,/turf/Mountains/pl5,/area)
-"bR" = (/turf/Mountains/mg7,/turf/Mountains/pl3,/area)
-"bS" = (/turf/Mountains/tg3,/area)
-"bT" = (/turf/Mountains/tg4,/area)
-"bU" = (/turf/Mountains/mg6,/turf/EnemyStop,/area)
-"bV" = (/turf/Mountains/mg8,/turf/EnemyStop,/area)
-"bW" = (/mob/Enemies/Wolf,/turf/Mountains/s9,/area)
-"bX" = (/mob/Enemies/Wolf,/turf/Mountains/mg7,/area)
-"bY" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Back,/area)
-"bZ" = (/turf/Mountains/mg2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"ca" = (/turf/Mountains/mg3,/area)
-"cb" = (/turf/Mountains/mg6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"cc" = (/turf/Mountains/mg1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"cd" = (/turf/Mountains/mg2,/turf/Mountains/pl2,/area)
-"ce" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
-"cf" = (/turf/Mountains/mg13,/turf/EnemyStop,/area)
-"cg" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Enter,/area)
-"ch" = (/mob/Enemies/Bandit_Enemies/Bandit,/turf/Mountains/s9,/area)
-"ci" = (/turf/Mountains/mg11,/area)
-"cj" = (/turf/Mountains/mg7,/turf/Mountains/pl11,/area)
-"ck" = (/turf/Mountains/mg12,/area)
-"cl" = (/turf/Mountains/mg12,/turf/Mountains/pl11,/area)
-"cm" = (/turf/Mountains/mg8,/turf/Mountains/pl9,/area)
-"cn" = (/turf/Mountains/w1,/area)
-"co" = (/turf/Mountains/mg7,/turf/Mountains/pl5,/turf/Mountains/pl9,/area)
-"cp" = (/turf/Mountains/mg5,/area)
-"cq" = (/turf/Mountains/mg4,/area)
-"cr" = (/turf/Mountains/mg1,/area)
-"cs" = (/turf/Mountains/mg2,/turf/Mountains/pl5,/area)
-"ct" = (/turf/Mountains/m2,/turf/Mountains/pl11,/area)
-"cu" = (/turf/Mountains/m3,/turf/Mountains/pl11,/area)
-"cv" = (/turf/Mountains/m1,/turf/Mountains/pl11,/area)
-"cw" = (/turf/Mountains/m8,/turf/Cave/entrance,/turf/Locations/Dungeons/Dungeon1_Inside,/area)
-"cx" = (/turf/Mountains/tg12,/area)
-"cy" = (/turf/Mountains/m2,/turf/Mountains/pl10,/turf/Mountains/pl11,/area)
-"cz" = (/turf/Mountains/tg11,/turf/Mountains/pl1,/turf/Mountains/pl9,/area)
-"cA" = (/turf/Mountains/tg11,/turf/Markers/Mountains/Dungeon1_Outside,/area)
-"cB" = (/mob/NPCS/Traveler,/turf/Mountains/tg11,/area)
-"cC" = (/turf/Mountains/w6,/area)
-"cD" = (/turf/Mountains/tg2,/area)
-"cE" = (/turf/Mountains/p3,/area)
-"cF" = (/turf/Mountains/p4,/turf/Mountains/pl5,/area)
-"cG" = (/turf/Mountains/p1,/area)
-"cH" = (/turf/Mountains/p2,/area)
-"cI" = (/turf/Mountains/br2,/area)
-"cJ" = (/turf/Mountains/br2,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Back,/area)
-"cK" = (/turf/Mountains/mg7,/turf/Mountains/pl1,/area)
-"cL" = (/turf/Mountains/br1,/area)
-"cM" = (/turf/Mountains/br1,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Back,/area)
-"cN" = (/turf/Mountains/tg13,/area)
-"cO" = (/turf/Mountains/tg15,/area)
-"cP" = (/turf/Mountains/tg16,/area)
-"cQ" = (/turf/Mountains/tg10,/turf/Mountains/pl5,/area)
-"cR" = (/turf/Mountains/tg14,/area)
-"cS" = (/turf/Mountains/tg10,/area)
-"cT" = (/turf/Mountains/tg11,/turf/Mountains/pl5,/area)
-"cU" = (/turf/Mountains/s12,/turf/Mountains/pl5,/area)
-"cV" = (/turf/Mountains/s13,/area)
-"cW" = (/turf/Mountains/s13,/turf/Mountains/pl11,/area)
-"cX" = (/turf/Mountains/tg11,/turf/Mountains/pl11,/area)
-"cY" = (/turf/Mountains/tg11,/turf/Mountains/pl1,/area)
-"cZ" = (/turf/Mountains/tg11,/turf/Mountains/pl2,/area)
-"da" = (/turf/Mountains/s12,/turf/Mountains/pl4,/area)
-"db" = (/turf/Mountains/s3,/area)
+"aT" = (/turf/Mountains/s8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aU" = (/turf/Mountains/s9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aV" = (/turf/Mountains/s9,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aW" = (/turf/Mountains/s10,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aX" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aY" = (/turf/Mountains/s4,/turf/Mountains/pl9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"aZ" = (/turf/Mountains/s12,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"ba" = (/turf/Mountains/s12,/turf/Mountains/pl2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bb" = (/turf/Mountains/s9,/turf/Mountains/pl9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bc" = (/turf/Mountains/s9,/turf/Mountains/pl2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bd" = (/turf/Mountains/s12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"be" = (/turf/Mountains/s3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bf" = (/turf/Mountains/s9,/turf/Mountains/pl11{layer = 20},/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bg" = (/turf/Mountains/s9,/turf/Mountains/pl11{layer = 10},/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bh" = (/turf/Mountains/s5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bi" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bj" = (/turf/Mountains/s6,/turf/Mountains/pl5,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bk" = (/turf/Mountains/s7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bl" = (/turf/Mountains/m1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bm" = (/turf/Mountains/m8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bn" = (/turf/Mountains/m3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bo" = (/turf,/area)
+"bp" = (/turf/Mountains/mg11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bq" = (/turf/Mountains/mg12,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"br" = (/turf/Mountains/mg12,/turf/Mountains/pl3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bs" = (/turf/Mountains/mg12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bt" = (/turf/Mountains/mg13,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bu" = (/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bv" = (/turf/Mountains/mg6,/area)
+"bw" = (/turf/Mountains/mg7,/turf/Mountains/pl2,/area)
+"bx" = (/mob/Enemies/Fox,/turf/Mountains/s9,/area)
+"by" = (/turf/Mountains/mg8,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bz" = (/turf/Mountains/mg2,/area)
+"bA" = (/turf/Mountains/mg2,/turf/Mountains/pl1,/area)
+"bB" = (/mob/Enemies/Fox,/turf/Mountains/mg2,/area)
+"bC" = (/turf/Mountains/mg8,/area)
+"bD" = (/turf/Mountains/m7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bE" = (/turf/Mountains/m9,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bF" = (/turf/Mountains/mg7,/turf/EnemyStop,/area)
+"bG" = (/turf/Mountains/s9,/turf/EnemyStop,/area)
+"bH" = (/turf/Mountains/m2,/turf/Mountains/pl11,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bI" = (/turf/Mountains/m2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bJ" = (/turf/Mountains/mg7,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bK" = (/turf/Mountains/mg7,/turf/Mountains/pl9,/area)
+"bL" = (/turf/Mountains/tg5,/area)
+"bM" = (/turf/Mountains/tg11,/turf/Mountains/pl9,/area)
+"bN" = (/turf/Mountains/tg11,/area)
+"bO" = (/turf/Mountains/tg8,/turf/Mountains/pl9,/area)
+"bP" = (/turf/Mountains/mg7,/turf/Mountains/pl5,/area)
+"bQ" = (/turf/Mountains/mg7,/turf/Mountains/pl3,/area)
+"bR" = (/turf/Mountains/tg3,/area)
+"bS" = (/turf/Mountains/tg4,/area)
+"bT" = (/turf/Mountains/mg6,/turf/EnemyStop,/area)
+"bU" = (/turf/Mountains/mg8,/turf/EnemyStop,/area)
+"bV" = (/mob/Enemies/Wolf,/turf/Mountains/s9,/area)
+"bW" = (/mob/Enemies/Wolf,/turf/Mountains/mg7,/area)
+"bX" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_1_Back,/area)
+"bY" = (/turf/Mountains/mg2,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"bZ" = (/turf/Mountains/mg3,/area)
+"ca" = (/turf/Mountains/mg6,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"cb" = (/turf/Mountains/mg1,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"cc" = (/turf/Mountains/mg2,/turf/Mountains/pl2,/area)
+"cd" = (/turf/Mountains/mg3,/turf/EnemyStop{D = 1; name = "Player&EnemyStop"},/area)
+"ce" = (/turf/Mountains/mg13,/turf/EnemyStop,/area)
+"cf" = (/turf/Mountains/s9,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Enter,/area)
+"cg" = (/mob/Enemies/Bandit_Enemies/Bandit,/turf/Mountains/s9,/area)
+"ch" = (/turf/Mountains/mg11,/area)
+"ci" = (/turf/Mountains/mg7,/turf/Mountains/pl11,/area)
+"cj" = (/turf/Mountains/mg12,/area)
+"ck" = (/turf/Mountains/mg12,/turf/Mountains/pl11,/area)
+"cl" = (/turf/Mountains/mg8,/turf/Mountains/pl9,/area)
+"cm" = (/turf/Mountains/w1,/area)
+"cn" = (/turf/Mountains/mg7,/turf/Mountains/pl5,/turf/Mountains/pl9,/area)
+"co" = (/turf/Mountains/mg5,/area)
+"cp" = (/turf/Mountains/mg4,/area)
+"cq" = (/turf/Mountains/mg1,/area)
+"cr" = (/turf/Mountains/mg2,/turf/Mountains/pl5,/area)
+"cs" = (/turf/Mountains/m2,/turf/Mountains/pl11,/area)
+"ct" = (/turf/Mountains/m3,/turf/Mountains/pl11,/area)
+"cu" = (/turf/Mountains/m1,/turf/Mountains/pl11,/area)
+"cv" = (/turf/Mountains/m8,/turf/Cave/entrance,/turf/Locations/Dungeons/Dungeon1_Inside,/area)
+"cw" = (/turf/Mountains/tg12,/area)
+"cx" = (/turf/Mountains/m2,/turf/Mountains/pl10,/turf/Mountains/pl11,/area)
+"cy" = (/turf/Mountains/tg11,/turf/Mountains/pl1,/turf/Mountains/pl9,/area)
+"cz" = (/turf/Mountains/tg11,/turf/Markers/Mountains/Dungeon1_Outside,/area)
+"cA" = (/mob/NPCS/Traveler,/turf/Mountains/tg11,/area)
+"cB" = (/turf/Mountains/w6,/area)
+"cC" = (/turf/Mountains/tg2,/area)
+"cD" = (/turf/Mountains/p3,/area)
+"cE" = (/turf/Mountains/p4,/turf/Mountains/pl5,/area)
+"cF" = (/turf/Mountains/p1,/area)
+"cG" = (/turf/Mountains/p2,/area)
+"cH" = (/turf/Mountains/br2,/area)
+"cI" = (/turf/Mountains/br2,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Back,/area)
+"cJ" = (/turf/Mountains/mg7,/turf/Mountains/pl1,/area)
+"cK" = (/turf/Mountains/br1,/area)
+"cL" = (/turf/Mountains/br1,/turf/Markers/Shaolin/Shaolin_Test/Level_2_Back,/area)
+"cM" = (/turf/Mountains/tg13,/area)
+"cN" = (/turf/Mountains/tg15,/area)
+"cO" = (/turf/Mountains/tg16,/area)
+"cP" = (/turf/Mountains/tg10,/turf/Mountains/pl5,/area)
+"cQ" = (/turf/Mountains/tg14,/area)
+"cR" = (/turf/Mountains/tg10,/area)
+"cS" = (/turf/Mountains/tg11,/turf/Mountains/pl5,/area)
+"cT" = (/turf/Mountains/s12,/turf/Mountains/pl5,/area)
+"cU" = (/turf/Mountains/s13,/area)
+"cV" = (/turf/Mountains/s13,/turf/Mountains/pl11,/area)
+"cW" = (/turf/Mountains/tg11,/turf/Mountains/pl11,/area)
+"cX" = (/turf/Mountains/tg11,/turf/Mountains/pl1,/area)
+"cY" = (/turf/Mountains/tg11,/turf/Mountains/pl2,/area)
+"cZ" = (/turf/Mountains/s12,/turf/Mountains/pl4,/area)
+"da" = (/turf/Mountains/s3,/area)
 
 (1,1,1) = {"
 aaabacababababacabababababadacabababababacabababababaeafagah
@@ -169,74 +168,74 @@ aiagagagagahauauauavauawawavauauauavauauauavauawawavauauauav
 aoapapapapasauauauavaxawawavayazazaAayazazaAaxawawavaxauauav
 axauauauauavazazazaAayawawaAaBaBaBaBaBaBaBaBayaCaCaAayazauaA
 axauauauauavagaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagaBaBaBaBaBaBaBaBaEaBaFaGaGaBaBaBaBaBaBaBaBaBaD
+axauauauauavagaBaBaBaBaBaBaBaBaBaBaEaFaFaBaBaBaBaBaBaBaBaBaD
 axauauauauavagaBaBaBaBaBaBaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagagaBaBaBaBaBagagagaHagagagagagagagagagagagagaI
-axauauauauavaBagaBaJagaKaLaLaMaBagaBaNaBaBaBaBaBaBaBaBaBaBaD
-axauauauauavagagagagagaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
+axauauauauavagagaBaBaBaBaBagagagaGagagagagagagagagagagagagaH
+axauauauauavaBagaBaIagaJaKaKaLaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
+axauauauauavagagagagagaMaBaNaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
 axauauauauavaBaBaBaBagaBaBaBaBaBagaBaBaBaBaBaBaBaBaBaBaBaBaD
 axauauauauavaBaBaBagagaBaBaBaBaBagagagagaBaBaBaBaBaOaPaQaQaR
-aOaQaQaSauavaBaBaBagaBaBaBaBaBaBaBaBaTagaFaGaGaBaBaUaVaWaVaX
-aUaWaYaZaQaQbaaQaQaQaQaQbbbaaQaRaBaBaOaSagagaBaBaOaYaVbcaVaX
-aUbcaVbdaVaVbcaVaVaVaWaVaVbcaYaVaQbebfaZaQaQaQaQbfbgaYaVaVaX
-aUaVaVaVaVaVaVaWaVaVbcaVaVaVaVaWaVaVaVaVaVaVbhaVaVbcaVaVaVaX
-aUaVaWaVaVaVaVbcaVaVaVaVaWaVaVbcaVaVaWaVaVaVbcaVaVaVaVaVaVaX
-bibjbcbjbjbjbjbjbjbjbjaVbcbjbjbjbjbjbcbkbjbjbjbjbjbjbjbjbjbl
-bmbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbo
+aOaQaQaSauavaBaBaBagaBaBaBaBaBaBaBaBaBagaEaFaFaBaBaTaUaVaUaW
+aTaVaXaYaQaQaZaQaQaQaQaQbaaZaQaRaBaBaOaSagagaBaBaOaXaUbbaUaW
+aTbbaUbcaUaUbbaUaUaUaVaUaUbbaXaUaQbdbeaYaQaQaQaQbebfaXaUaUaW
+aTaUaUaUaUaUaUaVaUaUbbaUaUaUaUaVaUaUaUaUaUaUbgaUaUbbaUaUaUaW
+aTaUaVaUaUaUaUbbaUaUaUaUaVaUaUbbaUaUaVaUaUaUbbaUaUaUaUaUaUaW
+bhbibbbibibibibibibibiaUbbbibibibibibbbjbibibibibibibibibibk
+blbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbn
 "}
 
 (1,1,2) = {"
-bpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbp
-aaaRbqbrbrbrbrbrbsbrbrbrbrbrbrbrbrbrbrbrbrbrbtbrbrbrbrbubvbp
-aiaXbwbxagagagagbyagagagagagagagagagagagagagagagagagaBbzbpbp
-aiaXbwaBagagagagagagagagagagagagagagagagagagagagagagaBbzbpbp
-aiaXbwaBagaBbAbAbAbAbAbBbAbAbCbAbAbAbAbAbAbAbAbAaBagbxbzbpbp
-aiaXbwaBbybDbEbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbFbGbHbGbzbpbp
-aiaXbwaBagbDbEauauauauauauauauauauauauauauauaubFaBagaBbzbpbp
-aoblbwaBagbDbmbIbJbJbIbJbJbIbJbJbIbJbJbIbJbJbIboaBagaBbzbpbp
-axbFbwaBagbDbKbLaBaBbLaBbMbNbObObNbObObPaBbQbLaBaBagaBbzbpbp
-axbFbwbRagbDbKaBaBbxaBaBaBbSbSbSbSbSbSbTaBaBaBaBaBagaBbzbpbp
-bmbobUbGbHbVbKaBagagagagagbWagagagagagbWagagagagagagaBbzbpbp
-bKaBaBaBagbDbKaBagaBaBaBaBaBaBaBaBaBagaBaBaBbXaBaBaBaBbzbpbp
-bYagagagagbDbKbRagaBbXaBaBaBaBaBbXaBagaBaBaBaBaBaBaBaBbzbpbp
-bZbAbAbAbAcabqbrbrbrbrbrbrbrbrbrbrbrbHbrbrbrbrbrbrbrbrbubpbp
-bEbnbnbnbnbFcbagagagagagagagagagagagagagagagagagagaBaBbzbpbp
-bEauauauauavccbAbAbAbAbAbAbAbAbAbAbAbAbAcdbAbAbAagbAbAcebpbp
-bnauauauauavbEbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnagbnbnbFbpbp
-bmbJbJbJbJbobEbJbJbJbJbJbJbJbJbJbJbJbJbJbJbJbJbJbHbJbJbFbpbp
-bKaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBagaBaBcfbpbp
-cgagagagagagagagagagagagagagchagagagagagagagagagagaBaBbVbpbp
-cgagagagagagagagagagchagagagagagagagchagagagagagagaBaBbVbpbp
-bZbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAbAcebpbp
-bnbnbnbnbnbnbnbnbnbnbEbnbnbnbnbnbnbnbnbnbnbnbEbnbnbnbnbFbpbp
-ayauaAayazazazazazazaxazazazazazazazazazazazazazazazazaAbpbp
-bpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbpbp
+bobobobobobobobobobobobobobobobobobobobobobobobobobobobobobo
+aaaRbpbqbqbqbqbqbrbqbqbqbqbqbqbqbqbqbqbqbqbqbsbqbqbqbqbtbubo
+aiaWbvbwagagagagbxagagagagagagagagagagagagagagagagagaBbybobo
+aiaWbvaBagagagagagagagagagagagagagagagagagagagagagagaBbybobo
+aiaWbvaBagaBbzbzbzbzbzbAbzbzbBbzbzbzbzbzbzbzbzbzaBagbwbybobo
+aiaWbvaBbxbCbDbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbEbFbGbFbybobo
+aiaWbvaBagbCbDauauauauauauauauauauauauauauauaubEaBagaBbybobo
+aobkbvaBagbCblbHbIbIbHbIbIbHbIbIbHbIbIbHbIbIbHbnaBagaBbybobo
+axbEbvaBagbCbJbKaBaBbKaBbLbMbNbNbMbNbNbOaBbPbKaBaBagaBbybobo
+axbEbvbQagbCbJaBaBbwaBaBaBbRbRbRbRbRbRbSaBaBaBaBaBagaBbybobo
+blbnbTbFbGbUbJaBagagagagagbVagagagagagbVagagagagagagaBbybobo
+bJaBaBaBagbCbJaBagaBaBaBaBaBaBaBaBaBagaBaBaBbWaBaBaBaBbybobo
+bXagagagagbCbJbQagaBbWaBaBaBaBaBbWaBagaBaBaBaBaBaBaBaBbybobo
+bYbzbzbzbzbZbpbqbqbqbqbqbqbqbqbqbqbqbGbqbqbqbqbqbqbqbqbtbobo
+bDbmbmbmbmbEcaagagagagagagagagagagagagagagagagagagaBaBbybobo
+bDauauauauavcbbzbzbzbzbzbzbzbzbzbzbzbzbzccbzbzbzagbzbzcdbobo
+bmauauauauavbDbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmagbmbmbEbobo
+blbIbIbIbIbnbDbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbIbGbIbIbEbobo
+bJaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBagaBaBcebobo
+cfagagagagagagagagagagagagagcgagagagagagagagagagagaBaBbUbobo
+cfagagagagagagagagagcgagagagagagagagcgagagagagagagaBaBbUbobo
+bYbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzbzcdbobo
+bmbmbmbmbmbmbmbmbmbmbDbmbmbmbmbmbmbmbmbmbmbmbDbmbmbmbmbEbobo
+ayauaAayazazazazazazaxazazazazazazazazazazazazazazazazaAbobo
+bobobobobobobobobobobobobobobobobobobobobobobobobobobobobobo
 "}
 
 (1,1,3) = {"
-cicjckckclclckclclckclclckclclckclclckckckckcmcncncncncncncn
-bwcoaBaBbLbLaBbLbLaBbLbLaBbLbLaBbLbLaBaBcjaBbDcncncncncncncn
-bwaBaBaBaBaBaBaBaBcjaBaBaBaBaBaBaBaBaBaBcoaBbDcncncncncncncn
-bwaBcjaBaBcjaBaBaBcoaBaBaBcjaBaBaBcjaBaBaBaBbDcncncncncncncn
-bwaBbLcpbAcobAbAbAbBbAbAbAcocdbAcqcoaBbQcjaBbDcncncncncncncn
-crcsbBcaaxawavaxauauawavaxauauavcrbAcdbAcobAcacncncncncncncn
-axauauavaxawavaxauauawavaxauauavaxawawavaxauavcncncncncncncn
-axauauavaxawavayazctaCcuayctctaAaxawawavaxauavcncncncncncncn
-cvctctcuaycwaAbOcxbLcjbLaBbLbLaBaycycycuayazaAcncncncncncncn
-bNczbNbNbOcAbOcBcxaBbLaBaBaBaBaBaBbLbLbLaBaBbDcCcCcCcCcCcCcC
-bObObObObObObObOcxaBaBaBaBbRaBaBaBaBaBaBaBaBbDcCcCcCcCcCcCcC
-cDcDcDcDcDcDcDbSbTaBaBcEcFaBaBaBaBaBaBaBaBaBbDcCcCcCcCcCcCcC
-aBaBagagagagagagagbQaBcGcHaBaBaBaBbxaBaBaBaBcIcIcIcIcIcJcIcI
-agagagaBcKaBaBaBagaBaBaBaBaBbQaBagagagagagagcLcLcLcLcLcMcLcL
-aBaBaBaBaBaBaBaBagagagagagagagagagaBaBaBaBaBcIcIcIcIcIcJcIcI
-cEcFaBaBcNcOcPaBcKaBaBaBaBaBaBaBaBaBbQaBaBaBcLcLcLcLcLcMcLcL
-cGcHaBaBbMcQcxaBaBaBaBaBcNcRcOcOcPcjcjcjaBaBbDcCcCcCcCcCcCcC
-cjcjcjcjbMcScxaBcNcRcOcOcObOcTbOcxaacUcVaBaBbDcCcCcCcCcCcCcC
-aaababcWbMcScXcXcXcXbObOcYbObObOaaagalahaBaBbDcCcCcCcCcCcCcC
-aialaeakababadacabcVcYcXaacWbOcZaiaeafahaBaBbDcCcCcCcCcCcCcC
-aiafagajalagagafaeagabdadbakababdbamaeahaBaBbDcCcCcCcCcCcCcC
-aiagagagafagagagagalagagagagagagagafagahaBaBbDcCcCcCcCcCcCcC
-aiagalagagagalagagafagagalagagagagagagagababcVcCcCcCcCcCcCcC
-aoapafapapapaqapapapapapafarapapapapapapapapascCcCcCcCcCcCcC
-ayauauauauauauauauauauauauauauauauauauauauauaAcCcCcCcCcCcCcC
+chcicjcjckckcjckckcjckckcjckckcjckckcjcjcjcjclcmcmcmcmcmcmcm
+bvcnaBaBbKbKaBbKbKaBbKbKaBbKbKaBbKbKaBaBciaBbCcmcmcmcmcmcmcm
+bvaBaBaBaBaBaBaBaBciaBaBaBaBaBaBaBaBaBaBcnaBbCcmcmcmcmcmcmcm
+bvaBciaBaBciaBaBaBcnaBaBaBciaBaBaBciaBaBaBaBbCcmcmcmcmcmcmcm
+bvaBbKcobzcnbzbzbzbAbzbzbzcnccbzcpcnaBbPciaBbCcmcmcmcmcmcmcm
+cqcrbAbZaxawavaxauauawavaxauauavcqbzccbzcnbzbZcmcmcmcmcmcmcm
+axauauavaxawavaxauauawavaxauauavaxawawavaxauavcmcmcmcmcmcmcm
+axauauavaxawavayazcsaCctaycscsaAaxawawavaxauavcmcmcmcmcmcmcm
+cucscsctaycvaAbNcwbKcibKaBbKbKaBaycxcxctayazaAcmcmcmcmcmcmcm
+bMcybMbMbNczbNcAcwaBbKaBaBaBaBaBaBbKbKbKaBaBbCcBcBcBcBcBcBcB
+bNbNbNbNbNbNbNbNcwaBaBaBaBbQaBaBaBaBaBaBaBaBbCcBcBcBcBcBcBcB
+cCcCcCcCcCcCcCbRbSaBaBcDcEaBaBaBaBaBaBaBaBaBbCcBcBcBcBcBcBcB
+aBaBagagagagagagagbPaBcFcGaBaBaBaBbwaBaBaBaBcHcHcHcHcHcIcHcH
+agagagaBcJaBaBaBagaBaBaBaBaBbPaBagagagagagagcKcKcKcKcKcLcKcK
+aBaBaBaBaBaBaBaBagagagagagagagagagaBaBaBaBaBcHcHcHcHcHcIcHcH
+cDcEaBaBcMcNcOaBcJaBaBaBaBaBaBaBaBaBbPaBaBaBcKcKcKcKcKcLcKcK
+cFcGaBaBbLcPcwaBaBaBaBaBcMcQcNcNcOciciciaBaBbCcBcBcBcBcBcBcB
+cicicicibLcRcwaBcMcQcNcNcNbNcSbNcwaacTcUaBaBbCcBcBcBcBcBcBcB
+aaababcVbLcRcWcWcWcWbNbNcXbNbNbNaaagalahaBaBbCcBcBcBcBcBcBcB
+aialaeakababadacabcUcXcWaacVbNcYaiaeafahaBaBbCcBcBcBcBcBcBcB
+aiafagajalagagafaeagabcZdaakababdaamaeahaBaBbCcBcBcBcBcBcBcB
+aiagagagafagagagagalagagagagagagagafagahaBaBbCcBcBcBcBcBcBcB
+aiagalagagagalagagafagagalagagagagagagagababcUcBcBcBcBcBcBcB
+aoapafapapapaqapapapapapafarapapapapapapapapascBcBcBcBcBcBcB
+ayauauauauauauauauauauauauauauauauauauauauauaAcBcBcBcBcBcBcB
 "}

@@ -1,14 +1,30 @@
 obj/Can_Build
-	Wood_Crafting_Table
+	CanPickUp=0
+	Basic_Crafting_Table
 		density=1
 		Health=50
 		MaxHealth=50
-		icon='NPCs.dmi'
-		icon_state="Tailor"
-		name="Wood Crafting Table"
+		icon='Icons/Buildable/WeaponTable1.dmi'
+		icon_state="weapontable1"
+		name="Basic Crafting Table"
 		New()
-			GenerateShadow(src, SOUTH,-60)
+			GenerateShadow(src, SOUTH,-30)
 			Wood_Crafting_Table()
+			..()
+		Click()
+			if(src in oview(1))
+				usr.CreateInventory2(src)
+				return
+	Basic_Sewing_Table
+		density=1
+		Health=50
+		MaxHealth=50
+		icon='Icons/Buildable/SewingTable1.dmi'
+		icon_state="tailortable1"
+		name="Basic Sewing Table"
+		New()
+			GenerateShadow(src, SOUTH,-30)
+			Sewing_Table()
 			..()
 		Click()
 			if(src in oview(1))
