@@ -473,6 +473,8 @@ mob
 	Stat()
 		..()
 		statpanel("Debug")
+		if(!src.clan)
+			return
 		stat("Clan name", src.clan.name)
 		stat("Clan Leader:", src.clan.leader)
 		stat("Clan war with:", src.clan.war.name)
