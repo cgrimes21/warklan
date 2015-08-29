@@ -14,7 +14,6 @@ world
 			if(A.shadow==1)
 				GenerateShadow(A,SOUTH,-52)
 		LoadClans()
-		Repopper()
 		spawn(20)
 			main_loop()
 		..()
@@ -24,6 +23,9 @@ world
 		world<<"<b><font color=yellow><font size=+1>Rebooting!!!</font></b>"
 		..()
 proc
+	send_to_graveyard(mob/A)
+		A.loc = locate(0,0,0)
+
 	main_loop()
 		while(world)
 			sleep(10)
@@ -32,15 +34,12 @@ proc
 			for(var/mob/M in world)
 				if(istype(M,/mob))
 					M.process()
+
 	LoadClans()
 		if(fexists("Saves/World/Clans.sav"))
 			var/savefile/F = new("Saves/World/Clans.sav")
 			F["Clan"] >> Clans
-	Repopper()
-		sleep(90)
-#warn never use world.repop. Design alternative
-		world.Repop()
-		Repopper()
+
 var
 	ticker = 0
 

@@ -59,7 +59,16 @@ mob/proc
 			if(src.alpha<=90)
 				if(src.Enemy)
 					src.Dying=0
-					del(src)
+					var/holder = src.type
+					var/holderloc = src.loc
+					spawn(2600)
+						new holder (holderloc)
+
+					send_to_graveyard(src)
+					spawn(2611)
+						del src
+
+
 				sleep(20)
 
 				src.Dying=0

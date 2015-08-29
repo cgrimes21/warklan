@@ -43,11 +43,27 @@ clan
 
 
 mob
-	verb
-		Request_Duel(mob/M in oview(1))
-			//regular pvp challenge
+	var/tmp
+		mob/clicked_who
+	Click()
+		..()
+		if(usr != src)
+			if(src.Player)
+				winshow(usr, "clanwindow", 1)
+				usr.clicked_who = src
 
-		Declare_Clan_War(mob/M in oview(1))
+	verb
+		Invite_Clan()
+			var/mob/M = src.clicked_who
+
+			winshow(src, "clanwindow", 0)
+		Request_Duel()
+			var/mob/M = src.clicked_who
+			//regular pvp challenge
+			winshow(src, "clanwindow", 0)
+
+		Declare_Clan_War()
+			var/mob/M = src.clicked_who
 			if(!M.client)
 				return
 			if(!usr.client)
@@ -70,6 +86,8 @@ mob
 			//	ClansLeader=usr.ClanLeader
 			//	winset(M,"ClanT","is-visible=true")
 			//	return
+
+			winshow(src, "clanwindow", 0)
 	/*
 	Clan(var/T as text)
 			if(T=="Yes")
