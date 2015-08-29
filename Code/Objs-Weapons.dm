@@ -144,7 +144,6 @@ obj/Items
 		Drop()
 			if(src in usr.contents)
 				usr.AvailableItems-=1
-				usr.QuestItemDrop()
 				src.loc = usr.loc
 				usr.AddItems()
 				usr.CreateInventory()

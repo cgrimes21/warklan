@@ -143,11 +143,11 @@ mob/verb
 
 			if(fight_on)
 				if(usr.SwordOn)
-					if(prob(20))
+					if(prob(80))
 						usr.Sword_Skill_EXP += rand(50,50)
 						usr.SkillLevelUP()
 				else
-					if(prob(20))
+					if(prob(80))
 						usr.HandToHand_Skill_EXP += rand(50,50)
 						usr.SkillLevelUP()
 				Jab+=1

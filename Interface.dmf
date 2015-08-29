@@ -117,7 +117,7 @@ macro "macro"
 		is-disabled = false
 	elem 
 		name = "T"
-		command = "Middle"
+		command = "Test"
 		is-disabled = false
 	elem 
 		name = "W"
@@ -635,7 +635,7 @@ window "Help"
 	elem "Help"
 		type = MAIN
 		pos = 281,0
-		size = 475x394
+		size = 475x517
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -671,16 +671,44 @@ window "Help"
 		macro = ""
 		menu = ""
 		on-close = ""
+	elem "label15"
+		type = LABEL
+		pos = 114,40
+		size = 256x72
+		anchor1 = none
+		anchor2 = none
+		font-family = "Aparajita,@Malgun Gothic"
+		font-size = 40
+		font-style = ""
+		text-color = #59b748
+		background-color = #000000
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = line
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Help (H)"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+		allow-html = false
+		letterbox = true
 	elem "Helping"
 		type = LABEL
-		pos = 0,0
-		size = 475x394
+		pos = 20,133
+		size = 435x331
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = "Times New Roman"
 		font-size = 14
 		font-style = "italic"
-		text-color = #80ff00
+		text-color = #5cb900
 		background-color = #000000
 		is-visible = true
 		is-disabled = false
@@ -691,7 +719,7 @@ window "Help"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "Controls\n\nA: Attack\nI: View Inventory\nS: View Skills\nSpacebar: Pick up items\nH: Bring Up Game Guide\n\nInfo\n\nDrag and drop skills to your skill slot to use them"
+		text = "Controls\n\nClick on NPCs to talk to them\n\nA: Attack\nI: View Inventory\nS: View Skills\nSpacebar: Pick up items\nH: Bring Up Game Guide"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -1565,8 +1593,8 @@ window "SkillLevels"
 		on-close = ""
 	elem "HandToHandSkillEXP"
 		type = LABEL
-		pos = 201,166
-		size = 91x24
+		pos = 206,166
+		size = 135x24
 		anchor1 = none
 		anchor2 = none
 		font-family = "sans-serif"
@@ -1587,14 +1615,14 @@ window "SkillLevels"
 		image = ""
 		image-mode = center
 		keep-aspect = false
-		align = center
+		align = left
 		text-wrap = false
 		allow-html = false
 		letterbox = true
 	elem "HandToHandSkillLevel"
 		type = LABEL
-		pos = 207,146
-		size = 75x24
+		pos = 206,146
+		size = 127x24
 		anchor1 = none
 		anchor2 = none
 		font-family = "sans-serif"
@@ -1615,7 +1643,7 @@ window "SkillLevels"
 		image = ""
 		image-mode = center
 		keep-aspect = false
-		align = center
+		align = left
 		text-wrap = false
 		allow-html = false
 		letterbox = true
@@ -1677,7 +1705,7 @@ window "SkillLevels"
 		letterbox = true
 	elem "SwordSkillEXP"
 		type = LABEL
-		pos = 201,275
+		pos = 204,275
 		size = 91x24
 		anchor1 = none
 		anchor2 = none
@@ -1699,7 +1727,7 @@ window "SkillLevels"
 		image = ""
 		image-mode = center
 		keep-aspect = false
-		align = center
+		align = left
 		text-wrap = false
 		allow-html = false
 		letterbox = true
@@ -1714,7 +1742,7 @@ window "SkillLevels"
 		font-style = "bold"
 		text-color = #9a0c0c
 		background-color = #000000
-		is-visible = true
+		is-visible = false
 		is-disabled = false
 		is-transparent = false
 		is-default = false
@@ -1723,7 +1751,7 @@ window "SkillLevels"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "Level 1\n\nEXP 0/50"
+		text = "Level 1\nEXP 0/50"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -1742,7 +1770,7 @@ window "SkillLevels"
 		font-style = ""
 		text-color = #ffffff
 		background-color = #000000
-		is-visible = true
+		is-visible = false
 		is-disabled = false
 		is-transparent = false
 		is-default = false
@@ -1770,7 +1798,7 @@ window "SkillLevels"
 		font-style = ""
 		text-color = #000000
 		background-color = none
-		is-visible = true
+		is-visible = false
 		is-disabled = false
 		is-transparent = false
 		is-default = false
@@ -1817,7 +1845,7 @@ window "SkillLevels"
 		letterbox = true
 	elem "SwordSkillLevel"
 		type = LABEL
-		pos = 207,255
+		pos = 205,255
 		size = 75x24
 		anchor1 = none
 		anchor2 = none
@@ -1839,7 +1867,7 @@ window "SkillLevels"
 		image = ""
 		image-mode = center
 		keep-aspect = false
-		align = center
+		align = left
 		text-wrap = false
 		allow-html = false
 		letterbox = true

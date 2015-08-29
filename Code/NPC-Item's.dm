@@ -48,15 +48,13 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(usr.SmallSticksCollected>=3)
+			if(count_sticks(usr)>=3)
 				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
 				if(usr.BagOpen==1)
 					usr.AddItems()
-				if(usr.DoingQuest==1&&usr.QuestLevel==2&&usr.BoughtWoodenSword==0)
-					usr.BoughtWoodenSword=1
 				_message(usr,"You've received a wooden sword.","Yellow")
 				return
 			else
@@ -82,8 +80,6 @@ obj/NPCs/Items
 				usr.contents+=A
 				if(usr.BagOpen==1)
 					usr.AddItems()
-				if(usr.DoingQuest==1&&usr.QuestLevel==1&&usr.BoughtFoxFurTunic==0)
-					usr.BoughtFoxFurTunic=1
 				_message(usr,"You've received a fox fur tunic.","Yellow")
 				return
 			else

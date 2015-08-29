@@ -44,10 +44,10 @@ clan
 
 mob
 	verb
-		Challenge(mob/M in oview(1))
+		Request_Duel(mob/M in oview(1))
 			//regular pvp challenge
 
-		Challenge_Clan(mob/M in oview(1))
+		Declare_Clan_War(mob/M in oview(1))
 			if(!M.client)
 				return
 			if(!usr.client)

@@ -30,3 +30,4 @@ obj/Can_Build
 			if(src in oview(1))
 				usr.CreateInventory2(src)
 				return
+

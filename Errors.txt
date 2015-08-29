@@ -1,0 +1,26 @@
+runtime error: Maximum recursion level reached (perhaps there is an infinite loop)
+To avoid this safety check, set world.loop_checks=0.
+proc name: Repopper (/proc/Repopper)
+  usr: null
+  src: null
+  call stack:
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+...
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+Repopper()
+: New()
