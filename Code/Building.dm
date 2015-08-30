@@ -6,24 +6,27 @@ mob/proc
 	Build(var/T as text)
 		if(src.Building)
 			return
-		else if(T=="Basic Crafting Table")
-			var/obj/Can_Build/Basic_Crafting_Table/A=new/obj/Can_Build/Basic_Crafting_Table
-			src.Building=1
-			src.Frozen=1
-			src<<"Building [T]..."
-			sleep(20)
-			src.Frozen=0
-			src.Building=0
-			A.loc = src.loc
-		else if(T=="Basic Sewing Table")
-			var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
-			src.Building=1
-			src.Frozen=1
-			src<<"Building [T]..."
-			sleep(20)
-			src.Frozen=0
-			src.Building=0
-			A.loc = src.loc
+		switch(T)
+			if("Basic Crafting Table")
+				var/obj/Can_Build/Basic_Crafting_Table/A=new/obj/Can_Build/Basic_Crafting_Table
+				src.Building=1
+				src.Frozen=1
+				src<<"Building [T]..."
+				sleep(20)
+				src.Frozen=0
+				src.Building=0
+				A.loc = src.loc
+				A.add_craft_item()
+			if("Basic Sewing Table")
+				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
+				src.Building=1
+				src.Frozen=1
+				src<<"Building [T]..."
+				sleep(20)
+				src.Frozen=0
+				src.Building=0
+				A.loc = src.loc
+				A.add_craft_item()
 
 mob/verb
 	BuildBCT()
@@ -53,3 +56,31 @@ mob
 	proc
 		ShowBuildMenuProc()
 			winset(usr,"Build","is-visible=true")
+
+proc
+	save_build()
+		if(fexists("Saves/World/Build"))
+			fdel("Saves/World/Build")
+		var/savefile/F = new ("Saves/World/Build")
+		var/list/what = list()
+		for(var/obj/Can_Build/B in world)
+			B.lastx = B.x
+			B.lasty = B.y
+			B.lastz = B.z
+			B.underlays = null
+			what.Add(B)
+
+		F["list"] << what
+
+	load_build()
+		if(fexists("Saves/World/Build"))
+			var/savefile/F = new ("Saves/World/Build")
+			var/list/load = list()
+			F["list"] >> load
+
+		//implement
+			for(var/obj/Can_Build/B in load)
+				if(locate(/obj/Can_Build) in locate(B.lastx,B.lasty,B.lastz))
+					continue
+
+				B.loc = locate(B.lastx,B.lasty,B.lastz)

@@ -7,6 +7,9 @@ world
 	fps=40
 	New()
 		log="Errors.txt"
+		//add an item to the crafting tables created in the map editor
+		for(var/obj/Can_Build/CC in world)
+			CC.add_craft_item()
 		for(var/turf/A in world)
 			if(A.shadow==1)
 				GenerateShadow(A,SOUTH)
@@ -14,6 +17,8 @@ world
 			if(A.shadow==1)
 				GenerateShadow(A,SOUTH,-52)
 		LoadClans()
+		//then load all the custom tables (already has a crafting item in it)
+		load_build()
 		spawn(20)
 			main_loop()
 		..()
@@ -21,6 +26,9 @@ world
 
 	Reboot()
 		world<<"<b><font color=yellow><font size=+1>Rebooting!!!</font></b>"
+		..()
+	Del()
+		save_build()
 		..()
 proc
 	send_to_graveyard(mob/A)
