@@ -58,10 +58,11 @@ mob/verb
 			else
 				usr.AvailableItems+=1
 				usr.contents+=O
-				QuestItemPickup()
+				usr.QuestItemPickup()
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
+
 //Items that get dropped
 obj/Items/ItemDrops
 	Fox_Fur

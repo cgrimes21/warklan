@@ -1,0 +1,9 @@
+BYOND Error:(Sfile.cpp,1138) failed to open file:
+BYOND Error:(Sfile.cpp,1138) 
+proc name: save build (/proc/save_build)
+  source file: Building.dm,64
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()

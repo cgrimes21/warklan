@@ -288,15 +288,15 @@ mob/verb
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Sticks!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
-			if(SecondQuestOver)
-				usr.ShowSkillLevel()
+			/*if(SecondQuestOver)
+				usr.ShowSkillLevel()*/
 		if(QuestLevel==3)
 			if(!usr.DoingQuest)
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
 			if(ThirdQuestOver)
-				ShowSkillLevel()
+				usr.ShowBuildMenu()
 		usr.CheckQuest()
 		return
 

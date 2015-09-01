@@ -168,6 +168,10 @@ mob/proc
 			src.HandToHand_Skill_Level+=1
 			src.HandToHand_Skill_EXP=0
 			src.HandToHand_Skill_MaxEXP *= 1.5
+			if(HandToHand_Skill_Level==2)
+				src.SkillLevelShow()
+
+
 
 
 	SkillLevelUP()

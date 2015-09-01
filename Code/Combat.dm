@@ -142,14 +142,14 @@ mob/verb
 				fight_on = 1
 
 			if(fight_on)
-				if(usr.SwordOn)
+				/*if(usr.SwordOn)
 					if(prob(80))
-						usr.Sword_Skill_EXP += rand(50,50)
+						usr.Sword_Skill_EXP += rand(0,1)
 						usr.SkillLevelUP()
 				else
 					if(prob(80))
-						usr.HandToHand_Skill_EXP += rand(50,50)
-						usr.SkillLevelUP()
+						usr.HandToHand_Skill_EXP += rand(0,1)
+						usr.SkillLevelUP()*/
 				Jab+=1
 				var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')
 				if(Jab>=3)

@@ -19,6 +19,8 @@ mob
 				if(!client){return}
 				winset(src,"Item","pos=[chatx+220],[chaty+215]")
 				sleep(world.tick_lag)
+
+
 obj/NPCs/Items
 	icon='Items.dmi'
 	WeaponLevel=1

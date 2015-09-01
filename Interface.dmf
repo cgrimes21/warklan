@@ -112,10 +112,6 @@ macro "macro"
 		command = "Reboot"
 		is-disabled = false
 	elem 
-		name = "S"
-		command = "ShowSkillLevel"
-		is-disabled = false
-	elem 
 		name = "T"
 		command = "Test"
 		is-disabled = false
