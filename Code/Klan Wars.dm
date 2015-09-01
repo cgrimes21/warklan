@@ -53,6 +53,10 @@ var
 
 mob/proc
 	process()
+		src.being_attacked = 0
+		for(var/mob/Enemies/E in oview(8,src))
+			if(E.Attacker == src.Name)
+				src.being_attacked = 1
 
 	update_health_bar()
 		if(!src.healthbar)

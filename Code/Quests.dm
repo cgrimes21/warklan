@@ -127,19 +127,21 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
 
-	QuestItemPickup()
+	QuestItemPickup(obj/O)
 		var/ffcollected = count_fox_furs(src)
 		if(src.DoingQuest&&src.QuestLevel==1)
-			_message(src, "<font color=green>Fox Furs Collected: [ffcollected]/3</font>","white")
-			if(ffcollected>=3)
-				src.ElderNPC=1
+			if(istype(O, /obj/Items/ItemDrops/Fox_Fur))
+				_message(src, "<font color=green>Fox Furs Collected: [ffcollected]/3</font>","white")
+				if(ffcollected>=3)
+					src.ElderNPC=1
 			return
 
 		var/stickscollected = count_sticks(src)
 		if(src.DoingQuest&&src.QuestLevel==2)
-			_message(src, "<font color=green>Small Sticks Collected: [stickscollected]/3</font>","white")
-			if(stickscollected>=3)
-				src.ElderNPC=1
+			if(istype(O, /obj/Items/ItemDrops/Small_Stick))
+				_message(src, "<font color=green>Small Sticks Collected: [stickscollected]/3</font>","white")
+				if(stickscollected>=3)
+					src.ElderNPC=1
 			return
 
 	QuestItemDelete()

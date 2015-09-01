@@ -27,6 +27,10 @@
 							)
 
 
+//definitions
+#define SPAWN_RATE		600		//(seconds * 10)
+#define INITIAL_AGGRO	15
+#define JOIN_AGGRO		5
 
 //	Define the CSS style for the browser, if you wish to make it more fancy.
 var/_CSS = {"

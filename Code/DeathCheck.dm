@@ -61,13 +61,14 @@ mob/proc
 					src.Dying=0
 					var/holder = src.type
 					var/holderloc = src.loc
-					spawn(2600)
+					spawn(SPAWN_RATE)
 						new holder (holderloc)
 
 					send_to_graveyard(src)
-					spawn(2611)
+					spawn(SPAWN_RATE + 10)
 						del src
 
+					return
 
 				sleep(20)
 

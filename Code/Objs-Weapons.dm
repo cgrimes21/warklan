@@ -58,7 +58,7 @@ mob/verb
 			else
 				usr.AvailableItems+=1
 				usr.contents+=O
-				usr.QuestItemPickup()
+				usr.QuestItemPickup(O)
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return

@@ -2,6 +2,7 @@ mob
 	var/tmp
 
 		Attacked=0
+		being_attacked = 0
 
 mob/proc
 	NPCAttack(mob/T,mob/M)
@@ -11,6 +12,7 @@ mob/proc
 		else
 			goto Begin
 			return
+		M.Attacker = T.Name
 		Begin
 		animate(M,icon_state="Knock Back")
 		sleep(1)
@@ -65,8 +67,8 @@ mob/Enemies
 			if(src && !src.Dead && !src.Dying)
 				if(src.Attacked)	//follow their attacker
 					var/found = 0
-					for(var/mob/M in oview(8))
-						if(M.Player && !M.Dead && !M.Dying && src.Attacker == M.Name)
+					for(var/mob/M in oview(8,src))
+						if(M.Player && !M.Dead && !M.Dying && (src.Attacker == M.Name))
 							found = 1
 							//if they are right next to the player facing them, attack them
 							if(get_dist(src,M)<=1 && src.dir == get_dir(src,M))
@@ -82,10 +84,19 @@ mob/Enemies
 						src.Attacked = 0
 				if(src.Attacked<=0)
 					step(src, pick(NORTH, EAST, SOUTH, WEST),1)
-					for(var/mob/M in oview(8))
-						if(M.Player && prob(10))
-							src.Attacked += 1
-							src.Attacker = M.Name
+					for(var/mob/M in oview(8,src))
+						if(M.Player && (src.Attacker != M.name))
+							if(M.being_attacked)
+								if(prob(JOIN_AGGRO))
+									src.Attacked += 1
+									src.Attacker = M.Name
+									M.being_attacked = 1
+
+
+							else if(prob(INITIAL_AGGRO))
+								src.Attacked += 1
+								src.Attacker = M.Name
+								M.being_attacked = 1
 
 					//walk(src, pick(NORTH, EAST, SOUTH, WEST),0,3)
 
