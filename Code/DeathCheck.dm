@@ -33,7 +33,7 @@ mob/proc
 				//var/Amount=rand(1,20)
 				//G.Amount=Amount
 				T.QUESTCHECK(M.Name)
-				if(M.Name=="Fox"&&M.Enemy==1)
+				if(M.Name=="Fox Cub"||M.Name=="Red Fox"&&M.Enemy==1)
 					//G.Amount=3
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
@@ -42,7 +42,7 @@ mob/proc
 				if(M.Name=="Wolf"&&M.Enemy==1)
 					//G.Amount=5
 					if(prob(50))
-						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stick
+						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stone
 						F.loc=M.loc
 					//G.loc=M.loc
 				else

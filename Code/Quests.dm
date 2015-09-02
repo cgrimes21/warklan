@@ -16,15 +16,15 @@ proc
 			has_it = 1
 		return has_it
 
-	count_sticks(mob/M)
+	count_stones(mob/M)
 		var/what = 0
-		for(var/obj/Items/ItemDrops/Small_Stick/C in M.contents)
+		for(var/obj/Items/ItemDrops/Small_Stone/C in M.contents)
 			what += 1
 		return what
 
 	check_for_weapon(mob/M)
 		var/has_it = 0
-		for(var/obj/Items/Weapons/Wooden_Sword/D in M.contents)
+		for(var/obj/Items/Weapons/Stone_Sword/D in M.contents)
 			has_it = 1
 		return has_it
 
@@ -104,11 +104,11 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=false")
 				usr.SecondQuestOver=1
 
-			else if(count_sticks(src) >=3)
-				src<< output("<center>You've retrieved the sticks! Take them to the crafting table and create a wooden sword.</center>","QuestMenu.Info")
+			else if(count_stones(src) >=3)
+				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a wooden sword? Go and get 3 small sticks, they're usually dropped by Wolves.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small stones, they're usually dropped by Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -116,7 +116,7 @@ mob/proc
 			src<< output(null,"QuestMenu.Info")
 
 			if(src.InClan)
-				src<< output("<center>Ah great, you've finally created a clan of your own. Clans can build fortifications and objects, but they may require resources such as wood, iron, gold, etc, or clan points gained from killing rival clan members. Press B to activate the 'Clan Building' Menu</center>","QuestMenu.Info")
+				src<< output("<center>Ah great, you've finally created a clan of your own. Clans can build fortifications and objects, but they may require resources such as wood, iron, gold, etc, or clan points gained from killing rival clan members. Right click any player to invite them to your clan. Press B to activate the 'Clan Building' Menu</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
@@ -136,11 +136,11 @@ mob/proc
 					src.ElderNPC=1
 			return
 
-		var/stickscollected = count_sticks(src)
+		var/stonescollected = count_stones(src)
 		if(src.DoingQuest&&src.QuestLevel==2)
-			if(istype(O, /obj/Items/ItemDrops/Small_Stick))
-				_message(src, "<font color=green>Small Sticks Collected: [stickscollected]/3</font>","white")
-				if(stickscollected>=3)
+			if(istype(O, /obj/Items/ItemDrops/Small_Stone))
+				_message(src, "<font color=green>Small Stones Collected: [stonescollected]/3</font>","white")
+				if(stonescollected>=3)
 					src.ElderNPC=1
 			return
 
@@ -159,7 +159,7 @@ mob/proc
 
 		if(src.DoingQuest&&src.QuestLevel==2)
 			var/counter = 0
-			for(var/obj/Items/ItemDrops/Small_Stick/C in src.contents)
+			for(var/obj/Items/ItemDrops/Small_Stone/C in src.contents)
 				counter++
 				if(counter <= 3)
 					del C
@@ -184,10 +184,7 @@ mob
 			if(src.DoingQuest&&src.QuestLevel==1&&hasfoxfurtunic)
 				src.DoingQuest=0
 				src.QuestLevel+=1
-				src.Gold+=15
-				src.EXP+=45
 				src.ElderNPC=1
-				_message(src, "<b><font color=yellow>Gold Received: 15, EXP Received: 45, Fox Fur Tunic Received!</font></b>","white")
 				_message(src, "<font color=green>New Task Unlocked: Make A Weapon!</font>","white")
 				return
 
@@ -195,21 +192,14 @@ mob
 			if(src.DoingQuest&&src.QuestLevel==2&&hasweapon)
 				src.DoingQuest=0
 				src.QuestLevel+=1
-				src.Gold+=20
-				src.EXP+=50
-				src.ElderNPC=1
-				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
-
+				src.ElderNPC=0
 
 				return
 
 			if(src.DoingQuest&&src.QuestLevel==3&&src.InClan==1)
 				src.DoingQuest=0
 				src.QuestLevel+=1
-				src.Gold+=20
-				src.EXP+=50
 				src.ElderNPC=0
-				_message(src, "<b><font color=yellow>Gold Received: 20, EXP Received: 50, Wooden Sword Received!</font></b>","white")
 
 				return
 
@@ -222,7 +212,7 @@ mob
 			/*if(N=="Wolf")
 				if(src.DoingQuest==1&&src.QuestLevel==2)
 					src.FoxKilled+=1
-					_message(src, "<font color=green>Small Sticks Collected: [src.FoxKilled]/3</font>","white")
+					_message(src, "<font color=green>Small Stones Collected: [src.FoxKilled]/3</font>","white")
 					if(src.FoxKilled>=3)
 						src.ElderNPC=1
 				return*/
@@ -287,7 +277,7 @@ mob/verb
 				usr.DoingQuest=1
 		if(QuestLevel==2)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Sticks!</font></b>","white")
+				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Stones!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
 			/*if(SecondQuestOver)

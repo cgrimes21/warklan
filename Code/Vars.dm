@@ -71,10 +71,10 @@ mob
 		Stamina=100
 		MaxStamina=100
 		MaxWeight=50
-		Strength=10
-		MaxStrength=10
-		Defense=10
-		MaxDefense=10
+		Strength=5
+		MaxStrength=5
+		Defense=4
+		MaxDefense=4
 		Gold=50
 		Iron=0
 		EXP=0
@@ -82,13 +82,12 @@ mob
 		Level=1
 
 		AvailableItems=0
-		MaxItems=6
+		MaxItems=10
 		SecondaryWeapon=""
 		WearingWeapon=0
 		WearingShirt=0
 
 
-		StaffBoost=0
 		SwordBoost=0
 		BowBoost=0
 		BowOn=0

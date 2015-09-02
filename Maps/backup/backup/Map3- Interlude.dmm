@@ -172,12 +172,10 @@
 "dp" = (/turf/Mountains/s10,/area)
 "dq" = (/turf/Mountains/s7,/area)
 "dr" = (/turf/Mountains/s11,/area)
-"ds" = (/turf/Mountains/Black,/turf/Locations/TreasureHunterQuests/ToTreasureHunterQuest2,/area)
+"ds" = (/turf/Mountains/Black,/area)
 "dt" = (/turf/Mountains/tg11,/turf/Markers/TreasureHunting/THQuest2_Outside,/area)
 "du" = (/turf/Mountains/s9,/turf/Markers/VillageTwo/ToArea2FromVillage2,/area)
-"dv" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageTwo/ToVillage2FromArea2,/area)
-"dw" = (/turf/Mountains/s9,/turf/Locations/Villages/VillageOne/ToVillageOutskirtsFromArea2,/area)
-"dx" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToArea2FromVillageOutskirts,/area)
+"dv" = (/turf/Mountains/s9,/turf/Markers/VillageOne/ToArea2FromVillageOutskirts,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -327,8 +325,8 @@ aDaEaEaEaEaEaUaVaUaUaWdtaWaWaQahajahahahahahahajajajahahak
 aDaEaEaEaEaEaWcFaWaWaWaWaWaWaQahahahahbbahahahahahahahahak
 aMaNdcdcdcdcbebebebebebebebfbgahahbhbiahahahahahahahahahak
 ajajajajajajahahbnbnbnbnbnbnbnasahbobpahahahahbqahahahahak
-ahahahahahahahahbnahbCahahahbnahahahahahasahbnbnbnbndubndv
-dwdxbnbnbnbnbnbnbnahahahahahbnbnbnbnbnbnbnbnbnahahahahahak
+ahahahahahahahahbnahbCahahahbnahahahahahasahbnbnbnbndubnbn
+bndvbnbnbnbnbnbnbnahahahahahbnbnbnbnbnbnbnbnbnahahahahahak
 ahahahahahahbhddahahbzbAbBahbCahahahahahahahahahasahahahak
 ahahahahahahbodeahahbEbFaQahahahahahbzbGbAbAbAbAbBaiaiaiak
 dfdfdfdfahahahahahahbEbHaQahbzbGbAbAbAaWbIaYaWaWaQbJbKbLak

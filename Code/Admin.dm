@@ -28,7 +28,7 @@
 
 
 //definitions
-#define SPAWN_RATE		600		//(seconds * 10)
+#define SPAWN_RATE		200		//(seconds * 10)
 #define INITIAL_AGGRO	15
 #define JOIN_AGGRO		5
 

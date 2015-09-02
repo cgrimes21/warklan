@@ -162,7 +162,7 @@ mob/verb
 					usr<<sound(G)
 				oview(10,usr)<<sound(G)
 				usr.speed=2;spawn(5)usr.speed=4
-				Punching=1;spawn(8)Punching=0
+				Punching=1;spawn(15)Punching=0
 				M.Attacker=usr.Name
 				if(M.Enemy)
 					M.Attacked+=10
@@ -178,12 +178,11 @@ mob/verb
 							M.dir=NORTH
 						usr.Jab=0
 						usr.UpperCut=0
-						var/tmp/damage=((usr.Strength+40)-M.Defense)/2
+						var/tmp/damage=((usr.Strength+25)-M.Defense)/2
 						if(damage<=0)
-							damage=rand(1,90)
+							damage=rand(1,10)
 						flick("Knock Back",M)
 						M.Damage(damage)
-						M.Stamina-=rand(1,15)
 						if(M.Stamina<=0)
 							M.Blocking=0
 							M.icon_state=""
@@ -214,13 +213,14 @@ mob/verb
 						M.DeathCheck(usr,M)
 						return
 					else
-						var/tmp/damage=round(usr.Strength-M.Defense)/1.5
+						var/tmp/damage=((usr.Strength+25)-M.Defense)/2
 						if(damage<=0)
 							damage=rand(1,80)
 						flick("Knock Back",M)
 						M.Damage(damage)
 						M.DeathCheck(usr,M)
 						return
+
 
 mob/proc
 	PIXELYADD()

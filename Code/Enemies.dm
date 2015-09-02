@@ -19,15 +19,15 @@ mob/proc
 		animate(M,icon_state="")
 		Next
 		if(M.Blocking)
-			var/tmp/damage=round((T.Strength+30)-M.Defense)/2
+			var/tmp/damage=round((T.Strength+25)-M.Defense)/2
 			if(damage<=0)
-				damage=rand(1,50)
+				damage=rand(1,3)
 			new/effect/damage(M.loc,"<font color=red><b>[round(damage)]</b></font>")
 			M.Health-=damage
 		else
-			var/tmp/damage=round((T.Strength+30)-M.Defense)/1.5
+			var/tmp/damage=round((T.Strength+25)-M.Defense)/1.5
 			if(damage<=0)
-				damage=rand(1,50)
+				damage=rand(1,3)
 			new/effect/damage(M.loc,"<font color=red><b>[round(damage)]</b></font>")
 			M.Health-=damage
 			M.update_health_bar()
@@ -101,15 +101,32 @@ mob/Enemies
 					//walk(src, pick(NORTH, EAST, SOUTH, WEST),0,3)
 
 
-	Fox
+	Fox_Cub
 		icon='fox3.dmi'
-		Name="Fox"
+		Name="Fox Cub"
 		speed=2
 		Level=1
 		Strength=8
-		Defense=6
-		Health=40
-		MaxHealth=40
+		Defense=7
+		Health=80
+		MaxHealth=80
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+	Red_Fox
+		icon='fox3.dmi'
+		Name="Red Fox"
+		speed=2
+		Level=1
+		Strength=24
+		Defense=21
+		Health=120
+		MaxHealth=120
 		New()
 			spawn
 				while(src)
@@ -123,51 +140,19 @@ mob/Enemies
 		icon='Wolf.dmi'
 		Name="Wolf"
 		Level=4
-		Strength=14
-		Defense=12
-		Health=80
-		MaxHealth=80
+		Strength=32
+		Defense=28
+		Health=200
+		MaxHealth=200
 		speed=2
 		New()
-			GenerateShadow(src, SOUTH,-50)
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
-			spawn while(src)
-				if(Attacked==0&&Health<MaxHealth)
-					Health+=15
-					if(Health>=MaxHealth)
-						Health=MaxHealth
-				sleep(100)
-			spawn while(src)
-				if(Attacked)
-					Attacked=0
-					Attacker=""
-					src.speed=2
-				sleep(120)
-			spawn while(src&&Dead==0&&Dying==0)
-				src.speed=2
-				walk(src, pick(NORTH, EAST, SOUTH, WEST),1,3)
-				sleep(15)
-			spawn while(src&&Dead==0&&Dying==0)
-				for(var/mob/M in oview(1))
-					if(M.Player==1&&M.Dead==0&&M.Dying==0&&src.Attacked&&src.Attacker==M.Name&&M.Level<5)
-						NPCAttack(src,M)
-					else
-						if(M.Player==1&&M.Dead==0&&M.Dying==0&&M.Level>=5)
-							if(src.dir==get_dir(src,M))
-								src.Attacker=M.Name
-								src.Attacked=1
-								NPCAttack(src,M)
-				sleep(10)
-			spawn while(src&&Dead==0&&Dying==0)
-				for(var/mob/M in oview(5))
-			//		if(M.Player==1&&M.Level>=5)
-			//			src.speed=4
-				//		walk(src,get_dir(src,M),1,3)
-					if(M.Player==1&&src.Attacked&&src.Attacker==M.Name)
-						src.speed=4
-						walk(src,get_dir(src,M),1,3)
-				sleep(world.tick_lag)
-			..()
+
 
 	Bandit_Enemies
 		Bandit

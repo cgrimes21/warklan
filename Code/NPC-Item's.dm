@@ -38,30 +38,212 @@ obj/NPCs/Items
 		usr.ShowingInfo=0
 		winset(usr,"Item","is-visible=false")
 
-	Wooden_Sword
-		name="Wooden Sword"
+	Stone_Sword
+		name="Stone Sword"
 		Weight=25
-		MaterialsRequired="3 Small Sticks"
-		Des="Wooden Sword"
+		MaterialsRequired="3 Small Stones"
+		Des="Stone Sword"
 		icon='JpShopItems.dmi'
-		icon_state="trainingstaff"
+		icon_state="Stone Sword"
 		Click()
 			usr<<sound('Clickitem_statpoints.wav')
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_sticks(usr)>=3)
+			if(count_stones(usr)>=3)
 				usr.QuestItemDelete()
-				var/obj/Items/Weapons/Wooden_Sword/A=new/obj/Items/Weapons/Wooden_Sword
+				var/obj/Items/Weapons/Stone_Sword/A=new/obj/Items/Weapons/Stone_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
 				if(usr.BagOpen==1)
 					usr.AddItems()
-				_message(usr,"You've received a wooden sword.","Yellow")
+				_message(usr,"You've received a Stone Sword.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+	Stone_Axe
+		name="Stone Axe"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Stone Axe"
+		icon='JpShopItems.dmi'
+		icon_state="Stone Axe"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Stone_Axe/A=new/obj/Items/Weapons/Stone_Axe
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Stone Axe.","Yellow")
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
+	Stone_Spear
+		name="Stone Spear"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Stone Spear"
+		icon='JpShopItems.dmi'
+		icon_state="Stone Spear"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Stone_Spear/A=new/obj/Items/Weapons/Stone_Spear
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Stone Spear.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Bronze_Sword
+		name="Bronze Sword"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Bronze Sword"
+		icon='JpShopItems.dmi'
+		icon_state="Bronze Sword"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				usr.QuestItemDelete()
+				var/obj/Items/Weapons/Bronze_Sword/A=new/obj/Items/Weapons/Bronze_Sword
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Bronze Sword.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+	Bronze_Axe
+		name="Bronze Axe"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Bronze Axe"
+		icon='JpShopItems.dmi'
+		icon_state="Bronze Axe"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Bronze_Axe/A=new/obj/Items/Weapons/Bronze_Axe
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Bronze Axe.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Bronze_Spear
+		name="Bronze Spear"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Bronze Spear"
+		icon='JpShopItems.dmi'
+		icon_state="Bronze Spear"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Bronze_Spear/A=new/obj/Items/Weapons/Bronze_Spear
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Bronze Spear.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Iron_Sword
+		name="Iron Sword"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Iron Sword"
+		icon='JpShopItems.dmi'
+		icon_state="Iron Sword"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				usr.QuestItemDelete()
+				var/obj/Items/Weapons/Iron_Sword/A=new/obj/Items/Weapons/Iron_Sword
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Iron Sword.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+	Iron_Axe
+		name="Iron Axe"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Iron Axe"
+		icon='JpShopItems.dmi'
+		icon_state="Iron Axe"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Iron_Axe/A=new/obj/Items/Weapons/Iron_Axe
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Iron Axe.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Iron_Spear
+		name="Iron Spear"
+		Weight=25
+		MaterialsRequired="3 Small Stones"
+		Des="Iron Spear"
+		icon='JpShopItems.dmi'
+		icon_state="Iron Spear"
+		Click()
+			usr<<sound('Clickitem_statpoints.wav')
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_stones(usr)>=3)
+				var/obj/Items/Weapons/Iron_Spear/A=new/obj/Items/Weapons/Iron_Spear
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Iron Spear.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
 	Fox_Fur_Tunic
 		name="Fox Fur Tunic"

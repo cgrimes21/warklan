@@ -1,3 +1,4 @@
+
 obj/Equipped
 	icon='Items.dmi'
 	icon_state="E2"
@@ -79,10 +80,10 @@ obj/Items/ItemDrops
 					usr.contents+=src
 					if(usr.BagOpen==1)
 						usr.AddItems()
-	Small_Stick
+	Small_Stone
 		icon='ItemDrops.dmi'
-		icon_state="smallstick"
-		name="Small Stick"
+		icon_state="smallstone"
+		name="Small Stone"
 		Click()
 			if(src in oview(1))
 				if(usr.AvailableItems>=usr.MaxItems)
@@ -304,7 +305,6 @@ obj/Items
 							src.pixel_y=0
 							src.pixel_x=0
 							S.overlays-=S.overlays
-							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingShirt==1)
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
@@ -333,15 +333,15 @@ obj/Items
 		WeaponLevel=1
 		layer=17
 		Weight=25
-		Wooden_Sword
+		Stone_Sword
 			icon='JpShopItems.dmi'
-			icon_state="trainingstaff"
+			icon_state="Stone Sword"
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.StaffBoost
+						usr.Strength-=usr.SwordBoost
 						src.overlays-=src.overlays
 						usr.WearingWeapon=0
 						usr.SwordOn=0
@@ -362,8 +362,348 @@ obj/Items
 						src.pixel_x+=3
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
-					usr.StaffBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.StaffBoost
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+		Stone_Axe
+			icon='JpShopItems.dmi'
+			icon_state="Stone Axe"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+
+		Stone_Spear
+			icon='JpShopItems.dmi'
+			icon_state="Stone Spear"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+		Bronze_Sword
+			icon='JpShopItems.dmi'
+			icon_state="Bronze Sword"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+		Bronze_Axe
+			icon='JpShopItems.dmi'
+			icon_state="Bronze Axe"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+
+		Bronze_Spear
+			icon='JpShopItems.dmi'
+			icon_state="Bronze Spear"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+
+		Iron_Sword
+			icon='JpShopItems.dmi'
+			icon_state="Iron Sword"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+		Iron_Axe
+			icon='JpShopItems.dmi'
+			icon_state="Iron Axe"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
+
+				else
+					if(src in oview(1))
+						if(usr.AvailableItems>=usr.MaxItems)
+							_message(usr,"You're Holding To Many Items","Yellow")
+							return
+						else
+							usr.AvailableItems+=1
+							usr.contents+=src
+							if(usr.BagOpen==1)
+								usr.AddItems()
+
+		Iron_Spear
+			icon='JpShopItems.dmi'
+			icon_state="Iron Spear"
+			Click()
+				usr<<sound('Clickitem_statpoints.wav')
+				if(src in usr.contents)
+					if(src.Wearing==1)
+						src.Wearing=0
+						usr.Strength-=usr.SwordBoost
+						src.overlays-=src.overlays
+						usr.WearingWeapon=0
+						usr.SwordOn=0
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y=0
+							src.pixel_x=0
+							S.overlays-=S.overlays
+							S.overlays+=new/obj/HudLetter/A
+						return
+					if(usr.WearingWeapon==1)
+						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						return
+					src.Wearing=1
+					usr.SwordOn = 1
+					usr.WearingWeapon=1
+					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+						src.pixel_y+=5
+						src.pixel_x+=3
+						S.overlays+=src
+					src.overlays+=new/obj/Equipped
+					usr.SwordBoost = 5 + WeaponLevel * 5
+					usr.Strength += usr.SwordBoost
 
 				else
 					if(src in oview(1))

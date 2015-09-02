@@ -31,11 +31,16 @@ mob/proc
 mob/verb
 	BuildBCT()
 		set hidden = 1
+		winset(usr,"Build","is-visible=false")
+		ShowingBuildMenu=0
 		usr.Build("Basic Crafting Table")
+
 
 mob/verb
 	BuildBST()
 		set hidden = 1
+		winset(usr,"Build","is-visible=false")
+		ShowingBuildMenu=0
 		usr.Build("Basic Sewing Table")
 
 mob
