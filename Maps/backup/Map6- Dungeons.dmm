@@ -13,80 +13,83 @@
 "am" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/shovel,/area)
 "an" = (/obj/Darkness,/turf/Mountains/s10,/area)
 "ao" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock7,/area)
-"ap" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room6_Back,/area)
-"aq" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room7_Next,/area)
-"ar" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room7_Back,/area)
-"as" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room6_Back,/area)
-"at" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room6_Next,/area)
-"au" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room7_Back,/area)
-"av" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room7_Next,/area)
-"aw" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room7_Back,/area)
-"ax" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room7_Next,/area)
-"ay" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock3,/area)
-"az" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/flower1,/area)
-"aA" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock6,/area)
-"aB" = (/obj/Darkness,/turf/Mountains/s5,/area)
-"aC" = (/obj/Darkness,/turf/Mountains/s6,/area)
-"aD" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock5,/area)
-"aE" = (/obj/Darkness,/turf/Mountains/s7,/area)
-"aF" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock4,/area)
-"aG" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock3,/area)
-"aH" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock6,/area)
-"aI" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock5,/area)
-"aJ" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock4,/area)
-"aK" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room4_Back,/area)
-"aL" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room5_Next,/area)
-"aM" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room5_Back,/area)
-"aN" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room6_Next,/area)
-"aO" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room4_Back,/area)
-"aP" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room4_Next,/area)
-"aQ" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room5_Back,/area)
-"aR" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room5_Next,/area)
-"aS" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room5_Back,/area)
-"aT" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room5_Next,/area)
-"aU" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room6_Back,/area)
-"aV" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room6_Next,/area)
-"aW" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock2,/area)
-"aX" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/flower1,/area)
-"aY" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock1,/area)
-"aZ" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock7,/area)
-"ba" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock7,/area)
-"bb" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock3,/area)
-"bc" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room2_Back,/area)
-"bd" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room3_Next,/area)
-"be" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room3_Back,/area)
-"bf" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room4_Next,/area)
-"bg" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room2_Back,/area)
-"bh" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room2_Next,/area)
-"bi" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room3_Back,/area)
-"bj" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room3_Next,/area)
-"bk" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room3_Back,/area)
-"bl" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room3_Next,/area)
-"bm" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room4_Back,/area)
-"bn" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room4_Next,/area)
-"bo" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/bones2,/area)
-"bp" = (/obj/Darkness,/turf/Mountains/m7,/area)
-"bq" = (/obj/Darkness,/turf/Mountains/m8,/area)
-"br" = (/obj/Darkness,/turf/Mountains/m9,/area)
-"bs" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room1_Next,/area)
-"bt" = (/obj/Darkness,/turf/Mountains/m4,/area)
-"bu" = (/turf/Mountains/m8,/obj/Darkness,/turf/Cave/rock6,/area)
-"bv" = (/obj/Darkness,/turf/Mountains/m6,/area)
-"bw" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room1_Back,/area)
-"bx" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room1_Next,/area)
-"by" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/bones2,/area)
-"bz" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/bones1,/area)
-"bA" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room1_Back,/area)
-"bB" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room2_Next,/area)
-"bC" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room1_Back,/area)
-"bD" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room1_Next,/area)
-"bE" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room2_Back,/area)
-"bF" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room2_Next,/area)
-"bG" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Dungeon1_Inside,/area)
-"bH" = (/obj/Darkness,/turf/Cave/Black,/area)
-"bI" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
-"bJ" = (/turf/Mountains/s9,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
-"bK" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
+"ap" = (/obj/Darkness,/mob/Enemies/Bat_Black,/turf/Mountains/s9,/area)
+"aq" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room6_Back,/area)
+"ar" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room7_Next,/area)
+"as" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room7_Back,/area)
+"at" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room6_Back,/area)
+"au" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room6_Next,/area)
+"av" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room7_Back,/area)
+"aw" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room7_Next,/area)
+"ax" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room7_Back,/area)
+"ay" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room7_Next,/area)
+"az" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock3,/area)
+"aA" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/flower1,/area)
+"aB" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock6,/area)
+"aC" = (/obj/Darkness,/turf/Mountains/s5,/area)
+"aD" = (/obj/Darkness,/turf/Mountains/s6,/area)
+"aE" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock5,/area)
+"aF" = (/obj/Darkness,/turf/Mountains/s7,/area)
+"aG" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock4,/area)
+"aH" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock3,/area)
+"aI" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock6,/area)
+"aJ" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock5,/area)
+"aK" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock4,/area)
+"aL" = (/obj/Darkness,/mob/Enemies/Cave_Spider,/turf/Mountains/s9,/area)
+"aM" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room4_Back,/area)
+"aN" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room5_Next,/area)
+"aO" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room5_Back,/area)
+"aP" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room6_Next,/area)
+"aQ" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room4_Back,/area)
+"aR" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room4_Next,/area)
+"aS" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room5_Back,/area)
+"aT" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room5_Next,/area)
+"aU" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room5_Back,/area)
+"aV" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room5_Next,/area)
+"aW" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room6_Back,/area)
+"aX" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room6_Next,/area)
+"aY" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/rock2,/area)
+"aZ" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/flower1,/area)
+"ba" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock1,/area)
+"bb" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/rock7,/area)
+"bc" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock7,/area)
+"bd" = (/turf/Mountains/s12,/obj/Darkness,/turf/Cave/rock3,/area)
+"be" = (/obj/Darkness,/mob/Enemies/Bat,/turf/Mountains/s9,/area)
+"bf" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room2_Back,/area)
+"bg" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room3_Next,/area)
+"bh" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room3_Back,/area)
+"bi" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room4_Next,/area)
+"bj" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room2_Back,/area)
+"bk" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room2_Next,/area)
+"bl" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room3_Back,/area)
+"bm" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room3_Next,/area)
+"bn" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room3_Back,/area)
+"bo" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room3_Next,/area)
+"bp" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room4_Back,/area)
+"bq" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room4_Next,/area)
+"br" = (/turf/Mountains/s6,/obj/Darkness,/turf/Cave/bones2,/area)
+"bs" = (/obj/Darkness,/turf/Mountains/m7,/area)
+"bt" = (/obj/Darkness,/turf/Mountains/m8,/area)
+"bu" = (/obj/Darkness,/turf/Mountains/m9,/area)
+"bv" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room1_Next,/area)
+"bw" = (/obj/Darkness,/turf/Mountains/m4,/area)
+"bx" = (/turf/Mountains/m8,/obj/Darkness,/turf/Cave/rock6,/area)
+"by" = (/obj/Darkness,/turf/Mountains/m6,/area)
+"bz" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room1_Back,/area)
+"bA" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room1_Next,/area)
+"bB" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/bones2,/area)
+"bC" = (/turf/Mountains/s9,/obj/Darkness,/turf/Cave/bones1,/area)
+"bD" = (/turf/Mountains/s11,/obj/Darkness,/turf/Locations/Dungeons/Room1_Back,/area)
+"bE" = (/turf/Mountains/s13,/obj/Darkness,/turf/Locations/Dungeons/Room2_Next,/area)
+"bF" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Room1_Back,/area)
+"bG" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room1_Next,/area)
+"bH" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Room2_Back,/area)
+"bI" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Room2_Next,/area)
+"bJ" = (/turf/Mountains/s9,/obj/Darkness,/turf/Markers/Mountains/Dungeon1_Inside,/area)
+"bK" = (/obj/Darkness,/turf/Cave/Black,/area)
+"bL" = (/turf/Mountains/s5,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
+"bM" = (/turf/Mountains/s9,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
+"bN" = (/turf/Mountains/s7,/obj/Darkness,/turf/Locations/Dungeons/Dungeon1_Outside,/area)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -94,59 +97,59 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabacadadadaeadadafadadadaeadadadagabahaaaaaaaaaaaaaaaaaaaaabacadadadaeadadadadaiadadadadadagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabajakakakalakakakamakakalakakakanabahaaaaaaaaaaaaaaaaaaaaabajakakakalakakakakakakakaoakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabahaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabapakakakakakakakakakakakakakakakakaqabaaaaaaaaaaaaaaaaaaabarakakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabasatakakakakakakakakakakakakakakauavabaaaaaaaaaaaaaaaaaaabawaxakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakayakakakakanabahaaaaaaaaaaaaaaaaaaaaabajakakazakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakaAakayakakaAakakakakaAakayanabahaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakazakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabaBaCaDaCaCaCaCaDaCaCaCaCaDaCaCaEabahaaaaaaaaaaaaaaaaaaaaabaBaCaFaCaCaCaGaCaCaCaCaCaCaGaCaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakapakakakakakapakakakakanabahaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakapakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakapakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabaqakakakakakakapakakakakakakakakakarabaaaaaaaaaaaaaaaaaaabasakakakakakakakakakapakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabatauakakakakakakakakakakakapakakavawabaaaaaaaaaaaaaaaaaaabaxayakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakapakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakapakakakakakazakakakakanabahaaaaaaaaaaaaaaaaaaaaabajakakaAakakakakakakakakakakapanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakaBakazakakaBakakakakaBakazanabahaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakaAakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaCaDaEaDaDaDaDaEaDaDaDaDaEaDaDaFabahaaaaaaaaaaaaaaaaaaaaabaCaDaGaDaDaDaHaDaDaDaDaDaDaHaDaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabacadaHadadadaHadadadadadadadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaiadadadaiadadadadaiadadaiagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakaIakaJakaIakakakakayakayakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakayakakakakayakakakayakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabahaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabaKakakakakakakakakakakakakakakakakaLabaaaaaaaaaaaaaaaaaaabaMakakakakakakakakakakakakakakakakaNabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabaOaPakakakakakakakakakakakakakakaQaRabaaaaaaaaaaaaaaaaaaabaSaTakakakakakakakakakakakakakakaUaVabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakaWakakakaWakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakaoakakakakakakakakaoakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabaBaCaXaCaCaYaCaZaCaYaCaCaCaXaCaEabaaaaaaaaaaaaaaaaaaaaaaabaBaFaCaCaCaCaXaCaCaZaCaCaCaCaCaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabacadaIadadadaIadadadadadadadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaiadadadaiadadadadaiadadaiagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakaJakaKakaJakakakakazakazakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakazakakakakazakakakazakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakaLakakakakakakakakakanabahaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakakaLakakakakaLakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakaLakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabaMakakakakakakakakakakakakakakakakaNabaaaaaaaaaaaaaaaaaaabaOakakakakakakakakaLakakakakakakakaPabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabaQaRakakakakakakaLakakakakakakakaSaTabaaaaaaaaaaaaaaaaaaabaUaVakaLakakakakakakakakakakakakaWaXabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakakakakakakakakakaLakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakaLakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakaLakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakaYakakakaYakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakaoakakakakakakakakaoakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaCaDaZaDaDbaaDbbaDbaaDaDaDaZaDaFabaaaaaaaaaaaaaaaaaaaaaaabaCaGaDaDaDaDaZaDaDbbaDaDaDaDaDaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabacadadadbabbadaHadadadbabbadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaeaeadadaeaeadadaeaeadadadagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakayakakakakaIayakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakalalakakalalakakalalakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaahabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabbcakakakakakakakakakakakakakakakakbdabaaaaaaaaaaaaaaaaaaabbeakakakakakakakakakakakakakakakakbfabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaabbgbhakakakakakakakakakakakakakakbibjabaaaaaaaaaaaaaaaaaaabbkblakakakakakakakakakakakakakakbmbnabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakaWakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakamakakakakakakayakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabaBaCaCaCboaCaYaCaXaCaCaXaCaCaCaEabaaaaaaaaaaaaaaaaaaaaaaabaBaCaXaGboaCaCaCaCaCaGaGaGaXaCaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabacadadadbcbdadaIadadadbcbdadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaeaeadadaeaeadadaeaeadadadagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakazakakakakaJazakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakalalakakalalakakalalakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaahabajakakakakakakakakbeakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakbeakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbfakakakakakakakakakakakakakakakakbgabaaaaaaaaaaaaaaaaaaabbhakakakakakakakakakakakakakakakakbiabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbjbkakakakakakbeakakakakakakakakblbmabaaaaaaaaaaaaaaaaaaabbnboakakakakakakakakakakakakakakbpbqabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaababajakakakakakakakakakakbeakakakanababaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakbeakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakaYakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakakakamakakakakakakazakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaCaDaDaDbraDbaaDaZaDaDaZaDaDaDaFabaaaaaaaaaaaaaaaaaaaaaaabaCaDaZaHbraDaDaDaDaDaHaHaHaZaDaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabacadaHaHaHadadadadadadadbaadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaeagacadaeagacadadagacadadadagabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakaIaIaIakakakayakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakalanaBaCaYaEajakaWanajakakaWanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaabaBaCaCaEbpbqbqbraBaCaYaEaBaCaCaYaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakakbsabaaaaaaaaaaaaaaaaaaaaabbpbqbqbrbtbqbubvbpbqbqbrbpbqbqbqbrabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakbwbxabaaaaaaaaaaaaaaaaaaaaabbtbqbqbvakaAaIakbtbqbqbvbtbqbqbqbvabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaahabajakakazakaIakamakakakakakakazakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaababajakakakakakakakbyakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakbzakaCaCaCaCaCaFaCaCaCaCaEabaaaaaaaaaaaaaaaaaaaaabbAakakakakakakakakakakakakakakakakakbBabaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakanababababababababababababaaaaaaaaaaaaaaaaaaaaabbCbDakakakakakakakakakakakakakakakbEbFabaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababajakakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabajakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabajakaWakakakakakakakakakakakayakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabaBakbGakaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaBaCaYaCaCaCaCaCaZaCaCaCaCaCaCaCaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaabbHbIbJbKbHabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabacadaIaIaIadadadadadadadbcadadagabaaaaaaaaaaaaaaaaaaaaaaabacadaeagacadaeagacadadagacadadadagabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakaJaJaJakakakazakakakakakakanabaaaaaaaaaaaaaaaaaaaaaaabajakalanaCaDbaaFajakaYanajakakaYanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaaaabaCaDaDaFbsbtbtbuaCaDbaaFaCaDaDbaaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakakbvabaaaaaaaaaaaaaaaaaaaaabbsbtbtbubwbtbxbybsbtbtbubsbtbtbtbuabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakbzbAabaaaaaaaaaaaaaaaaaaaaabbwbtbtbyakaBaJakbwbtbtbybwbtbtbtbyabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanababaaaaaaaaaaaaaaaaaaahabajakakaAakaJakamakakakakakakaAakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakakakakakakakakakakakakanabaaaaaaaaaaaaaaaaaaaaababajakakbeakakakakbBakbeakakakakbeanababaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakbCakaDaDaDaDaDaGaDaDaDaDaFabaaaaaaaaaaaaaaaaaaaaabbDakakakakakakakakakakakakakakakakakbEabaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakanababababababababababababaaaaaaaaaaaaaaaaaaaaabbFbGakakakakakakakakakakakakakakakbHbIabaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababajakakakakakakbeakakakakakbeakakanababaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabajakakakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabajakaYakakakakakakakakakakakazakanabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaCakbJakaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaCaDbaaDaDaDaDaDbbaDaDaDaDaDaDaDaFabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabbKbLbMbNbKabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaabababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

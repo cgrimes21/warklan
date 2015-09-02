@@ -125,8 +125,8 @@ mob/Enemies
 		Level=1
 		Strength=24
 		Defense=21
-		Health=120
-		MaxHealth=120
+		Health=150
+		MaxHealth=150
 		New()
 			spawn
 				while(src)
@@ -142,8 +142,60 @@ mob/Enemies
 		Level=4
 		Strength=32
 		Defense=28
-		Health=200
-		MaxHealth=200
+		Health=250
+		MaxHealth=250
+		speed=2
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+	Bat
+		icon='Bat.dmi'
+		Name="Cave Bat"
+		Level=4
+		Strength=40
+		Defense=35
+		Health=650
+		MaxHealth=650
+		speed=2
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+	Cave_Spider
+		icon='Spider.dmi'
+		Name="Cave Spider"
+		Level=4
+		Strength=40
+		Defense=35
+		Health=500
+		MaxHealth=500
+		speed=2
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+
+	Bat_Black
+		icon='Bat_Black.dmi'
+		Name="Black Bat"
+		Level=4
+		Strength=48
+		Defense=42
+		Health=500
+		MaxHealth=500
 		speed=2
 		New()
 			spawn

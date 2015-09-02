@@ -456,9 +456,6 @@ mob/proc
 				return
 			else
 				src.Stamina+=5
-				src.EXP+=0.5
-				if(src.EXP>src.MaxEXP)
-					src.LevelUP()
 			next
 			sleep(20)
 	HEALTHREGEN()
@@ -475,9 +472,6 @@ mob/proc
 				return
 			else
 				src.Health+=5
-				src.EXP+=0.5
-				if(src.EXP>src.MaxEXP)
-					src.LevelUP()
 			next
 			sleep(20)
 proc/percent(value, max)

@@ -104,7 +104,7 @@ mob/verb
 			/////////////////////
 				walk(A,usr.dir)*/
 		for(var/obj/Can_Build/O in get_step(src,usr.dir))
-			var/tmp/damage=((usr.Strength+40)-O.Defense)/2
+			var/tmp/damage=((usr.Strength+15)-O.Defense)/2
 			O.Health-=damage
 			O.Obj_DeathCheck()
 		for(var/mob/M in get_step(src,usr.dir))
@@ -213,9 +213,9 @@ mob/verb
 						M.DeathCheck(usr,M)
 						return
 					else
-						var/tmp/damage=((usr.Strength+25)-M.Defense)/2
+						var/tmp/damage=((usr.Strength+15)-M.Defense)/2.5
 						if(damage<=0)
-							damage=rand(1,80)
+							damage=rand(1,2)
 						flick("Knock Back",M)
 						M.Damage(damage)
 						M.DeathCheck(usr,M)

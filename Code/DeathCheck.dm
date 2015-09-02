@@ -38,15 +38,17 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
 						F.loc=M.loc
+						T.EXP+=rand(30,40)
 					//G.loc=M.loc
 				if(M.Name=="Wolf"&&M.Enemy==1)
 					//G.Amount=5
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stone
 						F.loc=M.loc
+						T.EXP+=rand(30,40)
 					//G.loc=M.loc
-				else
-					T.EXP+=rand(5,40)
+				//else
+					//T.EXP+=rand(5,40)
 				T.LevelUP()
 			if(M.Player)
 				debuggers<<"[M.Attacker] killed [M.name]"
