@@ -48,6 +48,7 @@ mob
 	Click()
 		..()
 		if(usr != src)
+			usr.Clicking()
 			if(src.Player)
 				winshow(usr, "clanwindow", 1)
 				usr.clicked_who = src

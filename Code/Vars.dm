@@ -47,14 +47,14 @@ mob
 		Attacker=""
 		obj/Effects/health_bar/healthbar
 		Sword_Skill_EXP = 0
-		Sword_Skill_MaxEXP = 10
+		Sword_Skill_MaxEXP = 20
 		Sword_Skill_Level = 1
 		HandToHand_Skill_EXP = 0
-		HandToHand_Skill_MaxEXP = 10
+		HandToHand_Skill_MaxEXP = 20
 		HandToHand_Skill_Level = 1
 		bow_skill = 0
-		music_on = 0
-		sound_on = 0
+		music_on = 1
+		sound_on = 1
 
 		Mute=0
 		Admin=0
@@ -167,11 +167,13 @@ obj
 		Cost=0
 		CanPickUp=1
 		MaterialsRequired=""
+		Fading=0
 
 obj/Can_Build
 	var
 		Health=50
 		MaxHealth=50
+		MaxDefense=50
 		Defense=50
 		CanDestroy=1
 		obj/Effects/health_bar/healthbar

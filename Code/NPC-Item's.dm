@@ -41,16 +41,16 @@ obj/NPCs/Items
 	Stone_Sword
 		name="Stone Sword"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="3 Stones"
 		Des="Stone Sword"
 		icon='JpShopItems.dmi'
 		icon_state="Stone Sword"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Stone",usr)>=3)
 				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Stone_Sword/A=new/obj/Items/Weapons/Stone_Sword
 				usr.AvailableItems+=1
@@ -61,42 +61,20 @@ obj/NPCs/Items
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
-	Stone_Axe
-		name="Stone Axe"
-		Weight=25
-		MaterialsRequired="3 Small Stones"
-		Des="Stone Axe"
-		icon='JpShopItems.dmi'
-		icon_state="Stone Axe"
-		Click()
-			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
-				_message(usr,"You're holding too many items!","Yellow")
-				return
-			if(count_stones(usr)>=3)
-				var/obj/Items/Weapons/Stone_Axe/A=new/obj/Items/Weapons/Stone_Axe
-				usr.AvailableItems+=1
-				usr.contents+=A
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				_message(usr,"You've received a Stone Axe.","Yellow")
-				return
-			else
-				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
 	Stone_Spear
 		name="Stone Spear"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="7 Stones"
 		Des="Stone Spear"
 		icon='JpShopItems.dmi'
 		icon_state="Stone Spear"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Stone",usr)>=3)
 				var/obj/Items/Weapons/Stone_Spear/A=new/obj/Items/Weapons/Stone_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -107,19 +85,42 @@ obj/NPCs/Items
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
+	Stone_Axe
+		name="Stone Axe"
+		Weight=25
+		MaterialsRequired="12 Stones"
+		Des="Stone Axe"
+		icon='JpShopItems.dmi'
+		icon_state="Stone Axe"
+		Click()
+			usr.Clicking()
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_minerals("Stone",,usr)>=3)
+				var/obj/Items/Weapons/Stone_Axe/A=new/obj/Items/Weapons/Stone_Axe
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Stone Axe.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
 	Bronze_Sword
 		name="Bronze Sword"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="5 Bronze Bars"
 		Des="Bronze Sword"
 		icon='JpShopItems.dmi'
 		icon_state="Bronze Sword"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Bronze",usr)>=3)
 				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Bronze_Sword/A=new/obj/Items/Weapons/Bronze_Sword
 				usr.AvailableItems+=1
@@ -130,42 +131,20 @@ obj/NPCs/Items
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
-	Bronze_Axe
-		name="Bronze Axe"
-		Weight=25
-		MaterialsRequired="3 Small Stones"
-		Des="Bronze Axe"
-		icon='JpShopItems.dmi'
-		icon_state="Bronze Axe"
-		Click()
-			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
-				_message(usr,"You're holding too many items!","Yellow")
-				return
-			if(count_stones(usr)>=3)
-				var/obj/Items/Weapons/Bronze_Axe/A=new/obj/Items/Weapons/Bronze_Axe
-				usr.AvailableItems+=1
-				usr.contents+=A
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				_message(usr,"You've received a Bronze Axe.","Yellow")
-				return
-			else
-				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
 	Bronze_Spear
 		name="Bronze Spear"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="10 Bronze Bars"
 		Des="Bronze Spear"
 		icon='JpShopItems.dmi'
 		icon_state="Bronze Spear"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Bronze",usr)>=3)
 				var/obj/Items/Weapons/Bronze_Spear/A=new/obj/Items/Weapons/Bronze_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -176,19 +155,43 @@ obj/NPCs/Items
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
+	Bronze_Axe
+		name="Bronze Axe"
+		Weight=25
+		MaterialsRequired="15 Bronze Bars"
+		Des="Bronze Axe"
+		icon='JpShopItems.dmi'
+		icon_state="Bronze Axe"
+		Click()
+			usr.Clicking()
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_minerals("Bronze",usr)>=3)
+				var/obj/Items/Weapons/Bronze_Axe/A=new/obj/Items/Weapons/Bronze_Axe
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Bronze Axe.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+
 	Iron_Sword
 		name="Iron Sword"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="10 Iron Bars"
 		Des="Iron Sword"
 		icon='JpShopItems.dmi'
 		icon_state="Iron Sword"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Iron",,usr)>=3)
 				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Iron_Sword/A=new/obj/Items/Weapons/Iron_Sword
 				usr.AvailableItems+=1
@@ -199,42 +202,20 @@ obj/NPCs/Items
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
-	Iron_Axe
-		name="Iron Axe"
-		Weight=25
-		MaterialsRequired="3 Small Stones"
-		Des="Iron Axe"
-		icon='JpShopItems.dmi'
-		icon_state="Iron Axe"
-		Click()
-			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
-				_message(usr,"You're holding too many items!","Yellow")
-				return
-			if(count_stones(usr)>=3)
-				var/obj/Items/Weapons/Iron_Axe/A=new/obj/Items/Weapons/Iron_Axe
-				usr.AvailableItems+=1
-				usr.contents+=A
-				if(usr.BagOpen==1)
-					usr.AddItems()
-				_message(usr,"You've received a Iron Axe.","Yellow")
-				return
-			else
-				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
 	Iron_Spear
 		name="Iron Spear"
 		Weight=25
-		MaterialsRequired="3 Small Stones"
+		MaterialsRequired="15 Iron Bars"
 		Des="Iron Spear"
 		icon='JpShopItems.dmi'
 		icon_state="Iron Spear"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_stones(usr)>=3)
+			if(count_minerals("Iron",usr)>=3)
 				var/obj/Items/Weapons/Iron_Spear/A=new/obj/Items/Weapons/Iron_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -245,26 +226,98 @@ obj/NPCs/Items
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
 
-	Fox_Fur_Tunic
-		name="Fox Fur Tunic"
+	Iron_Axe
+		name="Iron Axe"
 		Weight=25
-		MaterialsRequired="3 Fox Furs"
-		Des="Fox Fur Tunic"
+		MaterialsRequired="20 Iron Bars"
+		Des="Iron Axe"
 		icon='JpShopItems.dmi'
-		icon_state="fftunic"
+		icon_state="Iron Axe"
 		Click()
-			usr<<sound('Clickitem_statpoints.wav')
+			usr.Clicking()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_fox_furs(usr)>=3)
-				usr.QuestItemDelete()
-				var/obj/Items/Clothing/Fox_Fur_Tunic/A=new/obj/Items/Clothing/Fox_Fur_Tunic
+			if(count_minerals("Iron",usr)>=3)
+				var/obj/Items/Weapons/Iron_Axe/A=new/obj/Items/Weapons/Iron_Axe
 				usr.AvailableItems+=1
 				usr.contents+=A
 				if(usr.BagOpen==1)
 					usr.AddItems()
-				_message(usr,"You've received a fox fur tunic.","Yellow")
+				_message(usr,"You've received a Iron Axe.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Fox_Cub_Tunic
+		name="Fox Cub Tunic"
+		Weight=25
+		MaterialsRequired="3 Fox Furs"
+		Des="Fox Cub Tunic"
+		icon='JpShopItems.dmi'
+		icon_state="fctunic"
+		Click()
+			usr.Clicking()
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_furs("Fox Cub Furs",usr)>=3)
+				usr.QuestItemDelete()
+				var/obj/Items/Clothing/Fox_Cub_Tunic/A=new/obj/Items/Clothing/Fox_Cub_Tunic
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Fox Cub Tunic.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+	Red_Fox_Coat
+		name="Red Fox Coat"
+		Weight=25
+		MaterialsRequired="7 Red Fox Furs"
+		Des="Fox Fur Tunic"
+		icon='JpShopItems.dmi'
+		icon_state="rfcoat"
+		Click()
+			usr.Clicking()
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_furs("Red Fox Furs",usr)>=7)
+				usr.QuestItemDelete()
+				var/obj/Items/Clothing/Red_Fox_Coat/A=new/obj/Items/Clothing/Red_Fox_Coat
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Red Fox Coat.","Yellow")
+				return
+			else
+				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")
+
+
+	Wolf_Fur_Coat
+		name="Wolf Fur Coat"
+		Weight=25
+		MaterialsRequired="7 Wolf Furs"
+		Des="Wolf Fur Coat"
+		icon='JpShopItems.dmi'
+		icon_state="wfcoat"
+		Click()
+			usr.Clicking()
+			if(usr.AvailableItems>=usr.MaxItems)
+				_message(usr,"You're holding too many items!","Yellow")
+				return
+			if(count_furs("Mountain Wolf Furs",usr)>=7)
+				usr.QuestItemDelete()
+				var/obj/Items/Clothing/Wolf_Fur_Coat/A=new/obj/Items/Clothing/Wolf_Fur_Coat
+				usr.AvailableItems+=1
+				usr.contents+=A
+				if(usr.BagOpen==1)
+					usr.AddItems()
+				_message(usr,"You've received a Wolf Fur Coat.","Yellow")
 				return
 			else
 				_message(usr,"You'll need [src.MaterialsRequired].","Yellow")

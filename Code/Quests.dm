@@ -4,23 +4,40 @@ obj/!
 	pixel_y=20
 
 proc
-	count_fox_furs(mob/M)
+	count_furs(var/T as text,mob/M)
 		var/what = 0
-		for(var/obj/Items/ItemDrops/Fox_Fur/A in M.contents)
-			what += 1
+		switch(T)
+			if("Fox Cub Furs")
+				for(var/obj/Items/ItemDrops/Fox_Fur/A in M.contents)
+					what += 1
+			if("Red Fox Furs")
+				for(var/obj/Items/ItemDrops/Red_Fox_Fur/A in M.contents)
+					what += 1
+			if("Mountain Wolf Furs")
+				for(var/obj/Items/ItemDrops/Mountain_Wolf_Fur/A in M.contents)
+					what += 1
+		return what
+
+	count_minerals(var/T as text,mob/M)
+		var/what = 0
+		switch(T)
+			if("Stone")
+				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
+					what += 1
+			if("Bronze")
+				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
+					what += 1
+			if("Iron")
+				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
+					what += 1
 		return what
 
 	check_for_fftunic(mob/M)
 		var/has_it = 0
-		for(var/obj/Items/Clothing/Fox_Fur_Tunic/B in M.contents)
+		for(var/obj/Items/Clothing/Fox_Cub_Tunic/B in M.contents)
 			has_it = 1
 		return has_it
 
-	count_stones(mob/M)
-		var/what = 0
-		for(var/obj/Items/ItemDrops/Small_Stone/C in M.contents)
-			what += 1
-		return what
 
 	check_for_weapon(mob/M)
 		var/has_it = 0
@@ -82,11 +99,11 @@ mob/proc
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
 
-			else if(count_fox_furs(src) >=3)
+			else if(count_furs("Fox Cub Furs",src) >=3)
 				src<< output("<center>You've retrieved the furs! Take them to the sewing table and create a tunic.</center>","QuestMenu.Info")
 
 			else
-				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need stronger clothing, and a weapon. Why don't you go and get 3 fox skins for me. You can get them from the foxes to your right.</center>","QuestMenu.Info")
+				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need some clothing and a weapon. Let's get you a robe. Why don't you go and get 3 fox furs for me. You can get them from the fox cubs to your right.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -97,18 +114,18 @@ mob/proc
 			src<< output(null,"QuestMenu.Info")
 
 			if(check_for_weapon(src) ==1)
-				src<< output("<center>Good job! That weapon should do you well. If you need to purchase anything else you can always speak with the craftsman. Using that weapon will level up your sword skill and make it stronger, allowing you to wield better weapons. Press the S button to view your skill levels.</center>","QuestMenu.Info")
+				src<< output("<center>Good job! That weapon should do you well. If you need to create new weapons you can always create a crafting table in the build menu. Using that weapon will level up your sword skill and make it stronger, allowing you to wield better weapons. Press the S button to view your skill levels.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
 				usr.SecondQuestOver=1
 
-			else if(count_stones(src) >=3)
+			else if(count_minerals("Stone",src) >=3)
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small stones, they're usually dropped by Wolves.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small crafting stones, you can find them on Red Foxes and Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -128,19 +145,23 @@ mob/proc
 
 
 	QuestItemPickup(obj/O)
-		var/ffcollected = count_fox_furs(src)
+		var/ffcollected = count_furs("Fox Cub Furs",src)
 		if(src.DoingQuest&&src.QuestLevel==1)
 			if(istype(O, /obj/Items/ItemDrops/Fox_Fur))
 				_message(src, "<font color=green>Fox Furs Collected: [ffcollected]/3</font>","white")
-				if(ffcollected>=3)
+				if(ffcollected==3)
+					_message(usr, "<b><font color=red>Quest Completed:<font color=white> - Return To The Elder</font></b>","white")
+					usr<<sound('levelup.wav',volume=100)
 					src.ElderNPC=1
 			return
 
-		var/stonescollected = count_stones(src)
+		var/stonescollected = count_minerals("Stone",src)
 		if(src.DoingQuest&&src.QuestLevel==2)
-			if(istype(O, /obj/Items/ItemDrops/Small_Stone))
-				_message(src, "<font color=green>Small Stones Collected: [stonescollected]/3</font>","white")
-				if(stonescollected>=3)
+			if(istype(O, /obj/Items/ItemDrops/Stone))
+				_message(src, "<font color=green>Stones Collected: [stonescollected]/3</font>","white")
+				if(stonescollected==3)
+					_message(usr, "<b><font color=red>Quest Completed:<font color=white> - Return To The Elder</font></b>","white")
+					usr<<sound('levelup.wav',volume=100)
 					src.ElderNPC=1
 			return
 
@@ -159,7 +180,7 @@ mob/proc
 
 		if(src.DoingQuest&&src.QuestLevel==2)
 			var/counter = 0
-			for(var/obj/Items/ItemDrops/Small_Stone/C in src.contents)
+			for(var/obj/Items/ItemDrops/Stone/C in src.contents)
 				counter++
 				if(counter <= 3)
 					del C
@@ -241,6 +262,7 @@ mob/NPCS/QUEST
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				if(usr.QuestMenuUp==1)
 					return
 				else
@@ -277,11 +299,11 @@ mob/verb
 				usr.DoingQuest=1
 		if(QuestLevel==2)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Small Stones!</font></b>","white")
+				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Stones!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
-			/*if(SecondQuestOver)
-				usr.ShowSkillLevel()*/
+			if(SecondQuestOver)
+				usr.ShowSkillLevel()
 		if(QuestLevel==3)
 			if(!usr.DoingQuest)
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")

@@ -29,10 +29,17 @@ mob/proc
 		var/obj/NPCs/Items/Potion/G=new/obj/NPCs/Items/Potion
 		src.contents+=G
 		return
+
 	Witch_Doctor()
 		var/obj/NPCs/Items/Buff/G=new/obj/NPCs/Items/Buff
 		src.contents+=G
 		return
+
 	Tailor()
-		var/obj/NPCs/Items/Fox_Fur_Tunic/G=new/obj/NPCs/Items/Fox_Fur_Tunic
-		src.contents+=G
+		var/obj/NPCs/Items/Fox_Cub_Tunic/A=new/obj/NPCs/Items/Fox_Cub_Tunic
+		var/obj/NPCs/Items/Red_Fox_Coat/B=new/obj/NPCs/Items/Red_Fox_Coat
+		var/obj/NPCs/Items/Wolf_Fur_Coat/C=new/obj/NPCs/Items/Wolf_Fur_Coat
+
+		src.contents+=A
+		src.contents+=B
+		src.contents+=C
