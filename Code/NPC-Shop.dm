@@ -56,6 +56,6 @@ obj/Bag2
 			C.screen += src
 			..()
 		Click()
-
+			usr.Clicking()
 			usr.CreateInventory2()
 			return

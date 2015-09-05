@@ -13,6 +13,7 @@ mob/verb
 		GenerateShadow(usr, SOUTH,-32)
 		usr.Help_Player()
 		winset(usr,"NameChild","is-visible=false")
+		usr.Clicking()
 		return
 turf/BG
 	icon='Black2.dmi'

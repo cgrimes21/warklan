@@ -257,20 +257,23 @@ obj/Huds
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="24:4,10"
+				screen_loc="24:4,11:24"
 				c.screen+=src
-				src.maptext="<font color=white>Combat Level:</font>"
+				src.maptext="<font color=white>Weapon Level:</font>"
+
 		LevelPanel2
 			layer=9999
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="27:2,10"
+				screen_loc="24:100,11:24"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[usr.Level]</font>"
+					if(usr.SwordOn)
+						src.maptext="<font color=white>[usr.Sword_Skill_Level]</font>"
+					else src.maptext="<font color=white>[usr.HandToHand_Skill_Level]</font>"
 					sleep(20)
 		HealthPanel
 			layer=9999
@@ -321,19 +324,19 @@ obj/Huds
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="25:34,12:20"
+				screen_loc="25:30,12:20"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[usr.Defense]</font>"
+					src.maptext="<font color=white>[percent(usr.Defense, usr.MaxDefense)]%</font>"
 					sleep(5)
 
 		WeightPanel
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="24:4,11:24"
+				screen_loc="24:4,10"
 				c.screen+=src
 				src.maptext="<font color=white>Sword Skill EXP:</font>"
 		WeightPanel2
@@ -354,6 +357,7 @@ obj/Huds
 				screen_loc="24:4,10:26"
 				c.screen+=src
 				src.maptext="<font color=white>EXP:</font>"
+
 		EXPPanel2
 			layer=9999
 			maptext_width=900
@@ -363,7 +367,9 @@ obj/Huds
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[usr.EXP] / [usr.MaxEXP]</font>"
+					if(usr.SwordOn)
+						src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]</font>"
+					else src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
 					sleep(5)
 		STRPanel
 			layer=9999
@@ -376,12 +382,12 @@ obj/Huds
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="25:26,13:19"
+				screen_loc="25:30,13:19"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[usr.Strength]</font>"
+					src.maptext="<font color=white>[percent(usr.Strength, usr.MaxStrength)]%</font>"
 					sleep(5)
 
 

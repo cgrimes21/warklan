@@ -54,7 +54,8 @@ mob/Enemies
 			if(src.Attacked <= 0)
 				src.Attacked = 0
 				src.Attacker = ""
-				src.speed = 0.5
+				var/S = pick(0.5,1,1.5,2)
+				src.speed = S
 
 
 			if(src.Health > src.MaxHealth)
@@ -106,10 +107,10 @@ mob/Enemies
 		Name="Fox Cub"
 		speed=2
 		Level=1
-		Strength=8
-		Defense=7
-		Health=80
-		MaxHealth=80
+		Strength=7
+		Defense=4
+		Health=100
+		MaxHealth=100
 		New()
 			spawn
 				while(src)
@@ -122,11 +123,11 @@ mob/Enemies
 		icon='fox3.dmi'
 		Name="Red Fox"
 		speed=2
-		Level=1
+		Level=5
 		Strength=24
 		Defense=21
-		Health=150
-		MaxHealth=150
+		Health=100
+		MaxHealth=100
 		New()
 			spawn
 				while(src)
@@ -138,29 +139,29 @@ mob/Enemies
 
 	Wolf
 		icon='Wolf.dmi'
-		Name="Wolf"
-		Level=4
+		Name="Mountain Wolf"
+		Level=10
 		Strength=32
 		Defense=28
-		Health=250
-		MaxHealth=250
+		Health=220
+		MaxHealth=220
 		speed=2
 		New()
 			spawn
 				while(src)
 					sleep(10)
 					src.tickle()
-			GenerateShadow(src, SOUTH,-10)
+			GenerateShadow(src, SOUTH,-50)
 			Max_MouseName()
 
 	Bat
 		icon='Bat.dmi'
 		Name="Cave Bat"
 		Level=4
-		Strength=40
+		Strength=39
 		Defense=35
-		Health=650
-		MaxHealth=650
+		Health=290
+		MaxHealth=290
 		speed=2
 		New()
 			spawn
@@ -174,10 +175,10 @@ mob/Enemies
 		icon='Spider.dmi'
 		Name="Cave Spider"
 		Level=4
-		Strength=40
-		Defense=35
-		Health=500
-		MaxHealth=500
+		Strength=44
+		Defense=40
+		Health=360
+		MaxHealth=360
 		speed=2
 		New()
 			spawn
@@ -192,10 +193,10 @@ mob/Enemies
 		icon='Bat_Black.dmi'
 		Name="Black Bat"
 		Level=4
-		Strength=48
+		Strength=46
 		Defense=42
-		Health=500
-		MaxHealth=500
+		Health=430
+		MaxHealth=430
 		speed=2
 		New()
 			spawn
@@ -213,7 +214,7 @@ mob/Enemies
 			Level=10
 			Strength=17
 			Defense=15
-			Health=120
+			Health=12
 			MaxHealth=120
 			speed=3
 			New()

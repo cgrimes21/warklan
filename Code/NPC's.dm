@@ -103,6 +103,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				alert("Apparently there's some scary stuff in this cave...but I heard there was a lot of bronze inside!")
 	Tailor
 		icon_state="Tailor"
@@ -116,6 +117,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				usr.CreateInventory2(src)
 				if(usr.Interacting) { return }
 				Interact()
@@ -133,6 +135,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				usr.CreateInventory2(src)
 				if(usr.Interacting) { return }
 				Interact()
@@ -149,6 +152,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				usr.CreateInventory2(src)
 				if(usr.Interacting) { return }
 				Interact()
@@ -178,6 +182,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
+				usr.Clicking()
 				var/list/L
 				L = list("font size")
 

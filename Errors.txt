@@ -1,0 +1,2133 @@
+<<<<<<< HEAD
+=======
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+Guest-2606275673 (/mob): Save()
+Guest-2606275673 (/mob): Logout()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+Warning: further proc crash messages are being suppressed to prevent overload...
+proc name: load build (/proc/load_build)
+  source file: Building.dm,77
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+Warning: further proc crash messages are being suppressed to prevent overload...
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+Warning: further proc crash messages are being suppressed to prevent overload...
+Warning: type read from file (/obj/NPCs/Items/Wooden_Sword) is not defined
+runtime error: cannot append to list
+proc name: load build (/proc/load_build)
+  source file: Building.dm,84
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+Warning: type read from file (/obj/Items/Weapons/Wooden_Sword) is not defined
+runtime error: cannot append to list
+proc name: Load (/mob/proc/Load)
+  source file: Saving&Loading.dm,22
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Load()
+Guest-2606275673 (/mob): Login()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.name
+proc name: Stat (/mob/Stat)
+  source file: Admin.dm,484
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Stat()
+runtime error: Cannot read null.Health
+proc name: NPCAttack (/mob/proc/NPCAttack)
+  source file: Enemies.dm,32
+  usr: Fox Cub (/mob/Enemies/Fox_Cub)
+  src: Fox Cub (/mob/Enemies/Fox_Cub)
+  call stack:
+Fox Cub (/mob/Enemies/Fox_Cub): NPCAttack(Fox Cub (/mob/Enemies/Fox_Cub), null)
+Fox Cub (/mob/Enemies/Fox_Cub): NPCAttackPlayer(null)
+Fox Cub (/mob/Enemies/Fox_Cub): tickle()
+Fox Cub (/mob/Enemies/Fox_Cub): New(the s9 (20,22,6) (/turf/Mountains/s9))
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\Guest-2606275673.sav' outside of current directory.
+proc name: Load (/mob/proc/Load)
+  source file: Saving&Loading.dm,21
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Load()
+Guest-2606275673 (/mob): Login()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+Warning: type read from file (/obj/NPCs/Items/Fox_Fur_Tunic) is not defined
+runtime error: cannot append to list
+proc name: load build (/proc/load_build)
+  source file: Building.dm,142
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.m
+proc name: Login (/mob/Login)
+  source file: Klan Wars.dm,98
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Login()
+runtime error: Cannot read null.m
+proc name: Login (/mob/Login)
+  source file: Klan Wars.dm,98
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Login()
+runtime error: Cannot read null.m
+proc name: Login (/mob/Login)
+  source file: Klan Wars.dm,98
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Login()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,37
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,220
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Cannot execute null.Obj DeathCheck().
+proc name: Attack (/mob/verb/Attack)
+  source file: Combat.dm,126
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Attack()
+runtime error: Cannot execute null.Obj DeathCheck().
+proc name: Attack (/mob/verb/Attack)
+  source file: Combat.dm,126
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Attack()
+runtime error: Cannot execute null.Obj DeathCheck().
+proc name: Attack (/mob/verb/Attack)
+  source file: Combat.dm,126
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Attack()
+runtime error: Cannot execute null.Obj DeathCheck().
+proc name: Attack (/mob/verb/Attack)
+  source file: Combat.dm,126
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Attack()
+runtime error: Cannot execute null.Obj DeathCheck().
+proc name: Attack (/mob/verb/Attack)
+  source file: Combat.dm,126
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Attack()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,220
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+>>>>>>> origin/master

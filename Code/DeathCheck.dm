@@ -33,23 +33,63 @@ mob/proc
 				//var/Amount=rand(1,20)
 				//G.Amount=Amount
 				T.QUESTCHECK(M.Name)
-				if(M.Name=="Fox Cub"||M.Name=="Red Fox"&&M.Enemy==1)
-					//G.Amount=3
+				if(M.Name=="Fox Cub"&&M.Enemy==1)
+					var/exp = rand(10,20)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
 						F.loc=M.loc
-						T.EXP+=rand(30,40)
-					//G.loc=M.loc
-				if(M.Name=="Wolf"&&M.Enemy==1)
-					//G.Amount=5
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Red Fox"&&M.Enemy==1)
+					var/exp = rand(20,30)
 					if(prob(50))
-						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Small_Stone
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Red_Fox_Fur
 						F.loc=M.loc
-						T.EXP+=rand(30,40)
-					//G.loc=M.loc
-				//else
-					//T.EXP+=rand(5,40)
-				T.LevelUP()
+						F.Fade()
+					if(prob(30))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
+					var/exp = rand(30,40)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
+						F.loc=M.loc
+						F.Fade()
+					if(prob(30))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Bat"&&M.Enemy==1)
+					var/exp = rand(40,50)
+					if(prob(20))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Cave Spider"&&M.Enemy==1)
+					var/exp = rand(60,70)
+					if(prob(30))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Black Bat"&&M.Enemy==1)
+					var/exp = rand(80,90)
+					if(prob(30))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Iron
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				T.SkillLevelUP()
 			if(M.Player)
 				debuggers<<"[M.Attacker] killed [M.name]"
 				//_message(world, "<b><font color=red>[T.Name]<I> Has Killed [M.Name]!</b></I></font>")
@@ -158,22 +198,27 @@ mob/proc
 		src.Level+=1
 		src.EXP=0
 		src.MaxEXP *= 1.5
-		if(src.Level==5)
+		/*if(src.Level==5)
 			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
-			src.ElderNPC=1
+			src.ElderNPC=1*/
+
+	WeaponEquipCheck(exp)
+		if(src.SwordOn)
+			src.Sword_Skill_EXP+=exp
+		else
+			src.HandToHand_Skill_EXP+=exp
+		return exp
 
 	Skill_LevelGain_MaxExpGain()
+		src.Health = src.MaxHealth
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
 			src.Sword_Skill_Level+=1
 			src.Sword_Skill_EXP=0
-			src.Sword_Skill_MaxEXP *= 1.5
+			src.Sword_Skill_MaxEXP *= 2
 		else if(src.HandToHand_Skill_EXP>=HandToHand_Skill_MaxEXP)
 			src.HandToHand_Skill_Level+=1
 			src.HandToHand_Skill_EXP=0
-			src.HandToHand_Skill_MaxEXP *= 1.5
-			if(HandToHand_Skill_Level==2)
-				src.SkillLevelShow()
-
+			src.HandToHand_Skill_MaxEXP *= 2
 
 
 
@@ -229,7 +274,17 @@ mob/proc
 				return
 
 obj/Can_Build/proc
+
 	Obj_DeathCheck()
 		src.update_health_bar()
 		if(src.Health<=0)
 			del src
+
+	Damage(D)
+		if(Health<D)
+			Health=0
+			return
+		else
+			Health=Health-D
+			new/effect/damage(src.loc,"<font color=red><b>[round(D)]</b></font>")
+			return

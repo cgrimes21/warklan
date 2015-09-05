@@ -104,23 +104,56 @@ mob/verb
 			/////////////////////
 				walk(A,usr.dir)*/
 		for(var/obj/Can_Build/O in get_step(src,usr.dir))
-			var/tmp/damage=((usr.Strength+15)-O.Defense)/2
-			O.Health-=damage
+			if(usr.dir!=get_dir(usr,O))	//your not one step away facing them,
+				continue
+
+			if(usr.Punching)
+				return
+
+			if(usr.Stamina<=5)
+				debuggers<<"stamina = [usr.Stamina] return"
+				return
+
+			if(!O.CanDestroy)
+				return
+
+			var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')
+			if(usr.sound_on)
+				usr<<sound(G)
+			oview(10,usr)<<sound(G)
+			usr.speed=2;spawn(5)usr.speed=4
+			Punching=1;spawn(15)Punching=0
+
+				//All damage is done here
+			var/weaponlevel
+			if(usr.SwordOn)
+				weaponlevel=usr.Sword_Skill_Level
+			else
+				weaponlevel=usr.HandToHand_Skill_Level
+
+			var/tmp/damage=((usr.Strength+weaponlevel*10)-O.Defense)
+			if(damage<=0)
+				damage=rand(1,2)
+			usr.Stamina-=rand(1,2)
+			O.Damage(damage)
 			O.Obj_DeathCheck()
+			return
+
+
 		for(var/mob/M in get_step(src,usr.dir))
 			if(usr.dir!=get_dir(usr,M))	//your not one step away facing them,
 				continue
 			if(M.NPC == 1)
 				return
 			if(M.Dead==1)
-				//debuggers<<"dead = 1 return"
+				debuggers<<"dead = 1 return"
 				return
 			if(M.Dying==1)
-				//debuggers<<"dying = 1 return"
+				debuggers<<"dying = 1 return"
 				return
 
 			if(usr.Stamina<=5)
-				//debuggers<<"stamina = [usr.Stamina] return"
+				debuggers<<"stamina = [usr.Stamina] return"
 				return
 			if(usr.Punching)
 				return
@@ -133,93 +166,42 @@ mob/verb
 
 					if((ckey(usr.clan.war.name) == ckey(M.clan.name)) && (ckey(M.clan.war.name) == ckey(usr.clan.name)))
 						fight_on = 1
-						//debuggers<<"[usr.clan.name] is at war with [M.clan.name]"
+						debuggers<<"[usr.clan.name] is at war with [M.clan.name]"
 
 				if(usr.challenging ==ckey(M.name))
-					//debuggers<<"[usr.challenging] is challenging [M.name]"
+					debuggers<<"[usr.challenging] is challenging [M.name]"
 					fight_on = 1
 			else//enemy npc
 				fight_on = 1
 
 			if(fight_on)
-				/*if(usr.SwordOn)
-					if(prob(80))
-						usr.Sword_Skill_EXP += rand(0,1)
-						usr.SkillLevelUP()
-				else
-					if(prob(80))
-						usr.HandToHand_Skill_EXP += rand(0,1)
-						usr.SkillLevelUP()*/
-				Jab+=1
 				var/G=pick('Sounds/Punch.ogg','Sounds/Punch2.ogg')
-				if(Jab>=3)
-					Jab=0
-					UpperCut=1;spawn(20)UpperCut=0
-					flick("Upper Cut",usr)
-				else
-					flick("Jab",usr)
 				if(usr.sound_on)
 					usr<<sound(G)
+					if(prob(35))
+						usr<<sound('Sounds/aGrunt.ogg')
 				oview(10,usr)<<sound(G)
+				flick("Jab",usr)
 				usr.speed=2;spawn(5)usr.speed=4
 				Punching=1;spawn(15)Punching=0
 				M.Attacker=usr.Name
 				if(M.Enemy)
 					M.Attacked+=10
-				if(usr.UpperCut)
-					if(M.Blocking)
-						if(usr.dir==EAST)
-							M.dir=WEST
-						if(usr.dir==WEST)
-							M.dir=EAST
-						if(usr.dir==NORTH)
-							M.dir=SOUTH
-						if(usr.dir==SOUTH)
-							M.dir=NORTH
-						usr.Jab=0
-						usr.UpperCut=0
-						var/tmp/damage=((usr.Strength+25)-M.Defense)/2
-						if(damage<=0)
-							damage=rand(1,10)
-						flick("Knock Back",M)
-						M.Damage(damage)
-						if(M.Stamina<=0)
-							M.Blocking=0
-							M.icon_state=""
-						M.DeathCheck(usr,M)
-						return
-					if(!M.Blocking)
-						usr.Jab=0
-						usr.UpperCut=0
-						var/tmp/damage=((usr.Strength+40)-M.Defense)/1.5
-						if(damage<=0)
-							damage=rand(1,80)
-						flick("Knock Back",M)
-						M.Damage(damage)
-						M.DeathCheck(usr,M)
-						return
-					return
+
+				//All damage is done here
+				var/weaponlevel
+				if(usr.SwordOn)
+					weaponlevel=usr.Sword_Skill_Level
 				else
-					if(M.Blocking)
-						var/tmp/damage=round(usr.Strength-M.Defense)/2
-						if(damage<=0)
-							damage=rand(1,50)
-						flick("Knock Back",M)
-						M.Damage(damage)
-						M.Stamina-=rand(1,15)
-						if(M.Stamina<=0)
-							M.Blocking=0
-							M.icon_state=""
-						M.DeathCheck(usr,M)
-						return
-					else
-						var/tmp/damage=((usr.Strength+15)-M.Defense)/2.5
-						if(damage<=0)
-							damage=rand(1,2)
-						flick("Knock Back",M)
-						M.Damage(damage)
-						M.DeathCheck(usr,M)
-						return
+					weaponlevel=usr.HandToHand_Skill_Level
+
+				var/tmp/damage=((usr.Strength+weaponlevel*10)-M.Defense)
+				if(damage<=0)
+					damage=rand(1,2)
+				usr.Stamina-=rand(1,2)
+				M.Damage(damage)
+				M.DeathCheck(usr,M)
+				return
 
 
 mob/proc
@@ -270,8 +252,8 @@ effect/damage
 	New(newloc, val)
 		maptext = val
 		src.loc=newloc
-		pixel_x=30
-		pixel_y=50
+		pixel_x=9
+		pixel_y=45
 		sleep(7)
 		animate(src,transform=matrix()*10,alpha=0,pixel_y=80,time=3)
 		spawn(10)

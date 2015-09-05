@@ -49,6 +49,7 @@
 #include "Code\ShadowSystem.dm"
 #include "Code\SkillCoolDown.dm"
 #include "Code\Skills.dm"
+#include "Code\SoundEffects.dm"
 #include "Code\TextHandling.dm"
 #include "Code\Turfs.dm"
 #include "Code\Vars.dm"
