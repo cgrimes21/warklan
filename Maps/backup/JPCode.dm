@@ -354,11 +354,6 @@ turf
 			icon_state = "jap54"
 		Black
 			icon_state = "black"
-area
-	Darkness
-		Cave_Dark
-			icon='Icons/Darkness.dmi'
-			icon_state="cave_dark"
 
 turf/Markers
 	Mountains

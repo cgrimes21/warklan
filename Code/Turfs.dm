@@ -769,3 +769,4 @@ obj
 	Darkness
 		icon='Darkness.dmi'
 		icon_state="cave_dark"
+		layer=MOB_LAYER+12

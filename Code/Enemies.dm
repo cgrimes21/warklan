@@ -54,7 +54,8 @@ mob/Enemies
 			if(src.Attacked <= 0)
 				src.Attacked = 0
 				src.Attacker = ""
-				src.speed = 0.5
+				var/S = pick(0.5,1,1.5,2)
+				src.speed = S
 
 
 			if(src.Health > src.MaxHealth)
@@ -150,7 +151,7 @@ mob/Enemies
 				while(src)
 					sleep(10)
 					src.tickle()
-			GenerateShadow(src, SOUTH,-10)
+			GenerateShadow(src, SOUTH,-50)
 			Max_MouseName()
 
 	Bat
