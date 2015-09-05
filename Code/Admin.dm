@@ -481,6 +481,8 @@ mob
 			return
 		stat("Clan name", src.clan.name)
 		stat("Clan Leader:", src.clan.leader)
+		if(!src.clan.war)
+			return
 		stat("Clan war with:", src.clan.war.name)
 mob/verb
 	Edit()

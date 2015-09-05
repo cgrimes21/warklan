@@ -2,9 +2,16 @@ mob/var
 	Building=0
 	ShowingBuildMenu=0
 
+area
+	var/can_build = 1
+	no_build
+		can_build = 0
 mob/proc
 	Build(var/T as text)
 		if(src.Building)
+			return
+		var/area/t = src.loc.loc
+		if(!t.can_build)
 			return
 		switch(T)
 			if("Basic Crafting Table")

@@ -29,10 +29,12 @@ mob
 					O.layer = MOB_LAYER+20
 					src.client.screen += O
 					O.screen_loc = "[ox],[oy]"
-					oy--
-					if(oy<1)
-						oy=10
-						ox++
+					ox++
+					if(ox>17)
+						oy--
+						ox=14
+				if(oy > 21)
+					break
 		MenuBack2()
 			var/obj/H = new/obj/Bag2/Bag2(src.client)
 			var/obj/X = new/obj/Bag2/Exit(src.client)

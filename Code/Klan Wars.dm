@@ -110,7 +110,7 @@ mob
 		src.density=1
 		if(!fexists("Saves/[src].sav"))
 
-			src.loc=locate(30,20,2)
+			src.loc = locate(30,20,2)
 			new/obj/back(src.client)
 			new/obj/OOC(src.client)
 			winset(src,"Main","focus=true")
