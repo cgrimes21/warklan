@@ -72,16 +72,6 @@ mob/proc
 
 //PROCEDURE BELOW TO DECIDE IF YOU CAN BUILD ON AN AREA OR NOT
 
-atom/movable/var/canBuild = 1 //false defaultly
-
-area/cannotBuildOn
-	Entered(mob/M) //executing what happens as you go inside an atom, and enter is called when you bump against an atom
-		M:canBuild = 0
-		return ..()
-	Exited(mob/M)
-		M:canBuild = 1
-		return ..()
-
 
 mob/verb
 	BuildBaseFlag()
@@ -89,40 +79,36 @@ mob/verb
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
-		if(canBuild)
-			switch(alert("Requirements: Clan Level: 1",,"Accept","Deny"))
-				if("Accept")
-					if(usr.Player)
-						usr.Build("Clan Flag")
-						winset(usr,"Build","is-visible=false")
-						ShowingBuildMenu=0
-					else
-						src<<"You do not possess the necessary requirements to build this item."
-				if("Deny")
-					return
-		else
-			src<<"You cannot build in a tutorial/dungeon/creature heavy area."
+
+		switch(alert("Requirements: Clan Level: 1",,"Accept","Deny"))
+			if("Accept")
+				if(usr.Player)
+					usr.Build("Clan Flag")
+					winset(usr,"Build","is-visible=false")
+					ShowingBuildMenu=0
+				else
+					src<<"You do not possess the necessary requirements to build this item."
+			if("Deny")
+				return
 
 	BuildSCT()
 		set hidden = 1
 		if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return
-		if(canBuild)
-			switch(alert("Requirements: Clan Level: 5 || Materials: 10 Stones",,"Accept","Deny"))
-				if("Accept")
-					if(usr.ClanLevel>=5)
-						if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-							usr.Build("Stone Crafting Table")
-							winset(usr,"Build","is-visible=false")
-							ShowingBuildMenu=0
-						else src<<"You are too far away from your base flag!"
-					else
-						src<<"You do not possess the necessary requirements to build this item."
-				if("Deny")
-					return
-		else
-			src<<"You cannot build in a tutorial/dungeon/creature heavy area."
+
+		switch(alert("Requirements: Clan Level: 5 || Materials: 10 Stones",,"Accept","Deny"))
+			if("Accept")
+				if(usr.ClanLevel>=5)
+					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
+						usr.Build("Stone Crafting Table")
+						winset(usr,"Build","is-visible=false")
+						ShowingBuildMenu=0
+					else src<<"You are too far away from your base flag!"
+				else
+					src<<"You do not possess the necessary requirements to build this item."
+			if("Deny")
+				return
 
 
 	BuildBCT()
@@ -130,63 +116,57 @@ mob/verb
 		if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return
-		if(canBuild)
-			switch(alert("Requirements: Clan Level: 10 || Materials: 10 Bronze Bars",,"Accept","Deny"))
-				if("Accept")
-					if(usr.ClanLevel>=10)
-						if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-							usr.Build("Bronze Crafting Table")
-							winset(usr,"Build","is-visible=false")
-							ShowingBuildMenu=0
-						else src<<"You are too far away from your base flag!"
-					else
-						src<<"You do not possess the necessary requirements to build this item."
-				if("Deny")
-					return
-		else
-			src<<"You cannot build in a tutorial/dungeon/creature heavy area."
+
+		switch(alert("Requirements: Clan Level: 10 || Materials: 10 Bronze Bars",,"Accept","Deny"))
+			if("Accept")
+				if(usr.ClanLevel>=10)
+					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
+						usr.Build("Bronze Crafting Table")
+						winset(usr,"Build","is-visible=false")
+						ShowingBuildMenu=0
+					else src<<"You are too far away from your base flag!"
+				else
+					src<<"You do not possess the necessary requirements to build this item."
+			if("Deny")
+				return
 
 	BuildICT()
 		set hidden = 1
 		if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return
-		if(canBuild)
-			switch(alert("Requirements: Clan Level: 15 || Materials: 10 Iron Bars",,"Accept","Deny"))
-				if("Accept")
-					if(usr.ClanLevel>=15)
-						if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-							usr.Build("Iron Crafting Table")
-							winset(usr,"Build","is-visible=false")
-							ShowingBuildMenu=0
-						else src<<"You are too far away from your base flag!"
-					else
-						src<<"You do not possess the necessary requirements to build this item."
-				if("Deny")
-					return
-		else
-			src<<"You cannot build in a tutorial/dungeon/creature heavy area."
+
+		switch(alert("Requirements: Clan Level: 15 || Materials: 10 Iron Bars",,"Accept","Deny"))
+			if("Accept")
+				if(usr.ClanLevel>=15)
+					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
+						usr.Build("Iron Crafting Table")
+						winset(usr,"Build","is-visible=false")
+						ShowingBuildMenu=0
+					else src<<"You are too far away from your base flag!"
+				else
+					src<<"You do not possess the necessary requirements to build this item."
+			if("Deny")
+				return
 
 	BuildBST()
 		set hidden = 1
 		if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return
-		if(canBuild)
-			switch(alert("Requirements: Clan Level: 5",,"Accept","Deny"))
-				if("Accept")
-					if(usr.ClanLevel>=5)
-						if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-							usr.Build("Basic Sewing Table")
-							winset(usr,"Build","is-visible=false")
-							ShowingBuildMenu=0
-						else src<<"You are too far away from your base flag!"
-					else
-						src<<"You do not possess the necessary requirements to build this item."
-				if("Deny")
-					return
-		else
-			src<<"You cannot build in a tutorial/dungeon/creature heavy area."
+
+		switch(alert("Requirements: Clan Level: 5",,"Accept","Deny"))
+			if("Accept")
+				if(usr.ClanLevel>=5)
+					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
+						usr.Build("Basic Sewing Table")
+						winset(usr,"Build","is-visible=false")
+						ShowingBuildMenu=0
+					else src<<"You are too far away from your base flag!"
+				else
+					src<<"You do not possess the necessary requirements to build this item."
+			if("Deny")
+				return
 
 mob
 	verb
