@@ -49,9 +49,19 @@ mob
 		Sword_Skill_EXP = 0
 		Sword_Skill_MaxEXP = 20
 		Sword_Skill_Level = 1
+
+		Spear_Skill_EXP = 0
+		Spear_Skill_MaxEXP = 20
+		Spear_Skill_Level = 1
+
+		Axe_Skill_EXP = 0
+		Axe_Skill_MaxEXP = 20
+		Axe_Skill_Level = 1
+
 		HandToHand_Skill_EXP = 0
 		HandToHand_Skill_MaxEXP = 20
 		HandToHand_Skill_Level = 1
+
 		bow_skill = 0
 		music_on = 1
 		sound_on = 1
@@ -71,8 +81,8 @@ mob
 		Stamina=100
 		MaxStamina=100
 		MaxWeight=50
-		Strength=5
-		MaxStrength=5
+		Strength=500
+		MaxStrength=500
 		Defense=4
 		MaxDefense=4
 		Gold=50
@@ -88,10 +98,13 @@ mob
 		WearingShirt=0
 
 
-		SwordBoost=0
+		WeaponBoost=0
+		ShieldBoost=0
 		BowBoost=0
 		BowOn=0
 		SwordOn=0
+		SpearOn=0
+		AxeOn=0
 		InClan=0
 		ClanLevel=0
 		ClanExp=0
@@ -104,6 +117,14 @@ mob
 		Clan2Fighting = 0
 
 
+		//Tutorial
+		attackTutorialDone=0
+		pickupTutorialActivated=0
+		pickupTutorialDone=0
+		inventoryTutorialActivated=0
+		inventoryTutorialDone=0
+		skillsTutorialActivated=0
+		skillsTutorialDone=0
 
 
 
@@ -159,7 +180,9 @@ mob
 obj
 	var
 		WeaponLevel=0
+		Boost=0
 		Wearing=0
+		Attribute=""
 		Owner=""
 		Style=""
 		Amount=0

@@ -29,51 +29,7 @@ turf/EnemyStop
 			..()
 turf/Locations
 	layer=14
-	Shaolin_Temple
-		ToShaolinTempleFromArea1
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToShaolinTempleFromArea1)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		ToArea1FromShaolinTemple
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToArea1FromShaolinTemple)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
+	Tutorial
 		ToArea2FromArea1
 			Enter(atom/a)
 				if(istype(a,/mob/))
@@ -81,10 +37,12 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToArea2FromArea1)
+						usr.loc=locate(/turf/Markers/Tutorial/ToArea2FromArea1)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
+						if(!usr.attackTutorialDone) //if attack tutorial isn't finished
+							usr.HudCreate_Tut1() //create tut 1
 						return 1
 				else
 					..()
@@ -104,8 +62,10 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToArea1FromArea2)
+						usr.loc=locate(/turf/Markers/Tutorial/ToArea1FromArea2)
 						usr.Frozen=1
+						if(!usr.attackTutorialDone)
+							usr.HudDelete_Tut1()
 						sleep(5)
 						usr.Frozen=0
 						return 1
@@ -119,7 +79,6 @@ turf/Locations
 						return 1
 				else
 					..()
-
 		ToArea3FromArea2
 			Enter(atom/a)
 				if(istype(a,/mob/))
@@ -127,7 +86,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToArea3FromArea2)
+						usr.loc=locate(/turf/Markers/Tutorial/ToArea3FromArea2)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -150,7 +109,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/ShaolinTemple/ToArea2FromArea3)
+						usr.loc=locate(/turf/Markers/Tutorial/ToArea2FromArea3)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -168,7 +127,6 @@ turf/Locations
 
 
 
-
 	Dungeons
 		Dungeon1_Inside
 			Enter(atom/a)
@@ -177,7 +135,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Dungeon1_Inside)
+						usr.loc=locate(/turf/Markers/Dungeon1/Dungeon1_Inside)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -200,7 +158,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Dungeon1_Outside)
+						usr.loc=locate(/turf/Markers/Dungeon1/Dungeon1_Outside)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -224,7 +182,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room1_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room1_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -246,7 +204,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room1_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room1_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -268,7 +226,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room2_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room2_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -290,7 +248,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room2_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room2_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -312,7 +270,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room3_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room3_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -334,7 +292,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room3_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room3_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -356,7 +314,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room4_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room4_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -378,7 +336,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room4_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room4_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -400,7 +358,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room5_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room5_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -422,7 +380,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room5_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room5_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -444,7 +402,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room6_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room6_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -466,7 +424,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room6_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room6_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -488,7 +446,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room7_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room7_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -510,7 +468,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room7_Back)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room7_Back)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0
@@ -532,7 +490,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Mountains/Room8_Next)
+						usr.loc=locate(/turf/Markers/Dungeon1/Room8_Next)
 						usr.Frozen=1
 						sleep(5)
 						usr.Frozen=0

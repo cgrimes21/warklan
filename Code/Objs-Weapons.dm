@@ -1,8 +1,41 @@
 
+mob/proc
+	equip_add_Overlay()
+		src.overlays+=new/obj/weaponequipped
+	equip_del_Overlay()
+		src.overlays-=new/obj/weaponequipped
+	equip_clothing_add_Overlay()
+		src.overlays+=new/obj/clothingequipped
+	equip_clothing_del_Overlay()
+		src.overlays-=new/obj/clothingequipped
+
+obj/weaponequipped
+	icon='Equipped.dmi'
+	icon_state="sword"
+	parent_type = /obj
+	layer = 100
+	New(newloc, val)
+		maptext = val
+		src.loc=newloc
+		pixel_x=0
+		pixel_y=40
+
+obj/clothingequipped
+	icon='Equipped.dmi'
+	icon_state="shield"
+	parent_type = /obj
+	layer = 100
+	New(newloc, val)
+		maptext = val
+		src.loc=newloc
+		pixel_x=14
+		pixel_y=40
+
 obj/Equipped
 	icon='Items.dmi'
 	icon_state="E2"
 	layer=99999
+
 obj/HudLetter
 	icon='Items.dmi'
 	layer=99999
@@ -16,6 +49,7 @@ obj/HudLetter
 		icon_state="3"
 	Four
 		icon_state="4"
+
 
 obj/Gold
 	icon='Coin.dmi'
@@ -33,17 +67,7 @@ obj/proc
 		spawn(500)
 		if(src.Fading)
 			del src
-	clickPickUp()
-		usr.Clicking()
-		if(usr.AvailableItems>=usr.MaxItems)
-			_message(usr,"You're holding too many items!","Yellow")
-			return
-		else
-			usr.AvailableItems+=1
-			usr.contents+=src
-			if(usr.BagOpen==1)
-				usr.AddItems()
-			src.Fading=0
+
 
 
 mob/verb
@@ -61,6 +85,10 @@ mob/verb
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return
+			if(usr.pickupTutorialActivated==1)
+				usr.pickupTutorialActivated=0
+				usr.pickupTutorialDone=1
+				usr.HudDelete_Tut2()
 			if(usr.AvailableItems>=usr.MaxItems)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
@@ -69,7 +97,6 @@ mob/verb
 				usr.contents+=O
 				usr.QuestItemPickup(O)
 				O.Fading=0
-				_message(usr,"[O.Fading] == VALUE","Yellow")
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
@@ -333,7 +360,7 @@ obj/Items
 		icon='Weapons.dmi'
 		WeaponLevel=1
 		layer=17
-		Weight=25
+		Boost=0
 
 		Fox_Cub_Tunic
 			icon='JpShopItems.dmi'
@@ -344,17 +371,20 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
+						usr.equip_clothing_del_Overlay()
 						usr.WearingShirt=0
-						usr.Defense-=10
 						return
 					if(usr.WearingShirt==1)
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
 						return
 					src.Wearing=1
 					usr.WearingShirt=1
+					usr.equip_clothing_add_Overlay()
 					src.overlays+=new/obj/Equipped
-					usr.Defense+=10
+					usr.ShieldBoost = Boost
+					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
@@ -370,11 +400,13 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="rfcoat"
 			name="Red Fox Coat"
+			Boost=0
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
 						usr.Defense-=10
@@ -385,7 +417,8 @@ obj/Items
 					src.Wearing=1
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
-					usr.Defense+=10
+					usr.ShieldBoost = Boost
+					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
@@ -402,14 +435,15 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="wfcoat"
 			name="Wolf Fur Coat"
+			Boost=0
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
-						usr.Defense-=10
 						return
 					if(usr.WearingShirt==1)
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
@@ -417,7 +451,8 @@ obj/Items
 					src.Wearing=1
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
-					usr.Defense+=10
+					usr.ShieldBoost = Boost
+					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=usr.MaxItems)
@@ -432,11 +467,12 @@ obj/Items
 
 	Weapons
 		icon='Weapons.dmi'
-		WeaponLevel=1
 		layer=17
 		Weight=25
+
 		Stone_Sword
 			WeaponLevel=1
+			Boost=1.2
 			icon='JpShopItems.dmi'
 			icon_state="Stone Sword"
 			Click()
@@ -444,8 +480,9 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
 						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -455,18 +492,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = WeaponLevel
-					usr.Strength += usr.SwordBoost
+					if(usr.Sword_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SwordOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -479,7 +520,8 @@ obj/Items
 							if(usr.BagOpen==1)
 								usr.AddItems()
 		Stone_Spear
-			WeaponLevel=2
+			WeaponLevel=1
+			Boost=1.5
 			icon='JpShopItems.dmi'
 			icon_state="Stone Spear"
 			Click()
@@ -487,10 +529,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.SpearOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -498,18 +541,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Spear_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SpearOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -524,7 +571,8 @@ obj/Items
 
 
 		Stone_Axe
-			WeaponLevel=3
+			WeaponLevel=1
+			Boost=2
 			icon='JpShopItems.dmi'
 			icon_state="Stone Axe"
 			Click()
@@ -532,10 +580,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.AxeOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -543,18 +592,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Axe_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.AxeOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -568,7 +621,8 @@ obj/Items
 								usr.AddItems()
 
 		Bronze_Sword
-			WeaponLevel=4
+			WeaponLevel=5
+			Boost=2.5
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Sword"
 			Click()
@@ -576,8 +630,9 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
 						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -587,18 +642,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Sword_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SwordOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -612,7 +671,8 @@ obj/Items
 								usr.AddItems()
 
 		Bronze_Spear
-			WeaponLevel=5
+			WeaponLevel=7
+			Boost=3
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Spear"
 			Click()
@@ -620,10 +680,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.SpearOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -631,18 +692,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Spear_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SpearOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -657,7 +722,8 @@ obj/Items
 
 
 		Bronze_Axe
-			WeaponLevel=6
+			WeaponLevel=9
+			Boost=3.5
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Axe"
 			Click()
@@ -665,10 +731,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.AxeOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -676,18 +743,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Axe_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.AxeOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -702,6 +773,8 @@ obj/Items
 
 
 		Iron_Sword
+			WeaponLevel=13
+			Boost=4
 			icon='JpShopItems.dmi'
 			icon_state="Iron Sword"
 			Click()
@@ -709,8 +782,9 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
 						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -720,18 +794,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Sword_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SwordOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -745,6 +823,8 @@ obj/Items
 								usr.AddItems()
 
 		Iron_Spear
+			WeaponLevel=16
+			Boost=4.5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Spear"
 			Click()
@@ -752,10 +832,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.SpearOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -763,18 +844,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Spear_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.SpearOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -788,6 +873,8 @@ obj/Items
 								usr.AddItems()
 
 		Iron_Axe
+			WeaponLevel=19
+			Boost=5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Axe"
 			Click()
@@ -795,10 +882,11 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
+						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
-						usr.SwordOn=0
+						usr.AxeOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
 							src.pixel_y=0
 							src.pixel_x=0
@@ -806,18 +894,22 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					src.Wearing=1
-					usr.SwordOn = 1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					usr.SwordBoost = 5 + WeaponLevel * 5
-					usr.Strength += usr.SwordBoost
+					if(usr.Axe_Skill_Level==src.WeaponLevel)
+						src.Wearing=1
+						usr.AxeOn = 1
+						usr.WearingWeapon=1
+						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
+							src.pixel_y+=5
+							src.pixel_x+=3
+							S.overlays+=src
+						usr.equip_add_Overlay()
+						src.overlays+=new/obj/Equipped
+						usr.WeaponBoost = Boost
+						usr.Strength += usr.WeaponBoost
+					else
+						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
 				else
 					if(src in oview(1))
@@ -851,7 +943,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You're Already Wearing A Weapon","Yellow")
+						_message(usr,"You are already wearing a weapon","Yellow")
 						return
 					src.Wearing=1
 					usr.WearingWeapon=1
@@ -884,7 +976,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						usr.WearingWeapon=0
-						usr.Strength-=usr.SwordBoost
+						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.SwordOn=0
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -905,7 +997,7 @@ obj/Items
 						S.overlays+=src
 					src.overlays+=new/obj/Equipped
 					if(WeaponLevel==1)
-						usr.SwordBoost=15
+						usr.WeaponBoost=15
 						usr.Strength+=15
 				else
 					if(src in oview(1))

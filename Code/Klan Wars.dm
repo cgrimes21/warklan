@@ -67,6 +67,7 @@ mob/proc
 		src.overlays += src.healthbar
 		spawn(50)
 			src.overlays -= src.healthbar
+
 	Help_Player()
 
 		usr.QuestItemDelete()
@@ -74,7 +75,6 @@ mob/proc
 		//_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
 
 obj/Can_Build/proc
-	process()
 
 	update_health_bar()
 		if(!src.healthbar)
@@ -95,7 +95,7 @@ client
 mob
 	Login()
 		check_Initialized
-		if(src.ckey in list("distantworld101","redcrownmg","animebeyond","suicideshifterr",m.m))
+		if(src.ckey in list("redcrownmg","animebeyond","suicideshifterr",m.m))
 			src.Admin=1
 			debuggers += src
 		for(var/mob/M in world)

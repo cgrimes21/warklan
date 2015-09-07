@@ -30,8 +30,9 @@ obj/NPCs/Items
 		winset(usr,"Item","is-visible=true")
 		usr.IteminfoAlign()
 		winset(usr,"Item.Name","text = ' [src.name]'")
-		winset(usr,"Item.Level","text = ' Level: [WeaponLevel]'")
+		winset(usr,"Item.Level","text = ' Level Req: [WeaponLevel]'")
 		winset(usr,"Item.Materials","text = ' [src.MaterialsRequired] Needed'")
+		winset(usr,"Item.Boost","text = ' [src.Attribute]'")
 		usr<<output(null,"Item.ItemInfo")
 		usr<<output("[src.Des]     <font size=+1><font color=yellow>Click To Purchase!</font></font>","Item.ItemInfo")
 	MouseExited()
@@ -42,7 +43,9 @@ obj/NPCs/Items
 		name="Stone Sword"
 		Weight=25
 		MaterialsRequired="3 Stones"
+		WeaponLevel=1
 		Des="Stone Sword"
+		Attribute="x1.2 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Stone Sword"
 		Click()
@@ -66,7 +69,10 @@ obj/NPCs/Items
 		name="Stone Spear"
 		Weight=25
 		MaterialsRequired="7 Stones"
+		WeaponLevel=1
+		Boost=1.5
 		Des="Stone Spear"
+		Attribute="x1.5 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Stone Spear"
 		Click()
@@ -89,7 +95,10 @@ obj/NPCs/Items
 		name="Stone Axe"
 		Weight=25
 		MaterialsRequired="12 Stones"
+		WeaponLevel=1
+		Boost=2
 		Des="Stone Axe"
+		Attribute="x2 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Stone Axe"
 		Click()
@@ -112,7 +121,10 @@ obj/NPCs/Items
 		name="Bronze Sword"
 		Weight=25
 		MaterialsRequired="5 Bronze Bars"
+		WeaponLevel=5
+		Boost=1.5
 		Des="Bronze Sword"
+		Attribute="x2.5 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Bronze Sword"
 		Click()
@@ -136,7 +148,9 @@ obj/NPCs/Items
 		name="Bronze Spear"
 		Weight=25
 		MaterialsRequired="10 Bronze Bars"
+		WeaponLevel=7
 		Des="Bronze Spear"
+		Attribute="x3 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Bronze Spear"
 		Click()
@@ -159,7 +173,9 @@ obj/NPCs/Items
 		name="Bronze Axe"
 		Weight=25
 		MaterialsRequired="15 Bronze Bars"
+		WeaponLevel=9
 		Des="Bronze Axe"
+		Attribute="x3.5 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Bronze Axe"
 		Click()
@@ -183,7 +199,9 @@ obj/NPCs/Items
 		name="Iron Sword"
 		Weight=25
 		MaterialsRequired="10 Iron Bars"
+		WeaponLevel=13
 		Des="Iron Sword"
+		Attribute="x4 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Iron Sword"
 		Click()
@@ -207,7 +225,9 @@ obj/NPCs/Items
 		name="Iron Spear"
 		Weight=25
 		MaterialsRequired="15 Iron Bars"
+		WeaponLevel=16
 		Des="Iron Spear"
+		Attribute="x4.5 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Iron Spear"
 		Click()
@@ -230,7 +250,9 @@ obj/NPCs/Items
 		name="Iron Axe"
 		Weight=25
 		MaterialsRequired="20 Iron Bars"
+		WeaponLevel=19
 		Des="Iron Axe"
+		Attribute="x5 Strength"
 		icon='JpShopItems.dmi'
 		icon_state="Iron Axe"
 		Click()
@@ -254,6 +276,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="3 Fox Furs"
 		Des="Fox Cub Tunic"
+		Attribute="Defense"
 		icon='JpShopItems.dmi'
 		icon_state="fctunic"
 		Click()
@@ -278,6 +301,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="7 Red Fox Furs"
 		Des="Fox Fur Tunic"
+		Attribute="Defense"
 		icon='JpShopItems.dmi'
 		icon_state="rfcoat"
 		Click()
@@ -303,6 +327,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="7 Wolf Furs"
 		Des="Wolf Fur Coat"
+		Attribute="Defense"
 		icon='JpShopItems.dmi'
 		icon_state="wfcoat"
 		Click()

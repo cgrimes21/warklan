@@ -102,34 +102,33 @@
 "bX" = (/turf/Mountains/m4,/turf/EnemyStop{D = 1},/turf/Mountains/pl11{density = 1},/area)
 "bY" = (/mob/NPCS/Person,/turf/Mountains/s9,/area)
 "bZ" = (/turf/Mountains/s9,/turf/Markers/ShaolinTemple/ToShaolinTempleFromArea1,/area)
-"ca" = (/turf/Mountains/s9,/turf/Locations/Shaolin_Temple/ToArea1FromShaolinTemple,/area)
-"cb" = (/turf/Mountains/tg13,/area)
-"cc" = (/turf/Mountains/s11,/turf/EnemyStop{D = 1},/area)
-"cd" = (/turf/Mountains/s12,/turf/EnemyStop{D = 1},/area)
-"ce" = (/turf/Mountains/s13,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
-"cf" = (/turf/Mountains/s12,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
-"cg" = (/turf/Mountains/s13,/turf/EnemyStop{D = 1},/area)
-"ch" = (/turf/Mountains/s8,/turf/EnemyStop{D = 1},/area)
-"ci" = (/turf/Mountains/s9,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
-"cj" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
-"ck" = (/turf/Mountains/s4,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
-"cl" = (/turf/Mountains/s12,/turf/Mountains/pl2,/turf/EnemyStop{D = 1},/area)
-"cm" = (/turf/Mountains/s12,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
-"cn" = (/turf/Mountains/s9,/turf/EnemyStop{D = 1},/area)
-"co" = (/turf/Mountains/s10,/turf/EnemyStop{D = 1},/area)
-"cp" = (/turf/Mountains/s9,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
-"cq" = (/turf/Mountains/s9,/turf/Mountains/pl2,/turf/EnemyStop{D = 1},/area)
-"cr" = (/turf/Mountains/s9,/turf/Mountains/pl4,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
-"cs" = (/turf/Mountains/s4,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
-"ct" = (/turf/Mountains/s12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1},/area)
-"cu" = (/turf/Mountains/s3,/turf/EnemyStop{D = 1},/area)
-"cv" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
-"cw" = (/turf/Mountains/s5,/turf/EnemyStop{D = 1},/area)
-"cx" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1},/area)
-"cy" = (/turf/Mountains/s6,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
-"cz" = (/turf/Mountains/s6,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
-"cA" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
-"cB" = (/turf/Mountains/s7,/turf/EnemyStop{D = 1},/area)
+"ca" = (/turf/Mountains/tg13,/area)
+"cb" = (/turf/Mountains/s11,/turf/EnemyStop{D = 1},/area)
+"cc" = (/turf/Mountains/s12,/turf/EnemyStop{D = 1},/area)
+"cd" = (/turf/Mountains/s13,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
+"ce" = (/turf/Mountains/s12,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
+"cf" = (/turf/Mountains/s13,/turf/EnemyStop{D = 1},/area)
+"cg" = (/turf/Mountains/s8,/turf/EnemyStop{D = 1},/area)
+"ch" = (/turf/Mountains/s9,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
+"ci" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
+"cj" = (/turf/Mountains/s4,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
+"ck" = (/turf/Mountains/s12,/turf/Mountains/pl2,/turf/EnemyStop{D = 1},/area)
+"cl" = (/turf/Mountains/s12,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
+"cm" = (/turf/Mountains/s9,/turf/EnemyStop{D = 1},/area)
+"cn" = (/turf/Mountains/s10,/turf/EnemyStop{D = 1},/area)
+"co" = (/turf/Mountains/s9,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
+"cp" = (/turf/Mountains/s9,/turf/Mountains/pl2,/turf/EnemyStop{D = 1},/area)
+"cq" = (/turf/Mountains/s9,/turf/Mountains/pl4,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
+"cr" = (/turf/Mountains/s4,/turf/Mountains/pl11,/turf/EnemyStop{D = 1},/area)
+"cs" = (/turf/Mountains/s12,/turf/Mountains/pl4,/turf/EnemyStop{D = 1},/area)
+"ct" = (/turf/Mountains/s3,/turf/EnemyStop{D = 1},/area)
+"cu" = (/turf/Mountains/s9,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
+"cv" = (/turf/Mountains/s5,/turf/EnemyStop{D = 1},/area)
+"cw" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1},/area)
+"cx" = (/turf/Mountains/s6,/turf/Mountains/pl9,/turf/EnemyStop{D = 1},/area)
+"cy" = (/turf/Mountains/s6,/turf/Mountains/pl5,/turf/EnemyStop{D = 1},/area)
+"cz" = (/turf/Mountains/s6,/turf/EnemyStop{D = 1},/turf/Mountains/pl9,/area)
+"cA" = (/turf/Mountains/s7,/turf/EnemyStop{D = 1},/area)
 
 (1,1,1) = {"
 aaabababababababababababababababababababababababababababababab
@@ -175,11 +174,11 @@ bWbjbjbXbAbEbEbAbAbAbEbAbAbAbAbAbAbEbEbAbAbAbAbAbAbAbAbAbAbFbl
 bHbjbjbHbIbJbJbJbLbUbIbJbJbJbJbJbJbJbKbJbJbJbLbibibibibibibibl
 bibibjbjbibNbNbNbObibibNbNbNbNbNbJbJbJbJbJbJbObibibibTbibibibl
 bibibibjbibibibibibibibibTbibibibNbNbNbNbNbObibibibibibibibibl
-bibibibYbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbZcabl
+bibibibYbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbZbjbl
 bibibibibibibibTbibibibibibibibibibibibTbibibibibibibibibibibl
-bibibMbMbMbibibibibibicbbMbMbMbibibibibibibibibibicbbMbMbMbMbl
-cccdcdcebJbMbMbMbMbMcccdcdcebJbMbMbMbMbicbbMbMbMbibMbJcccfcgbl
-chcicjckcdcdclcmcdcdcncicjckcdcdclcmcdcgbMbJcccebMbJcccncicobl
-chcpcncqcncrcncpcjcicncpcncqcncrcncpcjcscdctcuckcdcdcucicvcobl
-cwcxcxcxcxcycxcxcxcycxcxcxcxcxcycxcxcxcycxcxcxczcxcxcxcAcxcBbl
+bibibMbMbMbibibibibibicabMbMbMbibibibibibibibibibicabMbMbMbMbl
+cbcccccdbJbMbMbMbMbMcbcccccdbJbMbMbMbMbicabMbMbMbibMbJcbcecfbl
+cgchcicjccccckclcccccmchcicjccccckclcccfbMbJcbcdbMbJcbcmchcnbl
+cgcocmcpcmcqcmcocichcmcocmcpcmcqcmcocicrcccsctcjccccctchcucnbl
+cvcwcwcwcwcxcwcwcwcxcwcwcwcwcwcxcwcwcwcxcwcwcwcycwcwcwczcwcAbl
 "}

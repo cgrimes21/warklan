@@ -73,7 +73,6 @@ mob/var
 	ElderNPC=1
 	WeaponNPC=0
 	EnemiesKilled=0
-	SecondQuestOver=0
 	ThirdQuestOver=0
 
 
@@ -93,11 +92,13 @@ mob/proc
 			src<< output(null,"QuestMenu.Info")
 
 			if(check_for_fftunic(src) ==1)
-				src<< output("<center>Great work! You've gotten the tunic, now let's get you a weapon. </center>","QuestMenu.Info")
+				src<< output("<center>Great work! You've gotten the tunic, on the bottom right, a window should've popped up, that is your inventory, and everything you pick up goes in there. You can press the I button to open and close it at will. Now let's get you a weapon. </center>","QuestMenu.Info")
 				winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
+				src.HudCreate_Tut3()
+				src.inventoryTutorialActivated=1
 
 			else if(count_furs("Fox Cub Furs",src) >=3)
 				src<< output("<center>You've retrieved the furs! Take them to the sewing table and create a tunic.</center>","QuestMenu.Info")
@@ -107,7 +108,7 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
-		if(T=="WoodenSwordQuest")
+		if(T=="SwordQuest")
 			var/icon/my_icon2 = icon('Icons/Quest_Rewards/FoxFurTunic.dmi')
 			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
@@ -119,7 +120,9 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
-				usr.SecondQuestOver=1
+				src.skillsTutorialActivated=1
+				src.HudCreate_Tut4()
+
 
 			else if(count_minerals("Stone",src) >=3)
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
@@ -128,6 +131,14 @@ mob/proc
 				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small crafting stones, you can find them on Red Foxes and Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
+
+		if(T=="BeforeCreateClanQuest")
+			src<< output(null,"QuestMenu.Info")
+			src<< output("<center>Hmm, your training is coming along, come to me when your overall level is 10 and i'll guide you through creating your own clan.</center>","QuestMenu.Info")
+			winset(src,"QuestMenu.Accept","is-visible=true")
+			winset(src,"QuestMenu.Accept","text=Complete")
+			winset(usr,"QuestMenu.Deny","is-visible=false")
+
 
 		if(T=="CreateClanQuest")
 			src<< output(null,"QuestMenu.Info")
@@ -142,6 +153,7 @@ mob/proc
 				src<< output("<center>I've seen your progress! You've grown very quickly. I think you're ready to form your own clan. Clans are the driving force in this world. You can create a clan of warriors that beat other clans into submission, a clan of conquerers that takes over the world, the possibilities are endless. Speak to the Clan Chief, and he'll start the process.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
+
 
 
 	QuestItemPickup(obj/O)
@@ -272,12 +284,15 @@ mob/NPCS/QUEST
 						return
 					if(usr.QuestLevel==2)
 						usr.QuestMenuUp=1
-						usr.BeginningQuests("WoodenSwordQuest")
+						usr.BeginningQuests("SwordQuest")
 						return
 					if(usr.QuestLevel==3&&usr.Level==5)
 						usr.QuestMenuUp=1
 						usr.BeginningQuests("CreateClanQuest")
 						return
+					else
+						usr.QuestMenuUp=1
+						usr.BeginningQuests("BeforeCreateClanQuest")
 
 
 
@@ -294,7 +309,7 @@ mob/verb
 		//Monk Temple Quests//
 		if(QuestLevel==1)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
+				_message(usr, "<b><font color=#A0C8C6>Quest:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
 		if(QuestLevel==2)
@@ -302,9 +317,7 @@ mob/verb
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Stones!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
-			if(SecondQuestOver)
-				usr.ShowSkillLevel()
-		if(QuestLevel==3)
+		if(QuestLevel==3&&usr.Level==10)
 			if(!usr.DoingQuest)
 				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")
 				usr.ElderNPC=0

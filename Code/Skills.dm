@@ -28,8 +28,15 @@ mob
 			winset(usr,"SkillLevels","is-visible=true")
 			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Sword_Skill_Level]'")
 			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Sword_Skill_EXP]/[src.Sword_Skill_MaxEXP]'")
+			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Spear_Skill_Level]'")
+			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Spear_Skill_EXP]/[src.Spear_Skill_MaxEXP]'")
+			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Axe_Skill_Level]'")
+			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Axe_Skill_EXP]/[src.Axe_Skill_MaxEXP]'")
 			winset(usr,"SkillLevels.HandToHandSkillLevel","text = 'Level: [src.HandToHand_Skill_Level]'")
 			winset(usr,"SkillLevels.HandToHandSkillEXP","text = 'EXP: [src.HandToHand_Skill_EXP]/[src.HandToHand_Skill_MaxEXP]'")
+			if(!usr.skillsTutorialDone&&usr.skillsTutorialActivated)
+				usr.HudDelete_Tut4()
+				usr.skillsTutorialDone=1
 
 		SkillAlign()
 			spawn while(src.ShowingSkills)

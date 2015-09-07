@@ -46,7 +46,7 @@ mob/proc
 			src.align()
 			if(src.SwordOn)
 				for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-					var/obj/Items/Weapons/RStaff/O = new/obj/Items/Weapons/RStaff
+					var/obj/Items/Weapons/Stone_Sword/O = new/obj/Items/Weapons/Stone_Sword
 					O.pixel_y+=5
 					O.pixel_x+=3
 					S.overlays+=O
@@ -56,5 +56,12 @@ mob/proc
 					O.pixel_y+=5
 					O.pixel_x+=3
 					S.overlays+=O
+
+			if(src.WearingWeapon)
+				src.equip_add_Overlay()
+
+			if(src.WearingShirt)
+				src.equip_clothing_add_Overlay()
+
 			src.CDCHECK()
 			src.deathcheck()

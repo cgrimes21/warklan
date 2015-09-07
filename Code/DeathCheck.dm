@@ -37,6 +37,9 @@ mob/proc
 					var/exp = rand(10,20)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
+						if(!T.pickupTutorialActivated&&!T.pickupTutorialDone) //if pickup tutorial hasn't been activated yet or done
+							T.pickupTutorialActivated=1 //the tutorial telling you how to pick stuff up is activated
+							T.HudCreate_Tut2()
 						F.loc=M.loc
 						F.Fade()
 					T.WeaponEquipCheck(exp)
@@ -47,7 +50,7 @@ mob/proc
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Red_Fox_Fur
 						F.loc=M.loc
 						F.Fade()
-					if(prob(30))
+					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.Fade()
@@ -198,23 +201,39 @@ mob/proc
 		src.Level+=1
 		src.EXP=0
 		src.MaxEXP *= 1.5
-		/*if(src.Level==5)
-			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
-			src.ElderNPC=1*/
+
 
 	WeaponEquipCheck(exp)
 		if(src.SwordOn)
 			src.Sword_Skill_EXP+=exp
+		if(src.SpearOn)
+			src.Spear_Skill_EXP+=exp
+		if(src.AxeOn)
+			src.Axe_Skill_EXP+=exp
 		else
 			src.HandToHand_Skill_EXP+=exp
 		return exp
 
 	Skill_LevelGain_MaxExpGain()
 		src.Health = src.MaxHealth
+
+		src.Level+=1
+		if(src.Level==10)
+			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
+			src.ElderNPC=1
+
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
 			src.Sword_Skill_Level+=1
 			src.Sword_Skill_EXP=0
 			src.Sword_Skill_MaxEXP *= 2
+		if(src.Axe_Skill_EXP>=Axe_Skill_MaxEXP)
+			src.Axe_Skill_Level+=1
+			src.Axe_Skill_EXP=0
+			src.Axe_Skill_MaxEXP *= 2
+		if(src.Spear_Skill_EXP>=Spear_Skill_MaxEXP)
+			src.Spear_Skill_Level+=1
+			src.Spear_Skill_EXP=0
+			src.Spear_Skill_MaxEXP *= 2
 		else if(src.HandToHand_Skill_EXP>=HandToHand_Skill_MaxEXP)
 			src.HandToHand_Skill_Level+=1
 			src.HandToHand_Skill_EXP=0
@@ -222,8 +241,17 @@ mob/proc
 
 
 
+
 	SkillLevelUP()
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
+			Skill_LevelGain_MaxExpGain()
+			_message(src,"Your sword skill has leveled up!","Aqua")
+			src<<sound('levelup.wav')
+		if(src.Spear_Skill_EXP>=Spear_Skill_MaxEXP)
+			Skill_LevelGain_MaxExpGain()
+			_message(src,"Your spear skill has leveled up!","Aqua")
+			src<<sound('levelup.wav')
+		if(src.Axe_Skill_EXP>=Axe_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
 			_message(src,"Your sword skill has leveled up!","Aqua")
 			src<<sound('levelup.wav')
@@ -250,9 +278,9 @@ mob/proc
 				src.Strength=src.MaxStrength
 				src.Strength+=BowBoost
 			if(src.SwordOn)
-				src.Strength-=SwordBoost
+				src.Strength-=WeaponBoost
 				src.Strength=src.MaxStrength
-				src.Strength+=SwordBoost
+				src.Strength+=WeaponBoost
 			//src.SkillGive()
 	SkillGive()
 		if(src.Class=="Monk")

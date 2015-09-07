@@ -128,6 +128,10 @@ mob/verb
 			var/weaponlevel
 			if(usr.SwordOn)
 				weaponlevel=usr.Sword_Skill_Level
+			if(usr.SpearOn)
+				weaponlevel=usr.Spear_Skill_Level
+			if(usr.AxeOn)
+				weaponlevel=usr.Axe_Skill_Level
 			else
 				weaponlevel=usr.HandToHand_Skill_Level
 
@@ -192,6 +196,10 @@ mob/verb
 				var/weaponlevel
 				if(usr.SwordOn)
 					weaponlevel=usr.Sword_Skill_Level
+				if(usr.SpearOn)
+					weaponlevel=usr.Spear_Skill_Level
+				if(usr.AxeOn)
+					weaponlevel=usr.Axe_Skill_Level
 				else
 					weaponlevel=usr.HandToHand_Skill_Level
 
@@ -201,6 +209,9 @@ mob/verb
 				usr.Stamina-=rand(1,2)
 				M.Damage(damage)
 				M.DeathCheck(usr,M)
+				if(!attackTutorialDone) //if you didnt already attack a mob
+					usr.attackTutorialDone=1 //you've attacked him now
+					usr.HudDelete_Tut1() //delete the tutorial
 				return
 
 
@@ -253,7 +264,7 @@ effect/damage
 		maptext = val
 		src.loc=newloc
 		pixel_x=9
-		pixel_y=45
+		pixel_y=55
 		sleep(7)
 		animate(src,transform=matrix()*10,alpha=0,pixel_y=80,time=3)
 		spawn(10)

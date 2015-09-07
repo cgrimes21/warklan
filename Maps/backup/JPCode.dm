@@ -356,7 +356,12 @@ turf
 			icon_state = "black"
 
 turf/Markers
-	Mountains
+	Tutorial
+		ToArea2FromArea1
+		ToArea1FromArea2
+		ToArea3FromArea2
+		ToArea2FromArea3
+	Dungeon1
 		Dungeon1_Inside
 		Dungeon1_Outside
 		Room1_Next

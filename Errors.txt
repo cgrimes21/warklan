@@ -2131,3 +2131,320 @@ proc name: load build (/proc/load_build)
 load build()
 : New()
 >>>>>>> origin/master
+Warning: type read from file (/obj/Can_Build/Basic_Crafting_Table) is not defined
+Warning: type read from file (/obj/NPCs/Items/Fox_Fur_Tunic) is not defined
+runtime error: cannot append to list
+proc name: load build (/proc/load_build)
+  source file: Building.dm,209
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: New (/obj/Huds/Tutorial/New)
+  source file: Huds&Bag.dm,128
+  usr: RedCrownMG (/mob)
+  src: Tutorial (/obj/Huds/Tutorial)
+  call stack:
+Tutorial (/obj/Huds/Tutorial): New(RedCrownMG (/client))
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: New (/obj/Huds/Tutorial/New)
+  source file: Huds&Bag.dm,127
+  usr: RedCrownMG (/mob)
+  src: Tutorial (/obj/Huds/Tutorial)
+  call stack:
+Tutorial (/obj/Huds/Tutorial): New(RedCrownMG (/client))
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: New (/obj/Huds/Tutorial/New)
+  source file: Huds&Bag.dm,128
+  usr: RedCrownMG (/mob)
+  src: Tutorial (/obj/Huds/Tutorial)
+  call stack:
+Tutorial (/obj/Huds/Tutorial): New(RedCrownMG (/client))
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: New (/obj/Huds/Tutorial/New)
+  source file: Huds&Bag.dm,121
+  usr: RedCrownMG (/mob)
+  src: Tutorial (/obj/Huds/Tutorial)
+  call stack:
+Tutorial (/obj/Huds/Tutorial): New(RedCrownMG (/client))
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+runtime error: bad icon operation
+proc name: Scale (/icon/proc/Scale)
+  usr: RedCrownMG (/mob)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Scale(0, 0)
+GenerateShadow(RedCrownMG (/mob), 2, -32)
+RedCrownMG (/mob): Load()
+RedCrownMG (/mob): Login()
+runtime error: bad icon operation
+proc name: Scale (/icon/proc/Scale)
+  usr: RedCrownMG (/mob)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Scale(0, 0)
+GenerateShadow(RedCrownMG (/mob), 2, -32)
+RedCrownMG (/mob): Load()
+RedCrownMG (/mob): Login()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/TutorialOne/New)
+  source file: Huds&Bag.dm,112
+  usr: RedCrownMG (/mob)
+  src: TutorialOne (/obj/Huds/TutorialOne)
+  call stack:
+TutorialOne (/obj/Huds/TutorialOne): New(null)
+RedCrownMG (/mob): NameC()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/TutorialOne/New)
+  source file: Huds&Bag.dm,112
+  usr: RedCrownMG (/mob)
+  src: TutorialOne (/obj/Huds/TutorialOne)
+  call stack:
+TutorialOne (/obj/Huds/TutorialOne): New(null)
+RedCrownMG (/mob): NameC()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/TutorialOne/New)
+  source file: Huds&Bag.dm,112
+  usr: RedCrownMG (/mob)
+  src: TutorialOne (/obj/Huds/TutorialOne)
+  call stack:
+TutorialOne (/obj/Huds/TutorialOne): New(null)
+RedCrownMG (/mob): NameC()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/TutorialOne/New)
+  source file: Huds&Bag.dm,111
+  usr: RedCrownMG (/mob)
+  src: TutorialOne (/obj/Huds/TutorialOne)
+  call stack:
+TutorialOne (/obj/Huds/TutorialOne): New(null)
+RedCrownMG (/mob): NameC()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/Tutorial/New)
+  source file: Huds&Bag.dm,112
+  usr: RedCrownMG (/mob)
+  src: Tutorial (/obj/Huds/Tutorial)
+  call stack:
+Tutorial (/obj/Huds/Tutorial): New(null)
+Fox Cub (/mob/Enemies/Fox_Cub): DeathCheck(RedCrownMG (/mob), Fox Cub (/mob/Enemies/Fox_Cub))
+RedCrownMG (/mob): Attack()
+runtime error: Cannot read null.screen
+proc name: New (/obj/Huds/Tutorial2/New)
+  source file: Huds&Bag.dm,129
+  usr: RedCrownMG (/mob)
+  src: Tutorial2 (/obj/Huds/Tutorial2)
+  call stack:
+Tutorial2 (/obj/Huds/Tutorial2): New(null)
+Fox Cub (/mob/Enemies/Fox_Cub): DeathCheck(RedCrownMG (/mob), Fox Cub (/mob/Enemies/Fox_Cub))
+RedCrownMG (/mob): Attack()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Cannot read null.screen
+proc name: FadeScreen (/mob/proc/FadeScreen)
+  source file: Huds&Bag.dm,538
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): FadeScreen()
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(RedCrownMG (/mob), ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\World\Build' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\World\Build' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\World\Build' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\World\Build' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,194
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()

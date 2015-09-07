@@ -143,8 +143,8 @@ mob/Enemies
 		Level=10
 		Strength=32
 		Defense=28
-		Health=220
-		MaxHealth=220
+		Health=100
+		MaxHealth=100
 		speed=2
 		New()
 			spawn
@@ -160,8 +160,8 @@ mob/Enemies
 		Level=4
 		Strength=39
 		Defense=35
-		Health=290
-		MaxHealth=290
+		Health=100
+		MaxHealth=100
 		speed=2
 		New()
 			spawn
@@ -177,8 +177,8 @@ mob/Enemies
 		Level=4
 		Strength=44
 		Defense=40
-		Health=360
-		MaxHealth=360
+		Health=100
+		MaxHealth=100
 		speed=2
 		New()
 			spawn
@@ -195,8 +195,8 @@ mob/Enemies
 		Level=4
 		Strength=46
 		Defense=42
-		Health=430
-		MaxHealth=430
+		Health=100
+		MaxHealth=100
 		speed=2
 		New()
 			spawn
@@ -207,7 +207,7 @@ mob/Enemies
 			Max_MouseName()
 
 
-	Bandit_Enemies
+	/*Bandit_Enemies
 		Bandit
 			icon='Bandit.dmi'
 			Name="Mountain Bandit"
@@ -556,7 +556,7 @@ mob/Enemies
 							src.speed=4
 							walk(src,get_dir(src,M),1,3)
 					sleep(world.tick_lag)
-				..()
+				..()*/
 
 /*	Zombie_Assassin
 		icon='Bandit.dmi'

@@ -1,5 +1,26 @@
 mob
 	proc
+		HudCreate_Tut1()
+			new/obj/Huds/Tutorial(src.client)
+		HudCreate_Tut2()
+			new/obj/Huds/Tutorial2(src.client)
+		HudCreate_Tut3()
+			new/obj/Huds/Tutorial3(src.client)
+		HudCreate_Tut4()
+			new/obj/Huds/Tutorial4(src.client)
+		HudDelete_Tut1()
+			for(var/obj/Huds/Tutorial/S in usr.client.screen)
+				del(S)
+		HudDelete_Tut2()
+			for(var/obj/Huds/Tutorial2/S in usr.client.screen)
+				del(S)
+		HudDelete_Tut3()
+			for(var/obj/Huds/Tutorial3/S in usr.client.screen)
+				del(S)
+		HudDelete_Tut4()
+			for(var/obj/Huds/Tutorial4/S in usr.client.screen)
+				del(S)
+
 		HudCreate()
 			new/obj/Huds/Health(src.client);new/obj/Huds/EXP(src.client);new/obj/Huds/Stamina(src.client)
 			new/obj/Huds/StatPanel/MainStatPanel(src.client)
@@ -23,6 +44,8 @@ mob
 			new/obj/Huds/SkillHuds/SkillHudFive(src.client)
 			new/obj/Huds/StatPanel/LevelPanel(src.client)
 			new/obj/Huds/StatPanel/LevelPanel2(src.client)
+			new/obj/Huds/StatPanel/WeaponLevelPanel(src.client)
+			new/obj/Huds/StatPanel/WeaponLevelPanel2(src.client)
 			var/obj/M1 = new/obj/Huds/Money1(src.client)
 			var/obj/M2 = new/obj/Huds/Money2(src.client)
 			var/obj/M3 = new/obj/Huds/Money3(src.client)
@@ -44,8 +67,6 @@ mob
 				new/obj/Huds/StatPanel/STRPanel2(usr.client)
 				new/obj/Huds/StatPanel/EXPPanel(usr.client)
 				new/obj/Huds/StatPanel/EXPPanel2(usr.client)
-				new/obj/Huds/StatPanel/WeightPanel(usr.client)
-				new/obj/Huds/StatPanel/WeightPanel2(usr.client)
 				new/obj/Huds/StatPanel/DefensePanel2(usr.client)
 				new/obj/Huds/StatPanel/DefensePanel(usr.client)
 				new/obj/Huds/StatPanel/NamePanel(usr.client)
@@ -54,8 +75,10 @@ mob
 				new/obj/Huds/StatPanel/StaminaPanel2(usr.client)
 				new/obj/Huds/StatPanel/StaminaPanel(usr.client)
 				new/obj/Huds/StatPanel/StaminaPanel(usr.client)
-				new/obj/Huds/StatPanel/LevelPanel2(src.client)
 				new/obj/Huds/StatPanel/LevelPanel(src.client)
+				new/obj/Huds/StatPanel/LevelPanel2(src.client)
+				new/obj/Huds/StatPanel/WeaponLevelPanel(src.client)
+				new/obj/Huds/StatPanel/WeaponLevelPanel2(src.client)
 				return
 			else
 				StatPanel=0
@@ -102,6 +125,39 @@ obj/Huds
 				c.screen+=src
 				src.overlays+=new/obj/HudLetter/Four
 				..()
+
+	Tutorial
+		layer=9999
+		icon='Tutorial.dmi'
+		icon_state="tutorial"
+		New(client/c)
+			screen_loc="8,15:52"
+			c.screen+=src
+
+	Tutorial2
+		layer=9999
+		icon='Tutorial.dmi'
+		icon_state="tutorial2"
+		New(client/c)
+			screen_loc="8,15:52"
+			c.screen+=src
+
+	Tutorial3
+		layer=9999
+		icon='Tutorial.dmi'
+		icon_state="tutorial3"
+		New(client/c)
+			screen_loc="8,15:52"
+			c.screen+=src
+
+	Tutorial4
+		layer=9999
+		icon='Tutorial.dmi'
+		icon_state="tutorial4"
+		New(client/c)
+			screen_loc="8,15:52"
+			c.screen+=src
+
 	Health
 		layer=9999
 		icon='Health.dmi'
@@ -131,6 +187,7 @@ obj/Huds
 				else if(round(usr.Health/usr.MaxHealth*100)>=0&&round(usr.Health/usr.MaxHealth*100)<5) src.icon_state="21"
 				else if(round(usr.Health/usr.MaxHealth*100)<=0) src.icon_state="21"
 				sleep(world.tick_lag)
+
 
 	EXP
 		layer=9999
@@ -233,9 +290,6 @@ obj/Huds
 
 
 
-
-
-
 	StatPanel
 		mouse_opacity = 0
 		MainStatPanel
@@ -252,29 +306,85 @@ obj/Huds
 				screen_loc="24:30,16:18"
 				c.screen+=src
 				src.maptext="<font color=white><b>[usr.Name]</b></font>"
+
 		LevelPanel
 			layer=9999
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="24:4,11:24"
+				screen_loc="24:4,11:21"
 				c.screen+=src
-				src.maptext="<font color=white>Weapon Level:</font>"
+				src.maptext="<font color=white>Overall Level:</font>"
 
 		LevelPanel2
 			layer=9999
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="24:100,11:24"
+				screen_loc="26:30,11:21"
+				c.screen+=src
+				spawn while(usr)
+					if(!usr.client)
+						return
+					src.maptext="<font color=white>[usr.Level]</font>"
+					sleep(5)
+
+		WeaponLevelPanel
+			layer=9999
+			maptext_width=900
+			maptext_height=900
+			New(client/c)
+				screen_loc="24:4,10:22"
+				c.screen+=src
+				src.maptext="<font color=white>Weapon Level:</font>"
+
+		WeaponLevelPanel2
+			layer=9999
+			maptext_width=900
+			maptext_height=900
+			New(client/c)
+				screen_loc="24:100,10:22"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
 					if(usr.SwordOn)
 						src.maptext="<font color=white>[usr.Sword_Skill_Level]</font>"
-					else src.maptext="<font color=white>[usr.HandToHand_Skill_Level]</font>"
-					sleep(20)
+					else if(usr.SpearOn)
+						src.maptext="<font color=white>[usr.Spear_Skill_Level]</font>"
+					else if(usr.AxeOn)
+						src.maptext="<font color=white>[usr.Axe_Skill_Level]</font>"
+					else
+						src.maptext="<font color=white>[usr.HandToHand_Skill_Level]</font>"
+					sleep(5)
+
+		EXPPanel
+			layer=9999
+			maptext_width=900
+			New(client/c)
+				screen_loc="24:4,9:23"
+				c.screen+=src
+				src.maptext="<font color=white>EXP:</font>"
+
+		EXPPanel2
+			layer=9999
+			maptext_width=900
+			New(client/c)
+				screen_loc="25:8,9:23"
+				c.screen+=src
+				spawn while(usr)
+					if(!usr.client)
+						return
+					if(usr.SwordOn)
+						src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]</font>"
+					if(usr.SpearOn)
+						src.maptext="<font color=white>[usr.Spear_Skill_EXP] / [usr.Spear_Skill_MaxEXP]</font>"
+					if(usr.AxeOn)
+						src.maptext="<font color=white>[usr.Axe_Skill_EXP] / [usr.Axe_Skill_MaxEXP]</font>"
+
+					else src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
+					sleep(5)
+
 		HealthPanel
 			layer=9999
 			maptext_width=900
@@ -332,45 +442,6 @@ obj/Huds
 					src.maptext="<font color=white>[percent(usr.Defense, usr.MaxDefense)]%</font>"
 					sleep(5)
 
-		WeightPanel
-			layer=9999
-			maptext_width=900
-			New(client/c)
-				screen_loc="24:4,10"
-				c.screen+=src
-				src.maptext="<font color=white>Sword Skill EXP:</font>"
-		WeightPanel2
-			layer=9999
-			maptext_width=900
-			New(client/c)
-				screen_loc="25:74,11:24"
-				c.screen+=src
-				spawn while(usr)
-					if(!usr.client)
-						return
-					src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]%</font>"
-					sleep(5)
-		EXPPanel
-			layer=9999
-			maptext_width=900
-			New(client/c)
-				screen_loc="24:4,10:26"
-				c.screen+=src
-				src.maptext="<font color=white>EXP:</font>"
-
-		EXPPanel2
-			layer=9999
-			maptext_width=900
-			New(client/c)
-				screen_loc="25:8,10:26"
-				c.screen+=src
-				spawn while(usr)
-					if(!usr.client)
-						return
-					if(usr.SwordOn)
-						src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]</font>"
-					else src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
-					sleep(5)
 		STRPanel
 			layer=9999
 			maptext_width=900
@@ -409,6 +480,9 @@ mob
 	verb
 		Bag()
 			usr.CreateInventory()
+			if(!usr.inventoryTutorialDone&&usr.inventoryTutorialActivated)
+				usr.HudDelete_Tut3()
+				usr.inventoryTutorialDone=1
 	proc
 		CreateInventory()
 			if(BagOpen==1)

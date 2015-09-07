@@ -13,8 +13,8 @@ obj/Can_Build
 			switch(src.type)
 				if(/obj/Can_Build/Stone_Crafting_Table)
 					var/obj/NPCs/Items/Stone_Sword/A=new/obj/NPCs/Items/Stone_Sword
-					var/obj/NPCs/Items/Stone_Axe/B=new/obj/NPCs/Items/Stone_Axe
-					var/obj/NPCs/Items/Stone_Spear/C=new/obj/NPCs/Items/Stone_Spear
+					var/obj/NPCs/Items/Stone_Spear/B=new/obj/NPCs/Items/Stone_Spear
+					var/obj/NPCs/Items/Stone_Axe/C=new/obj/NPCs/Items/Stone_Axe
 
 					src.contents+=A
 					src.contents+=B
@@ -22,8 +22,8 @@ obj/Can_Build
 
 				if(/obj/Can_Build/Bronze_Crafting_Table)
 					var/obj/NPCs/Items/Bronze_Sword/D=new/obj/NPCs/Items/Bronze_Sword
-					var/obj/NPCs/Items/Bronze_Axe/E=new/obj/NPCs/Items/Bronze_Axe
 					var/obj/NPCs/Items/Bronze_Spear/F=new/obj/NPCs/Items/Bronze_Spear
+					var/obj/NPCs/Items/Bronze_Axe/E=new/obj/NPCs/Items/Bronze_Axe
 
 					src.contents+=D
 					src.contents+=E
@@ -31,8 +31,8 @@ obj/Can_Build
 
 				if(/obj/Can_Build/Iron_Crafting_Table)
 					var/obj/NPCs/Items/Iron_Sword/G=new/obj/NPCs/Items/Iron_Sword
-					var/obj/NPCs/Items/Iron_Axe/H=new/obj/NPCs/Items/Iron_Axe
 					var/obj/NPCs/Items/Iron_Spear/I=new/obj/NPCs/Items/Iron_Spear
+					var/obj/NPCs/Items/Iron_Axe/H=new/obj/NPCs/Items/Iron_Axe
 
 					src.contents+=G
 					src.contents+=H
@@ -63,7 +63,6 @@ obj/Can_Build
 			if(src in oview(1))
 				usr.Clicking()
 				usr.CreateInventory2(src)
-				usr<<"[src.Health]"
 				return
 
 	Bronze_Crafting_Table
@@ -79,7 +78,6 @@ obj/Can_Build
 			if(src in oview(1))
 				usr.Clicking()
 				usr.CreateInventory2(src)
-				usr<<"[src.Health]"
 				return
 
 	Iron_Crafting_Table
@@ -95,7 +93,6 @@ obj/Can_Build
 			if(src in oview(1))
 				usr.Clicking()
 				usr.CreateInventory2(src)
-				usr<<"[src.Health]"
 				return
 
 	Basic_Sewing_Table
@@ -127,3 +124,4 @@ obj/Can_Build
 			if(src in oview(1))
 				usr.CreateInventory2(src)
 				return
+
