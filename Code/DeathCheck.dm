@@ -50,8 +50,16 @@ mob/proc
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Red_Fox_Fur
 						F.loc=M.loc
 						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
+					var/exp = rand(20,30)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.Fade()
+					if(prob(50))
+						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
 						F.loc=M.loc
 						F.Fade()
 					T.WeaponEquipCheck(exp)
@@ -93,8 +101,8 @@ mob/proc
 					T.BaseDestroyed_Table2=1
 					T.BaseDestroyQuestFinish()
 
-				if(M.Name=="Clan Flag")
-					T.BaseDestroyed_ClanFlag=1
+				if(M.Name=="Clan Base")
+					T.BaseDestroyed_ClanBase=1
 					T.BaseDestroyQuestFinish()
 
 				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
@@ -165,6 +173,7 @@ mob/proc
 			src.density=0
 			animate(src,transform=matrix(),alpha=alpha-2,time=0)
 			sleep(world.tick_lag)
+
 	ALPHAADD()
 		spawn while(Dead)
 			if(src.alpha>=250)
@@ -172,7 +181,10 @@ mob/proc
 				src.Stamina=src.MaxStamina
 				src.Dead=0
 				src.speed=4
-				src.loc=locate(17,12,5)
+				if(!src.TutorialDone)
+					src.loc=locate(/turf/Markers/VillageOne/Spawn)
+				else
+					src.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
 				src.speed=4
 				if(ClanArenaFilled)
 					if(src.ClanFighting)
@@ -247,9 +259,9 @@ mob/proc
 	WeaponEquipCheck(exp)
 		if(src.SwordOn)
 			src.Sword_Skill_EXP+=exp
-		if(src.SpearOn)
+		else if(src.SpearOn)
 			src.Spear_Skill_EXP+=exp
-		if(src.AxeOn)
+		else if(src.AxeOn)
 			src.Axe_Skill_EXP+=exp
 		else
 			src.HandToHand_Skill_EXP+=exp
@@ -286,7 +298,7 @@ mob/proc
 	SkillLevelUP()
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
-			_message(src,"Your sword skill has leveled up! EXP is [usr.EXP]/[usr.MaxEXP]","Aqua")
+			_message(src,"Your sword skill has leveled up!","Aqua")
 			src<<sound('levelup.wav')
 		if(src.Spear_Skill_EXP>=Spear_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()

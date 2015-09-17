@@ -125,3 +125,16 @@ obj/Can_Build
 				usr.CreateInventory2(src)
 				return
 
+	Clan_Base
+		density=1
+		Health=50
+		MaxHealth=50
+		Defense=0
+		MaxDefense=0
+		icon='Icons/Buildable/Firepit.dmi'
+		name="Clan Base"
+		Click()
+			usr.Clicking()
+			if(src in oview(1))
+				usr.CreateInventory2(src)
+				return

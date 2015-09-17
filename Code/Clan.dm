@@ -49,9 +49,9 @@ mob
 		..()
 		if(usr != src)
 			usr.Clicking()
-			if(src.Player)
+			/*if(src.Player)
 				winshow(usr, "clanwindow", 1)
-				usr.clicked_who = src
+				usr.clicked_who = src*/
 
 	verb
 		Invite_Clan()

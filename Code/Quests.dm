@@ -74,8 +74,9 @@ mob/var
 	EnemiesKilled=0
 	BaseDestroyed_Table1=0
 	BaseDestroyed_Table2=0
-	BaseDestroyed_ClanFlag=0
+	BaseDestroyed_ClanBase=0
 	BaseDestroyQuestFinished=0
+	TutorialDone=0
 
 
 mob/proc
@@ -127,7 +128,7 @@ mob/proc
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small crafting stones, you can find them on Red Foxes and Wolves.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small crafting stones, you can find them on Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
@@ -228,7 +229,7 @@ mob/proc
 					src.CreateInventory()
 
 	BaseDestroyQuestFinish()
-		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanFlag)
+		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanBase)
 			if(!BaseDestroyQuestFinished)
 				_message(src, "<b><font color=#A0C8C6>Quest Completed:<font color=white> - Destroyed Enemy Encampment</font></b>","white")
 				src.BaseDestroyQuestFinished=1
@@ -268,6 +269,7 @@ mob
 				src.ElderNPC=1
 				src.Frozen=1
 				src.FadeScreen()
+				src.TutorialDone=1
 				src.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
 				usr.Frozen=1
 				sleep(5)

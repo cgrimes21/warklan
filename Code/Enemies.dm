@@ -138,10 +138,9 @@ mob/Enemies
 
 	//BASE
 
-	Clan_Flag
-		icon='Icons/Buildable/ClanFlag.dmi'
-		icon_state="flag"
-		Name="Clan Flag"
+	Clan_Base
+		icon='Icons/Buildable/Firepit.dmi'
+		Name="Clan Base"
 		speed=2
 		Level=1
 		Strength=7
@@ -181,6 +180,22 @@ mob/Enemies
 			Max_MouseName()
 
 
+	Bandit
+		icon='White Base.dmi'
+		Name="Bandit"
+		Level=10
+		Strength=32
+		Defense=28
+		Health=100
+		MaxHealth=100
+		speed=2
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-32)
+			Max_MouseName()
 
 	Wolf
 		icon='Wolf.dmi'

@@ -376,6 +376,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="fctunic"
 			name="Fox Cub Tunic"
+			Boost=1.2
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -412,7 +413,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="rfcoat"
 			name="Red Fox Coat"
-			Boost=0
+			Boost=1.5
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -449,7 +450,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="wfcoat"
 			name="Wolf Fur Coat"
-			Boost=0
+			Boost=2
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
