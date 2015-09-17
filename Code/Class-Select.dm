@@ -4,7 +4,8 @@ mob/verb
 		if(Name==null||Name==""){return}
 		usr.Name=Name
 		if(usr.key=="RedCrownMG")
-			usr.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
+			usr.loc=locate(/turf/Markers/VillageOne/Spawn)
+			//usr.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
 		else usr.loc=locate(/turf/Markers/VillageOne/Spawn)
 		usr.icon ='White Base.dmi'
 		usr.HudCreate()

@@ -123,7 +123,7 @@ mob/proc
 
 
 
-			else if(count_minerals("Stone",src) >=3&&src.QuestLevel==1&&src.DoingQuest)
+			else if(count_minerals("Stone",src) >=3&&src.QuestLevel==2&&src.DoingQuest)
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
