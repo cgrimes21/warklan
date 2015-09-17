@@ -182,9 +182,12 @@ mob
 					usr.ShowingBuildMenu=1
 					usr.ShowBuildMenuProc()
 					usr.Clicking()
+					winset(usr,"Main.MainMap","focus=true")
 					return
 				else
 					usr.ShowingBuildMenu=0
+					winset(usr,"Main.MainMap","focus=true")
+					winset(usr,"Build","is-visible=false")
 					return
 			else
 				src<<"You need to be in a clan to use the building menu."

@@ -19,11 +19,14 @@ mob
 				usr.ShowingSkillLevels=1
 				usr.SkillLevelShow()
 				usr.Clicking()
+				winset(usr,"Main.MainMap","focus=true")
 				return
 			else
 				usr.ShowingSkillLevels=0
 				usr.Clicking()
 				winset(usr,"SkillLevels","is-visible=false")
+				winset(usr,"Main.MainMap","focus=true")
+
 				return
 	proc
 		SkillLevelShow()

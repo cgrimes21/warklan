@@ -50,18 +50,22 @@ mob
 		OOC(T as text|null)
 			if(!usr.Player){return}
 			if(T==""||T==null)
+				usr.Chating = 0
+				usr.OOC = 0
+				winset(usr,"Main.MainMap","focus=true")
 				return
 			if(usr.Mute)
 				_message(usr, "<b><font color=#ff7f00>[usr.Name]</font>: You're Muted</b>","white")
 				return
 			usr.Chating=0
+			winset(usr,"Main.MainMap","focus=true")
 			_message(world, "<b><font color=#ff7f00>[usr.Name]</font>: [html_encode(T)]</b>","white")
 			usr.OOC=0
 			return
 		Chat()
 			set hidden=1
 			if(usr.Chating)
-				winset(usr,"Main.Map","focus=true")
+				winset(usr,"Main.MainMap","focus=true")
 				usr.Chating=0
 				return
 			else

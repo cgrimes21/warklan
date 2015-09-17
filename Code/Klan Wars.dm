@@ -135,6 +135,7 @@ mob
 			set hidden=0
 			Help_Player()
 			QuestItemDelete()
+			winset(usr,"Main.MainMap","focus=true")
 
 		toggle_debug_window()
 			set hidden = 1
