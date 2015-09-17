@@ -56,6 +56,47 @@ mob/proc
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
+				if(M.Name=="Cave Bat"&&M.Enemy==1)
+					usr<< sound('Sounds/screech.ogg')
+					var/exp = rand(20,30)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Cave Spider"&&M.Enemy==1)
+					var/exp = rand(20,30)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.Fade()
+					if(prob(30))
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Black Bat"&&M.Enemy==1)
+					var/exp = rand(20,30)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
+						F.loc=M.loc
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Stone Crafting Table"&&M.Enemy==1)
+					T.BaseDestroyed_Table1=1
+					T.BaseDestroyQuestFinish()
+
+				if(M.Name=="Basic Sewing Table")
+					T.BaseDestroyed_Table2=1
+					T.BaseDestroyQuestFinish()
+
+				if(M.Name=="Clan Flag")
+					T.BaseDestroyed_ClanFlag=1
+					T.BaseDestroyQuestFinish()
+
 				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
 					var/exp = rand(30,40)
 					if(prob(50))
@@ -219,7 +260,7 @@ mob/proc
 
 		src.Level+=1
 		if(src.Level==10)
-			_message(src,"New Task Unlocked: Create A Clan!","Aqua")
+			_message(src,"New Task Unlocked: <font color=white>Create A Clan!","Aqua")
 			src.ElderNPC=1
 
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
@@ -245,7 +286,7 @@ mob/proc
 	SkillLevelUP()
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
-			_message(src,"Your sword skill has leveled up!","Aqua")
+			_message(src,"Your sword skill has leveled up! EXP is [usr.EXP]/[usr.MaxEXP]","Aqua")
 			src<<sound('levelup.wav')
 		if(src.Spear_Skill_EXP>=Spear_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
@@ -253,7 +294,7 @@ mob/proc
 			src<<sound('levelup.wav')
 		if(src.Axe_Skill_EXP>=Axe_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
-			_message(src,"Your sword skill has leveled up!","Aqua")
+			_message(src,"Your axe skill has leveled up!","Aqua")
 			src<<sound('levelup.wav')
 		if(src.HandToHand_Skill_EXP>=HandToHand_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()

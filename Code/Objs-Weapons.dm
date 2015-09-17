@@ -97,6 +97,7 @@ mob/verb
 				usr.contents+=O
 				usr.QuestItemPickup(O)
 				O.Fading=0
+				usr.Clicking()
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
@@ -185,15 +186,22 @@ obj/Items/ItemDrops
 
 	Bronze
 		icon='JpShopItems.dmi'
-		icon_state="iron"
+		icon_state="bronze"
 		Click()
 			usr.Clicking()
 			if(src in oview(1))
 				if(usr.Dying)
 					return
-				usr<<sound('pickupcoin.wav')
-				usr.Gold+=src.Amount
-				del(src)
+				if(usr.AvailableItems>=usr.MaxItems)
+					_message(usr,"You're holding too many items!","Yellow")
+					return
+				else
+					usr.AvailableItems+=1
+					usr.contents+=src
+					if(usr.BagOpen==1)
+						usr.AddItems()
+					src.Fading=0
+
 
 //Quest Items//
 obj/Items/Quest
@@ -245,6 +253,9 @@ obj/Items
 	verb
 		Drop()
 			if(src in usr.contents)
+				if(src.Equipped)
+					src<<"This item is equipped."
+					return
 				usr.AvailableItems-=1
 				src.loc = usr.loc
 				usr.AddItems()
@@ -359,7 +370,6 @@ obj/Items
 	Clothing
 		icon='Weapons.dmi'
 		WeaponLevel=1
-		layer=17
 		Boost=0
 
 		Fox_Cub_Tunic
@@ -371,6 +381,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
 						usr.equip_clothing_del_Overlay()
@@ -380,6 +391,7 @@ obj/Items
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
 						return
 					src.Wearing=1
+					src.Equipped=1
 					usr.WearingShirt=1
 					usr.equip_clothing_add_Overlay()
 					src.overlays+=new/obj/Equipped
@@ -406,6 +418,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
@@ -415,6 +428,7 @@ obj/Items
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
 						return
 					src.Wearing=1
+					src.Equipped=1
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
 					usr.ShieldBoost = Boost
@@ -441,6 +455,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Defense -= usr.ShieldBoost
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
@@ -449,6 +464,7 @@ obj/Items
 						_message(usr,"You're Already Wearing A Shirt!","Yellow")
 						return
 					src.Wearing=1
+					src.Equipped=1
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
 					usr.ShieldBoost = Boost
@@ -467,7 +483,6 @@ obj/Items
 
 	Weapons
 		icon='Weapons.dmi'
-		layer=17
 		Weight=25
 
 		Stone_Sword
@@ -480,6 +495,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -494,8 +510,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Sword_Skill_Level==src.WeaponLevel)
+					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SwordOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -529,6 +546,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -543,8 +561,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Spear_Skill_Level==src.WeaponLevel)
+					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SpearOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -580,6 +599,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -594,8 +614,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Axe_Skill_Level==src.WeaponLevel)
+					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.AxeOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -630,6 +651,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -644,8 +666,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Sword_Skill_Level==src.WeaponLevel)
+					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SwordOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -680,6 +703,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -694,8 +718,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Spear_Skill_Level==src.WeaponLevel)
+					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SpearOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -731,6 +756,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -745,8 +771,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Axe_Skill_Level==src.WeaponLevel)
+					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.AxeOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -782,6 +809,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -796,8 +824,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Sword_Skill_Level==src.WeaponLevel)
+					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SwordOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -832,6 +861,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -846,8 +876,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Spear_Skill_Level==src.WeaponLevel)
+					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.SpearOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -882,6 +913,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.WeaponBoost
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
@@ -896,8 +928,9 @@ obj/Items
 					if(usr.WearingWeapon==1)
 						_message(usr,"You are already wearing a weapon","Yellow")
 						return
-					if(usr.Axe_Skill_Level==src.WeaponLevel)
+					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
+						src.Equipped=1
 						usr.AxeOn = 1
 						usr.WearingWeapon=1
 						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
@@ -932,6 +965,7 @@ obj/Items
 				if(src in usr.contents)
 					if(src.Wearing==1)
 						src.Wearing=0
+						src.Equipped=0
 						usr.Strength-=usr.BowBoost
 						usr.WearingWeapon=0
 						src.overlays-=src.overlays

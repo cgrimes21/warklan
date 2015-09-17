@@ -2448,3 +2448,145 @@ proc name: save build (/proc/save_build)
   call stack:
 save build()
 : Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,207
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,210
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: bad client
+proc name: BeginningQuests (/mob/proc/BeginningQuests)
+  source file: Quests.dm,84
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): BeginningQuests("SwordQuest")
+save build()
+: Del()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\RedCrownMG.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Save()
+RedCrownMG (/mob): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\Jean-Pierre\Desktop\klanwars\warklan\Saves\World\Build' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,197
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,210
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+Guest-2606275673 (/mob): Save()
+Guest-2606275673 (/mob): Logout()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+Guest-2606275673 (/mob): Save()
+Guest-2606275673 (/mob): Logout()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,210
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,197
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: bad client
+proc name: BeginningQuests (/mob/proc/BeginningQuests)
+  source file: Quests.dm,84
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): BeginningQuests("FurQuest")
+save build()
+: Del()
+BYOND Error:(Sfile.cpp,1138) failed to open file:
+BYOND Error:(Sfile.cpp,1138) ­D
+proc name: save build (/proc/save_build)
+  source file: Building.dm,197
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,210
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,75
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,75
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()

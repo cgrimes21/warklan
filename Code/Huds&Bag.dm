@@ -8,6 +8,8 @@ mob
 			new/obj/Huds/Tutorial3(src.client)
 		HudCreate_Tut4()
 			new/obj/Huds/Tutorial4(src.client)
+		HudCreate_Tut5()
+			new/obj/Huds/Tutorial5(src.client)
 		HudDelete_Tut1()
 			for(var/obj/Huds/Tutorial/S in usr.client.screen)
 				del(S)
@@ -20,7 +22,9 @@ mob
 		HudDelete_Tut4()
 			for(var/obj/Huds/Tutorial4/S in usr.client.screen)
 				del(S)
-
+		HudDelete_Tut5()
+			for(var/obj/Huds/Tutorial5/S in usr.client.screen)
+				del(S)
 		HudCreate()
 			new/obj/Huds/Health(src.client);new/obj/Huds/EXP(src.client);new/obj/Huds/Stamina(src.client)
 			new/obj/Huds/StatPanel/MainStatPanel(src.client)
@@ -28,8 +32,6 @@ mob
 			new/obj/Huds/StatPanel/STRPanel2(src.client)
 			new/obj/Huds/StatPanel/EXPPanel(src.client)
 			new/obj/Huds/StatPanel/EXPPanel2(src.client)
-			//new/obj/Huds/StatPanel/WeightPanel(src.client)
-			//new/obj/Huds/StatPanel/WeightPanel2(src.client)
 			new/obj/Huds/StatPanel/DefensePanel2(src.client)
 			new/obj/Huds/StatPanel/DefensePanel(src.client)
 			new/obj/Huds/StatPanel/NamePanel(src.client)
@@ -158,6 +160,14 @@ obj/Huds
 			screen_loc="8,15:52"
 			c.screen+=src
 
+	Tutorial5
+		layer=9999
+		icon='Tutorial.dmi'
+		icon_state="tutorial5"
+		New(client/c)
+			screen_loc="8,15:52"
+			c.screen+=src
+
 	Health
 		layer=9999
 		icon='Health.dmi'
@@ -196,6 +206,7 @@ obj/Huds
 			screen_loc="1,18:84"
 			c.screen+=src
 			spawn while(usr)
+				usr.SetMainEXP(usr.EXP,usr.MaxEXP)
 				if(!usr.client)
 					return
 				if(round(usr.EXP/usr.MaxEXP*100)>=90) src.icon_state="1"
@@ -314,7 +325,7 @@ obj/Huds
 			New(client/c)
 				screen_loc="24:4,11:21"
 				c.screen+=src
-				src.maptext="<font color=white>Overall Level:</font>"
+				src.maptext="<font color=white>Player Level:</font>"
 
 		LevelPanel2
 			layer=9999
@@ -480,9 +491,11 @@ mob
 	verb
 		Bag()
 			usr.CreateInventory()
+			usr.Clicking()
 			if(!usr.inventoryTutorialDone&&usr.inventoryTutorialActivated)
 				usr.HudDelete_Tut3()
 				usr.inventoryTutorialDone=1
+				_message(usr, "<font color=green>New Task Unlocked: <font color=white>Make A Weapon!</font>","white")
 	proc
 		CreateInventory()
 			if(BagOpen==1)

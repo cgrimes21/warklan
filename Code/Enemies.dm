@@ -136,6 +136,51 @@ mob/Enemies
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
 
+	//BASE
+
+	Clan_Flag
+		icon='Icons/Buildable/ClanFlag.dmi'
+		icon_state="flag"
+		Name="Clan Flag"
+		speed=2
+		Level=1
+		Strength=7
+		Defense=4
+		Health=100
+		MaxHealth=100
+		New()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+	Stone_Crafting_Table
+		icon='Icons/Buildable/WeaponTable1.dmi'
+		icon_state="weapontable1"
+		Name="Stone Crafting Table"
+		speed=2
+		Level=1
+		Strength=7
+		Defense=4
+		Health=100
+		MaxHealth=100
+		New()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+	Basic_Sewing_Table
+		icon='Icons/Buildable/SewingTable1.dmi'
+		icon_state="tailortable1"
+		Name="Basic Sewing Table"
+		speed=2
+		Level=1
+		Strength=7
+		Defense=4
+		Health=100
+		MaxHealth=100
+		New()
+			GenerateShadow(src, SOUTH,-10)
+			Max_MouseName()
+
+
 
 	Wolf
 		icon='Wolf.dmi'

@@ -77,7 +77,7 @@ mob
 			if(src.Mute)
 				_message(src, "<b><font color=#7F00FF>[usr.Name]</font>: You're Muted</b>","white")
 				return
-			_message(world, "<b><font color=red>[usr.Name]</font>: [html_encode(T)]</b>","white")
+			_message(world, "<b><font color=#A0C8C6>[usr.Name]</font>: [html_encode(T)]</b>","white")
 			winset(src,"Chat.Input","text=")
 			winset(src,"Main.Map","focus=true")
 			winset(src,"Chat.Input","focus=false")

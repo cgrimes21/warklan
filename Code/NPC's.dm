@@ -103,8 +103,7 @@ mob/NPCS
 			..()
 		Click()
 			if(src in oview(1))
-				usr.Clicking()
-				alert("Apparently there's some scary stuff in this cave...but I heard there was a lot of bronze inside!")
+				usr.Dialogue("Traveler1")
 	Tailor
 		icon_state="Tailor"
 		Name="Tailor"

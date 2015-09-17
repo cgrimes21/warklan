@@ -54,6 +54,7 @@ obj/NPCs/Items
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Stone",usr)>=3)
+				if(usr.QuestLevel==2)usr.ElderNPC=1
 				usr.QuestItemDelete()
 				var/obj/Items/Weapons/Stone_Sword/A=new/obj/Items/Weapons/Stone_Sword
 				usr.AvailableItems+=1

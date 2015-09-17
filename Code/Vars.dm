@@ -39,6 +39,26 @@ mob
 		for(var/image/Max_Image in usr.client.images)
 			usr.client.images -= Max_Image
 
+mob/proc
+	SetMainEXP(usr.EXP,usr.MaxEXP)
+		if(usr.SwordOn)
+			usr.EXP = usr.Sword_Skill_EXP
+			usr.MaxEXP = usr.Sword_Skill_MaxEXP
+
+		if(usr.SpearOn)
+			usr.EXP = usr.Spear_Skill_EXP
+			usr.MaxEXP = usr.Spear_Skill_MaxEXP
+
+		if(usr.AxeOn)
+			usr.EXP = usr.Axe_Skill_EXP
+			usr.MaxEXP = usr.Axe_Skill_MaxEXP
+
+		else
+			usr.EXP = usr.HandToHand_Skill_EXP
+			usr.MaxEXP = usr.HandToHand_Skill_MaxEXP
+
+		return usr.EXP || usr.MaxEXP
+
 mob
 	layer=15
 	var
@@ -81,8 +101,8 @@ mob
 		Stamina=100
 		MaxStamina=100
 		MaxWeight=50
-		Strength=500
-		MaxStrength=500
+		Strength=5
+		MaxStrength=5
 		Defense=4
 		MaxDefense=4
 		Gold=50
@@ -96,7 +116,6 @@ mob
 		SecondaryWeapon=""
 		WearingWeapon=0
 		WearingShirt=0
-
 
 		WeaponBoost=0
 		ShieldBoost=0
@@ -125,7 +144,8 @@ mob
 		inventoryTutorialDone=0
 		skillsTutorialActivated=0
 		skillsTutorialDone=0
-
+		buildTutorialActivated=0
+		buildTutorialDone=0
 
 
 		QuestsDone=0
@@ -179,6 +199,7 @@ mob
 
 obj
 	var
+		Equipped=0
 		WeaponLevel=0
 		Boost=0
 		Wearing=0

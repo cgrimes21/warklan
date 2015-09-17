@@ -131,8 +131,8 @@ mob/DblClick()
 							M.ClanLeader=usr.Name
 							M.ClanGold=usr.ClanGold
 							M.Clan=usr.Clan
-							_message(world,"<b><font color=blue>[M.name]:</font> Has Joined The Clan [usr.Clan]</b>","red")
+							_message(world,"<b><font color=blue>[M.name]:</font> Has Joined The Clan [usr.Clan]</b>","white")
 							return
 						if("No")
-							_message(usr,"<font color=blue>[M.name]:</font> has denied your request","red")
+							_message(usr,"<font color=blue>[M.name]:</font> has denied your request","white")
 							return

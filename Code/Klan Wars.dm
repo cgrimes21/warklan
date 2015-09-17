@@ -70,7 +70,6 @@ mob/proc
 
 	Help_Player()
 
-		usr.QuestItemDelete()
 		winset(usr,"Help","is-visible=true")
 		//_message(usr,"<font size=+1>[src.DoingQuest] = DOING QUEST. [QuestLevel] = MERC QUEST</font>","Yellow")
 
@@ -106,7 +105,7 @@ mob
 		src.Quests()
 		..()
 		if(src.music_on)
-			src<< sound('Sounds/Intro2.ogg',1,volume=50)
+			src<< sound('Sounds/Intro2.ogg',1,0,1)
 		src.density=1
 		if(!fexists("Saves/[src].sav"))
 

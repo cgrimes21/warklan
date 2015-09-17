@@ -18,9 +18,11 @@ mob
 			if(!usr.ShowingSkillLevels)
 				usr.ShowingSkillLevels=1
 				usr.SkillLevelShow()
+				usr.Clicking()
 				return
 			else
 				usr.ShowingSkillLevels=0
+				usr.Clicking()
 				winset(usr,"SkillLevels","is-visible=false")
 				return
 	proc
@@ -28,15 +30,17 @@ mob
 			winset(usr,"SkillLevels","is-visible=true")
 			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Sword_Skill_Level]'")
 			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Sword_Skill_EXP]/[src.Sword_Skill_MaxEXP]'")
-			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Spear_Skill_Level]'")
-			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Spear_Skill_EXP]/[src.Spear_Skill_MaxEXP]'")
-			winset(usr,"SkillLevels.SwordSkillLevel","text = 'Level: [src.Axe_Skill_Level]'")
-			winset(usr,"SkillLevels.SwordSkillEXP","text = 'EXP: [src.Axe_Skill_EXP]/[src.Axe_Skill_MaxEXP]'")
+			winset(usr,"SkillLevels.SpearSkillLevel","text = 'Level: [src.Spear_Skill_Level]'")
+			winset(usr,"SkillLevels.SpearSkillEXP","text = 'EXP: [src.Spear_Skill_EXP]/[src.Spear_Skill_MaxEXP]'")
+			winset(usr,"SkillLevels.AxeSkillLevel","text = 'Level: [src.Axe_Skill_Level]'")
+			winset(usr,"SkillLevels.AxeSkillEXP","text = 'EXP: [src.Axe_Skill_EXP]/[src.Axe_Skill_MaxEXP]'")
 			winset(usr,"SkillLevels.HandToHandSkillLevel","text = 'Level: [src.HandToHand_Skill_Level]'")
 			winset(usr,"SkillLevels.HandToHandSkillEXP","text = 'EXP: [src.HandToHand_Skill_EXP]/[src.HandToHand_Skill_MaxEXP]'")
 			if(!usr.skillsTutorialDone&&usr.skillsTutorialActivated)
 				usr.HudDelete_Tut4()
 				usr.skillsTutorialDone=1
+				_message(src, "<font color=green>New Task Unlocked: <font color=white>Destroy Clan Base!</font>","white")
+
 
 		SkillAlign()
 			spawn while(src.ShowingSkills)
@@ -71,7 +75,7 @@ mob
 					if(!client){return}
 					winset(src,"Skills.SkillG",{"current-cell="2,[i]""})
 					if(I.CoolDown>0)
-						src<<output("<font size=+2.5><font color=red>[I.CoolDown]</font></font>","Skills.SkillG")
+						src<<output("<font size=+2.5><font color=#A0C8C6>[I.CoolDown]</font></font>","Skills.SkillG")
 					else
 						src<<output("<font size=+2.5><font color=green>Can Fire</font></font>","Skills.SkillG")
 				sleep(world.tick_lag)

@@ -3,7 +3,9 @@ mob/verb
 		var/Name=winget(usr,"Name.NameI","text")
 		if(Name==null||Name==""){return}
 		usr.Name=Name
-		usr.loc=locate(/turf/Markers/VillageOne/Spawn)
+		if(usr.key=="RedCrownMG")
+			usr.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
+		else usr.loc=locate(/turf/Markers/VillageOne/Spawn)
 		usr.icon ='White Base.dmi'
 		usr.HudCreate()
 		usr.Player=1

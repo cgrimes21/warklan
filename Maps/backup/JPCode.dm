@@ -361,6 +361,7 @@ turf/Markers
 		ToArea1FromArea2
 		ToArea3FromArea2
 		ToArea2FromArea3
+		ToRegularMap
 	Dungeon1
 		Dungeon1_Inside
 		Dungeon1_Outside

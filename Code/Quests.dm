@@ -57,8 +57,9 @@ mob
 				if(src.ElderNPC)
 					for(var/mob/NPCS/QUEST/Monk/M in oview())
 						var/image/I = image('!.dmi',M)
+						I.layer=15
 						I.pixel_y=34
-						I.pixel_x=27
+						I.pixel_x=12
 						usr<<I
 				sleep(10)
 
@@ -68,12 +69,13 @@ mob/var
 	//Tutorial
 	QuestLevel=1
 	DoingQuest=0
-	WolfKilled=0
-	FoxKilled=0
 	ElderNPC=1
 	WeaponNPC=0
 	EnemiesKilled=0
-	ThirdQuestOver=0
+	BaseDestroyed_Table1=0
+	BaseDestroyed_Table2=0
+	BaseDestroyed_ClanFlag=0
+	BaseDestroyQuestFinished=0
 
 
 mob/proc
@@ -97,11 +99,9 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
-				src.HudCreate_Tut3()
-				src.inventoryTutorialActivated=1
 
-			else if(count_furs("Fox Cub Furs",src) >=3)
-				src<< output("<center>You've retrieved the furs! Take them to the sewing table and create a tunic.</center>","QuestMenu.Info")
+			else if(count_furs("Fox Cub Furs",src) >=3&&src.QuestLevel==1&&src.DoingQuest)
+				src<< output("<center>You've retrieved the furs! Now take them to the sewing tables below me and create a fox cub tunic.</center>","QuestMenu.Info")
 
 			else
 				src<< output("<center>Ah, hello [usr.Name], you've grown into a fine young man indeed! However I think it's time for you to leave home and make your own legend, and time for you to create your own clan and stories of glory! Hm, but in order to do so, you'll need some clothing and a weapon. Let's get you a robe. Why don't you go and get 3 fox furs for me. You can get them from the fox cubs to your right.</center>","QuestMenu.Info")
@@ -109,7 +109,7 @@ mob/proc
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
 		if(T=="SwordQuest")
-			var/icon/my_icon2 = icon('Icons/Quest_Rewards/FoxFurTunic.dmi')
+			var/icon/my_icon2 = icon('Icons/Quest_Rewards/StoneSword.dmi')
 			var/file_reference2 = fcopy_rsc(my_icon2)
 			winset(src,"QuestMenu.RewardOne","image=\ref[file_reference2]")
 			src<< output(null,"QuestMenu.Info")
@@ -120,11 +120,10 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
-				src.skillsTutorialActivated=1
-				src.HudCreate_Tut4()
 
 
-			else if(count_minerals("Stone",src) >=3)
+
+			else if(count_minerals("Stone",src) >=3&&src.QuestLevel==1&&src.DoingQuest)
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
@@ -132,9 +131,23 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
+		if(T=="DestroyClanBaseQuest")
+			src<< output(null,"QuestMenu.Info")
+
+			if(src.BaseDestroyQuestFinished)
+				src<< output("<center>So you've learned how to attack and defend yourself, how to create weapons and clothing, and also how to raid and destroy enemy clan bases, I think you're ready to go out on your own. You are now able to wage warfare and build your own legend! Good look on your journey [usr.Name]!.</center>","QuestMenu.Info")
+				winset(src,"QuestMenu.Accept","is-visible=true")
+				winset(src,"QuestMenu.Accept","text=Complete")
+				winset(usr,"QuestMenu.Deny","is-visible=false")
+
+			else
+				src<< output("<center>Hm, so you've managed to get yourself a nice weapon, it's time to put it to use. All clans possess the ability to build encampments, starting with a base flag, and then from there on building walls, defenses, and more. As well as being able to build your own, you can also destroy other player encampents.  An enemy clan of ours has encroached on our territory and have created a settlement close to us. Your next task is to destroy it. The settlement is located right after the Red Foxes across the bridge.</center>","QuestMenu.Info")
+				winset(src,"QuestMenu.Accept","is-visible=true")
+				winset(usr,"QuestMenu.Deny","is-visible=true")
+
 		if(T=="BeforeCreateClanQuest")
 			src<< output(null,"QuestMenu.Info")
-			src<< output("<center>Hmm, your training is coming along, come to me when your overall level is 10 and i'll guide you through creating your own clan.</center>","QuestMenu.Info")
+			src<< output("<center>Hmm, your training is coming along, come to me when your player level is 10 and i'll guide you through creating your own clan.</center>","QuestMenu.Info")
 			winset(src,"QuestMenu.Accept","is-visible=true")
 			winset(src,"QuestMenu.Accept","text=Complete")
 			winset(usr,"QuestMenu.Deny","is-visible=false")
@@ -148,12 +161,25 @@ mob/proc
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(src,"QuestMenu.Accept","text=Complete")
 				winset(usr,"QuestMenu.Deny","is-visible=false")
-				usr.ThirdQuestOver=1
+
 			else
 				src<< output("<center>I've seen your progress! You've grown very quickly. I think you're ready to form your own clan. Clans are the driving force in this world. You can create a clan of warriors that beat other clans into submission, a clan of conquerers that takes over the world, the possibilities are endless. Speak to the Clan Chief, and he'll start the process.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
+	Dialogue(T as text)
+		winset(src,"Dialogue","is-visible=true")
+		spawn while(src.QuestMenuUp==1)
+			var/a=winget(src,"Main","pos")
+			var/chatx=text2num(copytext(a,1,","))
+			var/chaty=text2num(copytext(a,findtext(a,",")+1))
+			winset(src,"Dialogue","pos=[chatx+180],[chaty+237]")
+			sleep(world.tick_lag)
+		if(T=="Traveler1")
+			usr.Clicking()
+			src<< output(null,"Dialogue.Info")
+			src<< output("<center>Apparently there's some scary stuff in this cave...but I heard there was a lot of minerals like stone and bronze inside!</center>","Dialogue.Info")
+			winset(src,"Dialogue.Accept","is-visible=true")
 
 
 	QuestItemPickup(obj/O)
@@ -162,7 +188,7 @@ mob/proc
 			if(istype(O, /obj/Items/ItemDrops/Fox_Fur))
 				_message(src, "<font color=green>Fox Furs Collected: [ffcollected]/3</font>","white")
 				if(ffcollected==3)
-					_message(usr, "<b><font color=red>Quest Completed:<font color=white> - Return To The Elder</font></b>","white")
+					_message(usr, "<b><font color=#A0C8C6>Quest Completed:<font color=white> - Return To The Elder</font></b>","white")
 					usr<<sound('levelup.wav',volume=100)
 					src.ElderNPC=1
 			return
@@ -172,7 +198,7 @@ mob/proc
 			if(istype(O, /obj/Items/ItemDrops/Stone))
 				_message(src, "<font color=green>Stones Collected: [stonescollected]/3</font>","white")
 				if(stonescollected==3)
-					_message(usr, "<b><font color=red>Quest Completed:<font color=white> - Return To The Elder</font></b>","white")
+					_message(usr, "<b><font color=#A0C8C6>Quest Completed:<font color=white> - Retrieve 3 Stones!</font></b>","white")
 					usr<<sound('levelup.wav',volume=100)
 					src.ElderNPC=1
 			return
@@ -201,6 +227,13 @@ mob/proc
 					src.AvailableItems-=1
 					src.CreateInventory()
 
+	BaseDestroyQuestFinish()
+		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanFlag)
+			if(!BaseDestroyQuestFinished)
+				_message(src, "<b><font color=#A0C8C6>Quest Completed:<font color=white> - Destroyed Enemy Encampment</font></b>","white")
+				src.BaseDestroyQuestFinished=1
+				src.ElderNPC=1
+
 mob
 	verb
 		ExitQuest()
@@ -209,8 +242,6 @@ mob
 			usr.CheckQuest()
 	proc
 		CheckQuest()
-
-
 			// Beginning Quests//
 			//var/ffcollected = count_fox_furs(src)
 			var/hasfoxfurtunic = check_for_fftunic(src)
@@ -218,23 +249,35 @@ mob
 				src.DoingQuest=0
 				src.QuestLevel+=1
 				src.ElderNPC=1
-				_message(src, "<font color=green>New Task Unlocked: Make A Weapon!</font>","white")
+				src.HudCreate_Tut3()
+				src.inventoryTutorialActivated=1
 				return
 
 			var/hasweapon = check_for_weapon(src)
 			if(src.DoingQuest&&src.QuestLevel==2&&hasweapon)
 				src.DoingQuest=0
 				src.QuestLevel+=1
-				src.ElderNPC=0
-
+				src.ElderNPC=1
+				src.skillsTutorialActivated=1
+				src.HudCreate_Tut4()
 				return
 
-			if(src.DoingQuest&&src.QuestLevel==3&&src.InClan==1)
+			if(src.DoingQuest&&src.QuestLevel==3&&src.BaseDestroyQuestFinished)
 				src.DoingQuest=0
 				src.QuestLevel+=1
-				src.ElderNPC=0
-
+				src.ElderNPC=1
+				src.Frozen=1
+				src.FadeScreen()
+				src.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
+				usr.Frozen=1
+				sleep(5)
+				usr.Frozen=0
+				sleep(5)
+				src.buildTutorialActivated=1
+				src.HudCreate_Tut5()
 				return
+
+
 
 
 
@@ -270,7 +313,7 @@ mob/NPCS/QUEST
 		Name="Clan Elder"
 		New()
 			Max_MouseName()
-			GenerateShadow(src, SOUTH,-60)
+			GenerateShadow(src, SOUTH,-32)
 			..()
 		Click()
 			if(src in oview(1))
@@ -286,19 +329,35 @@ mob/NPCS/QUEST
 						usr.QuestMenuUp=1
 						usr.BeginningQuests("SwordQuest")
 						return
-					if(usr.QuestLevel==3&&usr.Level==5)
+					if(usr.QuestLevel==3)
+						usr.QuestMenuUp=1
+						usr.BeginningQuests("DestroyClanBaseQuest")
+						return
+					/*if(usr.QuestLevel==4)
 						usr.QuestMenuUp=1
 						usr.BeginningQuests("CreateClanQuest")
 						return
 					else
 						usr.QuestMenuUp=1
-						usr.BeginningQuests("BeforeCreateClanQuest")
+						usr.BeginningQuests("BeforeCreateClanQuest")*/
 
 
 
+
+
+mob/verb
+	DialogueClose()
+		set hidden=1
+		winset(usr,"Dialogue","is-visible=false")
+		usr.QuestMenuUp=0
+
+	ExitDialogue()
+		winset(usr,"Dialogue","is-visible=false")
+		usr.QuestMenuUp=0
 
 
 //when you accept a quest, these dialogues show up to say you've accepted it
+
 mob/verb
 	QAccept()
 		set hidden=1
@@ -309,21 +368,19 @@ mob/verb
 		//Monk Temple Quests//
 		if(QuestLevel==1)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=#A0C8C6>Quest:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
+				_message(usr, "<b><font color=#A0C8C6>Quest Accepted:<font color=white> - Collect 3 Fox Furs!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
 		if(QuestLevel==2)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=red>Quest:<font color=white> - Collect 3 Stones!</font></b>","white")
+				_message(usr, "<b><font color=#A0C8C6>Quest Accepted:<font color=white> - Collect 3 Stones!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
-		if(QuestLevel==3&&usr.Level==10)
+		if(QuestLevel==3)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=red>Quest:<font color=white> - Speak to Clan Elder</font></b>","white")
+				_message(usr, "<b><font color=#A0C8C6>Quest Accepted:<font color=white> - Destroy Clan Base!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
-			if(ThirdQuestOver)
-				usr.ShowBuildMenu()
 		usr.CheckQuest()
 		return
 
@@ -332,7 +389,7 @@ mob/verb
 	QDeny()
 		set hidden=1
 		winset(usr,"QuestMenu","is-visible=false")
-		_message(usr, "<b><font color=red>Quest:<font color=white> - Quest Cancelled!</font></b>","white")
+		_message(usr, "<b><font color=#A0C8C6>Quest:<font color=white> - Quest Cancelled!</font></b>","white")
 		usr.DoingQuest=0
 		usr.QuestMenuUp=0
 		return
