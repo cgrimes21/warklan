@@ -13,6 +13,7 @@ mob/verb
 		usr.Max_MouseName()
 		usr.HEALTHREGEN()
 		usr.StaminaREGEN()
+		usr.textColor=pick("#A0C8C6","#73B5AD","#ff7f00","#B1FFC7","#229472","#C6AB20","#6BB5C4")
 		GenerateShadow(usr, SOUTH,-32)
 		usr.Help_Player()
 		winset(usr,"NameChild","is-visible=false")

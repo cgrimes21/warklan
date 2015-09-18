@@ -28,12 +28,24 @@ mob/proc
 			var/tmp/damage=round((T.Strength+25)-M.Defense)/1.5
 			if(damage<=0)
 				damage=rand(1,3)
+			if(prob(75)) playAttackingSound(T,M)
 			new/effect/damage(M.loc,"<font color=red><b>[round(damage)]</b></font>")
 			M.Health-=damage
 			M.update_health_bar()
 		if(M.Health<=0)
 			M.Health=0
 			M.DeathCheck(src,M)
+
+	playAttackingSound(mob/T,mob/M)
+		switch(T.Name)
+			if("Cave Bat")
+				M << sound('Sounds/screech.ogg')
+			if("Bandit")
+				M << sound('Sounds/aGrunt.ogg')
+			else
+				M << sound('Sounds/growl.ogg')
+
+
 mob/Enemies
 	Enemy=1
 	NPC=0
@@ -106,11 +118,12 @@ mob/Enemies
 		icon='fox3.dmi'
 		Name="Fox Cub"
 		speed=2
-		Level=1
+		Level=3
 		Strength=7
 		Defense=4
 		Health=100
 		MaxHealth=100
+		expGiven=10
 		New()
 			spawn
 				while(src)
@@ -123,11 +136,12 @@ mob/Enemies
 		icon='fox3.dmi'
 		Name="Red Fox"
 		speed=2
-		Level=5
+		Level=6
 		Strength=24
 		Defense=21
 		Health=100
 		MaxHealth=100
+		expGiven=20
 		New()
 			spawn
 				while(src)
@@ -180,32 +194,15 @@ mob/Enemies
 			Max_MouseName()
 
 
-	Bandit
-		icon='White Base.dmi'
-		Name="Bandit"
-		Level=10
-		Strength=32
-		Defense=28
-		Health=100
-		MaxHealth=100
-		speed=2
-		New()
-			spawn
-				while(src)
-					sleep(10)
-					src.tickle()
-			GenerateShadow(src, SOUTH,-32)
-			Max_MouseName()
-
 	Wolf
 		icon='Wolf.dmi'
 		Name="Mountain Wolf"
-		Level=10
+		Level=9
 		Strength=32
 		Defense=28
 		Health=100
 		MaxHealth=100
-		speed=2
+		expGiven=40
 		New()
 			spawn
 				while(src)
@@ -214,15 +211,34 @@ mob/Enemies
 			GenerateShadow(src, SOUTH,-50)
 			Max_MouseName()
 
+
+	Bandit
+		icon='White Base.dmi'
+		Name="Bandit"
+		Level=9
+		Strength=32
+		Defense=28
+		Health=150
+		MaxHealth=150
+		expGiven=60
+		New()
+			spawn
+				while(src)
+					sleep(10)
+					src.tickle()
+			GenerateShadow(src, SOUTH,-32)
+			Max_MouseName()
+
 	Bat
 		icon='Bat.dmi'
 		Name="Cave Bat"
-		Level=4
+		Level=12
 		Strength=39
 		Defense=35
 		Health=100
 		MaxHealth=100
-		speed=2
+		expGiven=80
+
 		New()
 			spawn
 				while(src)
@@ -234,12 +250,12 @@ mob/Enemies
 	Cave_Spider
 		icon='Spider.dmi'
 		Name="Cave Spider"
-		Level=4
+		Level=15
 		Strength=44
 		Defense=40
 		Health=100
 		MaxHealth=100
-		speed=2
+		expGiven=100
 		New()
 			spawn
 				while(src)
@@ -252,12 +268,12 @@ mob/Enemies
 	Bat_Black
 		icon='Bat_Black.dmi'
 		Name="Black Bat"
-		Level=4
+		Level=18
 		Strength=46
 		Defense=42
 		Health=100
 		MaxHealth=100
-		speed=2
+		expGiven=120
 		New()
 			spawn
 				while(src)

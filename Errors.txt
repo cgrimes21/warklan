@@ -2617,3 +2617,57 @@ proc name: Quests (/mob/proc/Quests)
 RedCrownMG (/mob): Quests()
 save build()
 : Del()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,73
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,73
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,73
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,73
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()
+runtime error: Cannot modify null.Frozen.
+proc name: Enter (/turf/Locations/Tutorial/ToArea1FromArea2/Enter)
+  source file: Turfs.dm,73
+  usr: null
+  src: ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2)
+  call stack:
+ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(null, ToArea2FromArea1 (2,13,6) (/turf/Markers/Tutorial/ToArea2FromArea1))
+save build()
+: Del()

@@ -59,7 +59,7 @@ mob
 				return
 			usr.Chating=0
 			winset(usr,"Main.MainMap","focus=true")
-			_message(world, "<b><font color=#ff7f00>[usr.Name]</font>: [html_encode(T)]</b>","white")
+			_message(world, "<b><font color=[textColor]>[usr.Name]</font>: [html_encode(T)]</b>","white")
 			usr.OOC=0
 			return
 		Chat()
@@ -79,7 +79,7 @@ mob
 			if(T==""||T==null)
 				return
 			if(src.Mute)
-				_message(src, "<b><font color=#7F00FF>[usr.Name]</font>: You're Muted</b>","white")
+				_message(src, "<b><font color=#7F00FF>[usr.Name]</font>: You're muted</b>","white")
 				return
 			_message(world, "<b><font color=#A0C8C6>[usr.Name]</font>: [html_encode(T)]</b>","white")
 			winset(src,"Chat.Input","text=")

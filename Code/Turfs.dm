@@ -40,7 +40,7 @@ turf/Locations
 						usr.loc=locate(/turf/Markers/Tutorial/ToArea2FromArea1)
 						usr.Frozen=1
 						sleep(5)
-						usr<< sound('Sounds/Battle.ogg',1,0,1)
+						//usr<< sound('Sounds/Battle.ogg',1,0,1)
 						usr.Frozen=0
 						#warning its creating this five times, make it more efficient
 						if(!usr.attackTutorialDone) //if attack tutorial isn't finished
@@ -69,7 +69,7 @@ turf/Locations
 						if(!usr.attackTutorialDone)
 							usr.HudDelete_Tut1()
 						sleep(5)
-						usr<< sound('Sounds/Intro2.ogg',1,0,1)
+						//usr<< sound('Sounds/Intro2.ogg',1,0,1)
 						usr.Frozen=0
 						return 1
 				else
@@ -138,6 +138,7 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
+						usr.inDungeon=1
 						usr<< sound('Sounds/Dungeon.ogg',1,0,1)
 						usr.loc=locate(/turf/Markers/Dungeon1/Dungeon1_Inside)
 						usr.Frozen=1
@@ -162,7 +163,8 @@ turf/Locations
 						return 0
 					if(a:Player)
 						usr.FadeScreen()
-						usr<< sound('Sounds/Intro2.ogg',1,0,1)
+						usr.inDungeon=0
+						usr<< sound('Sounds/Battle.ogg',1,0,1)
 						usr.loc=locate(/turf/Markers/Dungeon1/Dungeon1_Outside)
 						usr.Frozen=1
 						sleep(5)

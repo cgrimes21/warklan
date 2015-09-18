@@ -93,6 +93,7 @@ mob
 		Player=0
 		Enemy=0
 		NPC=0
+		textColor=""
 		HandToHandLevel=1
 		WeaponsLevel=1
 		LongRangLevel=1
@@ -146,15 +147,18 @@ mob
 		skillsTutorialDone=0
 		buildTutorialActivated=0
 		buildTutorialDone=0
-
-
 		QuestsDone=0
+
+		inDungeon=0
 
 
 		MacroOne=""
 		MacroTwo=""
 		MacroThree=""
 		MacroFour=""
+
+mob/Enemies/var
+	expGiven=0
 
 
 mob/var/list/Skills=new

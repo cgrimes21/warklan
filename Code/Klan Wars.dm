@@ -105,7 +105,10 @@ mob
 		src.Quests()
 		..()
 		if(src.music_on)
-			src<< sound('Sounds/Intro2.ogg',1,0,1)
+			if(src.inDungeon==1)
+				src<< sound('Sounds/Dungeon.ogg',1,0,1)
+			else
+				src<< sound('Sounds/Battle.ogg',1,0,1)
 		src.density=1
 		if(!fexists("Saves/[src].sav"))
 
