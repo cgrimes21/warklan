@@ -40,6 +40,20 @@ mob/Enemies
 	layer=6
 	Level=1
 
+	var/list/most_dmg = list()
+	Move(a,b)
+
+		switch(b)
+			if(NORTHEAST)
+				b = pick(NORTH,EAST)
+			if(SOUTHEAST)
+				b = pick(EAST,SOUTH)
+			if(NORTHWEST)
+				b = pick(NORTH,WEST)
+			if(SOUTHWEST)
+				b = pick(SOUTH,WEST)
+		a = get_step(src,b)
+		..(a,b)
 	proc
 		NPCAttackPlayer(mob/who)
 			//debuggers<<"[src.name] attacking [who.name]"
@@ -72,8 +86,21 @@ mob/Enemies
 						if(M.Player && !M.Dead && !M.Dying && (src.Attacker == M.Name))
 							found = 1
 							//if they are right next to the player facing them, attack them
+							var/nolist = list(NORTHEAST,NORTHWEST,SOUTHEAST,SOUTHWEST)
 							if(get_dist(src,M)<=1 && src.dir == get_dir(src,M))
-								src.NPCAttackPlayer(M)
+								if(src.dir in nolist)
+									switch(src.dir)
+										if(NORTHEAST)
+											step(src,pick(NORTH,EAST))
+										if(NORTHWEST)
+											step(src,pick(NORTH,WEST))
+										if(SOUTHEAST)
+											step(src,pick(SOUTH,EAST))
+										if(SOUTHWEST)
+											step(src,pick(SOUTH,WEST))
+								else
+
+									src.NPCAttackPlayer(M)
 							else
 								//take a step towards them
 								step_to(src,M,0)

@@ -507,15 +507,16 @@ mob
 				for(var/obj/Bag/H in src.client.screen)
 					del(H)
 				return
-			for(var/obj/Items/O in src.client.screen)
-				O.layer = OBJ_LAYER
-				src.client.screen-=O
+			else
+				BagOpen = 1
+				for(var/obj/Items/O in src.client.screen)
+					O.layer = OBJ_LAYER
+					src.client.screen-=O
 
-			for(var/obj/Bag/H in src.client.screen)
-				del(H)
-			src.BagOpen=1
-			src.MenuBack()
-			src.AddItems()
+				for(var/obj/Bag/H in src.client.screen)
+					del(H)
+				src.MenuBack()
+				src.AddItems()
 		AddItems()
 			var/ox = 24
 			var/oy = 5

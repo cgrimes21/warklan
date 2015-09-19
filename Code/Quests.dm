@@ -203,29 +203,31 @@ mob/proc
 					src.ElderNPC=1
 			return
 
-	QuestItemDelete()
-		if(src.DoingQuest&&src.QuestLevel==1)
-			var/counter = 0
-			for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
-				counter++
-				if(counter <= 3)
-					del B
-					if(src.BagOpen==1)
-						usr.AddItems()
-					src.AvailableItems-=1
-					src.CreateInventory()
+	QuestItemDelete(var/quest = 0)
+		switch(quest)
+			if(1)
+
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+					counter++
+					if(counter <= 3)
+						del B
+						if(src.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
 
 
-		if(src.DoingQuest&&src.QuestLevel==2)
-			var/counter = 0
-			for(var/obj/Items/ItemDrops/Stone/C in src.contents)
-				counter++
-				if(counter <= 3)
-					del C
-					if(usr.BagOpen==1)
-						usr.AddItems()
-					src.AvailableItems-=1
-					src.CreateInventory()
+			if(2)
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Stone/C in src.contents)
+					counter++
+					if(counter <= 3)
+						del C
+						if(usr.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
 
 	BaseDestroyQuestFinish()
 		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanFlag)

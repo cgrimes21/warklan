@@ -50,7 +50,7 @@ obj/NPCs/Items
 		icon_state="Stone Sword"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Stone",usr)>=3)
@@ -78,7 +78,7 @@ obj/NPCs/Items
 		icon_state="Stone Spear"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Stone",usr)>=3)
@@ -104,7 +104,7 @@ obj/NPCs/Items
 		icon_state="Stone Axe"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Stone",,usr)>=3)
@@ -130,7 +130,7 @@ obj/NPCs/Items
 		icon_state="Bronze Sword"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Bronze",usr)>=3)
@@ -156,7 +156,7 @@ obj/NPCs/Items
 		icon_state="Bronze Spear"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Bronze",usr)>=3)
@@ -181,7 +181,7 @@ obj/NPCs/Items
 		icon_state="Bronze Axe"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Bronze",usr)>=3)
@@ -207,7 +207,7 @@ obj/NPCs/Items
 		icon_state="Iron Sword"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Iron",,usr)>=3)
@@ -233,7 +233,7 @@ obj/NPCs/Items
 		icon_state="Iron Spear"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Iron",usr)>=3)
@@ -258,7 +258,7 @@ obj/NPCs/Items
 		icon_state="Iron Axe"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_minerals("Iron",usr)>=3)
@@ -282,11 +282,11 @@ obj/NPCs/Items
 		icon_state="fctunic"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_furs("Fox Cub Furs",usr)>=3)
-				usr.QuestItemDelete()
+				usr.QuestItemDelete(1)
 				var/obj/Items/Clothing/Fox_Cub_Tunic/A=new/obj/Items/Clothing/Fox_Cub_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -307,11 +307,11 @@ obj/NPCs/Items
 		icon_state="rfcoat"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_furs("Red Fox Furs",usr)>=7)
-				usr.QuestItemDelete()
+				usr.QuestItemDelete(1)
 				var/obj/Items/Clothing/Red_Fox_Coat/A=new/obj/Items/Clothing/Red_Fox_Coat
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -333,7 +333,7 @@ obj/NPCs/Items
 		icon_state="wfcoat"
 		Click()
 			usr.Clicking()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(count_furs("Mountain Wolf Furs",usr)>=7)
@@ -354,7 +354,7 @@ obj/NPCs/Items
 		icon_state="Bow"
 		Click()
 			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.Gold>=src.Cost)
@@ -376,7 +376,7 @@ obj/NPCs/Items
 		icon_state="healingherb"
 		Click()
 			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.Gold>=src.Cost)
@@ -401,7 +401,7 @@ obj/NPCs/Items
 		icon_state="vigorizingherb"
 		Click()
 			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.Gold>=src.Cost)
@@ -426,7 +426,7 @@ obj/NPCs/Items
 		icon_state="Sack"
 		Click()
 			usr<<sound('Clickitem_statpoints.wav')
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			if(usr.Gold>=src.Cost)

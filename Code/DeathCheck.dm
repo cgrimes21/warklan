@@ -6,6 +6,7 @@ mob/proc
 			Stamina=Stamina-u
 			return
 	Damage(D)
+
 		if(Health<D)
 			Health=0
 			return
@@ -33,6 +34,19 @@ mob/proc
 				//var/Amount=rand(1,20)
 				//G.Amount=Amount
 				T.QUESTCHECK(M.Name)
+				var/most_dmg_name = ""
+				var/md = 0
+				var/mob/Enemies/e = M
+				for(var/v in e.most_dmg)
+					if(e.most_dmg[v]>=md)
+						md = e.most_dmg[v]
+						most_dmg_name = v
+
+				for(var/mob/temp in world)
+					if(temp.name == most_dmg_name)
+						T = temp
+						debuggers<<"[T.name] dealt the most damage."
+
 				if(M.Name=="Fox Cub"&&M.Enemy==1)
 					var/exp = rand(10,20)
 					if(prob(50))
@@ -41,6 +55,7 @@ mob/proc
 							T.pickupTutorialActivated=1 //the tutorial telling you how to pick stuff up is activated
 							T.HudCreate_Tut2()
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -49,10 +64,12 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Red_Fox_Fur
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -62,6 +79,7 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -70,10 +88,12 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					if(prob(30))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -82,6 +102,7 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -102,10 +123,12 @@ mob/proc
 					if(prob(50))
 						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					if(prob(30))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -114,6 +137,7 @@ mob/proc
 					if(prob(20))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -122,6 +146,7 @@ mob/proc
 					if(prob(30))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
@@ -130,6 +155,7 @@ mob/proc
 					if(prob(30))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Iron
 						F.loc=M.loc
+						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 

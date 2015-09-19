@@ -150,10 +150,10 @@ mob/verb
 			if(M.NPC == 1)
 				return
 			if(M.Dead==1)
-				debuggers<<"dead = 1 return"
+
 				return
 			if(M.Dying==1)
-				debuggers<<"dying = 1 return"
+
 				return
 
 			if(usr.Stamina<=5)
@@ -189,8 +189,8 @@ mob/verb
 				usr.speed=2;spawn(5)usr.speed=4
 				Punching=1;spawn(15)Punching=0
 				M.Attacker=usr.Name
-				if(M.Enemy)
-					M.Attacked+=10
+
+
 
 				//All damage is done here
 				var/weaponlevel
@@ -207,7 +207,15 @@ mob/verb
 				if(damage<=0)
 					damage=rand(1,2)
 				usr.Stamina-=rand(1,2)
+				if(M.Enemy)
+					M.Attacked+=10
+					var/mob/Enemies/e = M
+					e.most_dmg["[usr.name]"] += damage
+
 				M.Damage(damage)
+
+
+
 				M.DeathCheck(usr,M)
 				if(!attackTutorialDone) //if you didnt already attack a mob
 					usr.attackTutorialDone=1 //you've attacked him now

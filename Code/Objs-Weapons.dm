@@ -85,11 +85,14 @@ mob/verb
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return
+			if(O.owner != "")
+				usr<<"This belongs to [O.owner]."
+				return
 			if(usr.pickupTutorialActivated==1)
 				usr.pickupTutorialActivated=0
 				usr.pickupTutorialDone=1
 				usr.HudDelete_Tut2()
-			if(usr.AvailableItems>=usr.MaxItems)
+			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
 			else
@@ -101,9 +104,15 @@ mob/verb
 				if(usr.BagOpen==1)
 					usr.AddItems()
 					return
-
+obj/Items
+	var/owner = ""
 //Items that get dropped
 obj/Items/ItemDrops
+	New()
+		..()
+		spawn(600)
+			src.owner = ""
+
 	Fox_Fur
 		icon='ItemDrops.dmi'
 		icon_state="foxfur"
@@ -111,7 +120,7 @@ obj/Items/ItemDrops
 		Click()
 			if(src in oview(1))
 				usr.Clicking()
-				if(usr.AvailableItems>=usr.MaxItems)
+				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
 				else
@@ -128,7 +137,7 @@ obj/Items/ItemDrops
 		Click()
 			if(src in oview(1))
 				usr.Clicking()
-				if(usr.AvailableItems>=usr.MaxItems)
+				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
 				else
@@ -145,7 +154,7 @@ obj/Items/ItemDrops
 		Click()
 			if(src in oview(1))
 				usr.Clicking()
-				if(usr.AvailableItems>=usr.MaxItems)
+				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
 				else
@@ -163,7 +172,7 @@ obj/Items/ItemDrops
 		Click()
 			if(src in oview(1))
 				usr.Clicking()
-				if(usr.AvailableItems>=usr.MaxItems)
+				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
 				else
@@ -192,7 +201,7 @@ obj/Items/ItemDrops
 			if(src in oview(1))
 				if(usr.Dying)
 					return
-				if(usr.AvailableItems>=usr.MaxItems)
+				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
 				else
@@ -282,7 +291,7 @@ obj/Items
 					return
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -313,7 +322,7 @@ obj/Items
 					return
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -340,7 +349,7 @@ obj/Items
 						return
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -358,7 +367,7 @@ obj/Items
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in oview(1))
-					if(usr.AvailableItems>=usr.MaxItems)
+					if(usr.AvailableItems>=MAXITEMS)
 						_message(usr,"You're holding too many items","Yellow")
 						return
 					else
@@ -399,7 +408,7 @@ obj/Items
 					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -435,7 +444,7 @@ obj/Items
 					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -471,7 +480,7 @@ obj/Items
 					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -528,7 +537,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -579,7 +588,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -632,7 +641,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -684,7 +693,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -736,7 +745,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -789,7 +798,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -842,7 +851,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -894,7 +903,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -946,7 +955,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're Holding To Many Items","Yellow")
 							return
 						else
@@ -992,7 +1001,7 @@ obj/Items
 
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else
@@ -1035,7 +1044,7 @@ obj/Items
 						usr.Strength+=15
 				else
 					if(src in oview(1))
-						if(usr.AvailableItems>=usr.MaxItems)
+						if(usr.AvailableItems>=MAXITEMS)
 							_message(usr,"You're holding too many items!","Yellow")
 							return
 						else

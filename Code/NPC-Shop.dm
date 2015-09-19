@@ -10,15 +10,16 @@ mob
 				for(var/obj/Bag2/H in src.client.screen)
 					del(H)
 				return
-			for(var/obj/NPCs/Items/O in src.client.screen)
-				O.layer = OBJ_LAYER
-				src.client.screen-=O
+			else
+				BagOpen2 = 1
+				for(var/obj/NPCs/Items/O in src.client.screen)
+					O.layer = OBJ_LAYER
+					src.client.screen-=O
 
-			for(var/obj/Bag2/H in src.client.screen)
-				del(H)
-			src.BagOpen2=1
-			src.MenuBack2()
-			src.AddItems2(T)
+				for(var/obj/Bag2/H in src.client.screen)
+					del(H)
+				src.MenuBack2()
+				src.AddItems2(T)
 		AddItems2(mob/T)
 			var/ox = 14
 			var/oy = 15
