@@ -172,9 +172,9 @@ window "Build"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		on-size = ""
 		title = ""
-		titlebar = true
+		titlebar = false
 		statusbar = false
-		can-close = true
+		can-close = false
 		can-minimize = false
 		can-resize = false
 		is-pane = false
@@ -192,7 +192,7 @@ window "Build"
 		on-close = ""
 	elem "label24"
 		type = LABEL
-		pos = 135,378
+		pos = 135,410
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -220,7 +220,7 @@ window "Build"
 		letterbox = true
 	elem "label23"
 		type = LABEL
-		pos = 135,358
+		pos = 135,390
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -248,7 +248,7 @@ window "Build"
 		letterbox = true
 	elem "label22"
 		type = LABEL
-		pos = 134,338
+		pos = 134,370
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -276,7 +276,7 @@ window "Build"
 		letterbox = true
 	elem "button7"
 		type = BUTTON
-		pos = 43,339
+		pos = 43,371
 		size = 80x64
 		anchor1 = none
 		anchor2 = none
@@ -304,7 +304,7 @@ window "Build"
 		button-type = pushbutton
 	elem "label21"
 		type = LABEL
-		pos = 135,302
+		pos = 135,334
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -332,7 +332,7 @@ window "Build"
 		letterbox = true
 	elem "label20"
 		type = LABEL
-		pos = 135,282
+		pos = 135,314
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -360,7 +360,7 @@ window "Build"
 		letterbox = true
 	elem "label19"
 		type = LABEL
-		pos = 134,262
+		pos = 134,294
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -388,7 +388,7 @@ window "Build"
 		letterbox = true
 	elem "button6"
 		type = BUTTON
-		pos = 43,263
+		pos = 43,295
 		size = 80x64
 		anchor1 = none
 		anchor2 = none
@@ -416,7 +416,7 @@ window "Build"
 		button-type = pushbutton
 	elem "label18"
 		type = LABEL
-		pos = 135,151
+		pos = 259,164
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -444,8 +444,8 @@ window "Build"
 		letterbox = true
 	elem "label17"
 		type = LABEL
-		pos = 135,131
-		size = 184x24
+		pos = 259,131
+		size = 181x37
 		anchor1 = none
 		anchor2 = none
 		font-family = "sans-serif"
@@ -462,7 +462,7 @@ window "Build"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "Creates a clan base."
+		text = "Creates a clan base, allowing\n you to build other clan items."
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -472,7 +472,7 @@ window "Build"
 		letterbox = true
 	elem "label16"
 		type = LABEL
-		pos = 134,111
+		pos = 258,111
 		size = 163x24
 		anchor1 = none
 		anchor2 = none
@@ -490,7 +490,7 @@ window "Build"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "Base Flag"
+		text = "Clan Base"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -500,8 +500,8 @@ window "Build"
 		letterbox = true
 	elem "button5"
 		type = BUTTON
-		pos = 43,112
-		size = 80x64
+		pos = 167,112
+		size = 80x72
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -519,8 +519,8 @@ window "Build"
 		saved-params = "is-checked"
 		on-size = ""
 		text = ""
-		image = 'Icons\\Buildable\\ClanFlag.dmi'
-		command = "BuildBaseFlag"
+		image = 'Icons\\FirepitHUD.dmi'
+		command = "BuildBase"
 		is-flat = false
 		stretch = false
 		is-checked = false
@@ -528,7 +528,7 @@ window "Build"
 		button-type = pushbutton
 	elem "label13"
 		type = LABEL
-		pos = 416,151
+		pos = 416,259
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -556,7 +556,7 @@ window "Build"
 		letterbox = true
 	elem "label12"
 		type = LABEL
-		pos = 135,226
+		pos = 135,258
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -584,7 +584,7 @@ window "Build"
 		letterbox = true
 	elem "label11"
 		type = LABEL
-		pos = 416,130
+		pos = 416,238
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -612,7 +612,7 @@ window "Build"
 		letterbox = true
 	elem "label10"
 		type = LABEL
-		pos = 416,110
+		pos = 416,218
 		size = 163x24
 		anchor1 = none
 		anchor2 = none
@@ -640,7 +640,7 @@ window "Build"
 		letterbox = true
 	elem "button2"
 		type = BUTTON
-		pos = 325,111
+		pos = 325,219
 		size = 80x64
 		anchor1 = none
 		anchor2 = none
@@ -668,7 +668,7 @@ window "Build"
 		button-type = pushbutton
 	elem "label9"
 		type = LABEL
-		pos = 135,206
+		pos = 135,238
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -696,7 +696,7 @@ window "Build"
 		letterbox = true
 	elem "label3"
 		type = LABEL
-		pos = 134,186
+		pos = 134,218
 		size = 184x24
 		anchor1 = none
 		anchor2 = none
@@ -724,7 +724,7 @@ window "Build"
 		letterbox = true
 	elem "button1"
 		type = BUTTON
-		pos = 43,187
+		pos = 43,219
 		size = 80x64
 		anchor1 = none
 		anchor2 = none
@@ -2041,7 +2041,7 @@ window "Server"
 window "SkillLevels"
 	elem "SkillLevels"
 		type = MAIN
-		pos = 281,0
+		pos = 405,169
 		size = 553x358
 		anchor1 = none
 		anchor2 = none
@@ -2060,7 +2060,7 @@ window "SkillLevels"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		on-size = ""
 		title = ""
-		titlebar = true
+		titlebar = false
 		statusbar = false
 		can-close = true
 		can-minimize = false

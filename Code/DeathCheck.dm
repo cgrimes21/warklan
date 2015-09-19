@@ -14,8 +14,8 @@ mob/proc
 			Health=Health-D
 			new/effect/damage(src.loc,"<font color=red><b>[round(D)]</b></font>")
 			return
-	deathcheck()
 
+	deathcheck()
 		if(src.Dying)
 			if(src.Player)
 				//_message(world, "<b><font color=red>[T.Name]<I> Has Killed [M.Name]!</b></I></font>")
@@ -48,7 +48,7 @@ mob/proc
 						debuggers<<"[T.name] dealt the most damage."
 
 				if(M.Name=="Fox Cub"&&M.Enemy==1)
-					var/exp = rand(10,20)
+					var/exp = rand(8,10)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
 						if(!T.pickupTutorialActivated&&!T.pickupTutorialDone) //if pickup tutorial hasn't been activated yet or done
@@ -60,23 +60,85 @@ mob/proc
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Red Fox"&&M.Enemy==1)
-					var/exp = rand(20,30)
+					var/exp = rand(18,20)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Red_Fox_Fur
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
+<<<<<<< HEAD
 					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
+=======
+>>>>>>> origin/master
+					T.WeaponEquipCheck(exp)
+
+				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
+					var/exp = rand(38,40)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.owner = "[T.name]"
+						F.Fade()
+					if(prob(50))
+<<<<<<< HEAD
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Stone
+						F.loc=M.loc
+						F.owner = "[T.name]"
+						F.Fade()
+					if(prob(30))
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
+=======
+						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
+>>>>>>> origin/master
+						F.loc=M.loc
+						F.owner = "[T.name]"
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+
+<<<<<<< HEAD
+				if(M.Name=="Black Bat"&&M.Enemy==1)
+					var/exp = rand(20,30)
+					if(prob(50))
+						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
+						F.loc=M.loc
+						F.owner = "[T.name]"
+						F.Fade()
+					T.WeaponEquipCheck(exp)
+=======
+>>>>>>> origin/master
+
+				if(M.Name=="Stone Crafting Table"&&M.Enemy==1)
+					T.BaseDestroyed_Table1=1
+					T.BaseDestroyQuestFinish()
+
+				if(M.Name=="Basic Sewing Table")
+					T.BaseDestroyed_Table2=1
+					T.BaseDestroyQuestFinish()
+
+				if(M.Name=="Clan Base")
+					T.BaseDestroyed_ClanBase=1
+					T.BaseDestroyQuestFinish()
+
+				if(M.Name=="Bandit"&&M.Enemy==1)
+					usr<< sound('Sounds/screech.ogg')
+					var/exp = rand(58,60)
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Cave Bat"&&M.Enemy==1)
-					usr<< sound('Sounds/screech.ogg')
-					var/exp = rand(20,30)
+					var/exp = rand(78,80)
 					if(prob(50))
+<<<<<<< HEAD
+						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
+						F.loc=M.loc
+						F.owner = "[T.name]"
+						F.Fade()
+					if(prob(30))
+=======
+>>>>>>> origin/master
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.owner = "[T.name]"
@@ -84,7 +146,7 @@ mob/proc
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Cave Spider"&&M.Enemy==1)
-					var/exp = rand(20,30)
+					var/exp = rand(98,100)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
@@ -98,7 +160,7 @@ mob/proc
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Black Bat"&&M.Enemy==1)
-					var/exp = rand(20,30)
+					var/exp = rand(118,120)
 					if(prob(50))
 						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
@@ -106,58 +168,6 @@ mob/proc
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
-				if(M.Name=="Stone Crafting Table"&&M.Enemy==1)
-					T.BaseDestroyed_Table1=1
-					T.BaseDestroyQuestFinish()
-
-				if(M.Name=="Basic Sewing Table")
-					T.BaseDestroyed_Table2=1
-					T.BaseDestroyQuestFinish()
-
-				if(M.Name=="Clan Flag")
-					T.BaseDestroyed_ClanFlag=1
-					T.BaseDestroyQuestFinish()
-
-				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
-					var/exp = rand(30,40)
-					if(prob(50))
-						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					if(prob(30))
-						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					T.WeaponEquipCheck(exp)
-
-				if(M.Name=="Bat"&&M.Enemy==1)
-					var/exp = rand(40,50)
-					if(prob(20))
-						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					T.WeaponEquipCheck(exp)
-
-				if(M.Name=="Cave Spider"&&M.Enemy==1)
-					var/exp = rand(60,70)
-					if(prob(30))
-						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Bronze
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					T.WeaponEquipCheck(exp)
-
-				if(M.Name=="Black Bat"&&M.Enemy==1)
-					var/exp = rand(80,90)
-					if(prob(30))
-						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Iron
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					T.WeaponEquipCheck(exp)
 
 				T.SkillLevelUP()
 			if(M.Player)
@@ -191,6 +201,7 @@ mob/proc
 			src.density=0
 			animate(src,transform=matrix(),alpha=alpha-2,time=0)
 			sleep(world.tick_lag)
+
 	ALPHAADD()
 		spawn while(Dead)
 			if(src.alpha>=250)
@@ -198,7 +209,10 @@ mob/proc
 				src.Stamina=src.MaxStamina
 				src.Dead=0
 				src.speed=4
-				src.loc=locate(17,12,5)
+				if(!src.TutorialDone)
+					src.loc=locate(/turf/Markers/VillageOne/Spawn)
+				else
+					src.loc=locate(/turf/Markers/Tutorial/ToRegularMap)
 				src.speed=4
 				if(ClanArenaFilled)
 					if(src.ClanFighting)
@@ -273,9 +287,9 @@ mob/proc
 	WeaponEquipCheck(exp)
 		if(src.SwordOn)
 			src.Sword_Skill_EXP+=exp
-		if(src.SpearOn)
+		else if(src.SpearOn)
 			src.Spear_Skill_EXP+=exp
-		if(src.AxeOn)
+		else if(src.AxeOn)
 			src.Axe_Skill_EXP+=exp
 		else
 			src.HandToHand_Skill_EXP+=exp
@@ -312,7 +326,7 @@ mob/proc
 	SkillLevelUP()
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()
-			_message(src,"Your sword skill has leveled up! EXP is [usr.EXP]/[usr.MaxEXP]","Aqua")
+			_message(src,"Your sword skill has leveled up!","Aqua")
 			src<<sound('levelup.wav')
 		if(src.Spear_Skill_EXP>=Spear_Skill_MaxEXP)
 			Skill_LevelGain_MaxExpGain()

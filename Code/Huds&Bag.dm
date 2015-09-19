@@ -48,6 +48,8 @@ mob
 			new/obj/Huds/StatPanel/LevelPanel2(src.client)
 			new/obj/Huds/StatPanel/WeaponLevelPanel(src.client)
 			new/obj/Huds/StatPanel/WeaponLevelPanel2(src.client)
+			new/obj/Huds/StatPanel/WeaponEquippedPanel(src.client)
+			new/obj/Huds/StatPanel/WeaponEquippedPanel2(src.client)
 			var/obj/M1 = new/obj/Huds/Money1(src.client)
 			var/obj/M2 = new/obj/Huds/Money2(src.client)
 			var/obj/M3 = new/obj/Huds/Money3(src.client)
@@ -81,6 +83,8 @@ mob
 				new/obj/Huds/StatPanel/LevelPanel2(src.client)
 				new/obj/Huds/StatPanel/WeaponLevelPanel(src.client)
 				new/obj/Huds/StatPanel/WeaponLevelPanel2(src.client)
+				new/obj/Huds/StatPanel/WeaponEquippedPanel(src.client)
+				new/obj/Huds/StatPanel/WeaponEquippedPanel2(src.client)
 				return
 			else
 				StatPanel=0
@@ -332,7 +336,7 @@ obj/Huds
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="26:30,11:21"
+				screen_loc="26:25,11:21"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
@@ -340,12 +344,41 @@ obj/Huds
 					src.maptext="<font color=white>[usr.Level]</font>"
 					sleep(5)
 
-		WeaponLevelPanel
+		WeaponEquippedPanel
 			layer=9999
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
 				screen_loc="24:4,10:22"
+				c.screen+=src
+				src.maptext="<font color=white>Equipped:</font>"
+
+		WeaponEquippedPanel2
+			layer=9999
+			maptext_width=900
+			maptext_height=900
+			New(client/c)
+				screen_loc="24:75,10:22"
+				c.screen+=src
+				spawn while(usr)
+					if(!usr.client)
+						return
+					if(usr.SwordOn)
+						src.maptext="<font color=white>Sword</font>"
+					else if(usr.SpearOn)
+						src.maptext="<font color=white>Spear</font>"
+					else if(usr.AxeOn)
+						src.maptext="<font color=white>Axe</font>"
+					else
+						src.maptext="<font color=white>Fists</font>"
+					sleep(5)
+
+		WeaponLevelPanel
+			layer=9999
+			maptext_width=900
+			maptext_height=900
+			New(client/c)
+				screen_loc="24:4,9:23"
 				c.screen+=src
 				src.maptext="<font color=white>Weapon Level:</font>"
 
@@ -354,7 +387,7 @@ obj/Huds
 			maptext_width=900
 			maptext_height=900
 			New(client/c)
-				screen_loc="24:100,10:22"
+				screen_loc="25:70,9:23"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
@@ -373,7 +406,7 @@ obj/Huds
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="24:4,9:23"
+				screen_loc="24:4,8:24"
 				c.screen+=src
 				src.maptext="<font color=white>EXP:</font>"
 
@@ -381,20 +414,22 @@ obj/Huds
 			layer=9999
 			maptext_width=900
 			New(client/c)
-				screen_loc="25:8,9:23"
+				screen_loc="25:8,8:24"
 				c.screen+=src
 				spawn while(usr)
 					if(!usr.client)
 						return
 					if(usr.SwordOn)
 						src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]</font>"
-					if(usr.SpearOn)
+					else if(usr.SpearOn)
 						src.maptext="<font color=white>[usr.Spear_Skill_EXP] / [usr.Spear_Skill_MaxEXP]</font>"
-					if(usr.AxeOn)
+					else if(usr.AxeOn)
 						src.maptext="<font color=white>[usr.Axe_Skill_EXP] / [usr.Axe_Skill_MaxEXP]</font>"
-
-					else src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
+					else
+						src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
 					sleep(5)
+
+
 
 		HealthPanel
 			layer=9999

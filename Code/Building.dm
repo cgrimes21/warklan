@@ -58,8 +58,8 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 
-			if("Clan Flag")
-				var/obj/Can_Build/Clan_Flag/A=new/obj/Can_Build/Clan_Flag
+			if("Clan Base")
+				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -74,7 +74,7 @@ mob/proc
 
 
 mob/verb
-	BuildBaseFlag()
+	BuildBase()
 		set hidden = 1
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
@@ -83,9 +83,9 @@ mob/verb
 		switch(alert("Requirements: Player Level: 1",,"Accept","Deny"))
 			if("Accept")
 				if(usr.Level>1)
-					usr.Build("Clan Flag")
 					usr.Clicking()
 					winset(usr,"Build","is-visible=false")
+					usr.Build("Clan Base")
 					ShowingBuildMenu=0
 				else
 					src<<"You do not possess the necessary requirements to build this item."
@@ -101,10 +101,10 @@ mob/verb
 		switch(alert("Requirements: Player Level: 2 || Materials: 5 Stones",,"Accept","Deny"))
 			if("Accept")
 				if(usr.Level>=2&&count_minerals("Stone",usr)>=5)
-					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-						usr.Build("Stone Crafting Table")
+					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
+						usr.Build("Stone Crafting Table")
 						ShowingBuildMenu=0
 					else src<<"You are too far away from your base flag!"
 				else
@@ -122,10 +122,10 @@ mob/verb
 		switch(alert("Requirements: Player Level: 10 || Materials: 10 Bronze Bars",,"Accept","Deny"))
 			if("Accept")
 				if(usr.Level>=10&&count_minerals("Bronze",usr)>=10)
-					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-						usr.Build("Bronze Crafting Table")
+					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
+						usr.Build("Bronze Crafting Table")
 						ShowingBuildMenu=0
 					else src<<"You are too far away from your base flag!"
 				else
@@ -142,10 +142,10 @@ mob/verb
 		switch(alert("Requirements: Player Level: 20 || Materials: 15 Iron Bars",,"Accept","Deny"))
 			if("Accept")
 				if(usr.Level>=2&&count_minerals("Iron",usr)>=15)
-					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-						usr.Build("Iron Crafting Table")
+					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
+						usr.Build("Iron Crafting Table")
 						ShowingBuildMenu=0
 					else src<<"You are too far away from your base flag!"
 				else
@@ -162,10 +162,10 @@ mob/verb
 		switch(alert("Requirements: Clan Level: 5",,"Accept","Deny"))
 			if("Accept")
 				if(usr.ClanLevel>=5)
-					if(locate(/obj/Can_Build/Clan_Flag) in range(5, usr))
-						usr.Build("Basic Sewing Table")
+					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
+						usr.Build("Basic Sewing Table")
 						ShowingBuildMenu=0
 					else src<<"You are too far away from your base flag!"
 				else
