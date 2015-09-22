@@ -49,7 +49,7 @@ mob/proc
 mob/Enemies
 	Enemy=1
 	NPC=0
-	layer=6
+	layer=15
 	Level=1
 
 	var/list/most_dmg = list()
@@ -235,7 +235,7 @@ mob/Enemies
 				while(src)
 					sleep(10)
 					src.tickle()
-			GenerateShadow(src, SOUTH,-50)
+			GenerateShadow(src, SOUTH,-45)
 			Max_MouseName()
 
 

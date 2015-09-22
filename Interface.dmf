@@ -166,13 +166,13 @@ window "Build"
 		is-disabled = false
 		is-transparent = false
 		is-default = false
-		border = none
+		border = line
 		drop-zone = false
 		right-click = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		on-size = ""
 		title = ""
-		titlebar = false
+		titlebar = true
 		statusbar = false
 		can-close = false
 		can-minimize = false
@@ -2041,7 +2041,7 @@ window "Server"
 window "SkillLevels"
 	elem "SkillLevels"
 		type = MAIN
-		pos = 405,169
+		pos = 387,169
 		size = 553x358
 		anchor1 = none
 		anchor2 = none
@@ -2060,9 +2060,9 @@ window "SkillLevels"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		on-size = ""
 		title = ""
-		titlebar = false
+		titlebar = true
 		statusbar = false
-		can-close = true
+		can-close = false
 		can-minimize = false
 		can-resize = false
 		is-pane = false

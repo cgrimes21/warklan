@@ -80,9 +80,9 @@ mob/verb
 			src<<"You need to be in a clan to build this item."
 			return*/
 
-		switch(alert("Requirements: Player Level: 1",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 1 || Materials: 3 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>1)
+				if(usr.Level>1&&count_minerals("Stone",usr)>=3)
 					usr.Clicking()
 					winset(usr,"Build","is-visible=false")
 					usr.Build("Clan Base")
