@@ -115,11 +115,14 @@ turf
 		s11
 			icon_state="s11"
 			density=1
+			layer=6
 		s12
 			icon_state="s12"
 			density=1
+			layer=6
 		s13
 			icon_state="s13"
+			layer=6
 		mg1
 			icon_state="mg1"
 		mg2
@@ -202,14 +205,13 @@ turf
 			icon_state="pl5"
 		pl9
 			icon_state="pl9"
-			layer=17
 			density=1
 		pl10
 			icon_state="pl10"
 			density=0
 		pl11
 			icon_state="pl11"
-			layer=17
+			layer=16
 			density=0
 		w1_
 			icon_state = "w1_"

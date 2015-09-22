@@ -122,7 +122,7 @@ mob/verb
 				usr<<sound(G)
 			oview(10,usr)<<sound(G)
 			usr.speed=2;spawn(5)usr.speed=4
-			Punching=1;spawn(15)Punching=0
+			Punching=1;spawn(10)Punching=0
 
 				//All damage is done here
 			var/weaponlevel
@@ -187,7 +187,7 @@ mob/verb
 				oview(10,usr)<<sound(G)
 				flick("Jab",usr)
 				usr.speed=2;spawn(5)usr.speed=4
-				Punching=1;spawn(15)Punching=0
+				Punching=1;spawn(8)Punching=0
 				M.Attacker=usr.Name
 
 

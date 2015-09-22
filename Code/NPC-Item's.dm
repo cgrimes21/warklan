@@ -50,6 +50,7 @@ obj/NPCs/Items
 		icon_state="Stone Sword"
 		Click()
 			usr.Clicking()
+			usr.QuestItemDelete(2)
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return

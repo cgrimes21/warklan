@@ -19,7 +19,6 @@ mob
 				usr.ShowingSkillLevels=1
 				usr.SkillLevelShow()
 				usr.Clicking()
-				usr << "[usr.inDungeon]"
 				winset(usr,"Main.MainMap","focus=true")
 				return
 			else

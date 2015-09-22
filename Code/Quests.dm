@@ -207,7 +207,6 @@ mob/proc
 	QuestItemDelete(var/quest = 0)
 		switch(quest)
 			if(1)
-
 				var/counter = 0
 				for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
 					counter++

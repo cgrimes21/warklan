@@ -45,14 +45,14 @@ obj/Bag2
 	Bag2
 		icon='Huds.dmi'
 		icon_state="Bag"
-		layer=15
+		layer=17
 		New(client/C)
 			C.screen += src
 			..()
 	Exit
 		icon='Huds.dmi'
 		icon_state="X"
-		layer=15
+		layer=17
 		New(client/C)
 			C.screen += src
 			..()

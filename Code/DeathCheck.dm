@@ -66,14 +66,11 @@ mob/proc
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
-<<<<<<< HEAD
 					if(prob(50))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
-=======
->>>>>>> origin/master
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
@@ -83,23 +80,13 @@ mob/proc
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
-					if(prob(50))
-<<<<<<< HEAD
-						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Stone
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
 					if(prob(30))
-						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
-=======
 						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
->>>>>>> origin/master
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
 
-<<<<<<< HEAD
 				if(M.Name=="Black Bat"&&M.Enemy==1)
 					var/exp = rand(20,30)
 					if(prob(50))
@@ -108,8 +95,7 @@ mob/proc
 						F.owner = "[T.name]"
 						F.Fade()
 					T.WeaponEquipCheck(exp)
-=======
->>>>>>> origin/master
+
 
 				if(M.Name=="Stone Crafting Table"&&M.Enemy==1)
 					T.BaseDestroyed_Table1=1
@@ -131,14 +117,11 @@ mob/proc
 				if(M.Name=="Cave Bat"&&M.Enemy==1)
 					var/exp = rand(78,80)
 					if(prob(50))
-<<<<<<< HEAD
 						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
 					if(prob(30))
-=======
->>>>>>> origin/master
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.owner = "[T.name]"

@@ -104,24 +104,12 @@ macro "macro"
 		command = "StatPanel"
 		is-disabled = false
 	elem 
-		name = "Q"
-		command = "SWeapon"
-		is-disabled = false
-	elem 
 		name = "SHIFT+R"
 		command = "Reboot"
 		is-disabled = false
 	elem 
 		name = "S"
 		command = "ShowSkillLevel"
-		is-disabled = false
-	elem 
-		name = "T"
-		command = "Test"
-		is-disabled = false
-	elem 
-		name = "W"
-		command = "JBack"
 		is-disabled = false
 	elem 
 		name = "`+UP"
