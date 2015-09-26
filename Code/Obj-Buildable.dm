@@ -1,5 +1,6 @@
 obj/Can_Build
 	CanPickUp=0
+	Owner=""
 	var
 		lastx
 		lasty
@@ -120,10 +121,7 @@ obj/Can_Build
 		icon_state="flag"
 		name="Clan Flag"
 		Click()
-			usr.Clicking()
-			if(src in oview(1))
-				usr.CreateInventory2(src)
-				return
+			usr<<"[src.Owner] owns this base."
 
 	Clan_Base
 		density=1
@@ -134,7 +132,4 @@ obj/Can_Build
 		icon='Icons/Buildable/Firepit.dmi'
 		name="Clan Base"
 		Click()
-			usr.Clicking()
-			if(src in oview(1))
-				usr.CreateInventory2(src)
-				return
+			usr<<"[src.Owner] owns this base."

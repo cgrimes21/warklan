@@ -54,12 +54,22 @@ mob
 				for(var/image/S in src.client.images)
 					if(S.icon =='!.dmi')
 						del(S)
+				for(var/image/A in src.client.images)
+					if(A.icon =='ArrowDown.dmi')
+						del(A)
 				if(src.ElderNPC)
 					for(var/mob/NPCS/QUEST/Monk/M in oview())
 						var/image/I = image('!.dmi',M)
 						I.layer=15
 						I.pixel_y=34
 						I.pixel_x=12
+						usr<<I
+				if(src.destroyBaseQuestActivated)
+					for(var/mob/Enemies/Base/M in oview())
+						var/image/I = image('ArrowDown.dmi',M)
+						I.layer=15
+						I.pixel_y=34
+						I.pixel_x=0
 						usr<<I
 				sleep(10)
 
@@ -70,6 +80,7 @@ mob/var
 	QuestLevel=1
 	DoingQuest=0
 	ElderNPC=1
+	destroyBaseQuestActivated=0
 	WeaponNPC=0
 	EnemiesKilled=0
 	BaseDestroyed_Table1=0
@@ -229,6 +240,74 @@ mob/proc
 						src.AvailableItems-=1
 						src.CreateInventory()
 
+
+	MaterialDelete(var/material as text, var/amount_deleted = 0)
+		switch(material)
+			if("Fox Cub Furs")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del B
+						if(src.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+
+			if("Red Fox Furs")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del B
+						if(src.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+
+			if("Mountain Wolf Furs")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Fox_Fur/B in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del B
+						if(src.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+
+			if("Stone")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Stone/C in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del C
+						if(usr.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+
+			if("Bronze")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Bronze/B in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del B
+						if(usr.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+			if("Iron")
+				var/counter = 0
+				for(var/obj/Items/ItemDrops/Iron/I in src.contents)
+					counter++
+					if(counter <= amount_deleted)
+						del I
+						if(usr.BagOpen==1)
+							usr.AddItems()
+						src.AvailableItems-=1
+						src.CreateInventory()
+
 	BaseDestroyQuestFinish()
 		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanBase)
 			if(!BaseDestroyQuestFinished)
@@ -260,6 +339,7 @@ mob
 				src.DoingQuest=0
 				src.QuestLevel+=1
 				src.ElderNPC=1
+				destroyBaseQuestActivated=1
 				src.skillsTutorialActivated=1
 				src.HudCreate_Tut4()
 				return
@@ -381,7 +461,7 @@ mob/verb
 				usr.DoingQuest=1
 		if(QuestLevel==3)
 			if(!usr.DoingQuest)
-				_message(usr, "<b><font color=#A0C8C6>Quest Accepted:<font color=white> - Destroy Clan Base!</font></b>","white")
+				_message(usr, "<b><font color=#A0C8C6>Quest Accepted:<font color=white> - Destroy Enemy Encampment!</font></b>","white")
 				usr.ElderNPC=0
 				usr.DoingQuest=1
 		usr.CheckQuest()

@@ -43,6 +43,7 @@ obj/NPCs/Items
 		name="Stone Sword"
 		Weight=25
 		MaterialsRequired="3 Stones"
+		MaterialsReqNum=3
 		WeaponLevel=1
 		Des="Stone Sword"
 		Attribute="x1.2 Strength"
@@ -50,13 +51,12 @@ obj/NPCs/Items
 		icon_state="Stone Sword"
 		Click()
 			usr.Clicking()
-			usr.QuestItemDelete(2)
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Stone",usr)>=3)
+			if(count_minerals("Stone",usr)>=MaterialsReqNum)
 				if(usr.QuestLevel==2)usr.ElderNPC=1
-				usr.QuestItemDelete()
+				usr.MaterialDelete("Stone",MaterialsReqNum)
 				var/obj/Items/Weapons/Stone_Sword/A=new/obj/Items/Weapons/Stone_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -71,6 +71,7 @@ obj/NPCs/Items
 		name="Stone Spear"
 		Weight=25
 		MaterialsRequired="7 Stones"
+		MaterialsReqNum=7
 		WeaponLevel=1
 		Boost=1.5
 		Des="Stone Spear"
@@ -82,7 +83,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Stone",usr)>=3)
+			if(count_minerals("Stone",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Stone",MaterialsReqNum)
 				var/obj/Items/Weapons/Stone_Spear/A=new/obj/Items/Weapons/Stone_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -97,6 +99,7 @@ obj/NPCs/Items
 		name="Stone Axe"
 		Weight=25
 		MaterialsRequired="12 Stones"
+		MaterialsReqNum=12
 		WeaponLevel=1
 		Boost=2
 		Des="Stone Axe"
@@ -108,7 +111,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Stone",,usr)>=3)
+			if(count_minerals("Stone",,usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Stone",MaterialsReqNum)
 				var/obj/Items/Weapons/Stone_Axe/A=new/obj/Items/Weapons/Stone_Axe
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -123,6 +127,7 @@ obj/NPCs/Items
 		name="Bronze Sword"
 		Weight=25
 		MaterialsRequired="5 Bronze Bars"
+		MaterialsReqNum=5
 		WeaponLevel=5
 		Boost=1.5
 		Des="Bronze Sword"
@@ -134,8 +139,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Bronze",usr)>=3)
-				usr.QuestItemDelete()
+			if(count_minerals("Bronze",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Bronze",MaterialsReqNum)
 				var/obj/Items/Weapons/Bronze_Sword/A=new/obj/Items/Weapons/Bronze_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -150,6 +155,7 @@ obj/NPCs/Items
 		name="Bronze Spear"
 		Weight=25
 		MaterialsRequired="10 Bronze Bars"
+		MaterialsReqNum=10
 		WeaponLevel=7
 		Des="Bronze Spear"
 		Attribute="x3 Strength"
@@ -160,7 +166,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Bronze",usr)>=3)
+			if(count_minerals("Bronze",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Bronze",MaterialsReqNum)
 				var/obj/Items/Weapons/Bronze_Spear/A=new/obj/Items/Weapons/Bronze_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -175,6 +182,7 @@ obj/NPCs/Items
 		name="Bronze Axe"
 		Weight=25
 		MaterialsRequired="15 Bronze Bars"
+		MaterialsReqNum=15
 		WeaponLevel=9
 		Des="Bronze Axe"
 		Attribute="x3.5 Strength"
@@ -185,7 +193,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Bronze",usr)>=3)
+			if(count_minerals("Bronze",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Bronze",MaterialsReqNum)
 				var/obj/Items/Weapons/Bronze_Axe/A=new/obj/Items/Weapons/Bronze_Axe
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -201,6 +210,7 @@ obj/NPCs/Items
 		name="Iron Sword"
 		Weight=25
 		MaterialsRequired="10 Iron Bars"
+		MaterialsReqNum=10
 		WeaponLevel=13
 		Des="Iron Sword"
 		Attribute="x4 Strength"
@@ -211,8 +221,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Iron",,usr)>=3)
-				usr.QuestItemDelete()
+			if(count_minerals("Iron",,usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Iron",MaterialsReqNum)
 				var/obj/Items/Weapons/Iron_Sword/A=new/obj/Items/Weapons/Iron_Sword
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -227,6 +237,7 @@ obj/NPCs/Items
 		name="Iron Spear"
 		Weight=25
 		MaterialsRequired="15 Iron Bars"
+		MaterialsReqNum=15
 		WeaponLevel=16
 		Des="Iron Spear"
 		Attribute="x4.5 Strength"
@@ -237,7 +248,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Iron",usr)>=3)
+			if(count_minerals("Iron",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Iron",MaterialsReqNum)
 				var/obj/Items/Weapons/Iron_Spear/A=new/obj/Items/Weapons/Iron_Spear
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -252,6 +264,7 @@ obj/NPCs/Items
 		name="Iron Axe"
 		Weight=25
 		MaterialsRequired="20 Iron Bars"
+		MaterialsReqNum=20
 		WeaponLevel=19
 		Des="Iron Axe"
 		Attribute="x5 Strength"
@@ -262,7 +275,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Iron",usr)>=3)
+			if(count_minerals("Iron",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Iron",MaterialsReqNum)
 				var/obj/Items/Weapons/Iron_Axe/A=new/obj/Items/Weapons/Iron_Axe
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -277,6 +291,7 @@ obj/NPCs/Items
 		name="Fox Cub Tunic"
 		Weight=25
 		MaterialsRequired="3 Fox Furs"
+		MaterialsReqNum=3
 		Des="Fox Cub Tunic"
 		Attribute="Defense"
 		icon='JpShopItems.dmi'
@@ -286,8 +301,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_furs("Fox Cub Furs",usr)>=3)
-				usr.QuestItemDelete(1)
+			if(count_furs("Fox Cub Furs",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Fox Cub Furs",MaterialsReqNum)
 				var/obj/Items/Clothing/Fox_Cub_Tunic/A=new/obj/Items/Clothing/Fox_Cub_Tunic
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -302,6 +317,7 @@ obj/NPCs/Items
 		name="Red Fox Coat"
 		Weight=25
 		MaterialsRequired="7 Red Fox Furs"
+		MaterialsReqNum=7
 		Des="Fox Fur Tunic"
 		Attribute="Defense"
 		icon='JpShopItems.dmi'
@@ -311,8 +327,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_furs("Red Fox Furs",usr)>=7)
-				usr.QuestItemDelete(1)
+			if(count_furs("Red Fox Furs",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Red Fox Furs",MaterialsReqNum)
 				var/obj/Items/Clothing/Red_Fox_Coat/A=new/obj/Items/Clothing/Red_Fox_Coat
 				usr.AvailableItems+=1
 				usr.contents+=A
@@ -328,6 +344,7 @@ obj/NPCs/Items
 		name="Wolf Fur Coat"
 		Weight=25
 		MaterialsRequired="7 Wolf Furs"
+		MaterialsReqNum=7
 		Des="Wolf Fur Coat"
 		Attribute="Defense"
 		icon='JpShopItems.dmi'
@@ -337,8 +354,8 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_furs("Mountain Wolf Furs",usr)>=7)
-				usr.QuestItemDelete()
+			if(count_furs("Mountain Wolf Furs",usr)>=MaterialsReqNum)
+				usr.MaterialDelete("Mountain Wolf Furs",MaterialsReqNum)
 				var/obj/Items/Clothing/Wolf_Fur_Coat/A=new/obj/Items/Clothing/Wolf_Fur_Coat
 				usr.AvailableItems+=1
 				usr.contents+=A

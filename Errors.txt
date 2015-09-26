@@ -2674,3 +2674,374 @@ ToArea1FromArea2 (1,13,6) (/turf/Locations/Tutorial/ToArea1FromArea2): Enter(nul
 save build()
 : Del()
 >>>>>>> origin/master
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: RedCrownMG (/mob)
+  src: RedCrownMG (/mob)
+  call stack:
+RedCrownMG (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+proc name: Save (/mob/proc/Save)
+  source file: Saving&Loading.dm,5
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Save()
+Guest-2606275673 (/mob): Logout()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,228
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.icon
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,57
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()

@@ -128,7 +128,99 @@ turf/Locations
 				else
 					..()
 
+	MainMap
+		ToArea2FromArea1
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/MainMap/ToArea2FromArea1)
+						usr.Frozen=1
+						sleep(5)
+						//usr<< sound('Sounds/Battle.ogg',1,0,1)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
 
+		ToArea1FromArea2
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/MainMap/ToArea1FromArea2)
+						usr.Frozen=1
+						sleep(5)
+						//usr<< sound('Sounds/Intro2.ogg',1,0,1)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+		ToArea3FromArea2
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/MainMap/ToArea3FromArea2)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
+
+		ToArea2FromArea3
+			Enter(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						usr.FadeScreen()
+						usr.loc=locate(/turf/Markers/MainMap/ToArea2FromArea3)
+						usr.Frozen=1
+						sleep(5)
+						usr.Frozen=0
+						return 1
+				else
+					..()
+			Exit(atom/a)
+				if(istype(a,/mob/))
+					if(a:Enemy)
+						return 0
+					if(a:Player)
+						return 1
+				else
+					..()
 
 	Dungeons
 		Dungeon1_Inside

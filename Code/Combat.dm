@@ -203,7 +203,7 @@ mob/verb
 				else
 					weaponlevel=usr.HandToHand_Skill_Level
 
-				var/tmp/damage=((usr.Strength+weaponlevel*10)-M.Defense)
+				var/tmp/damage=((usr.Strength+usr.WeaponBoost+weaponlevel*10)-(M.Defense+M.ShieldBoost))
 				if(damage<=0)
 					damage=rand(1,2)
 				usr.Stamina-=rand(1,2)

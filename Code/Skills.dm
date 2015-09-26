@@ -42,7 +42,7 @@ mob
 			if(!usr.skillsTutorialDone&&usr.skillsTutorialActivated)
 				usr.HudDelete_Tut4()
 				usr.skillsTutorialDone=1
-				_message(src, "<font color=green>New Task Unlocked: <font color=white>Destroy Clan Base!</font>","white")
+				_message(src, "<font color=green>New Task Unlocked: <font color=white>Destroy Enemy Encampment!</font>","white")
 
 
 		SkillAlign()

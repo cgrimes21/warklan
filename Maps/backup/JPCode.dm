@@ -217,6 +217,7 @@ turf
 			icon_state = "w1_"
 		w1
 			icon_state="w1"
+			density=1
 		w2
 			icon_state="w2"
 		w3
@@ -364,6 +365,11 @@ turf/Markers
 		ToArea3FromArea2
 		ToArea2FromArea3
 		ToRegularMap
+	MainMap
+		ToArea2FromArea1
+		ToArea1FromArea2
+		ToArea3FromArea2
+		ToArea2FromArea3
 	Dungeon1
 		Dungeon1_Inside
 		Dungeon1_Outside
@@ -426,117 +432,3 @@ turf/Markers
 
 
 
-turf/Markers/Shaolin
-	Shaolin_Spawn
-	Shaolin_Test
-		Level_1_Enter
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Shaolin/Shaolin_Test/Level_1_Back)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		Level_1_Back
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Shaolin/Shaolin_Test/Level_1_Enter)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		Level_2_Enter
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Shaolin/Shaolin_Test/Level_2_Back)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		Level_2_Back
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Shaolin/Shaolin_Test/Level_2_Enter)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		To_Shaolin_Monk
-			Enter(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						usr.FadeScreen()
-						usr.loc=locate(/turf/Markers/Shaolin/Shaolin_Test/Shaolin_Monk)
-						usr.Frozen=1
-						sleep(5)
-						usr.Frozen=0
-						return 1
-				else
-					..()
-			Exit(atom/a)
-				if(istype(a,/mob/))
-					if(a:Enemy)
-						return 0
-					if(a:Player)
-						return 1
-				else
-					..()
-		Shaolin_Monk

@@ -485,7 +485,7 @@ obj/Huds
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[percent(usr.Defense, usr.MaxDefense)]%</font>"
+					src.maptext="<font color=white>[usr.Defense] (+[usr.ShieldBoost])</font>"
 					sleep(5)
 
 		STRPanel
@@ -504,7 +504,7 @@ obj/Huds
 				spawn while(usr)
 					if(!usr.client)
 						return
-					src.maptext="<font color=white>[percent(usr.Strength, usr.MaxStrength)]%</font>"
+					src.maptext="<font color=white>[usr.Strength] (+[usr.WeaponBoost])</font>"
 					sleep(5)
 
 

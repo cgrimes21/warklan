@@ -216,6 +216,7 @@ obj
 		CanPickUp=1
 		MaterialsRequired=""
 		Fading=0
+		MaterialsReqNum=0
 
 obj/Can_Build
 	var

@@ -392,7 +392,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Defense -= usr.ShieldBoost
+						usr.ShieldBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_clothing_del_Overlay()
 						usr.WearingShirt=0
@@ -406,7 +406,6 @@ obj/Items
 					usr.equip_clothing_add_Overlay()
 					src.overlays+=new/obj/Equipped
 					usr.ShieldBoost = Boost
-					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
@@ -429,7 +428,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Defense -= usr.ShieldBoost
+						usr.ShieldBoost = 0
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
 						usr.Defense-=10
@@ -442,7 +441,6 @@ obj/Items
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
 					usr.ShieldBoost = Boost
-					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
@@ -466,7 +464,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Defense -= usr.ShieldBoost
+						usr.ShieldBoost = 0
 						src.overlays-=src.overlays
 						usr.WearingShirt=0
 						return
@@ -478,7 +476,6 @@ obj/Items
 					usr.WearingShirt=1
 					src.overlays+=new/obj/Equipped
 					usr.ShieldBoost = Boost
-					usr.Defense += usr.ShieldBoost
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
@@ -506,7 +503,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -532,7 +529,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -557,7 +553,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -583,7 +579,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -610,7 +605,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -636,7 +631,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -662,7 +656,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -688,7 +682,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -714,7 +707,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -740,7 +733,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -767,7 +759,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -793,7 +785,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -820,7 +811,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -846,7 +837,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -872,7 +862,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -898,7 +888,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -924,7 +913,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.WeaponBoost
+						usr.WeaponBoost = 0
 						src.overlays-=src.overlays
 						usr.equip_del_Overlay()
 						usr.WearingWeapon=0
@@ -950,7 +939,6 @@ obj/Items
 						usr.equip_add_Overlay()
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
-						usr.Strength += usr.WeaponBoost
 					else
 						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
 
@@ -976,7 +964,7 @@ obj/Items
 					if(src.Wearing==1)
 						src.Wearing=0
 						src.Equipped=0
-						usr.Strength-=usr.BowBoost
+						usr.WeaponBoost = 0
 						usr.WearingWeapon=0
 						src.overlays-=src.overlays
 						usr.BowOn=0
@@ -1010,55 +998,6 @@ obj/Items
 							usr.contents+=src
 							if(usr.BagOpen==1)
 								usr.AddItems()
-
-		RStaff
-			icon='JpShopItems.dmi'
-			icon_state="redoakstaff"
-			Click()
-				usr<<sound('Clickitem_statpoints.wav')
-				if(src in usr.contents)
-					if(src.Wearing==1)
-						src.Wearing=0
-						usr.WearingWeapon=0
-						usr.Strength-=usr.WeaponBoost
-						src.overlays-=src.overlays
-						usr.SwordOn=0
-						for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-							src.pixel_y=0
-							src.pixel_x=0
-							S.overlays-=S.overlays
-							S.overlays+=new/obj/HudLetter/A
-						return
-					if(usr.WearingWeapon==1)
-						_message(usr,"Your Already Wearing A Weapon","Yellow")
-						return
-					src.Wearing=1
-					usr.SwordOn=1
-					usr.WearingWeapon=1
-					for(var/obj/Huds/SkillHuds/SkillHudOne/S in usr.client.screen)
-						src.pixel_y+=5
-						src.pixel_x+=3
-						S.overlays+=src
-					src.overlays+=new/obj/Equipped
-					if(WeaponLevel==1)
-						usr.WeaponBoost=15
-						usr.Strength+=15
-				else
-					if(src in oview(1))
-						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're holding too many items!","Yellow")
-							return
-						else
-							usr.AvailableItems+=1
-							usr.contents+=src
-							if(usr.BagOpen==1)
-								usr.AddItems()
-
-
-
-
-
-
 
 
 

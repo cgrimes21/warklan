@@ -12,6 +12,7 @@ mob/proc
 			return
 		var/area/t = src.loc.loc
 		if(!t.can_build)
+			src<<"You cannot build in this area!"
 			return
 		switch(T)
 			if("Stone Crafting Table")
@@ -24,6 +25,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
+				A.Owner=src
 
 			if("Bronze Crafting Table")
 				var/obj/Can_Build/Bronze_Crafting_Table/A=new/obj/Can_Build/Bronze_Crafting_Table
@@ -35,6 +37,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
+				A.Owner=src
 
 			if("Iron Crafting Table")
 				var/obj/Can_Build/Iron_Crafting_Table/A=new/obj/Can_Build/Iron_Crafting_Table
@@ -46,6 +49,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
+				A.Owner=src
 
 			if("Basic Sewing Table")
 				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
@@ -57,6 +61,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
+				A.Owner=src
 
 			if("Clan Base")
 				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
@@ -68,6 +73,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
+				A.Owner=src
 
 
 //PROCEDURE BELOW TO DECIDE IF YOU CAN BUILD ON AN AREA OR NOT
@@ -76,100 +82,117 @@ mob/proc
 mob/verb
 	BuildBase()
 		set hidden = 1
+		var/MaterialsReqNum=3
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
+		if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
+			usr<<"You're building too close to another clan base!"
+			return
 
 		switch(alert("Requirements: Player Level: 1 || Materials: 3 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>1&&count_minerals("Stone",usr)>=3)
+				if(usr.Level>=1&&count_minerals("Stone",usr)>=MaterialsReqNum)
 					usr.Clicking()
 					winset(usr,"Build","is-visible=false")
 					usr.Build("Clan Base")
+					usr.MaterialDelete("Stone",MaterialsReqNum)
 					ShowingBuildMenu=0
 				else
-					src<<"You do not possess the necessary requirements to build this item."
+					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")
 				return
 
 	BuildSCT()
 		set hidden = 1
+		var/MaterialsReqNum=1
+
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
 
 		switch(alert("Requirements: Player Level: 2 || Materials: 5 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=2&&count_minerals("Stone",usr)>=5)
-					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
-						usr.Clicking()
-						winset(usr,"Build","is-visible=false")
-						usr.Build("Stone Crafting Table")
-						ShowingBuildMenu=0
-					else src<<"You are too far away from your base flag!"
+				if(usr.Level>=2&&count_minerals("Stone",usr)>=MaterialsReqNum)
+					var/obj/Can_Build/Clan_Base/B = new/obj/Can_Build/Clan_Base
+					if(locate(B) in range(5, usr))
+						if(B.Owner==usr)
+							usr.Clicking()
+							winset(usr,"Build","is-visible=false")
+							usr.Build("Stone Crafting Table")
+							usr.MaterialDelete("Stone",MaterialsReqNum)
+							ShowingBuildMenu=0
+						else usr<<"You are not the owner of this base, you cannot build here."
+					else usr<<"You have not built one or uou are too far away from your base."
 				else
-					src<<"You do not possess the necessary requirements to build this item."
+					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")
 				return
 
 
 	BuildBCT()
 		set hidden = 1
+		var/MaterialsReqNum=10
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
 
 		switch(alert("Requirements: Player Level: 10 || Materials: 10 Bronze Bars",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=10&&count_minerals("Bronze",usr)>=10)
+				if(usr.Level>=10&&count_minerals("Bronze",usr)>=MaterialsReqNum)
 					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Bronze Crafting Table")
+						usr.MaterialDelete("Bronze",MaterialsReqNum)
 						ShowingBuildMenu=0
-					else src<<"You are too far away from your base flag!"
+					else usr<<"You are too far away from your base flag!"
 				else
-					src<<"You do not possess the necessary requirements to build this item."
+					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")
 				return
 
 	BuildICT()
 		set hidden = 1
+		var/MaterialsReqNum=15
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
 
 		switch(alert("Requirements: Player Level: 20 || Materials: 15 Iron Bars",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=2&&count_minerals("Iron",usr)>=15)
+				if(usr.Level>=2&&count_minerals("Iron",usr)>=MaterialsReqNum)
 					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Iron Crafting Table")
+						usr.MaterialDelete("Iron",MaterialsReqNum)
 						ShowingBuildMenu=0
-					else src<<"You are too far away from your base flag!"
+					else usr<<"You are too far away from your base flag!"
 				else
-					src<<"You do not possess the necessary requirements to build this item."
+					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")
 				return
 
 	BuildBST()
 		set hidden = 1
+		var/MaterialsReqNum=5
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
 
-		switch(alert("Requirements: Clan Level: 5",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 5 || Materials: 5 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.ClanLevel>=5)
+				if(usr.Level>=2&&count_minerals("Stone",usr)>=MaterialsReqNum)
 					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Basic Sewing Table")
+						usr.MaterialDelete("Stone",MaterialsReqNum)
 						ShowingBuildMenu=0
-					else src<<"You are too far away from your base flag!"
+					else usr<<"You are too far away from your base flag!"
 				else
-					src<<"You do not possess the necessary requirements to build this item."
+					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")
 				return
 

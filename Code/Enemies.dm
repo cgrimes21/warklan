@@ -154,7 +154,7 @@ mob/Enemies
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
@@ -178,47 +178,47 @@ mob/Enemies
 			Max_MouseName()
 
 	//BASE
+	Base
+		Clan_Base
+			icon='Icons/Buildable/Firepit.dmi'
+			Name="Clan Base"
+			speed=2
+			Level=1
+			Strength=7
+			Defense=4
+			Health=100
+			MaxHealth=100
+			New()
+				GenerateShadow(src, SOUTH,-10)
+				Max_MouseName()
 
-	Clan_Base
-		icon='Icons/Buildable/Firepit.dmi'
-		Name="Clan Base"
-		speed=2
-		Level=1
-		Strength=7
-		Defense=4
-		Health=100
-		MaxHealth=100
-		New()
-			GenerateShadow(src, SOUTH,-10)
-			Max_MouseName()
+		Stone_Crafting_Table
+			icon='Icons/Buildable/WeaponTable1.dmi'
+			icon_state="weapontable1"
+			Name="Stone Crafting Table"
+			speed=2
+			Level=1
+			Strength=7
+			Defense=4
+			Health=100
+			MaxHealth=100
+			New()
+				GenerateShadow(src, SOUTH,-10)
+				Max_MouseName()
 
-	Stone_Crafting_Table
-		icon='Icons/Buildable/WeaponTable1.dmi'
-		icon_state="weapontable1"
-		Name="Stone Crafting Table"
-		speed=2
-		Level=1
-		Strength=7
-		Defense=4
-		Health=100
-		MaxHealth=100
-		New()
-			GenerateShadow(src, SOUTH,-10)
-			Max_MouseName()
-
-	Basic_Sewing_Table
-		icon='Icons/Buildable/SewingTable1.dmi'
-		icon_state="tailortable1"
-		Name="Basic Sewing Table"
-		speed=2
-		Level=1
-		Strength=7
-		Defense=4
-		Health=100
-		MaxHealth=100
-		New()
-			GenerateShadow(src, SOUTH,-10)
-			Max_MouseName()
+		Basic_Sewing_Table
+			icon='Icons/Buildable/SewingTable1.dmi'
+			icon_state="tailortable1"
+			Name="Basic Sewing Table"
+			speed=2
+			Level=1
+			Strength=7
+			Defense=4
+			Health=100
+			MaxHealth=100
+			New()
+				GenerateShadow(src, SOUTH,-10)
+				Max_MouseName()
 
 
 	Wolf
