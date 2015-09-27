@@ -553,11 +553,12 @@ mob
 				src.MenuBack()
 				src.AddItems()
 		AddItems()
+
 			var/ox = 24
 			var/oy = 5
 			var/count = 0
 			for(var/obj/O in src.contents)
-				if(count < src.MaxItems)
+				if(count < MAXITEMS)
 					count++
 					O.layer = MOB_LAYER+20
 					src.client.screen += O
@@ -567,8 +568,17 @@ mob
 						ox=24
 						oy--
 		MenuBack()
-			var/obj/H = new/obj/Bag/Bag(src.client)
-			H.screen_loc = "24,1 to 28,5"
+			var/a = 24
+			var/b = 5
+			for(var/c = 1, c<=MAXITEMS, c++)
+				var/obj/H = new/obj/Bag/Bag(src.client)
+				//src.client.screen += H
+				if(a >=29)
+					a = 24
+					b-=1
+				H.screen_loc = "[a],[b]"
+				a += 1
+
 
 mob/proc
 	StaminaREGEN()

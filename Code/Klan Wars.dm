@@ -98,8 +98,9 @@ mob
 			src.Admin=1
 			debuggers += src
 		for(var/mob/M in world)
-			if(M.client && M.ckey == src.ckey && M!=src)
+			if(M.key == src.key && M!=src)
 				debuggers<<"Multikeying [src.ckey] attempt found. STOP"
+				del src
 				return
 
 		src.Quests()
