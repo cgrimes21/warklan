@@ -85,7 +85,7 @@ mob/verb
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return
-			if(O.owner != "")
+			if(O.owner != "" && O.owner != usr.name)
 				usr<<"This belongs to [O.owner]."
 				return
 			if(usr.pickupTutorialActivated==1)
