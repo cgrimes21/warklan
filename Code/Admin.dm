@@ -29,7 +29,7 @@
 
 //definitions
 #define SPAWN_RATE		200		//(seconds * 10)
-#define INITIAL_AGGRO	15
+#define INITIAL_AGGRO	35
 #define JOIN_AGGRO		5
 #define MAXITEMS		12
 

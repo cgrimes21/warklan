@@ -90,9 +90,9 @@ mob/verb
 			usr<<"You're building too close to another clan base!"
 			return
 
-		switch(alert("Requirements: Player Level: 1 || Materials: 3 Stones",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 5 || Materials: 3 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=1&&count_minerals("Stone",usr)>=MaterialsReqNum)
+				if(usr.Level>=5&&count_minerals("Stone",usr)>=MaterialsReqNum)
 					usr.Clicking()
 					winset(usr,"Build","is-visible=false")
 					usr.Build("Clan Base")
@@ -111,18 +111,16 @@ mob/verb
 			src<<"You need to be in a clan to build this item."
 			return*/
 
-		switch(alert("Requirements: Player Level: 2 || Materials: 5 Stones",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 5 || Materials: 5 Stones",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=2&&count_minerals("Stone",usr)>=MaterialsReqNum)
+				if(usr.Level>=5&&count_minerals("Stone",usr)>=MaterialsReqNum)
 					var/obj/Can_Build/Clan_Base/B = new/obj/Can_Build/Clan_Base
 					if(locate(B) in range(5, usr))
-						if(B.Owner==usr.key)
-							usr.Clicking()
-							winset(usr,"Build","is-visible=false")
-							usr.Build("Stone Crafting Table")
-							usr.MaterialDelete("Stone",MaterialsReqNum)
-							ShowingBuildMenu=0
-						else usr<<"You are not the owner of this base, you cannot build here."
+						usr.Clicking()
+						winset(usr,"Build","is-visible=false")
+						usr.Build("Stone Crafting Table")
+						usr.MaterialDelete("Stone",MaterialsReqNum)
+						ShowingBuildMenu=0
 					else usr<<"You have not built one or you are too far away from your base."
 				else
 					usr<<"You do not possess the necessary requirements to build this item."
@@ -137,9 +135,9 @@ mob/verb
 			src<<"You need to be in a clan to build this item."
 			return*/
 
-		switch(alert("Requirements: Player Level: 10 || Materials: 10 Bronze Bars",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 20 || Materials: 10 Bronze Bars",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=10&&count_minerals("Bronze",usr)>=MaterialsReqNum)
+				if(usr.Level>=20&&count_minerals("Bronze",usr)>=MaterialsReqNum)
 					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
@@ -159,9 +157,9 @@ mob/verb
 			src<<"You need to be in a clan to build this item."
 			return*/
 
-		switch(alert("Requirements: Player Level: 20 || Materials: 15 Iron Bars",,"Accept","Deny"))
+		switch(alert("Requirements: Player Level: 40 || Materials: 15 Iron Bars",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=2&&count_minerals("Iron",usr)>=MaterialsReqNum)
+				if(usr.Level>=40&&count_minerals("Iron",usr)>=MaterialsReqNum)
 					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")

@@ -111,16 +111,17 @@ mob
 			else
 				src<< sound('Sounds/Battle.ogg',1,0,1)
 		src.density=1
-		if(!fexists("Saves/[src].sav"))
 
-			src.loc = locate(13,13,1)
+		if(fexists("Saves/[src].sav"))
+			src.Load()
+		else
+			src.loc = locate(13,13,2)
 			new/obj/back(src.client)
 			new/obj/OOC(src.client)
 			winset(src,"Main","focus=true")
 			src.align()
 			winset(src,"Main","focus=true")
-		else
-			src.Load()
+
 
 		//init hotbar
 		for(var/obj/Skills/S in usr.Skills)
@@ -130,7 +131,7 @@ mob
 		..()
 		if(src.Player==1)
 			src.Save()
-		_message(world,"<font size=+1>[src.name] Disconnected</font>","Yellow")
+		//_message(world,"<font size=+1>[src.name] Disconnected</font>","Yellow")
 		sleep(1)
 		src.Player=0
 		del(src)

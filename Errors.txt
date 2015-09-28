@@ -3045,3 +3045,62 @@ proc name: Quests (/mob/proc/Quests)
   src: Guest-2606275673 (/mob)
   call stack:
 Guest-2606275673 (/mob): Quests()
+runtime error: Cannot read null.contents
+proc name: count minerals (/proc/count_minerals)
+  source file: Quests.dm,25
+  usr: Guest-2606275673 (/mob)
+  src: null
+  call stack:
+count minerals("Stone", null, Guest-2606275673 (/mob))
+Stone Axe (/obj/NPCs/Items/Stone_Axe): Click(null, "Main.MainMap", "icon-x=18;icon-y=17;left=1;scr...")
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Quests()
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,241
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: Load (/mob/proc/Load)
+  source file: Saving&Loading.dm,21
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Load()
+Guest-2606275673 (/mob): Login()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,228
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,241
+  usr: null
+  src: null
+  call stack:
+load build()
+: New()
+proc name: Load (/mob/proc/Load)
+  source file: Saving&Loading.dm,21
+  usr: Guest-2606275673 (/mob)
+  src: Guest-2606275673 (/mob)
+  call stack:
+Guest-2606275673 (/mob): Load()
+Guest-2606275673 (/mob): Login()
+proc name: save build (/proc/save_build)
+  source file: Building.dm,228
+  usr: null
+  src: null
+  call stack:
+save build()
+: Del()

@@ -138,7 +138,7 @@ mob/verb
 			var/tmp/damage=((usr.Strength+weaponlevel*10)-O.Defense)
 			if(damage<=0)
 				damage=rand(1,2)
-			usr.Stamina-=rand(1,2)
+			usr.Stamina-=rand(2,4)
 			O.Damage(damage)
 			O.Obj_DeathCheck()
 			return
@@ -206,7 +206,7 @@ mob/verb
 				var/tmp/damage=((usr.Strength+usr.WeaponBoost+weaponlevel*10)-(M.Defense+M.ShieldBoost))
 				if(damage<=0)
 					damage=rand(1,2)
-				usr.Stamina-=rand(1,2)
+				usr.Stamina-=rand(2,4)
 				if(M.Enemy)
 					M.Attacked+=10
 					var/mob/Enemies/e = M

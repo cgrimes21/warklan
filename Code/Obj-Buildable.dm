@@ -125,10 +125,10 @@ obj/Can_Build
 
 	Clan_Base
 		density=1
-		Health=50
-		MaxHealth=50
-		Defense=0
-		MaxDefense=0
+		Health=150
+		MaxHealth=150
+		Defense=60
+		MaxDefense=60
 		icon='Icons/Buildable/Firepit.dmi'
 		name="Clan Base"
 		Click()

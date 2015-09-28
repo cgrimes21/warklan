@@ -13,7 +13,7 @@ obj/weaponequipped
 	icon='Equipped.dmi'
 	icon_state="sword"
 	parent_type = /obj
-	layer = 100
+	layer = 16
 	New(newloc, val)
 		maptext = val
 		src.loc=newloc
@@ -24,7 +24,7 @@ obj/clothingequipped
 	icon='Equipped.dmi'
 	icon_state="shield"
 	parent_type = /obj
-	layer = 100
+	layer = 16
 	New(newloc, val)
 		maptext = val
 		src.loc=newloc
@@ -385,7 +385,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="fctunic"
 			name="Fox Cub Tunic"
-			Boost=1.2
+			Boost=1.5
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -421,7 +421,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="rfcoat"
 			name="Red Fox Coat"
-			Boost=1.5
+			Boost=2
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -457,7 +457,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="wfcoat"
 			name="Wolf Fur Coat"
-			Boost=2
+			Boost=2.5
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -494,7 +494,7 @@ obj/Items
 
 		Stone_Sword
 			WeaponLevel=1
-			Boost=1.2
+			Boost=1.5
 			icon='JpShopItems.dmi'
 			icon_state="Stone Sword"
 			Click()
@@ -515,7 +515,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -535,7 +535,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -544,7 +544,7 @@ obj/Items
 								usr.AddItems()
 		Stone_Spear
 			WeaponLevel=1
-			Boost=1.5
+			Boost=2
 			icon='JpShopItems.dmi'
 			icon_state="Stone Spear"
 			Click()
@@ -565,7 +565,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -585,7 +585,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -596,7 +596,7 @@ obj/Items
 
 		Stone_Axe
 			WeaponLevel=1
-			Boost=2
+			Boost=2.5
 			icon='JpShopItems.dmi'
 			icon_state="Stone Axe"
 			Click()
@@ -617,7 +617,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -637,7 +637,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -647,7 +647,7 @@ obj/Items
 
 		Bronze_Sword
 			WeaponLevel=5
-			Boost=2.5
+			Boost=3
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Sword"
 			Click()
@@ -668,7 +668,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -688,7 +688,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -698,7 +698,7 @@ obj/Items
 
 		Bronze_Spear
 			WeaponLevel=7
-			Boost=3
+			Boost=3.5
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Spear"
 			Click()
@@ -719,7 +719,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -739,7 +739,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -750,7 +750,7 @@ obj/Items
 
 		Bronze_Axe
 			WeaponLevel=9
-			Boost=3.5
+			Boost=4
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Axe"
 			Click()
@@ -771,7 +771,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -791,7 +791,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -802,7 +802,7 @@ obj/Items
 
 		Iron_Sword
 			WeaponLevel=13
-			Boost=4
+			Boost=4.5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Sword"
 			Click()
@@ -823,7 +823,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Sword_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -843,7 +843,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -853,7 +853,7 @@ obj/Items
 
 		Iron_Spear
 			WeaponLevel=16
-			Boost=4.5
+			Boost=6
 			icon='JpShopItems.dmi'
 			icon_state="Iron Spear"
 			Click()
@@ -874,7 +874,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Spear_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -894,7 +894,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -904,7 +904,7 @@ obj/Items
 
 		Iron_Axe
 			WeaponLevel=19
-			Boost=5
+			Boost=6.5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Axe"
 			Click()
@@ -925,7 +925,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					if(usr.Axe_Skill_Level>=src.WeaponLevel)
 						src.Wearing=1
@@ -945,7 +945,7 @@ obj/Items
 				else
 					if(src in oview(1))
 						if(usr.AvailableItems>=MAXITEMS)
-							_message(usr,"You're Holding To Many Items","Yellow")
+							_message(usr,"You are holding too many items.","Yellow")
 							return
 						else
 							usr.AvailableItems+=1
@@ -975,7 +975,7 @@ obj/Items
 							S.overlays+=new/obj/HudLetter/A
 						return
 					if(usr.WearingWeapon==1)
-						_message(usr,"You are already wearing a weapon","Yellow")
+						_message(usr,"You are already wearing a weapon.","Yellow")
 						return
 					src.Wearing=1
 					usr.WearingWeapon=1

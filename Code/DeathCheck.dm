@@ -66,11 +66,6 @@ mob/proc
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
-					if(prob(50))
-						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
 					T.WeaponEquipCheck(exp)
 
 				if(M.Name=="Mountain Wolf"&&M.Enemy==1)
@@ -82,15 +77,6 @@ mob/proc
 						F.Fade()
 					if(prob(30))
 						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					T.WeaponEquipCheck(exp)
-
-				if(M.Name=="Black Bat"&&M.Enemy==1)
-					var/exp = rand(20,30)
-					if(prob(50))
-						var/obj/Items/ItemDrops/Red_Fox_Fur/F=new/obj/Items/ItemDrops/Bronze
 						F.loc=M.loc
 						F.owner = "[T.name]"
 						F.Fade()
@@ -117,11 +103,6 @@ mob/proc
 				if(M.Name=="Cave Bat"&&M.Enemy==1)
 					var/exp = rand(78,80)
 					if(prob(50))
-						var/obj/Items/ItemDrops/Mountain_Wolf_Fur/F=new/obj/Items/ItemDrops/Mountain_Wolf_Fur
-						F.loc=M.loc
-						F.owner = "[T.name]"
-						F.Fade()
-					if(prob(30))
 						var/obj/Items/ItemDrops/Stone/F=new/obj/Items/ItemDrops/Stone
 						F.loc=M.loc
 						F.owner = "[T.name]"
@@ -280,8 +261,12 @@ mob/proc
 
 	Skill_LevelGain_MaxExpGain()
 		src.Health = src.MaxHealth
-
 		src.Level+=1
+		src.Strength+=2
+		src.MaxStrength+=2
+		src.Defense+=2
+		src.MaxDefense+=2
+
 		if(src.Level==10)
 			_message(src,"New Task Unlocked: <font color=white>Create A Clan!","Aqua")
 			src.ElderNPC=1

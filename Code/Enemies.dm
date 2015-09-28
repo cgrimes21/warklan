@@ -94,7 +94,7 @@ mob/Enemies
 			if(src && !src.Dead && !src.Dying)
 				if(src.Attacked)	//follow their attacker
 					var/found = 0
-					for(var/mob/M in oview(8,src))
+					for(var/mob/M in oview(5,src))
 						if(M.Player && !M.Dead && !M.Dying && (src.Attacker == M.Name))
 							found = 1
 							//if they are right next to the player facing them, attack them
@@ -124,7 +124,7 @@ mob/Enemies
 						src.Attacked = 0
 				if(src.Attacked<=0)
 					step(src, pick(NORTH, EAST, SOUTH, WEST),1)
-					for(var/mob/M in oview(8,src))
+					for(var/mob/M in oview(5,src))
 						if(M.Player && (src.Attacker != M.name))
 							if(M.being_attacked)
 								if(prob(JOIN_AGGRO))
@@ -186,8 +186,8 @@ mob/Enemies
 			Level=1
 			Strength=7
 			Defense=4
-			Health=100
-			MaxHealth=100
+			Health=200
+			MaxHealth=200
 			New()
 				GenerateShadow(src, SOUTH,-10)
 				Max_MouseName()
@@ -200,8 +200,8 @@ mob/Enemies
 			Level=1
 			Strength=7
 			Defense=4
-			Health=100
-			MaxHealth=100
+			Health=200
+			MaxHealth=200
 			New()
 				GenerateShadow(src, SOUTH,-10)
 				Max_MouseName()
@@ -214,8 +214,8 @@ mob/Enemies
 			Level=1
 			Strength=7
 			Defense=4
-			Health=100
-			MaxHealth=100
+			Health=200
+			MaxHealth=200
 			New()
 				GenerateShadow(src, SOUTH,-10)
 				Max_MouseName()
@@ -225,15 +225,15 @@ mob/Enemies
 		icon='Wolf.dmi'
 		Name="Mountain Wolf"
 		Level=9
-		Strength=32
-		Defense=28
-		Health=100
-		MaxHealth=100
+		Strength=35
+		Defense=31
+		Health=150
+		MaxHealth=150
 		expGiven=40
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-45)
 			Max_MouseName()
@@ -243,15 +243,15 @@ mob/Enemies
 		icon='White Base.dmi'
 		Name="Bandit"
 		Level=9
-		Strength=32
-		Defense=28
+		Strength=39
+		Defense=35
 		Health=150
 		MaxHealth=150
 		expGiven=60
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-32)
 			Max_MouseName()
@@ -260,16 +260,16 @@ mob/Enemies
 		icon='Bat.dmi'
 		Name="Cave Bat"
 		Level=12
-		Strength=39
-		Defense=35
-		Health=100
-		MaxHealth=100
+		Strength=44
+		Defense=40
+		Health=130
+		MaxHealth=130
 		expGiven=80
 
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
@@ -278,15 +278,15 @@ mob/Enemies
 		icon='Spider.dmi'
 		Name="Cave Spider"
 		Level=15
-		Strength=44
-		Defense=40
-		Health=100
-		MaxHealth=100
+		Strength=53
+		Defense=49
+		Health=150
+		MaxHealth=150
 		expGiven=100
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
@@ -304,7 +304,7 @@ mob/Enemies
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()

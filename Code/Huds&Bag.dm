@@ -594,9 +594,9 @@ mob/proc
 				goto next
 				return
 			else
-				src.Stamina+=5
+				src.Stamina+=3
 			next
-			sleep(20)
+			sleep(30)
 	HEALTHREGEN()
 		spawn while(src)
 			if(src.Dead)

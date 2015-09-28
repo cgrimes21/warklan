@@ -31,6 +31,7 @@ turf
 		rock6
 			icon_state="rock6"
 			density=1
+			layer=16
 
 		rock7
 			icon_state="rock7"
@@ -76,6 +77,7 @@ turf
 			icon_state="m5"
 		m6
 			icon_state="m6"
+			density=1
 		m7
 			icon_state="m7"
 			density=1

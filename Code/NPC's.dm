@@ -98,12 +98,13 @@ mob/NPCS
 		icon_state="Tailor"
 		Name="Traveler"
 		New()
-			GenerateShadow(src, SOUTH,-60)
+			GenerateShadow(src, SOUTH,-40)
 			Max_MouseName()
 			..()
 		Click()
 			if(src in oview(1))
 				usr.Dialogue("Traveler1")
+
 	Tailor
 		icon_state="Tailor"
 		Name="Tailor"

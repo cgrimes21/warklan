@@ -71,6 +71,13 @@ mob
 						I.pixel_y=34
 						I.pixel_x=0
 						usr<<I
+				if(src.TalkToTravelerActivated)
+					for(var/mob/NPCS/Traveler/M in oview())
+						var/image/I = image('!.dmi',M)
+						I.layer=15
+						I.pixel_y=45
+						I.pixel_x=12
+						usr<<I
 				sleep(10)
 
 
@@ -87,6 +94,7 @@ mob/var
 	BaseDestroyed_Table2=0
 	BaseDestroyed_ClanBase=0
 	BaseDestroyQuestFinished=0
+	TalkToTravelerActivated=1
 	TutorialDone=0
 
 
@@ -192,6 +200,7 @@ mob/proc
 			src<< output(null,"Dialogue.Info")
 			src<< output("<center>Apparently there's some scary stuff in this cave...but I heard there was a lot of minerals like stone and bronze inside!</center>","Dialogue.Info")
 			winset(src,"Dialogue.Accept","is-visible=true")
+			if(src.TalkToTravelerActivated) src.TalkToTravelerActivated=0
 
 
 	QuestItemPickup(obj/O)
@@ -358,6 +367,7 @@ mob
 				sleep(5)
 				src.buildTutorialActivated=1
 				src.HudCreate_Tut5()
+				_message(src, "<font color=green>New Task Unlocked<font color=white>: You've been sent out into the world. Find a secure place to build your clan base!","white")
 				return
 
 
