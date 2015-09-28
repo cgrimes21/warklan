@@ -25,7 +25,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src
+				A.Owner=src.key
 
 			if("Bronze Crafting Table")
 				var/obj/Can_Build/Bronze_Crafting_Table/A=new/obj/Can_Build/Bronze_Crafting_Table
@@ -37,7 +37,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src
+				A.Owner=src.key
 
 			if("Iron Crafting Table")
 				var/obj/Can_Build/Iron_Crafting_Table/A=new/obj/Can_Build/Iron_Crafting_Table
@@ -49,7 +49,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src
+				A.Owner=src.key
 
 			if("Basic Sewing Table")
 				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
@@ -61,7 +61,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src
+				A.Owner=src.key
 
 			if("Clan Base")
 				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
@@ -73,7 +73,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src
+				A.Owner=src.key
 
 
 //PROCEDURE BELOW TO DECIDE IF YOU CAN BUILD ON AN AREA OR NOT
@@ -116,14 +116,14 @@ mob/verb
 				if(usr.Level>=2&&count_minerals("Stone",usr)>=MaterialsReqNum)
 					var/obj/Can_Build/Clan_Base/B = new/obj/Can_Build/Clan_Base
 					if(locate(B) in range(5, usr))
-						if(B.Owner==usr)
+						if(B.Owner==usr.key)
 							usr.Clicking()
 							winset(usr,"Build","is-visible=false")
 							usr.Build("Stone Crafting Table")
 							usr.MaterialDelete("Stone",MaterialsReqNum)
 							ShowingBuildMenu=0
 						else usr<<"You are not the owner of this base, you cannot build here."
-					else usr<<"You have not built one or uou are too far away from your base."
+					else usr<<"You have not built one or you are too far away from your base."
 				else
 					usr<<"You do not possess the necessary requirements to build this item."
 			if("Deny")

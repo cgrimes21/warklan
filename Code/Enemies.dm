@@ -172,7 +172,7 @@ mob/Enemies
 		New()
 			spawn
 				while(src)
-					sleep(10)
+					sleep(5)
 					src.tickle()
 			GenerateShadow(src, SOUTH,-10)
 			Max_MouseName()
