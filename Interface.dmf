@@ -68,8 +68,16 @@ macro "macro"
 		command = "ShowBuildMenu"
 		is-disabled = false
 	elem 
+		name = "CTRL+B"
+		command = "IPBan"
+		is-disabled = false
+	elem 
 		name = "SHIFT+B"
-		command = "Boot"
+		command = "CharBan"
+		is-disabled = false
+	elem 
+		name = "CTRL+SHIFT+B"
+		command = "FullBan"
 		is-disabled = false
 	elem 
 		name = "C+UP"
@@ -110,6 +118,18 @@ macro "macro"
 	elem 
 		name = "S"
 		command = "ShowSkillLevel"
+		is-disabled = false
+	elem 
+		name = "SHIFT+S"
+		command = "Summon"
+		is-disabled = false
+	elem 
+		name = "SHIFT+T"
+		command = "Teleport"
+		is-disabled = false
+	elem 
+		name = "SHIFT+U"
+		command = "UnBan"
 		is-disabled = false
 	elem 
 		name = "`+UP"
