@@ -351,12 +351,17 @@ mob/proc
 				src.Skills+=new/obj/Skills/HTyphoon
 				_message(src,"You Have Learned Howling Typhoon, Press S to see all your skills.","green")
 				return
+obj/Can_Build
+	var
+		clan_build = ""
 
 obj/Can_Build/proc
 
 	Obj_DeathCheck()
 		src.update_health_bar()
 		if(src.Health<=0)
+			for(var/turf/too in view(5,src))
+				too.overlays = list()
 			del src
 
 	Damage(D)

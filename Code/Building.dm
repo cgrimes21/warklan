@@ -14,9 +14,15 @@ mob/proc
 		if(!t.can_build)
 			src<<"You cannot build in this area!"
 			return
+		for(var/obj/Can_Build/B in oview(5,src))
+			if(B.Owner != src.ckey)
+				src<<"This is not your base to build!"
+				return
 		switch(T)
 			if("Stone Crafting Table")
 				var/obj/Can_Build/Stone_Crafting_Table/A=new/obj/Can_Build/Stone_Crafting_Table
+				if(src.clan)
+					A.clan_build = src.clan
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -29,6 +35,8 @@ mob/proc
 
 			if("Bronze Crafting Table")
 				var/obj/Can_Build/Bronze_Crafting_Table/A=new/obj/Can_Build/Bronze_Crafting_Table
+				if(src.clan)
+					A.clan_build = src.clan
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -41,6 +49,8 @@ mob/proc
 
 			if("Iron Crafting Table")
 				var/obj/Can_Build/Iron_Crafting_Table/A=new/obj/Can_Build/Iron_Crafting_Table
+				if(src.clan)
+					A.clan_build = src.clan
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -53,6 +63,8 @@ mob/proc
 
 			if("Basic Sewing Table")
 				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
+				if(src.clan)
+					A.clan_build = src.clan
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -65,6 +77,8 @@ mob/proc
 
 			if("Clan Base")
 				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
+				if(src.clan)
+					A.clan_build = src.clan
 				src.Building=1
 				src.Frozen=1
 				src<<"Building [T]..."
@@ -73,7 +87,14 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.Name
+				A.Owner=src.ckey
+
+				//color your base
+				for(var/turf/too in view(5,A))
+					if(istype(too,/turf))
+						if(get_dist(too,src) >= 5)
+							var/icon/I = new('mybase.dmi')
+							too.overlays += I
 
 
 
@@ -86,6 +107,10 @@ mob/verb
 			return*/
 		if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
 			usr<<"You're building too close to another clan base!"
+			return
+		var/area/t = src.loc.loc
+		if(!t.can_build)
+			src<<"You cannot build in this area!"
 			return
 
 		switch(alert("Requirements: Player Level: 5 || Materials: 3 Stones",,"Accept","Deny"))

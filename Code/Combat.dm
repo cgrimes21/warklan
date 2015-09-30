@@ -124,13 +124,17 @@ mob/verb
 			usr.speed=2;spawn(5)usr.speed=4
 			Punching=1;spawn(10)Punching=0
 
+			if(O.clan_build != "")
+				usr.clan.Issue_War(O.clan_build)
+
 				//All damage is done here
 			var/weaponlevel
 			if(usr.SwordOn)
 				weaponlevel=usr.Sword_Skill_Level
-			if(usr.SpearOn)
+
+			else if(usr.SpearOn)
 				weaponlevel=usr.Spear_Skill_Level
-			if(usr.AxeOn)
+			else if(usr.AxeOn)
 				weaponlevel=usr.Axe_Skill_Level
 			else
 				weaponlevel=usr.HandToHand_Skill_Level
@@ -196,9 +200,11 @@ mob/verb
 				var/weaponlevel
 				if(usr.SwordOn)
 					weaponlevel=usr.Sword_Skill_Level
-				if(usr.SpearOn)
+				else if(usr.SpearOn)
 					weaponlevel=usr.Spear_Skill_Level
-				if(usr.AxeOn)
+				else if(usr.AxeOn)
+					world<<"AXE ON"
+					world<<usr.Axe_Skill_Level
 					weaponlevel=usr.Axe_Skill_Level
 				else
 					weaponlevel=usr.HandToHand_Skill_Level
