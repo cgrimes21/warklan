@@ -78,10 +78,6 @@ mob/verb
 			usr.Gold+=G.Amount
 			usr<<sound('pickupcoin.wav')
 			del(G)
-		for(var/obj/Items/ItemDrops/Iron/I in oview(1))
-			usr.Iron+=I.Amount
-			usr<<sound('pickupcoin.wav')
-			del(I)
 		for(var/obj/Items/O in oview(1))
 			if(!O.CanPickUp)
 				return
@@ -172,6 +168,8 @@ obj/Items/ItemDrops
 		Click()
 			if(src in oview(1))
 				usr.Clicking()
+				if(usr.Dying)
+					return
 				if(usr.AvailableItems>=MAXITEMS)
 					_message(usr,"You're holding too many items!","Yellow")
 					return
@@ -184,21 +182,29 @@ obj/Items/ItemDrops
 	Iron
 		icon='JpShopItems.dmi'
 		icon_state="iron"
+		name="Iron"
 		Click()
-			usr.Clicking()
 			if(src in oview(1))
+				usr.Clicking()
 				if(usr.Dying)
 					return
-				usr<<sound('pickupcoin.wav')
-				usr.Iron+=src.Amount
-				del(src)
+				if(usr.AvailableItems>=MAXITEMS)
+					_message(usr,"You're holding too many items!","Yellow")
+					return
+				else
+					usr.AvailableItems+=1
+					usr.contents+=src
+					if(usr.BagOpen==1)
+						usr.AddItems()
+					src.Fading=0
 
 	Bronze
 		icon='JpShopItems.dmi'
 		icon_state="bronze"
+		name="Bronze"
 		Click()
-			usr.Clicking()
 			if(src in oview(1))
+				usr.Clicking()
 				if(usr.Dying)
 					return
 				if(usr.AvailableItems>=MAXITEMS)
@@ -385,7 +391,7 @@ obj/Items
 			icon='JpShopItems.dmi'
 			icon_state="fctunic"
 			name="Fox Cub Tunic"
-			Boost=1.5
+			Boost=2.5
 			Click()
 				usr<<sound('Clickitem_statpoints.wav')
 				if(src in usr.contents)
@@ -530,7 +536,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your sword skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -580,7 +586,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your spear skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -632,7 +638,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your axe skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -646,7 +652,7 @@ obj/Items
 								usr.AddItems()
 
 		Bronze_Sword
-			WeaponLevel=5
+			WeaponLevel=10
 			Boost=3
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Sword"
@@ -683,7 +689,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your sword skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -697,7 +703,7 @@ obj/Items
 								usr.AddItems()
 
 		Bronze_Spear
-			WeaponLevel=7
+			WeaponLevel=15
 			Boost=3.5
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Spear"
@@ -734,7 +740,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your spear skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -749,7 +755,7 @@ obj/Items
 
 
 		Bronze_Axe
-			WeaponLevel=9
+			WeaponLevel=20
 			Boost=4
 			icon='JpShopItems.dmi'
 			icon_state="Bronze Axe"
@@ -786,7 +792,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your axe skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -801,7 +807,7 @@ obj/Items
 
 
 		Iron_Sword
-			WeaponLevel=13
+			WeaponLevel=20
 			Boost=4.5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Sword"
@@ -838,7 +844,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your sword skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your sword skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -852,7 +858,7 @@ obj/Items
 								usr.AddItems()
 
 		Iron_Spear
-			WeaponLevel=16
+			WeaponLevel=25
 			Boost=6
 			icon='JpShopItems.dmi'
 			icon_state="Iron Spear"
@@ -889,7 +895,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your spear skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your spear skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))
@@ -903,7 +909,7 @@ obj/Items
 								usr.AddItems()
 
 		Iron_Axe
-			WeaponLevel=19
+			WeaponLevel=30
 			Boost=6.5
 			icon='JpShopItems.dmi'
 			icon_state="Iron Axe"
@@ -940,7 +946,7 @@ obj/Items
 						src.overlays+=new/obj/Equipped
 						usr.WeaponBoost = Boost
 					else
-						usr<<"Your axe skill needs to be Level [WeaponLevel] to equip this weapon."
+						_message(usr,"Your axe skill needs to be Level [WeaponLevel] to equip this weapon.","White")
 
 				else
 					if(src in oview(1))

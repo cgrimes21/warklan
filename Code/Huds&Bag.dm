@@ -420,13 +420,13 @@ obj/Huds
 					if(!usr.client)
 						return
 					if(usr.SwordOn)
-						src.maptext="<font color=white>[usr.Sword_Skill_EXP] / [usr.Sword_Skill_MaxEXP]</font>"
+						src.maptext="<font color=white>[round(usr.Sword_Skill_EXP/usr.Sword_Skill_MaxEXP*100)]%</font>"
 					else if(usr.SpearOn)
-						src.maptext="<font color=white>[usr.Spear_Skill_EXP] / [usr.Spear_Skill_MaxEXP]</font>"
+						src.maptext="<font color=white>[round(usr.Spear_Skill_EXP/usr.Spear_Skill_MaxEXP*100)]%</font>"
 					else if(usr.AxeOn)
-						src.maptext="<font color=white>[usr.Axe_Skill_EXP] / [usr.Axe_Skill_MaxEXP]</font>"
+						src.maptext="<font color=white>[round(usr.Axe_Skill_EXP/usr.Axe_Skill_MaxEXP*100)]%</font>"
 					else
-						src.maptext="<font color=white>[usr.HandToHand_Skill_EXP] / [usr.HandToHand_Skill_MaxEXP]</font>"
+						src.maptext="<font color=white>[round(usr.HandToHand_Skill_EXP/usr.HandToHand_Skill_MaxEXP*100)]%</font>"
 					sleep(5)
 
 

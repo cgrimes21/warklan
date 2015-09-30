@@ -25,7 +25,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.key
+				A.Owner=src.Name
 
 			if("Bronze Crafting Table")
 				var/obj/Can_Build/Bronze_Crafting_Table/A=new/obj/Can_Build/Bronze_Crafting_Table
@@ -37,7 +37,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.key
+				A.Owner=src.Name
 
 			if("Iron Crafting Table")
 				var/obj/Can_Build/Iron_Crafting_Table/A=new/obj/Can_Build/Iron_Crafting_Table
@@ -49,7 +49,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.key
+				A.Owner=src.Name
 
 			if("Basic Sewing Table")
 				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
@@ -61,7 +61,7 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.key
+				A.Owner=src.Name
 
 			if("Clan Base")
 				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
@@ -73,10 +73,8 @@ mob/proc
 				src.Building=0
 				A.loc = src.loc
 				A.add_craft_item()
-				A.Owner=src.key
+				A.Owner=src.Name
 
-
-//PROCEDURE BELOW TO DECIDE IF YOU CAN BUILD ON AN AREA OR NOT
 
 
 mob/verb
@@ -105,7 +103,7 @@ mob/verb
 
 	BuildSCT()
 		set hidden = 1
-		var/MaterialsReqNum=1
+		var/MaterialsReqNum=5
 
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
@@ -131,22 +129,21 @@ mob/verb
 	BuildBCT()
 		set hidden = 1
 		var/MaterialsReqNum=10
-		/*if(!usr.InClan)
-			src<<"You need to be in a clan to build this item."
-			return*/
 
 		switch(alert("Requirements: Player Level: 20 || Materials: 10 Bronze Bars",,"Accept","Deny"))
 			if("Accept")
-				if(usr.Level>=20&&count_minerals("Bronze",usr)>=MaterialsReqNum)
-					if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
+				var/obj/Can_Build/Clan_Base/B = new/obj/Can_Build/Clan_Base
+				if(locate(B) in range(5, usr))
+					if(usr.Level>=20&&count_minerals("Bronze",usr)>=MaterialsReqNum)
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Bronze Crafting Table")
 						usr.MaterialDelete("Bronze",MaterialsReqNum)
 						ShowingBuildMenu=0
-					else usr<<"You are too far away from your base flag!"
-				else
-					usr<<"You do not possess the necessary requirements to build this item."
+					else usr<<"You do not possess the necessary requirements to build this item."
+
+				else usr<<"You have not built one or you are too far away from your base."
+
 			if("Deny")
 				return
 

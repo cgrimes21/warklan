@@ -3104,3 +3104,73 @@ proc name: save build (/proc/save_build)
   call stack:
 save build()
 : Del()
+runtime error: Safety violation: tried to access 'C:\Users\jp723\Desktop\github warklan\warklan\Saves\World\Clans.sav' outside of current directory.
+proc name: LoadClans (/proc/LoadClans)
+  source file: Klan Wars.dm,47
+  usr: null
+  src: null
+  call stack:
+LoadClans()
+world: New()
+runtime error: Safety violation: tried to access 'C:\Users\jp723\Desktop\github warklan\warklan\Saves\World\Build' outside of current directory.
+proc name: load build (/proc/load_build)
+  source file: Building.dm,238
+  usr: null
+  src: null
+  call stack:
+load build()
+world: New()
+runtime error: Safety violation: tried to access 'C:\Users\jp723\Desktop\github warklan\warklan\Saves\Guest-2971717334.sav' outside of current directory.
+proc name: Login (/mob/Login)
+  source file: Klan Wars.dm,115
+  usr: Guest-2971717334 (/mob)
+  src: Guest-2971717334 (/mob)
+  call stack:
+Guest-2971717334 (/mob): Login()
+runtime error: Safety violation: tried to access '0' outside of current directory.
+proc name: save build (/proc/save_build)
+  source file: Building.dm,224
+  usr: null
+  src: null
+  call stack:
+save build()
+world: Del()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2971717334 (/mob)
+  src: Guest-2971717334 (/mob)
+  call stack:
+Guest-2971717334 (/mob): Quests()
+runtime error: Cannot read null.images
+proc name: Quests (/mob/proc/Quests)
+  source file: Quests.dm,54
+  usr: Guest-2971717334 (/mob)
+  src: Guest-2971717334 (/mob)
+  call stack:
+Guest-2971717334 (/mob): Quests()
+save build()
+world: Del()
+proc name: load build (/proc/load_build)
+  source file: Building.dm,239
+  usr: null
+  src: null
+  call stack:
+load build()
+world: New()
+runtime error: Cannot read null.contents
+proc name: count minerals (/proc/count_minerals)
+  source file: Quests.dm,25
+  usr: Guest-2971717334 (/mob)
+  src: null
+  call stack:
+count minerals("Stone", null, Guest-2971717334 (/mob))
+Stone Axe (/obj/NPCs/Items/Stone_Axe): Click(null, "Main.MainMap", "icon-x=12;icon-y=25;left=1;scr...")
+runtime error: Cannot read null.contents
+proc name: count minerals (/proc/count_minerals)
+  source file: Quests.dm,25
+  usr: Guest-2971717334 (/mob)
+  src: null
+  call stack:
+count minerals("Stone", null, Guest-2971717334 (/mob))
+Stone Axe (/obj/NPCs/Items/Stone_Axe): Click(null, "Main.MainMap", "icon-x=11;icon-y=21;left=1;scr...")

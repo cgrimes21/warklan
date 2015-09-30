@@ -25,10 +25,10 @@ proc
 				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
 					what += 1
 			if("Bronze")
-				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
+				for(var/obj/Items/ItemDrops/Bronze/B in M.contents)
 					what += 1
 			if("Iron")
-				for(var/obj/Items/ItemDrops/Stone/C in M.contents)
+				for(var/obj/Items/ItemDrops/Iron/I in M.contents)
 					what += 1
 		return what
 
@@ -92,6 +92,7 @@ mob/var
 	EnemiesKilled=0
 	BaseDestroyed_Table1=0
 	BaseDestroyed_Table2=0
+	BaseDestroyed_Bandit=0
 	BaseDestroyed_ClanBase=0
 	BaseDestroyQuestFinished=0
 	TalkToTravelerActivated=1
@@ -147,11 +148,12 @@ mob/proc
 				src<< output("<center>You've retrieved the stones! Take them to the crafting table and create a Stone Sword.</center>","QuestMenu.Info")
 
 			else
-				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small crafting stones, you can find them on Wolves.</center>","QuestMenu.Info")
+				src<< output("<center>So let's see...we've gotten you some clothing, now it's time to get you a decent weapon! Why don't we craft you a Stone Sword? Go and get 3 small stones, you can find them on Wolves.</center>","QuestMenu.Info")
 				winset(src,"QuestMenu.Accept","is-visible=true")
 				winset(usr,"QuestMenu.Deny","is-visible=true")
 
 		if(T=="DestroyClanBaseQuest")
+			winset(src,"QuestMenu.RewardOne","")
 			src<< output(null,"QuestMenu.Info")
 
 			if(src.BaseDestroyQuestFinished)
@@ -306,6 +308,7 @@ mob/proc
 							usr.AddItems()
 						src.AvailableItems-=1
 						src.CreateInventory()
+
 			if("Iron")
 				var/counter = 0
 				for(var/obj/Items/ItemDrops/Iron/I in src.contents)
@@ -318,7 +321,7 @@ mob/proc
 						src.CreateInventory()
 
 	BaseDestroyQuestFinish()
-		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanBase)
+		if(src.BaseDestroyed_Table1&&src.BaseDestroyed_Table2&&src.BaseDestroyed_ClanBase&&BaseDestroyed_Bandit>=2)
 			if(!BaseDestroyQuestFinished)
 				_message(src, "<b><font color=#A0C8C6>Quest Completed:<font color=white> - Destroyed Enemy Encampment</font></b>","white")
 				src.BaseDestroyQuestFinished=1
@@ -367,7 +370,7 @@ mob
 				sleep(5)
 				src.buildTutorialActivated=1
 				src.HudCreate_Tut5()
-				_message(src, "<font color=green>New Task Unlocked<font color=white>: You've been sent out into the world. Find a secure place to build your clan base!","white")
+				_message(src, "<font color=green>Tutorial Complete<font color=white>: You've been sent out into the world. Find a secure place to build your clan base!","white")
 				return
 
 

@@ -49,7 +49,7 @@ mob/proc
 
 				if(M.Name=="Fox Cub"&&M.Enemy==1)
 					var/exp = rand(8,10)
-					if(prob(50))
+					if(prob(75))
 						var/obj/Items/ItemDrops/Fox_Fur/F=new/obj/Items/ItemDrops/Fox_Fur
 						if(!T.pickupTutorialActivated&&!T.pickupTutorialDone) //if pickup tutorial hasn't been activated yet or done
 							T.pickupTutorialActivated=1 //the tutorial telling you how to pick stuff up is activated
@@ -99,6 +99,8 @@ mob/proc
 					usr<< sound('Sounds/screech.ogg')
 					var/exp = rand(58,60)
 					T.WeaponEquipCheck(exp)
+					T.BaseDestroyed_Bandit+=1
+					T.BaseDestroyQuestFinish()
 
 				if(M.Name=="Cave Bat"&&M.Enemy==1)
 					var/exp = rand(78,80)
@@ -268,7 +270,7 @@ mob/proc
 		src.MaxDefense+=2
 
 		if(src.Level==10)
-			_message(src,"New Task Unlocked: <font color=white>Create A Clan!","Aqua")
+			//_message(src,"New Task Unlocked: <font color=white>Create A Clan!","Aqua")
 			src.ElderNPC=1
 
 		if(src.Sword_Skill_EXP>=Sword_Skill_MaxEXP)

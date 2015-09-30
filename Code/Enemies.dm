@@ -220,6 +220,23 @@ mob/Enemies
 				GenerateShadow(src, SOUTH,-10)
 				Max_MouseName()
 
+		Bandit
+			icon='White Base.dmi'
+			Name="Bandit"
+			Level=9
+			Strength=39
+			Defense=35
+			Health=150
+			MaxHealth=150
+			expGiven=60
+			New()
+				spawn
+					while(src)
+						sleep(5)
+						src.tickle()
+				GenerateShadow(src, SOUTH,-32)
+				Max_MouseName()
+
 
 	Wolf
 		icon='Wolf.dmi'
@@ -239,29 +256,12 @@ mob/Enemies
 			Max_MouseName()
 
 
-	Bandit
-		icon='White Base.dmi'
-		Name="Bandit"
-		Level=9
-		Strength=39
-		Defense=35
-		Health=150
-		MaxHealth=150
-		expGiven=60
-		New()
-			spawn
-				while(src)
-					sleep(5)
-					src.tickle()
-			GenerateShadow(src, SOUTH,-32)
-			Max_MouseName()
-
 	Bat
 		icon='Bat.dmi'
 		Name="Cave Bat"
 		Level=12
-		Strength=44
-		Defense=40
+		Strength=47
+		Defense=43
 		Health=130
 		MaxHealth=130
 		expGiven=80

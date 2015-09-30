@@ -32,8 +32,8 @@ obj/Can_Build
 
 				if(/obj/Can_Build/Iron_Crafting_Table)
 					var/obj/NPCs/Items/Iron_Sword/G=new/obj/NPCs/Items/Iron_Sword
-					var/obj/NPCs/Items/Iron_Spear/I=new/obj/NPCs/Items/Iron_Spear
-					var/obj/NPCs/Items/Iron_Axe/H=new/obj/NPCs/Items/Iron_Axe
+					var/obj/NPCs/Items/Iron_Spear/H=new/obj/NPCs/Items/Iron_Spear
+					var/obj/NPCs/Items/Iron_Axe/I=new/obj/NPCs/Items/Iron_Axe
 
 					src.contents+=G
 					src.contents+=H

@@ -30,7 +30,7 @@ obj/NPCs/Items
 		winset(usr,"Item","is-visible=true")
 		usr.IteminfoAlign()
 		winset(usr,"Item.Name","text = ' [src.name]'")
-		winset(usr,"Item.Level","text = ' Level Req: [WeaponLevel]'")
+		winset(usr,"Item.Level","text = ' Weapon Level Req: [WeaponLevel]'")
 		winset(usr,"Item.Materials","text = ' [src.MaterialsRequired] Needed'")
 		winset(usr,"Item.Boost","text = ' [src.Attribute]'")
 		usr<<output(null,"Item.ItemInfo")
@@ -72,7 +72,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="7 Stones"
 		MaterialsReqNum=7
-		WeaponLevel=5
+		WeaponLevel=1
 		Boost=1.5
 		Des="Stone Spear"
 		Attribute="+2 Strength"
@@ -100,7 +100,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="12 Stones"
 		MaterialsReqNum=12
-		WeaponLevel=15
+		WeaponLevel=1
 		Boost=2
 		Des="Stone Axe"
 		Attribute="+2.5 Strength"
@@ -111,7 +111,7 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Stone",,usr)>=MaterialsReqNum)
+			if(count_minerals("Stone",usr)>=MaterialsReqNum)
 				usr.MaterialDelete("Stone",MaterialsReqNum)
 				var/obj/Items/Weapons/Stone_Axe/A=new/obj/Items/Weapons/Stone_Axe
 				usr.AvailableItems+=1
@@ -128,7 +128,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="5 Bronze Bars"
 		MaterialsReqNum=5
-		WeaponLevel=20
+		WeaponLevel=10
 		Boost=1.5
 		Des="Bronze Sword"
 		Attribute="+3 Strength"
@@ -155,8 +155,8 @@ obj/NPCs/Items
 		name="Bronze Spear"
 		Weight=25
 		MaterialsRequired="10 Bronze Bars"
-		MaterialsReqNum=1
-		WeaponLevel=25
+		MaterialsReqNum=10
+		WeaponLevel=15
 		Des="Bronze Spear"
 		Attribute="+3.5 Strength"
 		icon='JpShopItems.dmi'
@@ -183,7 +183,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="15 Bronze Bars"
 		MaterialsReqNum=15
-		WeaponLevel=35
+		WeaponLevel=20
 		Des="Bronze Axe"
 		Attribute="+4 Strength"
 		icon='JpShopItems.dmi'
@@ -211,7 +211,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="10 Iron Bars"
 		MaterialsReqNum=10
-		WeaponLevel=40
+		WeaponLevel=20
 		Des="Iron Sword"
 		Attribute="+4.5 Strength"
 		icon='JpShopItems.dmi'
@@ -221,7 +221,7 @@ obj/NPCs/Items
 			if(usr.AvailableItems>=MAXITEMS)
 				_message(usr,"You're holding too many items!","Yellow")
 				return
-			if(count_minerals("Iron",,usr)>=MaterialsReqNum)
+			if(count_minerals("Iron",usr)>=MaterialsReqNum)
 				usr.MaterialDelete("Iron",MaterialsReqNum)
 				var/obj/Items/Weapons/Iron_Sword/A=new/obj/Items/Weapons/Iron_Sword
 				usr.AvailableItems+=1
@@ -238,7 +238,7 @@ obj/NPCs/Items
 		Weight=25
 		MaterialsRequired="15 Iron Bars"
 		MaterialsReqNum=15
-		WeaponLevel=45
+		WeaponLevel=25
 		Des="Iron Spear"
 		Attribute="+5 Strength"
 		icon='JpShopItems.dmi'
@@ -263,9 +263,9 @@ obj/NPCs/Items
 	Iron_Axe
 		name="Iron Axe"
 		Weight=25
-		MaterialsRequired="20 Iron Bars"
-		MaterialsReqNum=20
-		WeaponLevel=55
+		MaterialsRequired="19 Iron Bars"
+		MaterialsReqNum=19
+		WeaponLevel=30
 		Des="Iron Axe"
 		Attribute="+5.5 Strength"
 		icon='JpShopItems.dmi'
@@ -293,7 +293,7 @@ obj/NPCs/Items
 		MaterialsRequired="3 Fox Furs"
 		MaterialsReqNum=3
 		Des="Fox Cub Tunic"
-		Attribute="+1.5 Defense"
+		Attribute="+2.5 Defense"
 		icon='JpShopItems.dmi'
 		icon_state="fctunic"
 		Click()

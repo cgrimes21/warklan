@@ -9,16 +9,16 @@ mob/proc
 		var/obj/NPCs/Items/Bronze_Axe/E=new/obj/NPCs/Items/Bronze_Axe
 
 		var/obj/NPCs/Items/Iron_Sword/G=new/obj/NPCs/Items/Iron_Sword
-		var/obj/NPCs/Items/Iron_Spear/I=new/obj/NPCs/Items/Iron_Spear
-		var/obj/NPCs/Items/Iron_Axe/H=new/obj/NPCs/Items/Iron_Axe
+		var/obj/NPCs/Items/Iron_Spear/H=new/obj/NPCs/Items/Iron_Spear
+		var/obj/NPCs/Items/Iron_Axe/I=new/obj/NPCs/Items/Iron_Axe
 
 		src.contents+=A
 		src.contents+=B
 		src.contents+=C
 
 		src.contents+=D
-		src.contents+=E
 		src.contents+=F
+		src.contents+=E
 
 		src.contents+=G
 		src.contents+=H
