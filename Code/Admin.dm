@@ -53,6 +53,12 @@ If you want it bold, add: font-weight:bold;
 
 </style>
 "}
+var
+	list
+		BanListA = list()
+		BanListK = list()
+		UnBanListA = list()
+		UnBanListK = list()
 
 
 //  Other important defines that do not need editing
@@ -474,6 +480,81 @@ proc
 		if(isnull(variable))return "null"
 
 		return "- [variable] -"
+
+mob
+	proc
+		ip_ban(mob/M,n as num)
+			var/a = "[M.client.address]"
+			if(n != 1)
+				switch(alert("Are you sure you want to ban [a]?","Ban [M.name]","Yes","No"))
+					if("Yes")
+						var/F = new/savefile("BanList.sav")
+						F["BanListA"] >> BanListA
+						BanListA += a
+						F["BanListA"] << BanListA
+						world << "[usr] IP banned [M.name]"
+						del(M)
+			else
+				var/F = new/savefile("BanList.sav")
+				F["BanListA"] >> BanListA
+				BanListA += a
+				F["BanListA"] << BanListA
+				world << "[usr] IP banned [M.name]"
+				del(M)
+
+		key_ban(mob/M,n as num)
+			var/a = M.key
+			if(n != 1)
+				switch(alert("Really ban [M.key]?","Ban [M.name]","Yes","No"))
+					if("Yes")
+						var/F = new/savefile("BanList.sav")
+						F["BanListK"] >> BanListK
+						BanListK += a
+						F["BanListK"] << BanListK
+						world << "[usr] key banned [M.name]"
+						del(M)
+			else
+				var/F = new/savefile("BanList.sav")
+				F["BanListK"] >> BanListK
+				BanListK += a
+				F["BanListK"] << BanListK
+				world << "[usr] key banned [M.name]"
+				del(M)
+		full_ban(mob/M)
+			switch(alert("Really ban [M.key]/[M.name]","Ban","Yes","No"))
+				if("Yes")
+					key_ban(M,1)
+					ip_ban(M,1)
+		un_ban()
+			var/F = new/savefile("BanList.sav")
+			F["BanListK"] >> BanListK
+			F["BanListA"] >> BanListA
+			UnBanListA = list()
+			UnBanListK = list()
+			UnBanListA += BanListA
+			UnBanListK += BanListK
+			switch(alert("Key or IP?",,"Key","IP"))
+				if("Key")
+					var/a=input("Who do you want to unban?")in UnBanListK
+					switch(alert("Unban [a]?",,"Yes","No"))
+						if("Yes")
+							BanListK -= a
+				if("IP")
+					var/a=input("Who do you want to unban?")in UnBanListK
+					switch(alert("Unban [a]?",,"Yes","No"))
+						if("Yes")
+							BanListA -= a
+			F["BanListK"] << BanListK
+			F["BanListA"] << BanListA
+		Ban()
+			if(BanListA.Find("[usr.client.address]"))
+				usr << "You can't login, your banned!"
+				del(usr)
+			if(BanListK.Find(usr.key))
+				usr << "You can't login, your banned!"
+				del(usr)
+			..()
+
 mob
 	Stat()
 		..()
@@ -526,3 +607,36 @@ mob/verb
 			else
 				M.Mute=1
 				_message(M, "<b><font color=#7F00FF>[M.Name]</font>: You're Muted</b>","white")
+
+	Teleport(mob/M as mob in world)
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		usr.loc=M.loc
+
+	Summon(mob/M as mob in world)
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		M.loc=usr.loc
+
+	IPBan(mob/M as mob in world)
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		ip_ban(M)
+	CharBan(mob/M as mob in world)
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		key_ban(M)
+	FullBan(mob/M as mob in world)
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		full_ban(M)
+	Unban()
+		set hidden = 1
+		if(usr.Admin==0)
+			return
+		un_ban()

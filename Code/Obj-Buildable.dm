@@ -42,12 +42,12 @@ obj/Can_Build
 				if(/obj/Can_Build/Basic_Sewing_Table)
 
 					var/obj/NPCs/Items/Fox_Cub_Tunic/A=new/obj/NPCs/Items/Fox_Cub_Tunic
-					var/obj/NPCs/Items/Red_Fox_Coat/B=new/obj/NPCs/Items/Red_Fox_Coat
-					var/obj/NPCs/Items/Wolf_Fur_Coat/C=new/obj/NPCs/Items/Wolf_Fur_Coat
+					//var/obj/NPCs/Items/Red_Fox_Coat/B=new/obj/NPCs/Items/Red_Fox_Coat
+					//var/obj/NPCs/Items/Wolf_Fur_Coat/C=new/obj/NPCs/Items/Wolf_Fur_Coat
 
 					src.contents+=A
-					src.contents+=B
-					src.contents+=C
+					//src.contents+=B
+					//src.contents+=C
 
 
 

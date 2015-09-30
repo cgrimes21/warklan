@@ -97,11 +97,15 @@ mob
 		if(src.ckey in list("redcrownmg","animebeyond","suicideshifterr",m.m))
 			src.Admin=1
 			debuggers += src
+		var/F = new/savefile("BanList.sav")
+		F["BanListK"] >> BanListK
+		F["BanListA"] >> BanListA
 		for(var/mob/M in world)
 			if(M.key == src.key && M!=src)
 				debuggers<<"Multikeying [src.ckey] attempt found. STOP"
 				del src
 				return
+
 
 		src.Quests()
 		..()
