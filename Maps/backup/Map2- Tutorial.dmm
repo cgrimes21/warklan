@@ -41,7 +41,6 @@
 "aO" = (/obj/Tent,/turf/Mountains/s9,/area)
 "aP" = (/obj/Density,/turf/Mountains/s9,/area)
 "aQ" = (/mob/NPCS/QUEST/Monk,/turf/Mountains/s9,/area)
-<<<<<<< HEAD
 "aR" = (/obj/Items/ItemDrops/Stone,/turf/Mountains/mg7,/area)
 "aS" = (/obj/Can_Build/Stone_Crafting_Table,/turf/Mountains/mg7,/area)
 "aT" = (/obj/Can_Build/Basic_Sewing_Table,/turf/Mountains/mg7,/area)
@@ -203,7 +202,6 @@
 "dT" = (/turf/Mountains/s6,/turf/Mountains/pl9,/area/no_build)
 "dU" = (/turf/Mountains/s6,/turf/Mountains/pl5,/area/no_build)
 "dV" = (/turf/Mountains/s7,/area/no_build)
-=======
 "aR" = (/obj/Can_Build/Stone_Crafting_Table{CanDestroy = 0},/turf/Mountains/mg7,/area)
 "aS" = (/obj/Can_Build/Basic_Sewing_Table{CanDestroy = 0},/turf/Mountains/mg7,/area)
 "aT" = (/obj/Can_Build/Clan_Base{CanDestroy = 0; Owner = "No one"},/turf/Mountains/mg7,/area)
@@ -363,8 +361,6 @@
 "dR" = (/turf/Mountains/s6,/turf/Mountains/pl9,/area/no_build)
 "dS" = (/turf/Mountains/s6,/turf/Mountains/pl5,/area/no_build)
 "dT" = (/turf/Mountains/s7,/area/no_build)
->>>>>>> 30b526b746cd1d4a70daa10819ecbf4f9bd00dd2
-
 (1,1,1) = {"
 aaabacababababacabababababadacabababababacabababababaeafagah
 aiajakajalajajakajajajajajajakamajajajajanajajajajajajamajao
