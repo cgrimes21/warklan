@@ -361,6 +361,10 @@
 "dR" = (/turf/Mountains/s6,/turf/Mountains/pl9,/area/no_build)
 "dS" = (/turf/Mountains/s6,/turf/Mountains/pl5,/area/no_build)
 "dT" = (/turf/Mountains/s7,/area/no_build)
+<<<<<<< HEAD
+=======
+
+>>>>>>> e0186e406c2c70e5a3ba3284017d0598ee410cc8
 (1,1,1) = {"
 aaabacababababacabababababadacabababababacabababababaeafagah
 aiajakajalajajakajajajajajajakamajajajajanajajajajajajamajao
