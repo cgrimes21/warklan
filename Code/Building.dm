@@ -16,10 +16,11 @@ mob/proc
 			return
 		for(var/obj/Can_Build/B in oview(5,src))
 			if(B.Owner != src.ckey)
-				src<<"This is not your base to build!"
+				src<<"You can't build on someone else's base!"
 				return
 		switch(T)
 			if("Stone Crafting Table")
+				var/MaterialsReqNum=5
 				var/obj/Can_Build/Stone_Crafting_Table/A=new/obj/Can_Build/Stone_Crafting_Table
 				if(src.clan)
 					A.clan_build = src.clan
@@ -32,8 +33,10 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 				A.Owner=src.Name
+				src.MaterialDelete("Stone",MaterialsReqNum)
 
 			if("Bronze Crafting Table")
+				var/MaterialsReqNum=10
 				var/obj/Can_Build/Bronze_Crafting_Table/A=new/obj/Can_Build/Bronze_Crafting_Table
 				if(src.clan)
 					A.clan_build = src.clan
@@ -46,8 +49,10 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 				A.Owner=src.Name
+				src.MaterialDelete("Bronze",MaterialsReqNum)
 
 			if("Iron Crafting Table")
+				var/MaterialsReqNum=15
 				var/obj/Can_Build/Iron_Crafting_Table/A=new/obj/Can_Build/Iron_Crafting_Table
 				if(src.clan)
 					A.clan_build = src.clan
@@ -60,8 +65,10 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 				A.Owner=src.Name
+				src.MaterialDelete("Iron",MaterialsReqNum)
 
 			if("Basic Sewing Table")
+				var/MaterialsReqNum=5
 				var/obj/Can_Build/Basic_Sewing_Table/A=new/obj/Can_Build/Basic_Sewing_Table
 				if(src.clan)
 					A.clan_build = src.clan
@@ -74,8 +81,10 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 				A.Owner=src.Name
+				src.MaterialDelete("Stone",MaterialsReqNum)
 
 			if("Clan Base")
+				var/MaterialsReqNum=3
 				var/obj/Can_Build/Clan_Base/A=new/obj/Can_Build/Clan_Base
 				if(src.clan)
 					A.clan_build = src.clan
@@ -88,6 +97,7 @@ mob/proc
 				A.loc = src.loc
 				A.add_craft_item()
 				A.Owner=src.ckey
+				src.MaterialDelete("Stone",MaterialsReqNum)
 
 				//color your base
 				for(var/turf/too in view(5,A))
@@ -105,7 +115,7 @@ mob/verb
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
-		if(locate(/obj/Can_Build/Clan_Base) in range(5, usr))
+		if(locate(/obj/Can_Build/Clan_Base) in range(11, usr))
 			usr<<"You're building too close to another clan base!"
 			return
 		var/area/t = src.loc.loc
@@ -119,7 +129,6 @@ mob/verb
 					usr.Clicking()
 					winset(usr,"Build","is-visible=false")
 					usr.Build("Clan Base")
-					usr.MaterialDelete("Stone",MaterialsReqNum)
 					ShowingBuildMenu=0
 				else
 					usr<<"You do not possess the necessary requirements to build this item."
@@ -129,7 +138,6 @@ mob/verb
 	BuildSCT()
 		set hidden = 1
 		var/MaterialsReqNum=5
-
 		/*if(!usr.InClan)
 			src<<"You need to be in a clan to build this item."
 			return*/
@@ -142,7 +150,6 @@ mob/verb
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Stone Crafting Table")
-						usr.MaterialDelete("Stone",MaterialsReqNum)
 						ShowingBuildMenu=0
 					else usr<<"You have not built one or you are too far away from your base."
 				else
@@ -154,7 +161,6 @@ mob/verb
 	BuildBCT()
 		set hidden = 1
 		var/MaterialsReqNum=10
-
 		switch(alert("Requirements: Player Level: 20 || Materials: 10 Bronze Bars",,"Accept","Deny"))
 			if("Accept")
 				var/obj/Can_Build/Clan_Base/B = new/obj/Can_Build/Clan_Base
@@ -163,7 +169,6 @@ mob/verb
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Bronze Crafting Table")
-						usr.MaterialDelete("Bronze",MaterialsReqNum)
 						ShowingBuildMenu=0
 					else usr<<"You do not possess the necessary requirements to build this item."
 
@@ -186,7 +191,6 @@ mob/verb
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Iron Crafting Table")
-						usr.MaterialDelete("Iron",MaterialsReqNum)
 						ShowingBuildMenu=0
 					else usr<<"You are too far away from your base flag!"
 				else
@@ -208,7 +212,6 @@ mob/verb
 						usr.Clicking()
 						winset(usr,"Build","is-visible=false")
 						usr.Build("Basic Sewing Table")
-						usr.MaterialDelete("Stone",MaterialsReqNum)
 						ShowingBuildMenu=0
 					else usr<<"You are too far away from your base flag!"
 				else
